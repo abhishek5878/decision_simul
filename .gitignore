@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual envs
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs and temp
+*.log
+*.tmp
+*.temp
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Secrets and local config (do not commit API keys)
+.env.local
+.env.*.local
+*_secret*
+*credentials*
+*.pem
+
+# Large / generated data (dataset re-downloadable via Hugging Face)
+nemotron_personas_india_data/
+*.parquet
+# Hugging Face cache
+.cache/
+nemotron_personas_india_data/.cache/
+
+# Large pipeline/generated outputs (exceed GitHub 100MB limit)
+*_pipeline_result.json
+*_full_pipeline_results.json
+credigo_ss_pipeline_result.json
+credigo_pipeline_result.json
+keeper_ss_pipeline_result.json
+blink_money_pipeline_result.json
+blink_money_full_pipeline_results.json
+keeper_full_pipeline_results.json
+credigo_full_pipeline_results.json

@@ -1,0 +1,46 @@
+{
+  "primary_action": {
+    "main_input_field": {
+      "type": "text input",
+      "label": "Enter your email address",
+      "placeholder": "you@example.com",
+      "description": "User must enter their email address to check eligibility."
+    },
+    "secondary_input_fields": [
+      {
+        "type": "number input",
+        "label": "Enter mutual fund amount",
+        "description": "User can enter the amount related to mutual funds, but it might be optional."
+      }
+    ],
+    "primary_button": {
+      "text": "Check Eligibility",
+      "action": "When clicked, the user proceeds to the next step to check eligibility for a credit against mutual funds."
+    },
+    "step_flow": "User enters email address \u2192 Clicks Check Eligibility \u2192 Goes to step 3"
+  },
+  "contextual_information": {
+    "above_fold": [
+      "Eligibility check input field",
+      "Check Eligibility button"
+    ],
+    "below_fold": [
+      "Benefits of BlinkMoney",
+      "Testimonials",
+      "FAQs",
+      "Partner logos",
+      "Why BlinkMoney? section"
+    ],
+    "benefits_section": [
+      "No selling of funds",
+      "Instant credits in just 2 hours",
+      "Pay only interest",
+      "Compare digital process",
+      "No credit score?"
+    ],
+    "testimonials": true,
+    "faqs": true,
+    "partner_logos": true
+  },
+  "complete_understanding": "The user sees an input field for entering their email address and a button to check eligibility. Below the fold, they find contextual information like benefits, testimonials, FAQs, and partner logos. The primary action is entering the email and clicking the button to proceed."
+}

@@ -1,0 +1,65 @@
+{
+  "product_id": "credigo",
+  "simulation_version_hash": "df238cdc586ac248",
+  "run_mode": "production",
+  "personas_simulated": 15,
+  "decision_traces_count": 500,
+  "confidence_level": 0.42751427531290365,
+  "verdict_text": "Trust collapses when commitment is demanded before trust is established.",
+  "irreversible_moment": {
+    "step_id": "Find the Best Credit Card In 60 seconds",
+    "step_label": "Landing page",
+    "position_in_flow": 0,
+    "commitment_delta": 0.19,
+    "exit_probability_gradient": 0.22320142879572888,
+    "reversibility_score": 1.0,
+    "why_irreversible": "commitment requirement increases sharply; exit probability spikes"
+  },
+  "belief_before": {
+    "task_framing": "value is distant",
+    "commitment_level": 0.5221199999999999,
+    "expected_value_timing": "5 steps away",
+    "perceived_risk": 0.366144
+  },
+  "belief_after": {
+    "task_framing": "value is too distant to justify commitment",
+    "commitment_level": 0.49921052631578955,
+    "expected_value_timing": "5 steps away (too far)",
+    "perceived_risk": 0.3469263157894737
+  },
+  "retry_rate": 1.0,
+  "backtracking_rate": 0.0,
+  "abandonment_permanence_score": 0.0,
+  "why_recovery_does_not_occur": "Once a drop decision occurs, no traces show continuation in the same session. Backtracking does not occur. Abandonment is permanent within the simulated session.",
+  "minimal_sequencing_change": "Move value demonstration to before step 1",
+  "why_it_repairs_belief_ordering": "Value currently appears 5 steps after commitment is demanded. Moving value earlier repairs the belief ordering: value proof before commitment ask.",
+  "falsifiability_conditions": [
+    {
+      "condition_text": "If retry rate exceeds 20% after drop decisions",
+      "observable_outcome": "Personas that drop at the irreversible step continue in subsequent sessions or retry the same step"
+    },
+    {
+      "condition_text": "If urgent_need variant shows higher drop rate than price_sensitive variant at the irreversible step",
+      "observable_outcome": "Variant sensitivity pattern is reversed in real-world data or additional simulation runs"
+    },
+    {
+      "condition_text": "If commitment delta is negative (commitment increases) at the irreversible step",
+      "observable_outcome": "Continuation rate increases rather than decreases at the identified irreversible step"
+    }
+  ],
+  "most_sensitive_variant": "price_sensitive",
+  "least_sensitive_variant": "urgent_need",
+  "what_this_does_not_prove": [
+    "This does not prove that changing the product will improve outcomes.",
+    "This does not prove causality beyond the simulated decision traces.",
+    "This does not prove that the identified counterfactual will work in practice.",
+    "This does not prove that all users behave as the simulated personas do."
+  ],
+  "what_this_is_not_intended_for": [
+    "This is not intended for UX design recommendations.",
+    "This is not intended for A/B test hypothesis generation.",
+    "This is not intended for conversion rate optimization.",
+    "This is not intended for product roadmap planning."
+  ],
+  "closing_text": "This analysis explains why belief collapsed, not how to redesign the product."
+}

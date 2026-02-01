@@ -1,0 +1,40 @@
+{
+  "signal_strength": {
+    "score": 0.5666666666666667,
+    "consistency": 0.5,
+    "sensitivity": 0.5,
+    "evidence_diversity": 0.6666666666666666,
+    "confidence_band": [
+      0.43666666666666665,
+      0.6966666666666667
+    ],
+    "reasoning": "Moderate signal quality"
+  },
+  "false_certainty_warnings": [
+    "All 10 root causes have same failure mode - may be oversimplified",
+    "All 5 recommendations marked safe - may be overconfident"
+  ],
+  "judgment": {
+    "classification": "inconclusive",
+    "explanation": "Signal strength is low (56.7%) or false certainty detected. Results should be interpreted with caution.",
+    "trustworthy_conclusions": [
+      "Structural pattern: Trust-Before-Value Violation"
+    ],
+    "uncertain_conclusions": [
+      "Decision recommendations may vary across runs",
+      "All root causes have same failure mode - may be oversimplified",
+      "All recommendations marked safe - verify risk assessment"
+    ],
+    "improvement_suggestions": [
+      "Review confidence scores - may be overconfident"
+    ]
+  },
+  "summary": {
+    "overall_score": 0.5666666666666667,
+    "classification": "inconclusive",
+    "confidence_band": [
+      0.43666666666666665,
+      0.6966666666666667
+    ]
+  }
+}

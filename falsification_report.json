@@ -1,0 +1,63 @@
+{
+  "total_tests": 4,
+  "contradictions_detected": 4,
+  "contradictions_missed": 0,
+  "confidence_decreased_count": 0,
+  "conclusions_changed_count": 0,
+  "test_results": [
+    {
+      "test": {
+        "test_id": "inverted_outcomes_1",
+        "test_type": "inverted_outcomes",
+        "description": "Inverted drop rates: high drop steps become low drop, vice versa",
+        "expected_detection": true
+      },
+      "contradiction_detected": true,
+      "confidence_decreased": false,
+      "conclusions_changed": false,
+      "confidence_shift": 0.0,
+      "detection_method": "signal_quality_risk_flags"
+    },
+    {
+      "test": {
+        "test_id": "conflicting_signals_1",
+        "test_type": "conflicting_signals",
+        "description": "High effort steps with high completion rates (contradictory)",
+        "expected_detection": true
+      },
+      "contradiction_detected": true,
+      "confidence_decreased": false,
+      "conclusions_changed": false,
+      "confidence_shift": 0.21959999999999996,
+      "detection_method": "signal_quality_risk_flags"
+    },
+    {
+      "test": {
+        "test_id": "shuffled_mappings_1",
+        "test_type": "shuffled_mappings",
+        "description": "Randomly shuffled drop rates between steps",
+        "expected_detection": true
+      },
+      "contradiction_detected": true,
+      "confidence_decreased": false,
+      "conclusions_changed": false,
+      "confidence_shift": 0.300408,
+      "detection_method": "signal_quality_risk_flags"
+    },
+    {
+      "test": {
+        "test_id": "impossible_completion_1",
+        "test_type": "impossible_completion",
+        "description": "Later steps have higher completion than earlier steps (impossible if sequential)",
+        "expected_detection": true
+      },
+      "contradiction_detected": true,
+      "confidence_decreased": false,
+      "conclusions_changed": false,
+      "confidence_shift": 0.37891583999999995,
+      "detection_method": "signal_quality_risk_flags"
+    }
+  ],
+  "verdict": "FRAGILE",
+  "reasoning": "System detected 4/4 contradictions but decreased confidence in only 0 cases. System detects problems but maintains confidence despite contradictions."
+}

@@ -1,0 +1,93 @@
+Here’s a detailed analysis of the screenshot from the fintech product (Credigo.club):
+
+1. **Step Number**: Not visible.
+2. **Progress Percentage**: Not visible.
+3. **Main Question or Heading**: "Smart Credit against Mutual Funds for your dream Wedding."
+4. **Input Fields or Options Shown**: No specific input fields are presented; rather, the screen provides information about the credit options.
+5. **Any Buttons or CTAs**: 
+   - "Check Eligibility In 10s" button.
+   - A secondary CTA in the form of a message: "Check your credit limit & get up to ₹5000 off on your future travels."
+6. **Key UI Elements**:
+   - Informational banners highlighting key features: 
+     - Starting interest rate (@ 9.99% p.a.).
+     - Loan amount (up-to ₹1 Crore).
+     - Approval duration (In just 2 Hours).
+     - Note on interest conditions (Interest only EMI).
+   - Visual elements include a gift and travel icon for the CTAs.
+
+### Description of User Actions:
+
+At this step, users are presented with a clear and motivational heading that suggests taking a loan for wedding expenses by leveraging mutual funds. The screen provides critical information about the loan features and benefits, ensuring transparency.
+
+Users need to initiate their journey by clicking the prominently displayed "Check Eligibility In 10s" button. This step is likely crucial for assessing whether they qualify for the credit product described. The additional message about checking credit limits and the potential travel discount may serve to incentivize interaction and provide further value.
+
+Overall, the UI is designed to encourage users to proceed quickly with checking their eligibility while making the process seem straightforward and advantageous.
+
+---
+Here's the analysis of the screenshot from the fintech product (Blink Money):
+
+### 1. Step Number:
+- **Not visible.**
+
+### 2. Progress Percentage:
+- **Not visible.**
+
+### 3. Main Question or Heading:
+- "Check Your Eligibility"
+
+### 4. Input Fields or Options Shown:
+- **Mobile Number Input:**
+  - Label: "Mobile number (linked to your mutual funds)"
+  - Placeholder Text: "Enter mobile number"
+  - Format: "+91" indicating the country code for India.
+- **Checkbox:**
+  - Option: "I have a referral code"
+
+### 5. Any Buttons or CTAs:
+- **Button:**
+  - Text: "Continue >>"
+  
+### 6. Key UI Elements:
+- **Notification Area:**
+  - Mention of earning free flight vouchers up to ₹1,000 for proceeding with the application.
+- **Terms and Conditions:**
+  - Users are prompted to accept the T&Cs and Privacy Policy, with an authorization for bureau checks and contact via phone/WhatsApp.
+- **Branding:**
+  - The logo of "BLINK MONEY" is prominently displayed.
+
+### Description of User Action:
+At this step, the user is required to enter their mobile number that is linked to their mutual funds to check eligibility for a credit card. The screen encourages users to input their phone number in a provided field, and there is also an option to indicate if they possess a referral code. After entering the information, users should click the "Continue" button to proceed. Additionally, users are informed about potential rewards in the form of flight vouchers, which may incentivize them to complete the process. Acceptance of terms is necessary for advancing to the next step.
+---
+
+Here's a detailed analysis of the screenshot from the Credigo.club credit card recommendation tool:
+
+### 1. Step Number:
+- **Not visible.**
+
+### 2. Progress Percentage:
+- **Not visible.**
+
+### 3. Main Question or Heading:
+- **"Check Limit"** is the main heading displayed at the top of the screen.
+
+### 4. Input Fields or Options Shown:
+- **Enter PAN:** A text input field for the user to enter their PAN ID, with a character limit indication (0/10).
+- **Date of Birth:** A dropdown or calendar date picker for the user to select their date of birth.
+
+### 5. Any Buttons or CTAs:
+- **Verify:** A button at the bottom labeled "Verify" that users can tap to proceed.
+- **Additional Information:** A message below the "Verify" button that states, “Check your eligible loan limit without impact on credit score.”
+
+### 6. Key UI Elements:
+- **Help Icon:** A help button at the top right corner for user assistance.
+- **Terms and Policies Acceptance:** A statement indicating that by proceeding, the user accepts the Terms and Conditions, Privacy Policy, and authorizes bureau checks and contact via phone/WhatsApp.
+
+### User Action Step:
+At this step, the user is required to:
+1. Input their **PAN ID** into the provided text field.
+2. Select their **date of birth** from the date picker.
+3. After filling in both fields, the user needs to check the acceptance of terms and policies by understanding the rights they're granting.
+4. Finally, the user clicks the **"Verify"** button to check their eligible loan limit without affecting their credit score.
+
+The layout appears user-friendly, guiding the user smoothly through the initial details required for credit limit verification.
+

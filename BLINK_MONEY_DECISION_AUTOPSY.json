@@ -1,0 +1,65 @@
+{
+  "product_id": "blink_money",
+  "simulation_version_hash": "9abcb9ebea960751",
+  "run_mode": "production",
+  "personas_simulated": 100,
+  "decision_traces_count": 3118,
+  "confidence_level": 0.5204528650707608,
+  "verdict_text": "Value perception collapses when commitment is demanded while value remains distant.",
+  "irreversible_moment": {
+    "step_id": "Smart Credit against Mutual Funds",
+    "step_label": "Landing page - Credit against mutual funds, wedding loan, eligibility check promise",
+    "position_in_flow": 0,
+    "commitment_delta": 0.2042857142857143,
+    "exit_probability_gradient": 0.214682346174797,
+    "reversibility_score": 1.0,
+    "why_irreversible": "commitment requirement increases sharply; exit probability spikes"
+  },
+  "belief_before": {
+    "task_framing": "value is distant",
+    "commitment_level": 0.5296799999999999,
+    "expected_value_timing": "6 steps away",
+    "perceived_risk": 0.46861200000000003
+  },
+  "belief_after": {
+    "task_framing": "value is too distant to justify commitment",
+    "commitment_level": 0.5125454545454546,
+    "expected_value_timing": "6 steps away (too far)",
+    "perceived_risk": 0.4853832167832167
+  },
+  "retry_rate": 1.0,
+  "backtracking_rate": 0.0,
+  "abandonment_permanence_score": 0.0,
+  "why_recovery_does_not_occur": "Once a drop decision occurs, no traces show continuation in the same session. Backtracking does not occur. Abandonment is permanent within the simulated session.",
+  "minimal_sequencing_change": "Move value demonstration to before step 1",
+  "why_it_repairs_belief_ordering": "Value currently appears 6 steps after commitment is demanded. Moving value earlier repairs the belief ordering: value proof before commitment ask.",
+  "falsifiability_conditions": [
+    {
+      "condition_text": "If retry rate exceeds 20% after drop decisions",
+      "observable_outcome": "Personas that drop at the irreversible step continue in subsequent sessions or retry the same step"
+    },
+    {
+      "condition_text": "If tech_savvy_optimistic variant shows higher drop rate than price_sensitive variant at the irreversible step",
+      "observable_outcome": "Variant sensitivity pattern is reversed in real-world data or additional simulation runs"
+    },
+    {
+      "condition_text": "If commitment delta is negative (commitment increases) at the irreversible step",
+      "observable_outcome": "Continuation rate increases rather than decreases at the identified irreversible step"
+    }
+  ],
+  "most_sensitive_variant": "price_sensitive",
+  "least_sensitive_variant": "tech_savvy_optimistic",
+  "what_this_does_not_prove": [
+    "This does not prove that changing the product will improve outcomes.",
+    "This does not prove causality beyond the simulated decision traces.",
+    "This does not prove that the identified counterfactual will work in practice.",
+    "This does not prove that all users behave as the simulated personas do."
+  ],
+  "what_this_is_not_intended_for": [
+    "This is not intended for UX design recommendations.",
+    "This is not intended for A/B test hypothesis generation.",
+    "This is not intended for conversion rate optimization.",
+    "This is not intended for product roadmap planning."
+  ],
+  "closing_text": "This analysis explains why belief collapsed, not how to redesign the product."
+}

@@ -1,0 +1,319 @@
+{
+  "simulationId": "CIR-2026-01",
+  "latency": "0.01s",
+  "confidence": "100.0%",
+  "cohort": "Young professionals and salaried employees (22-35) in Tier-1 cities (Bengaluru, Mumbai, Delhi-NCR) who face cash flow constraints from high security deposits (2-6 months rent) when relocating for jobs, studies, or career moves. Creditworthy individuals seeking hassle-free, immediate move-ins without tying up large upfront savings.",
+  "productName": "CirclePe - Zero Security Deposit Rental Platform",
+  "userContext": "Users discovering CirclePe through WhatsApp link or direct message. They are actively seeking rental solutions, have urgent move-in needs, and are familiar with WhatsApp as a communication channel. Early-funnel but with strong intent once they understand the zero deposit value proposition. Expect low-friction exploration via familiar WhatsApp interface.",
+  "verdict": "Users abandon when WhatsApp bot asks them to commit to a path (Tenant vs Landlord) before showing clear value. The selection feels like a commitment point rather than exploration, triggering abandonment.",
+  "beliefBreak": {
+    "screenshot": "screenshots/circlepe/3.jpeg",
+    "irreversibleAction": "User must commit to Tenant or Landlord path at step 3 of 5 (60% progress) without seeing eligibility estimate or advance rent calculation first.",
+    "callouts": [
+      {
+        "text": "Commitment required before value shown",
+        "position": "top-left"
+      },
+      {
+        "text": "WhatsApp friction breaks low-friction expectation",
+        "position": "bottom-right"
+      }
+    ],
+    "psychology": "Users arrive via WhatsApp expecting low-friction exploration. When asked to select Tenant or Landlord, it feels like a commitment rather than exploration. They haven't seen their eligibility or advance rent calculation yet, so the selection feels premature and risky."
+  },
+  "journeyScreenshots": {
+    "before": "screenshots/circlepe/1.jpeg",
+    "moment": "screenshots/circlepe/1.jpeg",
+    "after": "screenshots/circlepe/2.jpeg"
+  },
+  "whyBeliefBreaks": {
+    "userBelieves": [
+      "WhatsApp bot will show eligibility or advance rent calculator immediately",
+      "They can explore zero deposit options without downloading an app",
+      "The platform will show value before asking them to commit to a path",
+      "Low-friction WhatsApp experience will continue throughout"
+    ],
+    "productAsks": [
+      "Select Tenant or Landlord path before seeing eligibility/calculator",
+      "Download app or wait for agent before seeing value",
+      "Commit to a path without understanding what they'll get"
+    ],
+    "whyItFails": [
+      "Value (eligibility estimate, advance rent calculation) is delayed until app or agent",
+      "WhatsApp low-friction expectation breaks when app redirect is required",
+      "Commitment to Tenant/Landlord path feels premature without seeing value first"
+    ]
+  },
+  "oneBet": {
+    "headline": "Show eligibility estimate or advance rent calculator in WhatsApp at Welcome & Personalization (Step 2) BEFORE User Type Selection (Step 3) where 200 users drop.",
+    "support": "If users see their eligibility estimate (for tenants) or advance rent calculation (for landlords) directly in WhatsApp before being asked to download the app or wait for an agent, they'll understand the value proposition. This maintains the low-friction WhatsApp experience and reduces abandonment at the app redirect step.",
+    "confidenceLevel": "high",
+    "minimalityAndReversibility": {
+      "whyThisIsSafe": "This change is minimal and reversible: (1) We're only adding a quick eligibility/calculator estimate in WhatsApp before the app redirect - no major infrastructure changes needed. (2) Can be implemented as a simple WhatsApp bot response with basic calculation logic. (3) Easily reversible - can A/B test with 50% traffic and revert if needed. (4) Low risk - worst case, users see estimate earlier (which is positive), best case, conversion increases significantly. (5) No data loss - we still collect all required information, just show value earlier in the flow."
+    },
+    "executionSpecificity": {
+      "whatExactlyToDo": "Step-by-step implementation: (1) After user selects Tenant or Landlord (Step 2), immediately show: For Tenants: 'Quick Eligibility Check - Enter your monthly salary range (e.g., \u20b930k-50k)' \u2192 Show 'You're eligible for up to \u20b9X credit limit' based on salary range. For Landlords: 'Advance Rent Calculator - Enter monthly rent (e.g., \u20b925,000)' \u2192 Show 'You'll receive \u20b9X (8-10 months advance) + \u20b9Y security deposit' based on rent. (2) Add 'See Full Details in App' button below the estimate. (3) Make app download optional - users can proceed with agent if they prefer. (4) A/B test: 50% see estimate in WhatsApp, 50% go directly to app. Measure conversion rate and time to value."
+    },
+    "learningPayoff": {
+      "evenIfThisFails": "Even if this change doesn't improve conversion, we'll learn: (1) User intent validation - If showing estimate in WhatsApp doesn't help, it means users don't value 'seeing estimate' as much as we thought, or they prefer app experience. (2) WhatsApp vs App preference - We'll understand if the problem is app download friction OR something else (trust, comparison to alternatives, agent availability). (3) Value timing - We'll see which personas respond to early value vs which don't, enabling better segmentation. (4) Technical feasibility - We'll validate if we can show accurate estimates with minimal data in WhatsApp, which opens up other product opportunities. (5) Competitive intelligence - If early estimate doesn't help, it means competitors' advantage isn't just 'faster results' - there's something else we're missing."
+    }
+  },
+  "howWrong": [
+    {
+      "name": "Value-First Sequencing Test",
+      "hypothesis": "Users abandon due to premature data request, not data request itself",
+      "measure": "Completion rate when financial questions move to post-recommendation vs current placement",
+      "falsifier": "If post-recommendation placement shows equal abandonment, timing isn't the blocker."
+    },
+    {
+      "name": "Progressive Disclosure Test",
+      "hypothesis": "Users need gradual trust building through value demonstration",
+      "measure": "Engagement with initial recommendations (no financial data) vs refined recommendations (with data)",
+      "falsifier": "If users don't engage with initial recommendations, they don't value the output."
+    },
+    {
+      "name": "Framing Transparency Test",
+      "hypothesis": "Bait-and-switch perception drives exit more than data request",
+      "measure": "Completion rate when step 1 explicitly mentions 'financial info needed' vs silent",
+      "falsifier": "If transparency reduces starts, users actively avoid financial disclosure regardless of timing."
+    }
+  ],
+  "evidence": {
+    "assumptions": [
+      "Users discovered CirclePe - Zero Security Deposit Rental Platform through organic search or ads promising 'instant recommendations'",
+      "Competing platforms offer immediate results without financial disclosure",
+      "Users have not yet established relationship with the brand"
+    ],
+    "constraints": [
+      "Accurate matching requires some financial data",
+      "Lending partners require minimum qualification criteria",
+      "Regulatory compliance mandates certain disclosures"
+    ],
+    "rationale": [
+      "Privacy reassurance appears only AFTER request \u2014 too late for trust building",
+      "Landing page shows value proposition (9.99% p.a., up to \u20b91 Crore) but doesn't show personalized eligibility",
+      "Users see generic benefits but must start process to learn if they qualify",
+      "Competing platforms show initial matches without credit score disclosure"
+    ]
+  },
+  "marginNotes": {
+    "page2": "Note: 20% progress indicator creates expectation of completion, not new high-friction requirement.",
+    "page4": "High confidence: Pattern observed across fintech onboarding where value-before-trust sequencing improves conversion.",
+    "page5": "Alternative hypothesis: Users lack credit score knowledge, not willingness to share. Test 'Don't know my score' option.",
+    "page3": "Landing page promises exploration, but immediately requires personal information \u2014 expectation mismatch from the start."
+  },
+  "decisionSimulation": {
+    "steps": [
+      {
+        "step_id": "Entry",
+        "step_index": 0,
+        "step_description": "User clicks wa.me link or messages CirclePe directly. Bot triggers immediately with welcome message. Low friction entry point via familiar WhatsApp interface.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "WhatsApp message from CirclePe bot. Low-friction entry via familiar WhatsApp interface.",
+            "what_user_thinks": "This is a rental platform. They want me to explore zero deposit options.",
+            "what_user_understands": "Value (eligibility/calculator) is 4 steps away. This is just entry.",
+            "emotional_state": "Curious, low commitment, expecting quick WhatsApp interaction"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "WhatsApp message from CirclePe bot. Low-friction entry via familiar WhatsApp interface.",
+            "what_user_thinks": "This is a rental platform. They want me to explore zero deposit options.",
+            "what_user_understands": "Value (eligibility/calculator) is 4 steps away. This is just entry.",
+            "emotional_state": "Curious, low commitment, expecting quick WhatsApp interaction"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "WhatsApp message from CirclePe bot. Low-friction entry via familiar WhatsApp interface.",
+            "what_user_thinks": "This is a rental platform. They want me to explore zero deposit options.",
+            "what_user_understands": "Value (eligibility/calculator) is 4 steps away. This is just entry.",
+            "emotional_state": "Curious, low commitment, expecting quick WhatsApp interaction"
+          }
+        ]
+      },
+      {
+        "step_id": "Welcome & Personalization",
+        "step_index": 1,
+        "step_description": "Greeting with user name, welcome message 'Welcome to CirclePe Club (An IIT-IIM Venture) \ud83c\udf89', full-screen image/carousel showing 'You are just ONE STEP AWAY to unlock the ZERO Security Deposit' with trust logos (Paytm, BharatPe, OYO, Uni). Buttons: Services (Tenant/Landlord) or Got a query?. Strong authority signals from IIT-IIM branding and partner logos.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "Welcome message with IIT-IIM branding, partner logos (Paytm, BharatPe, OYO, Uni), 'ONE STEP AWAY' text, Services button",
+            "what_user_thinks": "They're showing trust signals but I haven't seen my eligibility or calculator yet.",
+            "what_user_understands": "Branding shown but value delayed 3 steps. Need to proceed to see eligibility.",
+            "emotional_state": "Slightly anxious - want to see value, not just branding"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Welcome message with IIT-IIM branding, partner logos (Paytm, BharatPe, OYO, Uni), 'ONE STEP AWAY' text, Services button",
+            "what_user_thinks": "They're showing trust signals but I haven't seen my eligibility or calculator yet.",
+            "what_user_understands": "Branding shown but value delayed 3 steps. Need to proceed to see eligibility.",
+            "emotional_state": "Slightly anxious - want to see value, not just branding"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Welcome message with IIT-IIM branding, partner logos (Paytm, BharatPe, OYO, Uni), 'ONE STEP AWAY' text, Services button",
+            "what_user_thinks": "They're showing trust signals but I haven't seen my eligibility or calculator yet.",
+            "what_user_understands": "Branding shown but value delayed 3 steps. Need to proceed to see eligibility.",
+            "emotional_state": "Slightly anxious - want to see value, not just branding"
+          }
+        ]
+      },
+      {
+        "step_id": "User Type Selection",
+        "step_index": 2,
+        "step_description": "Branch point: User selects Tenant or Landlord from Services list. This determines the path forward. Simple choice but commits user to a specific flow path.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "Services list: Tenant or Landlord options. This is a choice that commits me to a path.",
+            "what_user_thinks": "I need to choose Tenant or Landlord but I don't know what I'll get yet.",
+            "what_user_understands": "Commitment required before seeing value. Still 2 steps from eligibility/calculator.",
+            "emotional_state": "Anxious about committing without seeing value first"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Services list: Tenant or Landlord options. This is a choice that commits me to a path.",
+            "what_user_thinks": "I need to choose Tenant or Landlord but I don't know what I'll get yet.",
+            "what_user_understands": "Commitment required before seeing value. Still 2 steps from eligibility/calculator.",
+            "emotional_state": "Anxious about committing without seeing value first"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Services list: Tenant or Landlord options. This is a choice that commits me to a path.",
+            "what_user_thinks": "I need to choose Tenant or Landlord but I don't know what I'll get yet.",
+            "what_user_understands": "Commitment required before seeing value. Still 2 steps from eligibility/calculator.",
+            "emotional_state": "Anxious about committing without seeing value first"
+          }
+        ]
+      },
+      {
+        "step_id": "Path-Specific Interaction",
+        "step_index": 3,
+        "step_description": "Tenant: Eligibility check prompt with app redirect button. Landlord: Benefits display with advance rent calculator or property listing prompt. Both paths show value proposition (zero deposit for tenants, advance rent for landlords) but require app redirect or agent handover. Value becomes clearer here.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "Tenant: Eligibility prompt with app redirect button. Landlord: Benefits/calculator with app redirect.",
+            "what_user_thinks": "They want me to download the app or wait for agent. I wanted to see this in WhatsApp.",
+            "what_user_understands": "Value is shown but requires app download or agent wait. This breaks WhatsApp low-friction expectation.",
+            "emotional_state": "Frustrated - WhatsApp was supposed to be quick, now I need app or agent"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Tenant: Eligibility prompt with app redirect button. Landlord: Benefits/calculator with app redirect.",
+            "what_user_thinks": "They want me to download the app or wait for agent. I wanted to see this in WhatsApp.",
+            "what_user_understands": "Value is shown but requires app download or agent wait. This breaks WhatsApp low-friction expectation.",
+            "emotional_state": "Frustrated - WhatsApp was supposed to be quick, now I need app or agent"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Tenant: Eligibility prompt with app redirect button. Landlord: Benefits/calculator with app redirect.",
+            "what_user_thinks": "They want me to download the app or wait for agent. I wanted to see this in WhatsApp.",
+            "what_user_understands": "Value is shown but requires app download or agent wait. This breaks WhatsApp low-friction expectation.",
+            "emotional_state": "Frustrated - WhatsApp was supposed to be quick, now I need app or agent"
+          }
+        ]
+      },
+      {
+        "step_id": "App Redirect or Agent Handover",
+        "step_index": 4,
+        "step_description": "Final step: User is redirected to CirclePe app for eligibility check/advance rent calculation, OR live agent takes over via chat/call. Bot does not handle docs upload, payments, agreements - all in app + agent coordination. Highest value moment but also highest friction (app download/install or waiting for agent).",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "App download prompt or agent connecting message. Eligibility/calculator shown but in app or via agent.",
+            "what_user_thinks": "Finally I see value but I have to download app or wait for agent.",
+            "what_user_understands": "Value delivered but friction is high. WhatsApp promise of low-friction is broken.",
+            "emotional_state": "Mixed - value shown but friction is high"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "App download prompt or agent connecting message. Eligibility/calculator shown but in app or via agent.",
+            "what_user_thinks": "Finally I see value but I have to download app or wait for agent.",
+            "what_user_understands": "Value delivered but friction is high. WhatsApp promise of low-friction is broken.",
+            "emotional_state": "Mixed - value shown but friction is high"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "App download prompt or agent connecting message. Eligibility/calculator shown but in app or via agent.",
+            "what_user_thinks": "Finally I see value but I have to download app or wait for agent.",
+            "what_user_understands": "Value delivered but friction is high. WhatsApp promise of low-friction is broken.",
+            "emotional_state": "Mixed - value shown but friction is high"
+          }
+        ]
+      }
+    ]
+  },
+  "productContext": {
+    "company": {
+      "name": "CirclePe",
+      "description": "CirclePe is a zero security deposit rental platform that helps tenants move in without paying large upfront deposits (typically 2-6 months rent). It provides advance rent payouts to landlords while vetting tenants, enabling hassle-free renting for young professionals.",
+      "founder": "IIT-IIM Venture",
+      "funding": "Not specified"
+    },
+    "features": [
+      {
+        "name": "Zero Security Deposit",
+        "valueProposition": "Move in without paying 2-6 months security deposit upfront.",
+        "keyBenefit": "Preserve cash flow for young professionals relocating for jobs."
+      },
+      {
+        "name": "Advance Rent Payout",
+        "valueProposition": "Landlords receive 8-10 months advance rent (non-refundable) plus additional security deposit.",
+        "keyBenefit": "Guaranteed income and vetted tenants for landlords."
+      },
+      {
+        "name": "WhatsApp Onboarding",
+        "valueProposition": "Simple WhatsApp bot flow for qualification and handover to agents.",
+        "keyBenefit": "Low-friction entry point, familiar interface for Indian users."
+      },
+      {
+        "name": "Vetted Tenants",
+        "valueProposition": "CIBIL checks and tenant verification reduce landlord risk.",
+        "keyBenefit": "Quality tenants with creditworthiness validation."
+      }
+    ],
+    "targetMarkets": {
+      "india": {
+        "opportunity": "Large young professional population in Tier-1 cities facing high security deposit burden when relocating. Growing rental market with increasing mobility.",
+        "challenges": "Trust in zero-deposit model, app adoption after WhatsApp engagement, agent availability during office hours, competition from traditional rental platforms.",
+        "personaFit": "Strong fit for 22-35 year old salaried professionals in Bengaluru, Mumbai, Delhi-NCR who need quick move-ins without large upfront cash."
+      }
+    },
+    "competitiveLandscape": [
+      "Traditional Rental Platforms (99acres, MagicBricks)",
+      "Co-living Spaces (Zolo, Stanza Living)",
+      "Rental Aggregators",
+      "Direct Landlord-Tenant Rentals"
+    ],
+    "productSteps": [
+      {
+        "step": 0,
+        "name": "Entry",
+        "description": "User clicks wa.me link or messages CirclePe directly"
+      },
+      {
+        "step": 1,
+        "name": "Welcome & Personalization",
+        "description": "Greeting with trust logos and value proposition"
+      },
+      {
+        "step": 2,
+        "name": "User Type Selection",
+        "description": "Tenant or Landlord selection"
+      },
+      {
+        "step": 3,
+        "name": "Path-Specific Interaction",
+        "description": "Eligibility check (Tenant) or Benefits/Calculator (Landlord)"
+      },
+      {
+        "step": 4,
+        "name": "App Redirect or Agent Handover",
+        "description": "Redirect to app or live agent takes over"
+      }
+    ]
+  }
+}

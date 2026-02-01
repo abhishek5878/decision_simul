@@ -1,0 +1,30 @@
+TradeEasy - Zero-commission stock trading app for young investors
+
+Product Description:
+TradeEasy is a mobile-first stock trading platform offering zero-commission equity trading, mutual funds, and SIPs. Designed for first-time investors and young professionals who want to start investing with small amounts.
+
+Target Users:
+- Young professionals and students (20-35 years old) in metro cities
+- Moderate to high income (middle to upper-middle class)
+- Tech-savvy, comfortable with mobile apps
+- Growth-oriented, interested in wealth building
+- Moderate to high risk tolerance (comfortable with equity markets)
+- Individual decision-makers
+- High intent to start investing
+
+Product Flow:
+1. Landing page - Explains zero-commission trading, investment options, educational content
+2. Phone + OTP - Mobile number verification
+3. KYC - PAN, Aadhaar, bank details, selfie verification
+4. Investment selection - Choose stocks, mutual funds, or SIPs (browse, search, compare)
+5. Bank linking - Link bank account for funding (read-only access, UPI mandate)
+6. Add money - Transfer funds to trading account (minimum ₹500)
+7. First trade - Place first order (buy stocks or start SIP)
+
+Key Features:
+- SEBI-registered broker
+- Zero commission on equity delivery trades
+- Educational content and market insights
+- Paper trading for practice
+- Real-time market data and charts
+

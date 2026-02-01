@@ -1,0 +1,180 @@
+{
+  "simulationId": "BAC-2026-01",
+  "latency": "0.00s",
+  "confidence": "100.0%",
+  "cohort": "Self-employed and non-salaried Indians with irregular daily or weekly income",
+  "productName": "Bachatt - Automated Wealth Building",
+  "userContext": "Users struggling to save consistently but wanting simple, automated wealth building, early-funnel",
+  "verdict": "Value perception collapses when commitment is demanded while value remains distant.",
+  "beliefBreak": {
+    "screenshot": "screenshots/bachatt/1.jpeg",
+    "irreversibleAction": "User must share mobile number at step 1 of 3 (33% progress) before understanding what they'll receive.",
+    "callouts": [
+      {
+        "text": "Sensitive data requested at peak commitment",
+        "position": "top-left"
+      },
+      {
+        "text": "No established trust before financial disclosure",
+        "position": "bottom-right"
+      }
+    ],
+    "psychology": "Users arrive expecting to explore options, but immediately encounter a request for personal information. The mismatch between initial expectations and actual requirements triggers immediate abandonment."
+  },
+  "journeyScreenshots": {
+    "before": "screenshots/bachatt/1.jpeg",
+    "moment": "screenshots/bachatt/1.jpeg",
+    "after": "screenshots/bachatt/2.jpeg"
+  },
+  "whyBeliefBreaks": {
+    "userBelieves": [
+      "This is a quick exploration tool",
+      "They can browse options without commitment",
+      "The platform will show value before asking for data"
+    ],
+    "productAsks": [
+      "Share mobile number"
+    ],
+    "whyItFails": [
+      "Value not demonstrated before data request",
+      "Trust demand exceeds relationship depth"
+    ]
+  },
+  "oneBet": {
+    "headline": "Show personalized recommendations BEFORE requesting financial disclosure.",
+    "support": "If users see tailored results based solely on preferences, establishing value before trust demands, completion rates should increase.",
+    "confidenceLevel": "high"
+  },
+  "howWrong": [
+    {
+      "name": "Value-First Sequencing Test",
+      "hypothesis": "Users abandon due to premature data request, not data request itself",
+      "measure": "Completion rate when financial questions move to post-recommendation vs current placement",
+      "falsifier": "If post-recommendation placement shows equal abandonment, timing isn't the blocker."
+    },
+    {
+      "name": "Progressive Disclosure Test",
+      "hypothesis": "Users need gradual trust building through value demonstration",
+      "measure": "Engagement with initial recommendations (no financial data) vs refined recommendations (with data)",
+      "falsifier": "If users don't engage with initial recommendations, they don't value the output."
+    },
+    {
+      "name": "Framing Transparency Test",
+      "hypothesis": "Bait-and-switch perception drives exit more than data request",
+      "measure": "Completion rate when step 1 explicitly mentions 'financial info needed' vs silent",
+      "falsifier": "If transparency reduces starts, users actively avoid financial disclosure regardless of timing."
+    }
+  ],
+  "evidence": {
+    "assumptions": [
+      "Users discovered Bachatt - Automated Wealth Building through organic search or ads promising 'instant recommendations'",
+      "Competing platforms offer immediate results without financial disclosure",
+      "Users have not yet established relationship with the brand"
+    ],
+    "constraints": [
+      "Accurate matching requires some financial data",
+      "Lending partners require minimum qualification criteria",
+      "Regulatory compliance mandates certain disclosures"
+    ],
+    "rationale": [
+      "Privacy reassurance appears only AFTER request \u2014 too late for trust building",
+      "Mobile number requested early without value demonstration \u2014 users hesitate to share contact info",
+      "Free vouchers mentioned as incentive, but value not personalized to user's needs",
+      "Competing platforms show initial matches without credit score disclosure"
+    ]
+  },
+  "marginNotes": {
+    "page2": "Note: 33% progress indicator creates expectation of completion, not new high-friction requirement.",
+    "page4": "High confidence: Pattern observed across fintech onboarding where value-before-trust sequencing improves conversion.",
+    "page5": "Alternative hypothesis: Users lack credit score knowledge, not willingness to share. Test 'Don't know my score' option.",
+    "page3": "Landing page promises exploration, but immediately requires personal information \u2014 expectation mismatch from the start."
+  },
+  "decisionSimulation": {
+    "steps": [
+      {
+        "step_id": "Enter your mobile number",
+        "step_index": 0,
+        "step_description": "Users are prompted to enter their Aadhaar-linked mobile number for OTP verification, with a focus on data consent for identity confirmation.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "Landing page with BACHATT branding and a call-to-action button",
+            "what_user_thinks": "This looks like a financial product. I can explore without commitment.",
+            "what_user_understands": "I'm still in the process. I haven't seen what I'll get yet.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Landing page promising credit/loan benefits. Progress shows step 1 of 3",
+            "what_user_thinks": "This is a credit/loan product. I'll need to provide some information to see if I qualify.",
+            "what_user_understands": "I'm 1 steps in. I expect to see results in 2 more steps. Value is coming but not yet shown.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Landing page: Users are prompted to enter their Aadhaar-linked mobile number for OTP verification, with a focus on data consent for identity confirmation.. Value proposition visible but generic. No personalized eligibility shown. Progress: 33%",
+            "what_user_thinks": "This is a credit/loan product. They want me to start a process that will require personal information. I haven't seen if I qualify yet, but they're asking me to begin.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 1 but value appears at step 3. I'm being asked to share users are prompted to enter their aadhaar-linked mobile number for otp verification, with a focus on data consent for identity confirmation. 2 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Cautiously optimistic - proceeding but aware of the trust-value gap"
+          }
+        ]
+      },
+      {
+        "step_id": "Enter OTP",
+        "step_index": 1,
+        "step_description": "Users must input the OTP sent to their registered mobile number to verify their identity and continue the registration process.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen asking to enter OTP sent to phone",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "I'm providing information, but unclear what happens next.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Users must input the OTP sent to their registered mobile number to verify their identity and continue the registration process.. Progress shows 2/3",
+            "what_user_thinks": "This is part of the process. I'll continue if it's not too complicated.",
+            "what_user_understands": "I'm providing information that will help determine my eligibility or options.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 2/3 (66%): Users must input the OTP sent to their registered mobile number to verify their identity and continue the registration process.. Irreversibility: 0.0. Value delay: 0 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I understand the process flow. I'm providing information that will lead to personalized results. The sequence makes sense.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      },
+      {
+        "step_id": "Save \u20b9101 daily",
+        "step_index": 2,
+        "step_description": "Users are prompted to select their saving frequency and amount, emphasizing potential long-term wealth growth to encourage regular saving habits.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with Users are prompted to select their saving frequency and amount, emphasizing potential long-term wealth growth to encourage regular saving habits.",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "There might be some benefit, but I'm not sure what exactly.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Users are prompted to select their saving frequency and amount, emphasizing potential long-term wealth growth to encourage regular saving habits.. Progress shows 3/3",
+            "what_user_thinks": "This is part of the process. I'll continue if it's not too complicated.",
+            "what_user_understands": "I can see some value proposition, but I'm not sure if it's personalized to me yet.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 3/3 (100%): Users are prompted to select their saving frequency and amount, emphasizing potential long-term wealth growth to encourage regular saving habits.. Irreversibility: 0.0. Value delay: -2 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I can see value now (eligibility/loan amount). This justifies the information I've shared. Trust is established because value was shown.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      }
+    ]
+  }
+}

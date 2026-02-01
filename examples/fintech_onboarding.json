@@ -1,0 +1,180 @@
+{
+  "scenario_name": "fintech_onboarding_demo",
+  "personas": [
+    {
+      "name": "GenZ_UPI_Native_Metro",
+      "description": "Gen Z UPI-native, metro, low risk aversion",
+      "raw_fields": {
+        "SEC": 0.6,
+        "UrbanRuralTier": 1.0,
+        "DigitalLiteracy": 0.9,
+        "FamilyInfluence": 0.2,
+        "AspirationalLevel": 0.8,
+        "PriceSensitivity": 0.3,
+        "RegionalCulture": 0.4,
+        "InfluencerTrust": 0.7,
+        "ProfessionalSector": 0.8,
+        "EnglishProficiency": 0.9,
+        "HobbyDiversity": 0.7,
+        "CareerAmbition": 0.8,
+        "AgeBucket": 1.0,
+        "GenderMarital": 0.7
+      }
+    },
+    {
+      "name": "Salaried_Tier2_Cautious",
+      "description": "Salaried worker, Tier-2, high family influence, cautious",
+      "raw_fields": {
+        "SEC": 0.5,
+        "UrbanRuralTier": 0.4,
+        "DigitalLiteracy": 0.5,
+        "FamilyInfluence": 0.8,
+        "AspirationalLevel": 0.4,
+        "PriceSensitivity": 0.7,
+        "RegionalCulture": 0.7,
+        "InfluencerTrust": 0.4,
+        "ProfessionalSector": 0.5,
+        "EnglishProficiency": 0.5,
+        "HobbyDiversity": 0.4,
+        "CareerAmbition": 0.4,
+        "AgeBucket": 0.6,
+        "GenderMarital": 0.2
+      }
+    },
+    {
+      "name": "Self_Employed_Trader_HighRisk",
+      "description": "Self-employed trader, high risk tolerance, impatient",
+      "raw_fields": {
+        "SEC": 0.4,
+        "UrbanRuralTier": 0.7,
+        "DigitalLiteracy": 0.6,
+        "FamilyInfluence": 0.5,
+        "AspirationalLevel": 0.7,
+        "PriceSensitivity": 0.6,
+        "RegionalCulture": 0.6,
+        "InfluencerTrust": 0.5,
+        "ProfessionalSector": 0.3,
+        "EnglishProficiency": 0.4,
+        "HobbyDiversity": 0.5,
+        "CareerAmbition": 0.7,
+        "AgeBucket": 0.6,
+        "GenderMarital": 0.8
+      }
+    },
+    {
+      "name": "Rural_First_Time_User",
+      "description": "Rural user, first-time fintech, high trust concerns",
+      "raw_fields": {
+        "SEC": 0.2,
+        "UrbanRuralTier": 0.0,
+        "DigitalLiteracy": 0.3,
+        "FamilyInfluence": 0.9,
+        "AspirationalLevel": 0.2,
+        "PriceSensitivity": 0.9,
+        "RegionalCulture": 0.9,
+        "InfluencerTrust": 0.2,
+        "ProfessionalSector": 0.2,
+        "EnglishProficiency": 0.1,
+        "HobbyDiversity": 0.2,
+        "CareerAmbition": 0.2,
+        "AgeBucket": 0.4,
+        "GenderMarital": 0.3
+      }
+    },
+    {
+      "name": "Urban_Professional_Optimizer",
+      "description": "Urban professional, high digital literacy, value optimizer",
+      "raw_fields": {
+        "SEC": 0.8,
+        "UrbanRuralTier": 0.9,
+        "DigitalLiteracy": 0.95,
+        "FamilyInfluence": 0.3,
+        "AspirationalLevel": 0.9,
+        "PriceSensitivity": 0.2,
+        "RegionalCulture": 0.3,
+        "InfluencerTrust": 0.6,
+        "ProfessionalSector": 0.95,
+        "EnglishProficiency": 1.0,
+        "HobbyDiversity": 0.9,
+        "CareerAmbition": 0.9,
+        "AgeBucket": 0.8,
+        "GenderMarital": 0.6
+      }
+    }
+  ],
+  "steps": [
+    {
+      "name": "Landing Page",
+      "description": "Product explanation, value proposition",
+      "cognitive_demand": 0.2,
+      "effort_demand": 0.0,
+      "risk_signal": 0.1,
+      "irreversibility": 0,
+      "delay_to_value": 5,
+      "explicit_value": 0.4,
+      "reassurance_signal": 0.5,
+      "authority_signal": 0.3
+    },
+    {
+      "name": "Mobile + OTP",
+      "description": "Phone verification step",
+      "cognitive_demand": 0.3,
+      "effort_demand": 0.4,
+      "risk_signal": 0.2,
+      "irreversibility": 0,
+      "delay_to_value": 4,
+      "explicit_value": 0.3,
+      "reassurance_signal": 0.4,
+      "authority_signal": 0.2
+    },
+    {
+      "name": "KYC Document Upload",
+      "description": "Identity verification via documents",
+      "cognitive_demand": 0.5,
+      "effort_demand": 0.7,
+      "risk_signal": 0.4,
+      "irreversibility": 0,
+      "delay_to_value": 3,
+      "explicit_value": 0.2,
+      "reassurance_signal": 0.6,
+      "authority_signal": 0.5
+    },
+    {
+      "name": "PAN + Bank Linking",
+      "description": "Financial data linking (irreversible)",
+      "cognitive_demand": 0.4,
+      "effort_demand": 0.6,
+      "risk_signal": 0.7,
+      "irreversibility": 1,
+      "delay_to_value": 2,
+      "explicit_value": 0.5,
+      "reassurance_signal": 0.7,
+      "authority_signal": 0.6
+    },
+    {
+      "name": "Consent + Terms",
+      "description": "Legal consent and terms acceptance",
+      "cognitive_demand": 0.6,
+      "effort_demand": 0.2,
+      "risk_signal": 0.3,
+      "irreversibility": 0,
+      "delay_to_value": 1,
+      "explicit_value": 0.3,
+      "reassurance_signal": 0.3,
+      "authority_signal": 0.4
+    },
+    {
+      "name": "First Transaction",
+      "description": "First transaction / test transfer (value delivery)",
+      "cognitive_demand": 0.3,
+      "effort_demand": 0.3,
+      "risk_signal": 0.2,
+      "irreversibility": 0,
+      "delay_to_value": 0,
+      "explicit_value": 1.0,
+      "reassurance_signal": 0.5,
+      "authority_signal": 0.3
+    }
+  ]
+}
+

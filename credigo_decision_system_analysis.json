@@ -1,0 +1,158 @@
+{
+  "decision_gates": [
+    {
+      "step_id": "step_0",
+      "step_index": 0,
+      "signal_demanded": "Initial commitment to proceed",
+      "passes_count": 90,
+      "fails_count": 10,
+      "total_count": 100,
+      "pass_rate": 0.9,
+      "passing_persona_characteristics": {
+        "avg_cognitive_energy": 0.4171992089981397,
+        "avg_risk_tolerance": 0.4251164114457939,
+        "avg_effort_tolerance": 0.32774299706685905,
+        "avg_intent_strength": 0.022699942622369577
+      },
+      "failing_persona_characteristics": {
+        "avg_cognitive_energy": 0.43374962335226586,
+        "avg_risk_tolerance": 0.37752146866242603,
+        "avg_effort_tolerance": 0.24302183950798512,
+        "avg_intent_strength": 0.01687787376377583
+      },
+      "avg_forces_pass": {
+        "effort": 0.0,
+        "risk": 0.015294954736568955,
+        "value": 0.24297005679460756,
+        "trust": 0.04200627807845265,
+        "intent_mismatch": 0.0
+      },
+      "avg_forces_fail": {
+        "effort": 0.0,
+        "risk": 0.02269182696903046,
+        "value": 0.014260864095958458,
+        "trust": 0.2779333092848143,
+        "intent_mismatch": 0.0
+      }
+    },
+    {
+      "step_id": "step_4",
+      "step_index": 4,
+      "signal_demanded": "Personal financial information",
+      "passes_count": 4,
+      "fails_count": 86,
+      "total_count": 90,
+      "pass_rate": 0.044444444444444446,
+      "passing_persona_characteristics": {
+        "avg_cognitive_energy": 0.4203657707930203,
+        "avg_risk_tolerance": 0.3563450641538983,
+        "avg_effort_tolerance": 0.4629058536585269,
+        "avg_intent_strength": 0.016162952558176215
+      },
+      "failing_persona_characteristics": {
+        "avg_cognitive_energy": 0.32587338850803466,
+        "avg_risk_tolerance": 0.42831507876169594,
+        "avg_effort_tolerance": 0.32145635257422334,
+        "avg_intent_strength": 0.02300398867186694
+      },
+      "avg_forces_pass": {
+        "effort": 0.0,
+        "risk": 0.0,
+        "value": 0.6463224287607824,
+        "trust": 0.0,
+        "intent_mismatch": 0.0
+      },
+      "avg_forces_fail": {
+        "effort": 0.09310170457537414,
+        "risk": 0.03577378984059542,
+        "value": 0.2619807248733172,
+        "trust": 0.1833046765927695,
+        "intent_mismatch": 0.0
+      }
+    },
+    {
+      "step_id": "step_9",
+      "step_index": 9,
+      "signal_demanded": "Acceptance of recommendation",
+      "passes_count": 0,
+      "fails_count": 4,
+      "total_count": 4,
+      "pass_rate": 0.0,
+      "passing_persona_characteristics": {},
+      "failing_persona_characteristics": {
+        "avg_cognitive_energy": 0.2531216823637895,
+        "avg_risk_tolerance": 0.3563450641538983,
+        "avg_effort_tolerance": 0.4629058536585269,
+        "avg_intent_strength": 0.016162952558176215
+      },
+      "avg_forces_pass": {},
+      "avg_forces_fail": {
+        "effort": 0.0,
+        "risk": 0.0,
+        "value": 0.3963224287607824,
+        "trust": 0.0,
+        "intent_mismatch": 0.0
+      }
+    }
+  ],
+  "user_contract": [
+    "does not need education or convincing before starting",
+    "does not require reassurance before sharing information"
+  ],
+  "filtering_patterns": {
+    "intolerances": [
+      {
+        "type": "uncertainty_about_intent",
+        "description": "Users who are uncertain whether they want a recommendation",
+        "evidence": "10 users filtered at step_0 with avg intent strength 0.02"
+      }
+    ],
+    "optimizations": [],
+    "refusals": []
+  },
+  "tradeoffs": [
+    {
+      "decision": "Ask for Initial commitment to proceed at step_0 (step 0)",
+      "gains": [
+        "Filters out low-intent users immediately, saving computational resources",
+        "Ensures remaining users are committed to the process"
+      ],
+      "losses": [
+        "Permanently loses 10 users (10.0%) who might convert with more education",
+        "Cannot recover users who need convincing before starting"
+      ],
+      "evidence": {
+        "passes": 90,
+        "fails": 10,
+        "pass_rate": 0.9
+      }
+    },
+    {
+      "decision": "Ask for Personal financial information at step_4 (step 4)",
+      "gains": [
+        "Gets detailed personalization data early, enabling better recommendations",
+        "Commits users who have already shared sensitive information"
+      ],
+      "losses": [
+        "Permanently loses 86 users (95.6%) who would share info after seeing value",
+        "Cannot convert users who need value demonstration before commitment"
+      ],
+      "evidence": {
+        "passes": 4,
+        "fails": 86,
+        "pass_rate": 0.044444444444444446
+      }
+    },
+    {
+      "decision": "Ask for Acceptance of recommendation at step_9 (step 9)",
+      "gains": [],
+      "losses": [],
+      "evidence": {
+        "passes": 0,
+        "fails": 4,
+        "pass_rate": 0.0
+      }
+    }
+  ],
+  "raw_traces_count": 480
+}

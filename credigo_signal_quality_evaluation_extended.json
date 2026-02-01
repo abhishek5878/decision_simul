@@ -1,0 +1,74 @@
+{
+  "signal_strength": {
+    "score": 0.5666666666666667,
+    "consistency": 0.5,
+    "sensitivity": 0.5,
+    "evidence_diversity": 0.6666666666666666,
+    "confidence_band": [
+      0.43666666666666665,
+      0.6966666666666667
+    ],
+    "reasoning": "Moderate signal quality"
+  },
+  "stability": null,
+  "confidence_calibration": {
+    "overconfidence_detected": true,
+    "calibrated_confidence": 0.5833333333333333,
+    "original_confidence": 1.0,
+    "calibration_factor": 0.5833333333333333,
+    "reliability_modifier": 0.5833333333333333,
+    "warnings": [
+      "High confidence (100.0%) but low consistency (50.0%)",
+      "100% confidence detected - likely overconfident"
+    ]
+  },
+  "sensitivity": null,
+  "false_certainty_warnings": [
+    "All 10 root causes have same failure mode - may be oversimplified",
+    "All 5 recommendations marked safe - may be overconfident"
+  ],
+  "judgment": {
+    "classification": "inconclusive",
+    "explanation": "Signal strength is low (56.7%) or false certainty detected. Results should be interpreted with caution.",
+    "trustworthy_conclusions": [
+      "Structural pattern: Trust-Before-Value Violation"
+    ],
+    "uncertain_conclusions": [
+      "Decision recommendations may vary across runs",
+      "All root causes have same failure mode - may be oversimplified",
+      "All recommendations marked safe - verify risk assessment"
+    ],
+    "improvement_suggestions": [
+      "Review confidence scores - may be overconfident"
+    ]
+  },
+  "final_evaluation": {
+    "signal_quality": {
+      "strength": 0.5666666666666667,
+      "stability": 0.5,
+      "confidence_calibration": 0.5833333333333333,
+      "overall_trust_index": 0.6
+    },
+    "risk_flags": [
+      "All 10 root causes have same failure mode - may be oversimplified",
+      "All 5 recommendations marked safe - may be overconfident",
+      "Overconfident recommendations detected"
+    ],
+    "safe_to_act_on": [
+      "Structural pattern: Trust-Before-Value Violation"
+    ],
+    "needs_validation": [
+      "Magnitude of impact estimates",
+      "Exact ranking of recommendations"
+    ]
+  },
+  "summary": {
+    "overall_score": 0.5666666666666667,
+    "classification": "inconclusive",
+    "confidence_band": [
+      0.43666666666666665,
+      0.6966666666666667
+    ],
+    "trust_index": 0.6
+  }
+}

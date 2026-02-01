@@ -1,0 +1,200 @@
+{
+  "schema_version": "2.0",
+  "description": "Simplified, founder-friendly Decision Autopsy results schema",
+  
+  "result_structure": {
+    "simulationId": {
+      "type": "string",
+      "description": "Unique identifier for this simulation run",
+      "format": "pattern: ^[A-Z]{3}-[0-9]{4}-[0-9]{2}$"
+    },
+    "latency": {
+      "type": "string",
+      "description": "Time taken to generate the analysis",
+      "format": "pattern: ^[0-9.]+s$"
+    },
+    "confidence": {
+      "type": "string",
+      "description": "Confidence level as percentage",
+      "format": "pattern": "^[0-9.]+%$"
+    },
+    "cohort": {
+      "type": "string",
+      "description": "User cohort description in plain language"
+    },
+    "productName": {
+      "type": "string",
+      "description": "Full product name with context"
+    },
+    "userContext": {
+      "type": "string",
+      "description": "Where users are in their journey"
+    },
+    "verdict": {
+      "type": "string",
+      "description": "One clear sentence explaining the belief break"
+    },
+    "beliefBreak": {
+      "type": "object",
+      "properties": {
+        "screenshot": {
+          "type": "string",
+          "description": "Path to screenshot of the belief break moment"
+        },
+        "irreversibleAction": {
+          "type": "string",
+          "description": "What the user must do at this step (plain language)"
+        },
+        "callouts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {"type": "string"},
+              "position": {
+                "type": "string",
+                "enum": ["top-left", "top-right", "bottom-left", "bottom-right", "center"]
+              }
+            },
+            "required": ["text", "position"]
+          }
+        },
+        "psychology": {
+          "type": "string",
+          "description": "Plain-language explanation of why users abandon at this moment"
+        }
+      },
+      "required": ["screenshot", "irreversibleAction", "callouts", "psychology"]
+    },
+    "journeyScreenshots": {
+      "type": "object",
+      "properties": {
+        "before": {"type": "string", "description": "Screenshot before the break"},
+        "moment": {"type": "string", "description": "Screenshot at the break moment"},
+        "after": {"type": "string", "description": "Screenshot after the break (if available)"}
+      },
+      "required": ["before", "moment"]
+    },
+    "whyBeliefBreaks": {
+      "type": "object",
+      "properties": {
+        "userBelieves": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "What users think they're doing (in their words)"
+        },
+        "productAsks": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "What the product actually requires (plain language)"
+        },
+        "whyItFails": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Why the mismatch causes abandonment (simple explanations)"
+        }
+      },
+      "required": ["userBelieves", "productAsks", "whyItFails"]
+    },
+    "oneBet": {
+      "type": "object",
+      "properties": {
+        "headline": {
+          "type": "string",
+          "description": "Single, actionable intervention (imperative form)"
+        },
+        "support": {
+          "type": "string",
+          "description": "Why this should work (if-then logic)"
+        },
+        "confidenceLevel": {
+          "type": "string",
+          "enum": ["low", "medium", "high"],
+          "description": "Confidence in the bet"
+        }
+      },
+      "required": ["headline", "support", "confidenceLevel"]
+    },
+    "howWrong": {
+      "type": "array",
+      "description": "Tests to prove the hypothesis wrong",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string", "description": "Test name (descriptive)"},
+          "hypothesis": {"type": "string", "description": "What we're testing"},
+          "measure": {"type": "string", "description": "How to measure it"},
+          "falsifier": {"type": "string", "description": "What would prove us wrong"}
+        },
+        "required": ["name", "hypothesis", "measure", "falsifier"]
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "assumptions": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "What we assume about users (contextual)"
+        },
+        "constraints": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Product/regulatory limitations (realistic)"
+        },
+        "rationale": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Specific observations from the flow (detailed, concrete)"
+        }
+      },
+      "required": ["assumptions", "constraints", "rationale"]
+    },
+    "marginNotes": {
+      "type": "object",
+      "description": "Additional insights keyed by page/section",
+      "additionalProperties": {"type": "string"}
+    },
+    "decisionSimulation": {
+      "type": "object",
+      "description": "Step-by-step decision simulation showing what users actually see/think at different inference levels",
+      "properties": {
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "step_id": {"type": "string"},
+              "step_index": {"type": "integer"},
+              "step_description": {"type": "string"},
+              "inferences": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "inference_level": {"type": "string", "enum": ["30%", "60%", "100%"]},
+                    "what_user_sees": {"type": "string"},
+                    "what_user_thinks": {"type": "string"},
+                    "what_user_understands": {"type": "string"},
+                    "emotional_state": {"type": "string"}
+                  },
+                  "required": ["inference_level", "what_user_sees", "what_user_thinks", "what_user_understands", "emotional_state"]
+                }
+              }
+            },
+            "required": ["step_id", "step_index", "step_description", "inferences"]
+          }
+        }
+      },
+      "required": ["steps"]
+    }
+  },
+  
+  "language_guidelines": {
+    "tone": "Plain, founder-friendly, no jargon",
+    "avoid": ["commitment delta", "exit probability gradient", "irreversibility score", "SHAP values", "decision traces"],
+    "prefer": ["users abandon", "people leave", "what users think", "what the product asks", "why it fails"],
+    "verdict_style": "One clear sentence: [What] happens when [condition]",
+    "psychology_style": "Narrative explanation: what users experience, why they feel betrayed, what triggers abandonment"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "product_name": "Blink Money",
+    "ledger_filename": "blink_money_decision_ledger.json",
+    "ledger_timestamp": "2026-01-04T05:48:07.958442",
+    "generator_version": "1.0.0",
+    "generation_timestamp": "2026-01-04T05:48:08.571435"
+  },
+  "sections": [
+    {
+      "section_id": "doc_type_declaration",
+      "title": "Document Type Declaration",
+      "section_type": "required",
+      "content_length": 516
+    },
+    {
+      "section_id": "executive_summary",
+      "title": "Executive Summary",
+      "section_type": "required",
+      "content_length": 490
+    },
+    {
+      "section_id": "decision_boundaries",
+      "title": "Decision Boundaries by Step",
+      "section_type": "required",
+      "content_length": 2037
+    },
+    {
+      "section_id": "acceptance_patterns",
+      "title": "Acceptance Patterns",
+      "section_type": "required",
+      "content_length": 2020
+    },
+    {
+      "section_id": "rejection_patterns",
+      "title": "Rejection Patterns",
+      "section_type": "required",
+      "content_length": 2009
+    },
+    {
+      "section_id": "termination_points",
+      "title": "Decision Termination Points",
+      "section_type": "required",
+      "content_length": 107
+    },
+    {
+      "section_id": "hypotheses",
+      "title": "Decision Pattern Hypotheses",
+      "section_type": "required",
+      "content_length": 876
+    },
+    {
+      "section_id": "methodology",
+      "title": "Methodology Notes",
+      "section_type": "required",
+      "content_length": 1474
+    },
+    {
+      "section_id": "traceability",
+      "title": "Ledger Traceability",
+      "section_type": "required",
+      "content_length": 545
+    }
+  ],
+  "validation": {
+    "schema_valid": true,
+    "language_safe": true
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "per_step_errors_before": {
+    "Find the Best Credit Card In 60 seconds": 0.4297142857142857,
+    "What kind of perks excite you the most?": 0.19743495786002196,
+    "Any preference on annual fee?": 0.2142857142857143,
+    "straightforward + options are clearly defined": 0.18181818181818177,
+    "Your top 2 spend categories?": 0.16666666666666663,
+    "Do you track your monthly spending?": 0.19999999999999996,
+    "How much do you spend monthly?": 0.16666666666666663,
+    "Help us personalise your card matches": 0.19999999999999996,
+    "Best Deals for You \u2013 Apply Now": 0.25,
+    "Completed": 0.16666666666666663
+  },
+  "per_step_errors_after": {
+    "Find the Best Credit Card In 60 seconds": 0.35257142857142865,
+    "What kind of perks excite you the most?": 0.1650264335095567,
+    "Any preference on annual fee?": 0.2130214917825537,
+    "straightforward + options are clearly defined": 0.18181818181818177,
+    "Your top 2 spend categories?": 0.16666666666666663,
+    "Do you track your monthly spending?": 0.19999999999999996,
+    "How much do you spend monthly?": 0.16666666666666663,
+    "Help us personalise your card matches": 0.19999999999999996,
+    "Best Deals for You \u2013 Apply Now": 0.25,
+    "Completed": 0.16666666666666663
+  },
+  "parameter_sensitivity": {
+    "BASE_COMPLETION_RATE": 0.0019035239283608932,
+    "PERSISTENCE_BONUS_START": 0.0019035239283608932,
+    "PERSISTENCE_BONUS_RATE": 0.0019035239283608932,
+    "INTENT_PENALTY_WEIGHT": 0.0019035239283608932,
+    "ENTRY_PROBABILITY_SCALE": 0.0019035239283608932
+  },
+  "regularization_penalty": 0.00434027777777779,
+  "optimization_history": [
+    {
+      "iteration": 1,
+      "parameter": "BASE_COMPLETION_RATE",
+      "error": 0.19602810569689524,
+      "parameters": {
+        "BASE_COMPLETION_RATE": 0.475,
+        "PERSISTENCE_BONUS_START": 0.18,
+        "PERSISTENCE_BONUS_RATE": 0.22,
+        "INTENT_PENALTY_WEIGHT": 0.025,
+        "FRICTION_PENALTY_WEIGHT": 1.0,
+        "VALUE_SENSITIVITY": 1.0,
+        "COGNITIVE_PENALTY_WEIGHT": 1.0,
+        "EFFORT_PENALTY_WEIGHT": 1.0,
+        "RISK_PENALTY_WEIGHT": 1.0,
+        "ENTRY_PROBABILITY_SCALE": 1.0
+      }
+    },
+    {
+      "iteration": 1,
+      "parameter": "PERSISTENCE_BONUS_START",
+      "error": 0.19602810569689524,
+      "parameters": {
+        "BASE_COMPLETION_RATE": 0.475,
+        "PERSISTENCE_BONUS_START": 0.18,
+        "PERSISTENCE_BONUS_RATE": 0.22,
+        "INTENT_PENALTY_WEIGHT": 0.025,
+        "FRICTION_PENALTY_WEIGHT": 1.0,
+        "VALUE_SENSITIVITY": 1.0,
+        "COGNITIVE_PENALTY_WEIGHT": 1.0,
+        "EFFORT_PENALTY_WEIGHT": 1.0,
+        "RISK_PENALTY_WEIGHT": 1.0,
+        "ENTRY_PROBABILITY_SCALE": 1.0
+      }
+    },
+    {
+      "iteration": 1,
+      "parameter": "PERSISTENCE_BONUS_RATE",
+      "error": 0.19602810569689524,
+      "parameters": {
+        "BASE_COMPLETION_RATE": 0.475,
+        "PERSISTENCE_BONUS_START": 0.18,
+        "PERSISTENCE_BONUS_RATE": 0.22,
+        "INTENT_PENALTY_WEIGHT": 0.025,
+        "FRICTION_PENALTY_WEIGHT": 1.0,
+        "VALUE_SENSITIVITY": 1.0,
+        "COGNITIVE_PENALTY_WEIGHT": 1.0,
+        "EFFORT_PENALTY_WEIGHT": 1.0,
+        "RISK_PENALTY_WEIGHT": 1.0,
+        "ENTRY_PROBABILITY_SCALE": 1.0
+      }
+    },
+    {
+      "iteration": 1,
+      "parameter": "INTENT_PENALTY_WEIGHT",
+      "error": 0.19602810569689524,
+      "parameters": {
+        "BASE_COMPLETION_RATE": 0.475,
+        "PERSISTENCE_BONUS_START": 0.18,
+        "PERSISTENCE_BONUS_RATE": 0.22,
+        "INTENT_PENALTY_WEIGHT": 0.025,
+        "FRICTION_PENALTY_WEIGHT": 1.0,
+        "VALUE_SENSITIVITY": 1.0,
+        "COGNITIVE_PENALTY_WEIGHT": 1.0,
+        "EFFORT_PENALTY_WEIGHT": 1.0,
+        "RISK_PENALTY_WEIGHT": 1.0,
+        "ENTRY_PROBABILITY_SCALE": 1.0
+      }
+    },
+    {
+      "iteration": 1,
+      "parameter": "ENTRY_PROBABILITY_SCALE",
+      "error": 0.1921425537488433,
+      "parameters": {
+        "BASE_COMPLETION_RATE": 0.475,
+        "PERSISTENCE_BONUS_START": 0.18,
+        "PERSISTENCE_BONUS_RATE": 0.22,
+        "INTENT_PENALTY_WEIGHT": 0.025,
+        "FRICTION_PENALTY_WEIGHT": 1.0,
+        "VALUE_SENSITIVITY": 1.0,
+        "COGNITIVE_PENALTY_WEIGHT": 1.0,
+        "EFFORT_PENALTY_WEIGHT": 1.0,
+        "RISK_PENALTY_WEIGHT": 1.0,
+        "ENTRY_PROBABILITY_SCALE": 0.875
+      }
+    },
+    {
+      "iteration": 2,
+      "parameter": "BASE_COMPLETION_RATE",
+      "error": 0.1921425537488433,
+      "parameters": {
+        "BASE_COMPLETION_RATE": 0.475,
+        "PERSISTENCE_BONUS_START": 0.18,
+        "PERSISTENCE_BONUS_RATE": 0.22,
+        "INTENT_PENALTY_WEIGHT": 0.025,
+        "FRICTION_PENALTY_WEIGHT": 1.0,
+        "VALUE_SENSITIVITY": 1.0,
+        "COGNITIVE_PENALTY_WEIGHT": 1.0,
+        "EFFORT_PENALTY_WEIGHT": 1.0,
+        "RISK_PENALTY_WEIGHT": 1.0,
+        "ENTRY_PROBABILITY_SCALE": 0.875
+      }
+    },
+    {
+      "iteration": 2,
+      "parameter": "PERSISTENCE_BONUS_START",
+      "error": 0.1921425537488433,
+      "parameters": {
+        "BASE_COMPLETION_RATE": 0.475,
+        "PERSISTENCE_BONUS_START": 0.18,
+        "PERSISTENCE_BONUS_RATE": 0.22,
+        "INTENT_PENALTY_WEIGHT": 0.025,
+        "FRICTION_PENALTY_WEIGHT": 1.0,
+        "VALUE_SENSITIVITY": 1.0,
+        "COGNITIVE_PENALTY_WEIGHT": 1.0,
+        "EFFORT_PENALTY_WEIGHT": 1.0,
+        "RISK_PENALTY_WEIGHT": 1.0,
+        "ENTRY_PROBABILITY_SCALE": 0.875
+      }
+    },
+    {
+      "iteration": 2,
+      "parameter": "PERSISTENCE_BONUS_RATE",
+      "error": 0.1921425537488433,
+      "parameters": {
+        "BASE_COMPLETION_RATE": 0.475,
+        "PERSISTENCE_BONUS_START": 0.18,
+        "PERSISTENCE_BONUS_RATE": 0.22,
+        "INTENT_PENALTY_WEIGHT": 0.025,
+        "FRICTION_PENALTY_WEIGHT": 1.0,
+        "VALUE_SENSITIVITY": 1.0,
+        "COGNITIVE_PENALTY_WEIGHT": 1.0,
+        "EFFORT_PENALTY_WEIGHT": 1.0,
+        "RISK_PENALTY_WEIGHT": 1.0,
+        "ENTRY_PROBABILITY_SCALE": 0.875
+      }
+    },
+    {
+      "iteration": 2,
+      "parameter": "INTENT_PENALTY_WEIGHT",
+      "error": 0.1921425537488433,
+      "parameters": {
+        "BASE_COMPLETION_RATE": 0.475,
+        "PERSISTENCE_BONUS_START": 0.18,
+        "PERSISTENCE_BONUS_RATE": 0.22,
+        "INTENT_PENALTY_WEIGHT": 0.025,
+        "FRICTION_PENALTY_WEIGHT": 1.0,
+        "VALUE_SENSITIVITY": 1.0,
+        "COGNITIVE_PENALTY_WEIGHT": 1.0,
+        "EFFORT_PENALTY_WEIGHT": 1.0,
+        "RISK_PENALTY_WEIGHT": 1.0,
+        "ENTRY_PROBABILITY_SCALE": 0.875
+      }
+    },
+    {
+      "iteration": 2,
+      "parameter": "ENTRY_PROBABILITY_SCALE",
+      "error": 0.1921425537488433,
+      "parameters": {
+        "BASE_COMPLETION_RATE": 0.475,
+        "PERSISTENCE_BONUS_START": 0.18,
+        "PERSISTENCE_BONUS_RATE": 0.22,
+        "INTENT_PENALTY_WEIGHT": 0.025,
+        "FRICTION_PENALTY_WEIGHT": 1.0,
+        "VALUE_SENSITIVITY": 1.0,
+        "COGNITIVE_PENALTY_WEIGHT": 1.0,
+        "EFFORT_PENALTY_WEIGHT": 1.0,
+        "RISK_PENALTY_WEIGHT": 1.0,
+        "ENTRY_PROBABILITY_SCALE": 0.875
+      }
+    }
+  ],
+  "convergence_reason": "Grid search completed (2 iterations)"
+}

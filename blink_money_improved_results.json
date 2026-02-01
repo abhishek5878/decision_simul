@@ -1,0 +1,49 @@
+{
+  "simulation_type": "improved_behavioral_engine",
+  "product": "Blink Money (Credit against Mutual Funds)",
+  "timestamp": "2025-12-29T23:57:27.199079",
+  "total_personas": 1000,
+  "total_trajectories": 7000,
+  "overall_completion_rate": 0.23385714285714285,
+  "funnel_analysis": {
+    "Smart Credit against Mutual Funds": {
+      "entered": 7000,
+      "exited": 3623,
+      "drop_rate": 51.75714285714286
+    },
+    "Check Your Eligibility - Mobile Number": {
+      "entered": 3377,
+      "exited": 1626,
+      "drop_rate": 48.149244891915906
+    },
+    "Check Limit - PAN and DOB": {
+      "entered": 1751,
+      "exited": 114,
+      "drop_rate": 6.510565391205025
+    }
+  },
+  "failure_reasons": {
+    "System 2 fatigue": 5139,
+    "Loss aversion": 224
+  },
+  "exit_steps": {
+    "Check Your Eligibility - Mobile Number": 1626,
+    "Smart Credit against Mutual Funds": 3623,
+    "Completed": 1637,
+    "Check Limit - PAN and DOB": 114
+  },
+  "energy_recovery": {
+    "total_events": 4,
+    "recovery_rate": 0.078003120124805,
+    "by_step": {
+      "Check Limit - PAN and DOB": 4
+    }
+  },
+  "persona_variance": {
+    "mean": 0.23385714285714282,
+    "median": 0.14285714285714285,
+    "std_dev": 0.19646004942585185,
+    "min": 0.0,
+    "max": 1.0
+  }
+}

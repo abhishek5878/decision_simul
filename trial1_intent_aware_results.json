@@ -1,0 +1,48 @@
+{
+  "simulation_type": "intent_aware_behavioral_engine",
+  "product": "Trial1 (AI Tool)",
+  "timestamp": "2025-12-30T22:53:43.861862",
+  "total_personas": 1000,
+  "total_trajectories": 7000,
+  "overall_completion_rate": 0.5164285714285715,
+  "completion_rate_ci_lower": 0.5048571428571429,
+  "completion_rate_ci_upper": 0.5294285714285715,
+  "completion_rate_std_error": 0.006120785555492575,
+  "completion_rate_range": "50.5% - 52.9%",
+  "confidence_level": 0.95,
+  "total_intent_mismatches": 14557,
+  "fixed_intent": {
+    "intent_id": "try_ai_tool",
+    "description": "Indie founder/small SaaS team wants to try an AI tool to solve their problem",
+    "primary_goal": "Try the AI tool and see if it delivers value for their use case",
+    "tolerance_for_effort": 0.6,
+    "tolerance_for_risk": 0.4,
+    "expected_value_type": "speed",
+    "commitment_threshold": 0.3,
+    "expected_reward": "Working AI tool that solves their problem or demonstrates value",
+    "acceptable_friction": 0.4,
+    "typical_exit_triggers": [
+      "Too much setup before trying the tool",
+      "Unclear value proposition",
+      "Asking for payment before seeing value",
+      "Tool doesn't work or is too complex"
+    ],
+    "expected_completion_behavior": "Tries the tool quickly, sees value, then decides to continue or not"
+  },
+  "intent_profile": {
+    "try_ai_tool": 1.0
+  },
+  "failure_reasons": {
+    "System 2 fatigue": 1210,
+    "Step blocked comparison goal: value_type_mismatch": 459,
+    "Loss aversion": 1716
+  },
+  "exit_steps": {
+    "Completed": 3615,
+    "Landing Page - AI Tool Value Proposition": 1436,
+    "Onboarding - Use Case Selection": 459,
+    "First Use / Value Delivery": 306,
+    "Sign Up / Email Entry": 838,
+    "Setup / Configuration": 346
+  }
+}

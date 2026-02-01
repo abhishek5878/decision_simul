@@ -1,0 +1,1322 @@
+================================================================================
+DECISION LEDGER
+================================================================================
+
+Generated: 2026-01-03T11:36:15.638212
+Sequences: 7000
+Steps: 11
+
+This output is a decision ledger, not an analysis or recommendation.
+All assertions are machine-verifiable facts from DecisionTrace objects.
+
+--------------------------------------------------------------------------------
+DECISION BOUNDARIES
+--------------------------------------------------------------------------------
+
+Assertions: 36
+
+[1] Step: Find the Best Credit Card In 60 seconds
+     Step Index: 0
+     Persona Class: medium_energy_low_risk_low_effort
+     Coherence Score: 0.962
+     Coherence Stable: True
+     Supporting Traces: 916
+     Accepted Count: 740
+     Rejected Count: 176
+     Cognitive Thresholds (accepted):
+       energy: [0.300, 0.600]
+       risk: [0.196, 0.277]
+       effort: [0.050, 0.200]
+       value: [0.164, 0.916]
+       control: [0.294, 1.048]
+     Counterexample (rejected): 9_tech_savvy_optimistic
+     First Observed: 2026-01-03T11:09:45.956536
+     Last Observed: 2026-01-03T11:09:51.588337
+     Occurrence Count: 916
+     Pattern Stable: True
+
+[2] Step: Find the Best Credit Card In 60 seconds
+     Step Index: 0
+     Persona Class: low_energy_medium_risk_low_effort
+     Coherence Score: 0.963
+     Coherence Stable: True
+     Supporting Traces: 3568
+     Accepted Count: 2813
+     Rejected Count: 755
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.300]
+       risk: [0.340, 0.577]
+       effort: [0.100, 0.300]
+       value: [0.196, 0.652]
+       control: [0.228, 1.072]
+     Counterexample (rejected): 0_tired_commuter
+     First Observed: 2026-01-03T11:09:45.957545
+     Last Observed: 2026-01-03T11:09:51.597226
+     Occurrence Count: 3568
+     Pattern Stable: True
+
+[3] Step: Find the Best Credit Card In 60 seconds
+     Step Index: 0
+     Persona Class: medium_energy_medium_risk_low_effort
+     Coherence Score: 0.947
+     Coherence Stable: True
+     Supporting Traces: 430
+     Accepted Count: 349
+     Rejected Count: 81
+     Cognitive Thresholds (accepted):
+       energy: [0.300, 0.595]
+       risk: [0.340, 0.577]
+       effort: [0.100, 0.300]
+       value: [0.196, 1.022]
+       control: [0.258, 1.128]
+     Counterexample (rejected): 21_distrustful_arrival
+     First Observed: 2026-01-03T11:09:45.957726
+     Last Observed: 2026-01-03T11:09:51.586628
+     Occurrence Count: 430
+     Pattern Stable: True
+
+[4] Step: Find the Best Credit Card In 60 seconds
+     Step Index: 0
+     Persona Class: low_energy_low_risk_low_effort
+     Coherence Score: 0.967
+     Coherence Stable: True
+     Supporting Traces: 2049
+     Accepted Count: 1619
+     Rejected Count: 430
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.300]
+       risk: [0.198, 0.277]
+       effort: [0.050, 0.200]
+       value: [0.164, 0.466]
+       control: [0.288, 1.072]
+     Counterexample (rejected): 1_browsing_casually
+     First Observed: 2026-01-03T11:09:45.962326
+     Last Observed: 2026-01-03T11:09:51.597894
+     Occurrence Count: 2049
+     Pattern Stable: True
+
+[5] Step: Find the Best Credit Card In 60 seconds
+     Step Index: 0
+     Persona Class: high_energy_low_risk_low_effort
+     Coherence Score: 0.951
+     Coherence Stable: True
+     Supporting Traces: 35
+     Accepted Count: 32
+     Rejected Count: 3
+     Cognitive Thresholds (accepted):
+       energy: [0.600, 0.741]
+       risk: [0.202, 0.268]
+       effort: [0.050, 0.200]
+       value: [0.209, 0.797]
+       control: [0.426, 1.128]
+     Counterexample (rejected): 10_tech_savvy_optimistic
+     First Observed: 2026-01-03T11:09:46.013809
+     Last Observed: 2026-01-03T11:09:51.552250
+     Occurrence Count: 35
+     Pattern Stable: True
+
+[6] Step: Find the Best Credit Card In 60 seconds
+     Step Index: 0
+     Persona Class: high_energy_medium_risk_low_effort
+     Coherence Score: 0.985
+     Coherence Stable: True
+     Supporting Traces: 2
+     Accepted Count: 2
+     Rejected Count: 0
+     Cognitive Thresholds (accepted):
+       energy: [0.604, 0.616]
+       risk: [0.552, 0.560]
+       effort: [0.200, 0.200]
+       value: [0.563, 0.616]
+       control: [0.363, 0.634]
+     First Observed: 2026-01-03T11:09:46.405401
+     Last Observed: 2026-01-03T11:09:50.016362
+     Occurrence Count: 2
+     Pattern Stable: False
+
+[7] Step: What kind of perks excite you the most?
+     Step Index: 1
+     Persona Class: low_energy_high_risk_medium_effort
+     Coherence Score: 0.889
+     Coherence Stable: True
+     Supporting Traces: 4742
+     Accepted Count: 3791
+     Rejected Count: 951
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.298]
+       risk: [0.602, 1.322]
+       effort: [0.300, 0.600]
+       value: [0.253, 1.065]
+       control: [0.333, 1.273]
+     Counterexample (rejected): 1_fresh_motivated
+     First Observed: 2026-01-03T11:09:45.956769
+     Last Observed: 2026-01-03T11:09:51.597361
+     Occurrence Count: 4742
+     Pattern Stable: True
+
+[8] Step: What kind of perks excite you the most?
+     Step Index: 1
+     Persona Class: low_energy_medium_risk_medium_effort
+     Coherence Score: 0.979
+     Coherence Stable: True
+     Supporting Traces: 154
+     Accepted Count: 123
+     Rejected Count: 31
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.292]
+       risk: [0.391, 0.600]
+       effort: [0.305, 0.580]
+       value: [0.253, 0.715]
+       control: [0.997, 1.437]
+     Counterexample (rejected): 98_fresh_motivated
+     First Observed: 2026-01-03T11:09:45.961906
+     Last Observed: 2026-01-03T11:09:51.588468
+     Occurrence Count: 154
+     Pattern Stable: True
+
+[9] Step: What kind of perks excite you the most?
+     Step Index: 1
+     Persona Class: low_energy_high_risk_high_effort
+     Coherence Score: 0.953
+     Coherence Stable: True
+     Supporting Traces: 437
+     Accepted Count: 346
+     Rejected Count: 91
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.050]
+       risk: [0.643, 1.097]
+       effort: [0.600, 0.680]
+       value: [0.375, 0.416]
+       control: [0.373, 1.254]
+     Counterexample (rejected): 39_tired_commuter
+     First Observed: 2026-01-03T11:09:45.967123
+     Last Observed: 2026-01-03T11:09:51.581239
+     Occurrence Count: 437
+     Pattern Stable: True
+
+[10] Step: What kind of perks excite you the most?
+     Step Index: 1
+     Persona Class: low_energy_high_risk_low_effort
+     Coherence Score: 0.831
+     Coherence Stable: True
+     Supporting Traces: 132
+     Accepted Count: 117
+     Rejected Count: 15
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.283]
+       risk: [0.602, 0.970]
+       effort: [0.215, 0.300]
+       value: [0.416, 1.046]
+       control: [0.441, 1.195]
+     Counterexample (rejected): 26_tech_savvy_optimistic
+     First Observed: 2026-01-03T11:09:46.094722
+     Last Observed: 2026-01-03T11:09:51.490003
+     Occurrence Count: 132
+     Pattern Stable: True
+
+[11] Step: What kind of perks excite you the most?
+     Step Index: 1
+     Persona Class: low_energy_medium_risk_low_effort
+     Coherence Score: 0.981
+     Coherence Stable: True
+     Supporting Traces: 33
+     Accepted Count: 32
+     Rejected Count: 1
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.294]
+       risk: [0.466, 0.599]
+       effort: [0.210, 0.300]
+       value: [0.416, 0.699]
+       control: [0.925, 1.393]
+     Counterexample (rejected): 731_fresh_motivated
+     First Observed: 2026-01-03T11:09:46.115417
+     Last Observed: 2026-01-03T11:09:51.550433
+     Occurrence Count: 33
+     Pattern Stable: True
+
+[12] Step: What kind of perks excite you the most?
+     Step Index: 1
+     Persona Class: medium_energy_medium_risk_low_effort
+     Coherence Score: 0.910
+     Coherence Stable: True
+     Supporting Traces: 17
+     Accepted Count: 16
+     Rejected Count: 1
+     Cognitive Thresholds (accepted):
+       energy: [0.304, 0.537]
+       risk: [0.394, 0.590]
+       effort: [0.175, 0.295]
+       value: [0.416, 1.366]
+       control: [0.997, 1.393]
+     Counterexample (rejected): 940_tech_savvy_optimistic
+     First Observed: 2026-01-03T11:09:46.334948
+     Last Observed: 2026-01-03T11:09:51.552386
+     Occurrence Count: 17
+     Pattern Stable: True
+
+[13] Step: What kind of perks excite you the most?
+     Step Index: 1
+     Persona Class: high_energy_medium_risk_low_effort
+     Coherence Score: 0.994
+     Coherence Stable: True
+     Supporting Traces: 2
+     Accepted Count: 1
+     Rejected Count: 1
+     Cognitive Thresholds (accepted):
+       energy: [0.649, 0.649]
+       risk: [0.525, 0.525]
+       effort: [0.195, 0.195]
+       value: [1.166, 1.166]
+       control: [1.179, 1.179]
+     Counterexample (rejected): 75_tech_savvy_optimistic
+     First Observed: 2026-01-03T11:09:46.402865
+     Last Observed: 2026-01-03T11:09:46.409565
+     Occurrence Count: 2
+     Pattern Stable: False
+
+[14] Step: What kind of perks excite you the most?
+     Step Index: 1
+     Persona Class: medium_energy_high_risk_medium_effort
+     Coherence Score: 0.811
+     Coherence Stable: True
+     Supporting Traces: 9
+     Accepted Count: 8
+     Rejected Count: 1
+     Cognitive Thresholds (accepted):
+       energy: [0.301, 0.408]
+       risk: [0.644, 1.183]
+       effort: [0.305, 0.385]
+       value: [0.503, 1.065]
+       control: [0.441, 0.960]
+     Counterexample (rejected): 723_distrustful_arrival
+     First Observed: 2026-01-03T11:09:46.769992
+     Last Observed: 2026-01-03T11:09:51.273461
+     Occurrence Count: 9
+     Pattern Stable: False
+
+[15] Step: What kind of perks excite you the most?
+     Step Index: 1
+     Persona Class: high_energy_high_risk_low_effort
+     Coherence Score: 0.996
+     Coherence Stable: True
+     Supporting Traces: 2
+     Accepted Count: 1
+     Rejected Count: 1
+     Cognitive Thresholds (accepted):
+       energy: [0.678, 0.678]
+       risk: [0.785, 0.785]
+       effort: [0.205, 0.205]
+       value: [1.054, 1.054]
+       control: [0.660, 0.660]
+     Counterexample (rejected): 723_tech_savvy_optimistic
+     First Observed: 2026-01-03T11:09:50.015504
+     Last Observed: 2026-01-03T11:09:50.018515
+     Occurrence Count: 2
+     Pattern Stable: False
+
+[16] Step: Any preference on annual fee?
+     Step Index: 2
+     Persona Class: low_energy_high_risk_high_effort
+     Coherence Score: 0.783
+     Coherence Stable: True
+     Supporting Traces: 3910
+     Accepted Count: 3169
+     Rejected Count: 741
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.050]
+       risk: [0.601, 2.001]
+       effort: [0.600, 1.060]
+       value: [0.412, 1.278]
+       control: [0.438, 1.694]
+     Counterexample (rejected): 0_distrustful_arrival
+     First Observed: 2026-01-03T11:09:45.956918
+     Last Observed: 2026-01-03T11:09:51.597498
+     Occurrence Count: 3910
+     Pattern Stable: True
+
+[17] Step: Any preference on annual fee?
+     Step Index: 2
+     Persona Class: low_energy_high_risk_medium_effort
+     Coherence Score: 0.791
+     Coherence Stable: True
+     Supporting Traces: 496
+     Accepted Count: 424
+     Rejected Count: 72
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.298]
+       risk: [0.600, 1.879]
+       effort: [0.310, 0.600]
+       value: [0.447, 2.043]
+       control: [0.468, 1.550]
+     Counterexample (rejected): 0_tech_savvy_optimistic
+     First Observed: 2026-01-03T11:09:45.962045
+     Last Observed: 2026-01-03T11:09:51.551003
+     Occurrence Count: 496
+     Pattern Stable: True
+
+[18] Step: Any preference on annual fee?
+     Step Index: 2
+     Persona Class: high_energy_high_risk_low_effort
+     Coherence Score: 1.000
+     Coherence Stable: True
+     Supporting Traces: 1
+     Accepted Count: 1
+     Rejected Count: 0
+     Cognitive Thresholds (accepted):
+       energy: [0.629, 0.629]
+       risk: [0.657, 0.657]
+       effort: [0.290, 0.290]
+       value: [1.900, 1.900]
+       control: [1.444, 1.444]
+     First Observed: 2026-01-03T11:09:46.403000
+     Last Observed: 2026-01-03T11:09:46.403000
+     Occurrence Count: 1
+     Pattern Stable: False
+
+[19] Step: Any preference on annual fee?
+     Step Index: 2
+     Persona Class: low_energy_medium_risk_high_effort
+     Coherence Score: 0.841
+     Coherence Stable: True
+     Supporting Traces: 29
+     Accepted Count: 25
+     Rejected Count: 4
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.050]
+       risk: [0.386, 0.599]
+       effort: [0.620, 0.890]
+       value: [0.412, 0.754]
+       control: [1.544, 1.802]
+     Counterexample (rejected): 351_tech_savvy_optimistic
+     First Observed: 2026-01-03T11:09:46.524319
+     Last Observed: 2026-01-03T11:09:51.114254
+     Occurrence Count: 29
+     Pattern Stable: True
+
+[20] Step: Any preference on annual fee?
+     Step Index: 2
+     Persona Class: medium_energy_medium_risk_medium_effort
+     Coherence Score: 1.000
+     Coherence Stable: True
+     Supporting Traces: 1
+     Accepted Count: 0
+     Rejected Count: 1
+     First Observed: 2026-01-03T11:09:47.166420
+     Last Observed: 2026-01-03T11:09:47.166420
+     Occurrence Count: 1
+     Pattern Stable: False
+
+[21] Step: Any preference on annual fee?
+     Step Index: 2
+     Persona Class: low_energy_medium_risk_medium_effort
+     Coherence Score: 0.984
+     Coherence Stable: True
+     Supporting Traces: 10
+     Accepted Count: 8
+     Rejected Count: 2
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.050]
+       risk: [0.558, 0.599]
+       effort: [0.470, 0.580]
+       value: [0.640, 0.876]
+       control: [1.514, 1.538]
+     Counterexample (rejected): 991_urgent_need
+     First Observed: 2026-01-03T11:09:47.553211
+     Last Observed: 2026-01-03T11:09:51.588603
+     Occurrence Count: 10
+     Pattern Stable: True
+
+[22] Step: Any preference on annual fee?
+     Step Index: 2
+     Persona Class: high_energy_high_risk_medium_effort
+     Coherence Score: 1.000
+     Coherence Stable: True
+     Supporting Traces: 1
+     Accepted Count: 1
+     Rejected Count: 0
+     Cognitive Thresholds (accepted):
+       energy: [0.653, 0.653]
+       risk: [1.216, 1.216]
+       effort: [0.310, 0.310]
+       value: [1.697, 1.697]
+       control: [0.825, 0.825]
+     First Observed: 2026-01-03T11:09:50.015638
+     Last Observed: 2026-01-03T11:09:50.015638
+     Occurrence Count: 1
+     Pattern Stable: False
+
+[23] Step: straightforward + options are clearly defined
+     Step Index: 3
+     Persona Class: low_energy_high_risk_high_effort
+     Coherence Score: 0.748
+     Coherence Stable: True
+     Supporting Traces: 3433
+     Accepted Count: 2907
+     Rejected Count: 526
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.178]
+       risk: [0.611, 2.178]
+       effort: [0.602, 1.174]
+       value: [0.749, 3.000]
+       control: [0.543, 2.000]
+     Counterexample (rejected): 2_fresh_motivated
+     First Observed: 2026-01-03T11:09:45.957056
+     Last Observed: 2026-01-03T11:09:51.597659
+     Occurrence Count: 3433
+     Pattern Stable: True
+
+[24] Step: straightforward + options are clearly defined
+     Step Index: 3
+     Persona Class: high_energy_high_risk_medium_effort
+     Coherence Score: 0.832
+     Coherence Stable: True
+     Supporting Traces: 2
+     Accepted Count: 2
+     Rejected Count: 0
+     Cognitive Thresholds (accepted):
+       energy: [0.695, 0.735]
+       risk: [0.809, 1.376]
+       effort: [0.318, 0.341]
+       value: [3.000, 3.000]
+       control: [0.990, 1.709]
+     First Observed: 2026-01-03T11:09:46.403136
+     Last Observed: 2026-01-03T11:09:50.015769
+     Occurrence Count: 2
+     Pattern Stable: False
+
+[25] Step: straightforward + options are clearly defined
+     Step Index: 3
+     Persona Class: low_energy_medium_risk_high_effort
+     Coherence Score: 0.997
+     Coherence Stable: True
+     Supporting Traces: 4
+     Accepted Count: 4
+     Rejected Count: 0
+     Cognitive Thresholds (accepted):
+       energy: [0.152, 0.153]
+       risk: [0.538, 0.560]
+       effort: [0.706, 0.867]
+       value: [1.120, 1.120]
+       control: [2.000, 2.000]
+     First Observed: 2026-01-03T11:09:46.526181
+     Last Observed: 2026-01-03T11:09:50.939714
+     Occurrence Count: 4
+     Pattern Stable: False
+
+[26] Step: Your top 2 spend categories?
+     Step Index: 4
+     Persona Class: low_energy_medium_risk_high_effort
+     Coherence Score: 0.870
+     Coherence Stable: True
+     Supporting Traces: 27
+     Accepted Count: 26
+     Rejected Count: 1
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.050]
+       risk: [0.313, 0.595]
+       effort: [0.820, 1.442]
+       value: [1.495, 2.770]
+       control: [2.000, 2.000]
+     Counterexample (rejected): 880_tech_savvy_optimistic
+     First Observed: 2026-01-03T11:09:46.524601
+     Last Observed: 2026-01-03T11:09:51.193777
+     Occurrence Count: 27
+     Pattern Stable: True
+
+[27] Step: Do you track your monthly spending?
+     Step Index: 5
+     Persona Class: medium_energy_high_risk_medium_effort
+     Coherence Score: 1.000
+     Coherence Stable: True
+     Supporting Traces: 1
+     Accepted Count: 1
+     Rejected Count: 0
+     Cognitive Thresholds (accepted):
+       energy: [0.579, 0.579]
+       risk: [1.198, 1.198]
+       effort: [0.600, 0.600]
+       value: [3.000, 3.000]
+       control: [2.000, 2.000]
+     First Observed: 2026-01-03T11:09:48.500790
+     Last Observed: 2026-01-03T11:09:48.500790
+     Occurrence Count: 1
+     Pattern Stable: False
+
+[28] Step: Do you track your monthly spending?
+     Step Index: 5
+     Persona Class: low_energy_high_risk_medium_effort
+     Coherence Score: 1.000
+     Coherence Stable: True
+     Supporting Traces: 1
+     Accepted Count: 1
+     Rejected Count: 0
+     Cognitive Thresholds (accepted):
+       energy: [0.277, 0.277]
+       risk: [1.362, 1.362]
+       effort: [0.570, 0.570]
+       value: [3.000, 3.000]
+       control: [1.669, 1.669]
+     First Observed: 2026-01-03T11:09:50.558307
+     Last Observed: 2026-01-03T11:09:50.558307
+     Occurrence Count: 1
+     Pattern Stable: False
+
+[29] Step: Do you track your monthly spending?
+     Step Index: 5
+     Persona Class: high_energy_high_risk_high_effort
+     Coherence Score: 1.000
+     Coherence Stable: True
+     Supporting Traces: 1
+     Accepted Count: 1
+     Rejected Count: 0
+     Cognitive Thresholds (accepted):
+       energy: [0.694, 0.694]
+       risk: [1.034, 1.034]
+       effort: [0.620, 0.620]
+       value: [3.000, 3.000]
+       control: [2.000, 2.000]
+     First Observed: 2026-01-03T11:09:51.271864
+     Last Observed: 2026-01-03T11:09:51.271864
+     Occurrence Count: 1
+     Pattern Stable: False
+
+[30] Step: How much do you spend monthly?
+     Step Index: 6
+     Persona Class: high_energy_high_risk_medium_effort
+     Coherence Score: 1.000
+     Coherence Stable: True
+     Supporting Traces: 2
+     Accepted Count: 2
+     Rejected Count: 0
+     Cognitive Thresholds (accepted):
+       energy: [0.695, 0.695]
+       risk: [0.876, 0.887]
+       effort: [0.594, 0.594]
+       value: [3.000, 3.000]
+       control: [2.000, 2.000]
+     First Observed: 2026-01-03T11:09:46.403544
+     Last Observed: 2026-01-03T11:09:46.407983
+     Occurrence Count: 2
+     Pattern Stable: False
+
+[31] Step: How much do you spend monthly?
+     Step Index: 6
+     Persona Class: low_energy_medium_risk_high_effort
+     Coherence Score: 0.981
+     Coherence Stable: True
+     Supporting Traces: 3
+     Accepted Count: 3
+     Rejected Count: 0
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.050]
+       risk: [0.466, 0.577]
+       effort: [1.532, 1.894]
+       value: [3.000, 3.000]
+       control: [2.000, 2.000]
+     First Observed: 2026-01-03T11:09:47.249692
+     Last Observed: 2026-01-03T11:09:50.933637
+     Occurrence Count: 3
+     Pattern Stable: False
+
+[32] Step: Do you have any existing credit cards?
+     Step Index: 7
+     Persona Class: medium_energy_high_risk_high_effort
+     Coherence Score: 0.827
+     Coherence Stable: True
+     Supporting Traces: 14
+     Accepted Count: 13
+     Rejected Count: 1
+     Cognitive Thresholds (accepted):
+       energy: [0.313, 0.565]
+       risk: [1.253, 2.582]
+       effort: [0.828, 1.276]
+       value: [3.000, 3.000]
+       control: [1.544, 2.000]
+     Counterexample (rejected): 823_tech_savvy_optimistic
+     First Observed: 2026-01-03T11:09:46.330399
+     Last Observed: 2026-01-03T11:09:51.278074
+     Occurrence Count: 14
+     Pattern Stable: True
+
+[33] Step: Help us personalise your card matches
+     Step Index: 8
+     Persona Class: medium_energy_high_risk_high_effort
+     Coherence Score: 0.786
+     Coherence Stable: True
+     Supporting Traces: 12
+     Accepted Count: 11
+     Rejected Count: 1
+     Cognitive Thresholds (accepted):
+       energy: [0.302, 0.565]
+       risk: [1.033, 2.598]
+       effort: [0.971, 1.507]
+       value: [3.000, 3.000]
+       control: [1.725, 2.000]
+     Counterexample (rejected): 823_fresh_motivated
+     First Observed: 2026-01-03T11:09:46.330535
+     Last Observed: 2026-01-03T11:09:51.551814
+     Occurrence Count: 12
+     Pattern Stable: True
+
+[34] Step: Help us personalise your card matches
+     Step Index: 8
+     Persona Class: low_energy_medium_risk_high_effort
+     Coherence Score: 0.986
+     Coherence Stable: True
+     Supporting Traces: 2
+     Accepted Count: 1
+     Rejected Count: 1
+     Cognitive Thresholds (accepted):
+       energy: [0.132, 0.132]
+       risk: [0.543, 0.543]
+       effort: [2.228, 2.228]
+       value: [3.000, 3.000]
+       control: [2.000, 2.000]
+     First Observed: 2026-01-03T11:09:47.249950
+     Last Observed: 2026-01-03T11:09:48.842842
+     Occurrence Count: 2
+     Pattern Stable: False
+
+[35] Step: Best Deals for You – Apply Now
+     Step Index: 10
+     Persona Class: low_energy_medium_risk_high_effort
+     Coherence Score: 0.985
+     Coherence Stable: True
+     Supporting Traces: 5
+     Accepted Count: 5
+     Rejected Count: 0
+     Cognitive Thresholds (accepted):
+       energy: [0.200, 0.275]
+       risk: [0.390, 0.590]
+       effort: [2.553, 2.856]
+       value: [3.000, 3.000]
+       control: [2.000, 2.000]
+     First Observed: 2026-01-03T11:09:46.525419
+     Last Observed: 2026-01-03T11:09:50.937295
+     Occurrence Count: 5
+     Pattern Stable: False
+
+[36] Step: Best Deals for You – Apply Now
+     Step Index: 10
+     Persona Class: medium_energy_medium_risk_high_effort
+     Coherence Score: 0.988
+     Coherence Stable: True
+     Supporting Traces: 3
+     Accepted Count: 3
+     Rejected Count: 0
+     Cognitive Thresholds (accepted):
+       energy: [0.400, 0.455]
+       risk: [0.572, 0.593]
+       effort: [2.179, 2.433]
+       value: [3.000, 3.000]
+       control: [2.000, 2.000]
+     First Observed: 2026-01-03T11:09:48.126943
+     Last Observed: 2026-01-03T11:09:50.639024
+     Occurrence Count: 3
+     Pattern Stable: False
+
+--------------------------------------------------------------------------------
+PRECEDENTS
+--------------------------------------------------------------------------------
+
+Assertions: 45
+
+[1] Step: What kind of perks excite you the most?
+     Persona Class: low_energy_high_risk_medium_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 4403
+     Occurrence Rate: 4.416
+     First Observed: 2026-01-03T11:09:45.957867
+     Last Observed: 2026-01-03T11:09:51.597361
+     Time Span (days): 0.0
+     Stable: True
+
+[2] Step: Find the Best Credit Card In 60 seconds
+     Persona Class: low_energy_medium_risk_low_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch
+     Outcome: CONTINUE
+     Occurrence Count: 3568
+     Occurrence Rate: 3.593
+     First Observed: 2026-01-03T11:09:45.957545
+     Last Observed: 2026-01-03T11:09:51.597226
+     Time Span (days): 0.0
+     Stable: True
+
+[3] Step: Any preference on annual fee?
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, effort_demand, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 3063
+     Occurrence Rate: 3.400
+     First Observed: 2026-01-03T11:09:45.958001
+     Last Observed: 2026-01-03T11:09:51.597498
+     Time Span (days): 0.0
+     Stable: True
+
+[4] Step: straightforward + options are clearly defined
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, effort_demand, intent_mismatch, risk_spike
+     Outcome: DROP
+     Occurrence Count: 3038
+     Occurrence Rate: 3.225
+     First Observed: 2026-01-03T11:09:45.958602
+     Last Observed: 2026-01-03T11:09:51.597659
+     Time Span (days): 0.0
+     Stable: True
+
+[5] Step: Your top 2 spend categories?
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, effort_demand, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 2989
+     Occurrence Rate: 3.041
+     First Observed: 2026-01-03T11:09:45.957201
+     Last Observed: 2026-01-03T11:09:51.595927
+     Time Span (days): 0.0
+     Stable: True
+
+[6] Step: Do you track your monthly spending?
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, effort_demand, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 2687
+     Occurrence Rate: 2.784
+     First Observed: 2026-01-03T11:09:45.957347
+     Last Observed: 2026-01-03T11:09:51.596063
+     Time Span (days): 0.0
+     Stable: True
+
+[7] Step: How much do you spend monthly?
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, effort_demand, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 2424
+     Occurrence Rate: 2.565
+     First Observed: 2026-01-03T11:09:45.959013
+     Last Observed: 2026-01-03T11:09:51.596197
+     Time Span (days): 0.0
+     Stable: True
+
+[8] Step: Do you have any existing credit cards?
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, effort_demand, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 2225
+     Occurrence Rate: 2.408
+     First Observed: 2026-01-03T11:09:45.959152
+     Last Observed: 2026-01-03T11:09:51.596331
+     Time Span (days): 0.0
+     Stable: True
+
+[9] Step: Find the Best Credit Card In 60 seconds
+     Persona Class: low_energy_low_risk_low_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch
+     Outcome: DROP
+     Occurrence Count: 2049
+     Occurrence Rate: 2.463
+     First Observed: 2026-01-03T11:09:45.962326
+     Last Observed: 2026-01-03T11:09:51.597894
+     Time Span (days): 0.0
+     Stable: True
+
+[10] Step: Help us personalise your card matches
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, effort_demand, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 2016
+     Occurrence Rate: 2.238
+     First Observed: 2026-01-03T11:09:45.959293
+     Last Observed: 2026-01-03T11:09:51.596465
+     Time Span (days): 0.0
+     Stable: True
+
+[11] Step: Step 1 of 11
+     Persona Class: medium_energy_high_risk_high_effort
+     Dominant Factors: effort_demand, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 1355
+     Occurrence Rate: 2.134
+     First Observed: 2026-01-03T11:09:45.959434
+     Last Observed: 2026-01-03T11:09:51.596601
+     Time Span (days): 0.0
+     Stable: True
+
+[12] Step: Best Deals for You – Apply Now
+     Persona Class: medium_energy_high_risk_high_effort
+     Dominant Factors: effort_demand, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 1135
+     Occurrence Rate: 1.964
+     First Observed: 2026-01-03T11:09:45.959572
+     Last Observed: 2026-01-03T11:09:51.596738
+     Time Span (days): 0.0
+     Stable: True
+
+[13] Step: Find the Best Credit Card In 60 seconds
+     Persona Class: medium_energy_low_risk_low_effort
+     Dominant Factors: intent_mismatch
+     Outcome: CONTINUE
+     Occurrence Count: 916
+     Occurrence Rate: 2.331
+     First Observed: 2026-01-03T11:09:45.956536
+     Last Observed: 2026-01-03T11:09:51.588337
+     Time Span (days): 0.0
+     Stable: True
+
+[14] Step: Any preference on annual fee?
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 833
+     Occurrence Rate: 1.646
+     First Observed: 2026-01-03T11:09:45.956918
+     Last Observed: 2026-01-03T11:09:51.579100
+     Time Span (days): 0.0
+     Stable: True
+
+[15] Step: Step 1 of 11
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, effort_demand, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 486
+     Occurrence Rate: 2.051
+     First Observed: 2026-01-03T11:09:45.969166
+     Last Observed: 2026-01-03T11:09:51.583148
+     Time Span (days): 0.0
+     Stable: True
+
+[16] Step: Any preference on annual fee?
+     Persona Class: low_energy_high_risk_medium_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 467
+     Occurrence Rate: 2.192
+     First Observed: 2026-01-03T11:09:45.962045
+     Last Observed: 2026-01-03T11:09:51.551003
+     Time Span (days): 0.0
+     Stable: True
+
+[17] Step: Best Deals for You – Apply Now
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, effort_demand, intent_mismatch, risk_spike
+     Outcome: DROP
+     Occurrence Count: 431
+     Occurrence Rate: 1.890
+     First Observed: 2026-01-03T11:09:45.969295
+     Last Observed: 2026-01-03T11:09:51.583279
+     Time Span (days): 0.0
+     Stable: True
+
+[18] Step: Find the Best Credit Card In 60 seconds
+     Persona Class: medium_energy_medium_risk_low_effort
+     Dominant Factors: intent_mismatch
+     Outcome: DROP
+     Occurrence Count: 430
+     Occurrence Rate: 2.671
+     First Observed: 2026-01-03T11:09:45.957726
+     Last Observed: 2026-01-03T11:09:51.586628
+     Time Span (days): 0.0
+     Stable: True
+
+[19] Step: What kind of perks excite you the most?
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 429
+     Occurrence Rate: 1.000
+     First Observed: 2026-01-03T11:09:45.967123
+     Last Observed: 2026-01-03T11:09:51.581239
+     Time Span (days): 0.0
+     Stable: True
+
+[20] Step: straightforward + options are clearly defined
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 388
+     Occurrence Rate: 1.516
+     First Observed: 2026-01-03T11:09:45.957056
+     Last Observed: 2026-01-03T11:09:51.588740
+     Time Span (days): 0.0
+     Stable: True
+
+[21] Step: What kind of perks excite you the most?
+     Persona Class: low_energy_high_risk_medium_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch
+     Outcome: CONTINUE
+     Occurrence Count: 339
+     Occurrence Rate: 1.340
+     First Observed: 2026-01-03T11:09:45.956769
+     Last Observed: 2026-01-03T11:09:51.586047
+     Time Span (days): 0.0
+     Stable: True
+
+[22] Step: straightforward + options are clearly defined
+     Persona Class: low_energy_high_risk_medium_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 177
+     Occurrence Rate: 1.924
+     First Observed: 2026-01-03T11:09:46.012753
+     Last Observed: 2026-01-03T11:09:51.551141
+     Time Span (days): 0.0
+     Stable: True
+
+[23] Step: What kind of perks excite you the most?
+     Persona Class: low_energy_medium_risk_medium_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch
+     Outcome: CONTINUE
+     Occurrence Count: 154
+     Occurrence Rate: 1.495
+     First Observed: 2026-01-03T11:09:45.961906
+     Last Observed: 2026-01-03T11:09:51.588468
+     Time Span (days): 0.0
+     Stable: True
+
+[24] Step: Best Deals for You – Apply Now
+     Persona Class: high_energy_high_risk_high_effort
+     Dominant Factors: effort_demand, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 105
+     Occurrence Rate: 2.500
+     First Observed: 2026-01-03T11:09:46.155102
+     Last Observed: 2026-01-03T11:09:51.552076
+     Time Span (days): 0.0
+     Stable: True
+
+[25] Step: What kind of perks excite you the most?
+     Persona Class: low_energy_high_risk_low_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 100
+     Occurrence Rate: 1.333
+     First Observed: 2026-01-03T11:09:46.094722
+     Last Observed: 2026-01-03T11:09:51.445717
+     Time Span (days): 0.0
+     Stable: True
+
+[26] Step: Find the Best Credit Card In 60 seconds
+     Persona Class: high_energy_low_risk_low_effort
+     Dominant Factors: intent_mismatch
+     Outcome: CONTINUE
+     Occurrence Count: 35
+     Occurrence Rate: 1.842
+     First Observed: 2026-01-03T11:09:46.013809
+     Last Observed: 2026-01-03T11:09:51.552250
+     Time Span (days): 0.0
+     Stable: True
+
+[27] Step: What kind of perks excite you the most?
+     Persona Class: low_energy_medium_risk_low_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch
+     Outcome: CONTINUE
+     Occurrence Count: 33
+     Occurrence Rate: 1.065
+     First Observed: 2026-01-03T11:09:46.115417
+     Last Observed: 2026-01-03T11:09:51.550433
+     Time Span (days): 0.0
+     Stable: True
+
+[28] Step: What kind of perks excite you the most?
+     Persona Class: low_energy_high_risk_low_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch
+     Outcome: CONTINUE
+     Occurrence Count: 32
+     Occurrence Rate: 1.067
+     First Observed: 2026-01-03T11:09:46.224464
+     Last Observed: 2026-01-03T11:09:51.490003
+     Time Span (days): 0.0
+     Stable: True
+
+[29] Step: Your top 2 spend categories?
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 32
+     Occurrence Rate: 1.524
+     First Observed: 2026-01-03T11:09:46.232179
+     Last Observed: 2026-01-03T11:09:51.493822
+     Time Span (days): 0.0
+     Stable: True
+
+[30] Step: Any preference on annual fee?
+     Persona Class: low_energy_high_risk_medium_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch
+     Outcome: CONTINUE
+     Occurrence Count: 29
+     Occurrence Rate: 1.000
+     First Observed: 2026-01-03T11:09:46.115558
+     Last Observed: 2026-01-03T11:09:51.493544
+     Time Span (days): 0.0
+     Stable: True
+
+[31] Step: Your top 2 spend categories?
+     Persona Class: low_energy_medium_risk_high_effort
+     Dominant Factors: cognitive_fatigue, effort_demand, intent_mismatch
+     Outcome: CONTINUE
+     Occurrence Count: 27
+     Occurrence Rate: 1.588
+     First Observed: 2026-01-03T11:09:46.524601
+     Last Observed: 2026-01-03T11:09:51.193777
+     Time Span (days): 0.0
+     Stable: True
+
+[32] Step: Step 1 of 11
+     Persona Class: high_energy_high_risk_high_effort
+     Dominant Factors: effort_demand, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 25
+     Occurrence Rate: 2.083
+     First Observed: 2026-01-03T11:09:46.403951
+     Last Observed: 2026-01-03T11:09:51.551941
+     Time Span (days): 0.0
+     Stable: True
+
+[33] Step: straightforward + options are clearly defined
+     Persona Class: medium_energy_high_risk_medium_effort
+     Dominant Factors: intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 23
+     Occurrence Rate: 1.917
+     First Observed: 2026-01-03T11:09:46.329855
+     Last Observed: 2026-01-03T11:09:51.276805
+     Time Span (days): 0.0
+     Stable: True
+
+[34] Step: Any preference on annual fee?
+     Persona Class: low_energy_medium_risk_high_effort
+     Dominant Factors: cognitive_fatigue, effort_demand, intent_mismatch
+     Outcome: DROP
+     Occurrence Count: 21
+     Occurrence Rate: 1.615
+     First Observed: 2026-01-03T11:09:46.524319
+     Last Observed: 2026-01-03T11:09:51.114254
+     Time Span (days): 0.0
+     Stable: True
+
+[35] Step: What kind of perks excite you the most?
+     Persona Class: medium_energy_medium_risk_low_effort
+     Dominant Factors: intent_mismatch
+     Outcome: CONTINUE
+     Occurrence Count: 17
+     Occurrence Rate: 1.417
+     First Observed: 2026-01-03T11:09:46.334948
+     Last Observed: 2026-01-03T11:09:51.552386
+     Time Span (days): 0.0
+     Stable: True
+
+[36] Step: Your top 2 spend categories?
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, effort_demand, intent_mismatch
+     Outcome: CONTINUE
+     Occurrence Count: 16
+     Occurrence Rate: 1.067
+     First Observed: 2026-01-03T11:09:46.151515
+     Last Observed: 2026-01-03T11:09:51.588872
+     Time Span (days): 0.0
+     Stable: True
+
+[37] Step: What kind of perks excite you the most?
+     Persona Class: medium_energy_high_risk_low_effort
+     Dominant Factors: intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 15
+     Occurrence Rate: 1.875
+     First Observed: 2026-01-03T11:09:46.405538
+     Last Observed: 2026-01-03T11:09:50.767795
+     Time Span (days): 0.0
+     Stable: True
+
+[38] Step: Do you have any existing credit cards?
+     Persona Class: medium_energy_high_risk_high_effort
+     Dominant Factors: effort_demand, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 14
+     Occurrence Rate: 1.400
+     First Observed: 2026-01-03T11:09:46.330399
+     Last Observed: 2026-01-03T11:09:51.278074
+     Time Span (days): 0.0
+     Stable: True
+
+[39] Step: Do you track your monthly spending?
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 14
+     Occurrence Rate: 1.167
+     First Observed: 2026-01-03T11:09:46.404940
+     Last Observed: 2026-01-03T11:09:51.210618
+     Time Span (days): 0.0
+     Stable: True
+
+[40] Step: What kind of perks excite you the most?
+     Persona Class: medium_energy_high_risk_low_effort
+     Dominant Factors: intent_mismatch
+     Outcome: CONTINUE
+     Occurrence Count: 12
+     Occurrence Rate: 1.000
+     First Observed: 2026-01-03T11:09:46.329586
+     Last Observed: 2026-01-03T11:09:51.254473
+     Time Span (days): 0.0
+     Stable: True
+
+[41] Step: Your top 2 spend categories?
+     Persona Class: low_energy_high_risk_medium_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 12
+     Occurrence Rate: 1.500
+     First Observed: 2026-01-03T11:09:46.329989
+     Last Observed: 2026-01-03T11:09:51.137648
+     Time Span (days): 0.0
+     Stable: True
+
+[42] Step: Help us personalise your card matches
+     Persona Class: medium_energy_high_risk_high_effort
+     Dominant Factors: effort_demand, intent_mismatch, risk_spike
+     Outcome: CONTINUE
+     Occurrence Count: 12
+     Occurrence Rate: 1.200
+     First Observed: 2026-01-03T11:09:46.330535
+     Last Observed: 2026-01-03T11:09:51.551814
+     Time Span (days): 0.0
+     Stable: True
+
+[43] Step: How much do you spend monthly?
+     Persona Class: low_energy_high_risk_high_effort
+     Dominant Factors: cognitive_fatigue, effort_demand, intent_mismatch
+     Outcome: DROP
+     Occurrence Count: 12
+     Occurrence Rate: 1.333
+     First Observed: 2026-01-03T11:09:46.524874
+     Last Observed: 2026-01-03T11:09:51.113469
+     Time Span (days): 0.0
+     Stable: True
+
+[44] Step: Help us personalise your card matches
+     Persona Class: high_energy_high_risk_high_effort
+     Dominant Factors: effort_demand, intent_mismatch, risk_spike
+     Outcome: DROP
+     Occurrence Count: 11
+     Occurrence Rate: 1.571
+     First Observed: 2026-01-03T11:09:46.403816
+     Last Observed: 2026-01-03T11:09:51.272278
+     Time Span (days): 0.0
+     Stable: True
+
+[45] Step: Any preference on annual fee?
+     Persona Class: low_energy_medium_risk_medium_effort
+     Dominant Factors: cognitive_fatigue, intent_mismatch
+     Outcome: CONTINUE
+     Occurrence Count: 10
+     Occurrence Rate: 1.111
+     First Observed: 2026-01-03T11:09:47.553211
+     Last Observed: 2026-01-03T11:09:51.588603
+     Time Span (days): 0.0
+     Stable: True
+
+--------------------------------------------------------------------------------
+DECISION DENSITY
+--------------------------------------------------------------------------------
+
+Assertions: 11
+
+Step: Find the Best Credit Card In 60 seconds
+     Step Index: 0
+     Has Observed Rejections: True
+     Rejection Decision Count: 1445
+     Decision Density: 0.2064
+     Is Last Decision Boundary: False
+     First Rejection: 2026-01-03T11:09:45.957545
+     Last Rejection: 2026-01-03T11:09:51.597894
+
+Step: What kind of perks excite you the most?
+     Step Index: 1
+     Has Observed Rejections: True
+     Rejection Decision Count: 1096
+     Decision Density: 0.1973
+     Is Last Decision Boundary: False
+     First Rejection: 2026-01-03T11:09:45.962471
+     Last Rejection: 2026-01-03T11:09:51.597052
+
+Step: Any preference on annual fee?
+     Step Index: 2
+     Has Observed Rejections: True
+     Rejection Decision Count: 820
+     Decision Density: 0.1839
+     Is Last Decision Boundary: False
+     First Rejection: 2026-01-03T11:09:45.958001
+     Last Rejection: 2026-01-03T11:09:51.590699
+
+Step: straightforward + options are clearly defined
+     Step Index: 3
+     Has Observed Rejections: True
+     Rejection Decision Count: 549
+     Decision Density: 0.1509
+     Is Last Decision Boundary: False
+     First Rejection: 2026-01-03T11:09:45.966823
+     Last Rejection: 2026-01-03T11:09:51.597659
+
+Step: Your top 2 spend categories?
+     Step Index: 4
+     Has Observed Rejections: True
+     Rejection Decision Count: 363
+     Decision Density: 0.1175
+     Is Last Decision Boundary: False
+     First Rejection: 2026-01-03T11:09:45.983891
+     Last Rejection: 2026-01-03T11:09:51.591416
+
+Step: Do you track your monthly spending?
+     Step Index: 5
+     Has Observed Rejections: True
+     Rejection Decision Count: 274
+     Decision Density: 0.1005
+     Is Last Decision Boundary: False
+     First Rejection: 2026-01-03T11:09:45.957347
+     Last Rejection: 2026-01-03T11:09:51.565082
+
+Step: How much do you spend monthly?
+     Step Index: 6
+     Has Observed Rejections: True
+     Rejection Decision Count: 205
+     Decision Density: 0.0836
+     Is Last Decision Boundary: False
+     First Rejection: 2026-01-03T11:09:45.964042
+     Last Rejection: 2026-01-03T11:09:51.585739
+
+Step: Do you have any existing credit cards?
+     Step Index: 7
+     Has Observed Rejections: True
+     Rejection Decision Count: 204
+     Decision Density: 0.0907
+     Is Last Decision Boundary: False
+     First Rejection: 2026-01-03T11:09:46.052022
+     Last Rejection: 2026-01-03T11:09:51.516934
+
+Step: Help us personalise your card matches
+     Step Index: 8
+     Has Observed Rejections: True
+     Rejection Decision Count: 177
+     Decision Density: 0.0866
+     Is Last Decision Boundary: False
+     First Rejection: 2026-01-03T11:09:45.981852
+     Last Rejection: 2026-01-03T11:09:51.592699
+
+Step: Step 1 of 11
+     Step Index: 9
+     Has Observed Rejections: True
+     Rejection Decision Count: 184
+     Decision Density: 0.0986
+     Is Last Decision Boundary: False
+     First Rejection: 2026-01-03T11:09:45.975917
+     Last Rejection: 2026-01-03T11:09:51.589554
+
+Step: Best Deals for You – Apply Now
+     Step Index: 10
+     Has Observed Rejections: True
+     Rejection Decision Count: 151
+     Decision Density: 0.0897
+     Is Last Decision Boundary: True
+     First Rejection: 2026-01-03T11:09:45.966177
+     Last Rejection: 2026-01-03T11:09:51.594454

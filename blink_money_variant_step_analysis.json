@@ -1,0 +1,359 @@
+{
+  "Smart Credit against Mutual Funds": {
+    "fresh_motivated": {
+      "reached": 100,
+      "dropped": 18,
+      "continued": 82,
+      "drop_rate": 18.0,
+      "continue_rate": 82.0
+    },
+    "tired_commuter": {
+      "reached": 100,
+      "dropped": 22,
+      "continued": 78,
+      "drop_rate": 22.0,
+      "continue_rate": 78.0
+    },
+    "distrustful_arrival": {
+      "reached": 100,
+      "dropped": 22,
+      "continued": 78,
+      "drop_rate": 22.0,
+      "continue_rate": 78.0
+    },
+    "browsing_casually": {
+      "reached": 100,
+      "dropped": 26,
+      "continued": 74,
+      "drop_rate": 26.0,
+      "continue_rate": 74.0
+    },
+    "urgent_need": {
+      "reached": 100,
+      "dropped": 17,
+      "continued": 83,
+      "drop_rate": 17.0,
+      "continue_rate": 83.0
+    },
+    "price_sensitive": {
+      "reached": 100,
+      "dropped": 25,
+      "continued": 75,
+      "drop_rate": 25.0,
+      "continue_rate": 75.0
+    },
+    "tech_savvy_optimistic": {
+      "reached": 100,
+      "dropped": 13,
+      "continued": 87,
+      "drop_rate": 13.0,
+      "continue_rate": 87.0
+    }
+  },
+  "Check Your Eligibility - Mobile Number": {
+    "fresh_motivated": {
+      "reached": 82,
+      "dropped": 11,
+      "continued": 71,
+      "drop_rate": 13.414634146341465,
+      "continue_rate": 86.58536585365853
+    },
+    "distrustful_arrival": {
+      "reached": 78,
+      "dropped": 11,
+      "continued": 67,
+      "drop_rate": 14.102564102564102,
+      "continue_rate": 85.8974358974359
+    },
+    "browsing_casually": {
+      "reached": 74,
+      "dropped": 15,
+      "continued": 59,
+      "drop_rate": 20.27027027027027,
+      "continue_rate": 79.72972972972973
+    },
+    "urgent_need": {
+      "reached": 83,
+      "dropped": 14,
+      "continued": 69,
+      "drop_rate": 16.867469879518072,
+      "continue_rate": 83.13253012048193
+    },
+    "price_sensitive": {
+      "reached": 75,
+      "dropped": 19,
+      "continued": 56,
+      "drop_rate": 25.333333333333336,
+      "continue_rate": 74.66666666666667
+    },
+    "tech_savvy_optimistic": {
+      "reached": 87,
+      "dropped": 14,
+      "continued": 73,
+      "drop_rate": 16.091954022988507,
+      "continue_rate": 83.9080459770115
+    },
+    "tired_commuter": {
+      "reached": 78,
+      "dropped": 16,
+      "continued": 62,
+      "drop_rate": 20.51282051282051,
+      "continue_rate": 79.48717948717949
+    }
+  },
+  "Check Limit - PAN and DOB": {
+    "fresh_motivated": {
+      "reached": 71,
+      "dropped": 10,
+      "continued": 61,
+      "drop_rate": 14.084507042253522,
+      "continue_rate": 85.91549295774648
+    },
+    "distrustful_arrival": {
+      "reached": 67,
+      "dropped": 7,
+      "continued": 60,
+      "drop_rate": 10.44776119402985,
+      "continue_rate": 89.55223880597015
+    },
+    "browsing_casually": {
+      "reached": 59,
+      "dropped": 10,
+      "continued": 49,
+      "drop_rate": 16.94915254237288,
+      "continue_rate": 83.05084745762711
+    },
+    "urgent_need": {
+      "reached": 69,
+      "dropped": 9,
+      "continued": 60,
+      "drop_rate": 13.043478260869565,
+      "continue_rate": 86.95652173913044
+    },
+    "price_sensitive": {
+      "reached": 56,
+      "dropped": 10,
+      "continued": 46,
+      "drop_rate": 17.857142857142858,
+      "continue_rate": 82.14285714285714
+    },
+    "tech_savvy_optimistic": {
+      "reached": 73,
+      "dropped": 8,
+      "continued": 65,
+      "drop_rate": 10.95890410958904,
+      "continue_rate": 89.04109589041096
+    },
+    "tired_commuter": {
+      "reached": 62,
+      "dropped": 9,
+      "continued": 53,
+      "drop_rate": 14.516129032258066,
+      "continue_rate": 85.48387096774194
+    }
+  },
+  "OTP Verification": {
+    "fresh_motivated": {
+      "reached": 61,
+      "dropped": 5,
+      "continued": 56,
+      "drop_rate": 8.19672131147541,
+      "continue_rate": 91.80327868852459
+    },
+    "browsing_casually": {
+      "reached": 49,
+      "dropped": 4,
+      "continued": 45,
+      "drop_rate": 8.16326530612245,
+      "continue_rate": 91.83673469387756
+    },
+    "price_sensitive": {
+      "reached": 46,
+      "dropped": 2,
+      "continued": 44,
+      "drop_rate": 4.3478260869565215,
+      "continue_rate": 95.65217391304348
+    },
+    "tech_savvy_optimistic": {
+      "reached": 65,
+      "dropped": 3,
+      "continued": 62,
+      "drop_rate": 4.615384615384616,
+      "continue_rate": 95.38461538461539
+    },
+    "urgent_need": {
+      "reached": 60,
+      "dropped": 4,
+      "continued": 56,
+      "drop_rate": 6.666666666666667,
+      "continue_rate": 93.33333333333333
+    },
+    "tired_commuter": {
+      "reached": 53,
+      "dropped": 6,
+      "continued": 47,
+      "drop_rate": 11.320754716981133,
+      "continue_rate": 88.67924528301887
+    },
+    "distrustful_arrival": {
+      "reached": 60,
+      "dropped": 3,
+      "continued": 57,
+      "drop_rate": 5.0,
+      "continue_rate": 95.0
+    }
+  },
+  "Bank Account Linking": {
+    "fresh_motivated": {
+      "reached": 56,
+      "dropped": 2,
+      "continued": 54,
+      "drop_rate": 3.571428571428571,
+      "continue_rate": 96.42857142857143
+    },
+    "browsing_casually": {
+      "reached": 45,
+      "dropped": 2,
+      "continued": 43,
+      "drop_rate": 4.444444444444445,
+      "continue_rate": 95.55555555555556
+    },
+    "price_sensitive": {
+      "reached": 44,
+      "dropped": 6,
+      "continued": 38,
+      "drop_rate": 13.636363636363635,
+      "continue_rate": 86.36363636363636
+    },
+    "tech_savvy_optimistic": {
+      "reached": 62,
+      "dropped": 2,
+      "continued": 60,
+      "drop_rate": 3.225806451612903,
+      "continue_rate": 96.7741935483871
+    },
+    "urgent_need": {
+      "reached": 56,
+      "dropped": 6,
+      "continued": 50,
+      "drop_rate": 10.714285714285714,
+      "continue_rate": 89.28571428571429
+    },
+    "tired_commuter": {
+      "reached": 47,
+      "dropped": 4,
+      "continued": 43,
+      "drop_rate": 8.51063829787234,
+      "continue_rate": 91.48936170212765
+    },
+    "distrustful_arrival": {
+      "reached": 57,
+      "dropped": 8,
+      "continued": 49,
+      "drop_rate": 14.035087719298245,
+      "continue_rate": 85.96491228070175
+    }
+  },
+  "Eligibility Results": {
+    "fresh_motivated": {
+      "reached": 54,
+      "dropped": 5,
+      "continued": 49,
+      "drop_rate": 9.25925925925926,
+      "continue_rate": 90.74074074074075
+    },
+    "browsing_casually": {
+      "reached": 43,
+      "dropped": 1,
+      "continued": 42,
+      "drop_rate": 2.3255813953488373,
+      "continue_rate": 97.67441860465115
+    },
+    "price_sensitive": {
+      "reached": 38,
+      "dropped": 8,
+      "continued": 30,
+      "drop_rate": 21.052631578947366,
+      "continue_rate": 78.94736842105263
+    },
+    "tech_savvy_optimistic": {
+      "reached": 60,
+      "dropped": 7,
+      "continued": 53,
+      "drop_rate": 11.666666666666666,
+      "continue_rate": 88.33333333333333
+    },
+    "urgent_need": {
+      "reached": 50,
+      "dropped": 3,
+      "continued": 47,
+      "drop_rate": 6.0,
+      "continue_rate": 94.0
+    },
+    "tired_commuter": {
+      "reached": 43,
+      "dropped": 1,
+      "continued": 42,
+      "drop_rate": 2.3255813953488373,
+      "continue_rate": 97.67441860465115
+    },
+    "distrustful_arrival": {
+      "reached": 49,
+      "dropped": 6,
+      "continued": 43,
+      "drop_rate": 12.244897959183673,
+      "continue_rate": 87.75510204081633
+    }
+  },
+  "Final Confirmation": {
+    "browsing_casually": {
+      "reached": 42,
+      "dropped": 3,
+      "continued": 39,
+      "drop_rate": 7.142857142857142,
+      "continue_rate": 92.85714285714286
+    },
+    "price_sensitive": {
+      "reached": 30,
+      "dropped": 1,
+      "continued": 29,
+      "drop_rate": 3.3333333333333335,
+      "continue_rate": 96.66666666666667
+    },
+    "urgent_need": {
+      "reached": 47,
+      "dropped": 7,
+      "continued": 40,
+      "drop_rate": 14.893617021276595,
+      "continue_rate": 85.1063829787234
+    },
+    "tech_savvy_optimistic": {
+      "reached": 53,
+      "dropped": 3,
+      "continued": 50,
+      "drop_rate": 5.660377358490567,
+      "continue_rate": 94.33962264150944
+    },
+    "fresh_motivated": {
+      "reached": 49,
+      "dropped": 4,
+      "continued": 45,
+      "drop_rate": 8.16326530612245,
+      "continue_rate": 91.83673469387756
+    },
+    "tired_commuter": {
+      "reached": 42,
+      "dropped": 3,
+      "continued": 39,
+      "drop_rate": 7.142857142857142,
+      "continue_rate": 92.85714285714286
+    },
+    "distrustful_arrival": {
+      "reached": 43,
+      "dropped": 2,
+      "continued": 41,
+      "drop_rate": 4.651162790697675,
+      "continue_rate": 95.34883720930233
+    }
+  }
+}

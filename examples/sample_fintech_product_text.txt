@@ -1,0 +1,28 @@
+SavingsGoal - A goal-based savings app for young professionals in metro cities.
+
+Product Description:
+SavingsGoal helps users save money for specific goals (vacation, emergency fund, down payment) by linking their bank account via UPI, setting up automatic transfers, and tracking progress.
+
+Target Users:
+- Young professionals (25-35 years old) in Tier-1 metros
+- Comfortable with digital apps and UPI
+- Moderate to high income (middle to upper-middle class)
+- Individualistic decision-makers (not heavily family-influenced)
+- Growth-oriented and aspirational
+- Price-conscious but not deal-only
+- Balanced to risk-tolerant attitude (comfortable with digital finance)
+
+Product Flow:
+1. Landing page - Explains the concept of goal-based savings, shows example goals, emphasizes security and ease
+2. Phone verification - User enters mobile number, receives OTP, verifies
+3. KYC - User uploads PAN card and Aadhaar, takes selfie for verification
+4. Bank account linking - User links primary bank account via UPI mandate (read-only access)
+5. Goal creation - User creates first savings goal (amount, timeline, auto-transfer settings)
+6. First transfer - User makes first manual transfer or sets up auto-transfer
+
+Key Features:
+- RBI-regulated, bank-grade security
+- No fees, no minimum balance
+- Instant goal tracking and progress visualization
+- Auto-transfer options for hands-off savings
+

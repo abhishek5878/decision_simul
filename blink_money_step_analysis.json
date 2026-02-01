@@ -1,0 +1,102 @@
+[
+  {
+    "step_id": "Bank Account Linking",
+    "total_reached": 367,
+    "drops": 30,
+    "continues": 337,
+    "drop_rate": 8.174386920980927,
+    "continue_rate": 91.82561307901908,
+    "drop_forces": {},
+    "unique_personas_dropped": 30
+  },
+  {
+    "step_id": "Check Limit - PAN and DOB",
+    "total_reached": 457,
+    "drops": 63,
+    "continues": 394,
+    "drop_rate": 13.785557986870897,
+    "continue_rate": 86.2144420131291,
+    "drop_forces": {
+      "cognitive_energy": 8.908524133113062,
+      "intent": 0.0,
+      "effort_tolerance": 2.6266661516953747,
+      "risk_tolerance": 6.9056562839919495,
+      "trust": 23.232877665447635,
+      "value": 26.633195555270454,
+      "effort": 14.952762958586451,
+      "risk": 16.740317251895082,
+      "intent_mismatch": 0.0
+    },
+    "unique_personas_dropped": 63
+  },
+  {
+    "step_id": "Check Your Eligibility - Mobile Number",
+    "total_reached": 557,
+    "drops": 100,
+    "continues": 457,
+    "drop_rate": 17.953321364452425,
+    "continue_rate": 82.04667863554758,
+    "drop_forces": {
+      "cognitive_energy": 15.526597236605392,
+      "intent": 0.0,
+      "effort_tolerance": 3.3420672050694042,
+      "risk_tolerance": 4.97413876193058,
+      "trust": 30.796143710321793,
+      "value": 7.359119110845803,
+      "effort": 19.613840025494877,
+      "risk": 18.38809394973215,
+      "intent_mismatch": 0.0
+    },
+    "unique_personas_dropped": 100
+  },
+  {
+    "step_id": "Eligibility Results",
+    "total_reached": 337,
+    "drops": 31,
+    "continues": 306,
+    "drop_rate": 9.198813056379821,
+    "continue_rate": 90.80118694362018,
+    "drop_forces": {},
+    "unique_personas_dropped": 31
+  },
+  {
+    "step_id": "Final Confirmation",
+    "total_reached": 306,
+    "drops": 23,
+    "continues": 283,
+    "drop_rate": 7.516339869281046,
+    "continue_rate": 92.48366013071896,
+    "drop_forces": {},
+    "unique_personas_dropped": 23
+  },
+  {
+    "step_id": "OTP Verification",
+    "total_reached": 394,
+    "drops": 27,
+    "continues": 367,
+    "drop_rate": 6.852791878172589,
+    "continue_rate": 93.1472081218274,
+    "drop_forces": {},
+    "unique_personas_dropped": 27
+  },
+  {
+    "step_id": "Smart Credit against Mutual Funds",
+    "total_reached": 700,
+    "drops": 143,
+    "continues": 557,
+    "drop_rate": 20.42857142857143,
+    "continue_rate": 79.57142857142857,
+    "drop_forces": {
+      "cognitive_energy": 9.223242711943902,
+      "intent": 0.0,
+      "effort_tolerance": 0.0,
+      "risk_tolerance": 2.02733197344212,
+      "trust": 33.00703984061786,
+      "value": 42.94377145456729,
+      "effort": 0.0,
+      "risk": 12.798614019428832,
+      "intent_mismatch": 0.0
+    },
+    "unique_personas_dropped": 143
+  }
+]

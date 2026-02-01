@@ -1,0 +1,2342 @@
+{
+  "metadata": {
+    "scenario": "fintech_onboarding_demo",
+    "personas": 5,
+    "state_variants": 7,
+    "product_steps": 6,
+    "total_trajectories": 35
+  },
+  "personas": [
+    {
+      "name": "GenZ_UPI_Native_Metro",
+      "description": "Gen Z UPI-native, metro, low risk aversion",
+      "raw_fields": {
+        "SEC": 0.6,
+        "UrbanRuralTier": 1.0,
+        "DigitalLiteracy": 0.9,
+        "FamilyInfluence": 0.2,
+        "AspirationalLevel": 0.8,
+        "PriceSensitivity": 0.3,
+        "RegionalCulture": 0.4,
+        "InfluencerTrust": 0.7,
+        "ProfessionalSector": 0.8,
+        "EnglishProficiency": 0.9,
+        "HobbyDiversity": 0.7,
+        "CareerAmbition": 0.8,
+        "AgeBucket": 1.0,
+        "GenderMarital": 0.7
+      },
+      "compiled_priors": {
+        "CC": 0.8800000000000001,
+        "FR": 0.1,
+        "RT": 0.71,
+        "LAM": 1.24,
+        "ET": 0.8200000000000001,
+        "TB": 0.85,
+        "DR": 0.31000000000000005,
+        "CN": 0.22,
+        "MS": 0.8400000000000001
+      }
+    },
+    {
+      "name": "Salaried_Tier2_Cautious",
+      "description": "Salaried worker, Tier-2, high family influence, cautious",
+      "raw_fields": {
+        "SEC": 0.5,
+        "UrbanRuralTier": 0.4,
+        "DigitalLiteracy": 0.5,
+        "FamilyInfluence": 0.8,
+        "AspirationalLevel": 0.4,
+        "PriceSensitivity": 0.7,
+        "RegionalCulture": 0.7,
+        "InfluencerTrust": 0.4,
+        "ProfessionalSector": 0.5,
+        "EnglishProficiency": 0.5,
+        "HobbyDiversity": 0.4,
+        "CareerAmbition": 0.4,
+        "AgeBucket": 0.6,
+        "GenderMarital": 0.2
+      },
+      "compiled_priors": {
+        "CC": 0.5,
+        "FR": 0.47,
+        "RT": 0.37000000000000005,
+        "LAM": 1.76,
+        "ET": 0.45,
+        "TB": 0.43000000000000005,
+        "DR": 0.55,
+        "CN": 0.73,
+        "MS": 0.44
+      }
+    },
+    {
+      "name": "Self_Employed_Trader_HighRisk",
+      "description": "Self-employed trader, high risk tolerance, impatient",
+      "raw_fields": {
+        "SEC": 0.4,
+        "UrbanRuralTier": 0.7,
+        "DigitalLiteracy": 0.6,
+        "FamilyInfluence": 0.5,
+        "AspirationalLevel": 0.7,
+        "PriceSensitivity": 0.6,
+        "RegionalCulture": 0.6,
+        "InfluencerTrust": 0.5,
+        "ProfessionalSector": 0.3,
+        "EnglishProficiency": 0.4,
+        "HobbyDiversity": 0.5,
+        "CareerAmbition": 0.7,
+        "AgeBucket": 0.6,
+        "GenderMarital": 0.8
+      },
+      "compiled_priors": {
+        "CC": 0.53,
+        "FR": 0.43999999999999995,
+        "RT": 0.4900000000000001,
+        "LAM": 1.54,
+        "ET": 0.59,
+        "TB": 0.52,
+        "DR": 0.5599999999999999,
+        "CN": 0.49,
+        "MS": 0.6599999999999999
+      }
+    },
+    {
+      "name": "Rural_First_Time_User",
+      "description": "Rural user, first-time fintech, high trust concerns",
+      "raw_fields": {
+        "SEC": 0.2,
+        "UrbanRuralTier": 0.0,
+        "DigitalLiteracy": 0.3,
+        "FamilyInfluence": 0.9,
+        "AspirationalLevel": 0.2,
+        "PriceSensitivity": 0.9,
+        "RegionalCulture": 0.9,
+        "InfluencerTrust": 0.2,
+        "ProfessionalSector": 0.2,
+        "EnglishProficiency": 0.1,
+        "HobbyDiversity": 0.2,
+        "CareerAmbition": 0.2,
+        "AgeBucket": 0.4,
+        "GenderMarital": 0.3
+      },
+      "compiled_priors": {
+        "CC": 0.25,
+        "FR": 0.71,
+        "RT": 0.16000000000000003,
+        "LAM": 1.9000000000000001,
+        "ET": 0.25,
+        "TB": 0.2,
+        "DR": 0.67,
+        "CN": 0.9,
+        "MS": 0.3
+      }
+    },
+    {
+      "name": "Urban_Professional_Optimizer",
+      "description": "Urban professional, high digital literacy, value optimizer",
+      "raw_fields": {
+        "SEC": 0.8,
+        "UrbanRuralTier": 0.9,
+        "DigitalLiteracy": 0.95,
+        "FamilyInfluence": 0.3,
+        "AspirationalLevel": 0.9,
+        "PriceSensitivity": 0.2,
+        "RegionalCulture": 0.3,
+        "InfluencerTrust": 0.6,
+        "ProfessionalSector": 0.95,
+        "EnglishProficiency": 1.0,
+        "HobbyDiversity": 0.9,
+        "CareerAmbition": 0.9,
+        "AgeBucket": 0.8,
+        "GenderMarital": 0.6
+      },
+      "compiled_priors": {
+        "CC": 0.9,
+        "FR": 0.1,
+        "RT": 0.79,
+        "LAM": 1.26,
+        "ET": 0.9,
+        "TB": 0.825,
+        "DR": 0.33999999999999997,
+        "CN": 0.26,
+        "MS": 0.92
+      }
+    }
+  ],
+  "state_variants": {
+    "fresh_motivated": {
+      "cognitive_energy_mult": 0.9,
+      "perceived_value": 0.8,
+      "perceived_risk": 0.1,
+      "perceived_effort": 0.1,
+      "perceived_control": 0.7,
+      "description": "Fresh arrival, high motivation"
+    },
+    "tired_commuter": {
+      "cognitive_energy_mult": 0.5,
+      "perceived_value": 0.6,
+      "perceived_risk": 0.2,
+      "perceived_effort": 0.3,
+      "perceived_control": 0.5,
+      "description": "Tired, lower energy"
+    },
+    "distrustful_arrival": {
+      "cognitive_energy_mult": 0.8,
+      "perceived_value": 0.6,
+      "perceived_risk": 0.4,
+      "perceived_effort": 0.2,
+      "perceived_control": 0.3,
+      "description": "Arrives with trust concerns"
+    },
+    "browsing_casually": {
+      "cognitive_energy_mult": 0.9,
+      "perceived_value": 0.3,
+      "perceived_risk": 0.1,
+      "perceived_effort": 0.2,
+      "perceived_control": 0.6,
+      "description": "Low urgency, exploring"
+    },
+    "urgent_need": {
+      "cognitive_energy_mult": 0.7,
+      "perceived_value": 0.9,
+      "perceived_risk": 0.2,
+      "perceived_effort": 0.1,
+      "perceived_control": 0.8,
+      "description": "High urgency, strong motivation"
+    },
+    "price_sensitive": {
+      "cognitive_energy_mult": 0.8,
+      "perceived_value": 0.4,
+      "perceived_risk": 0.3,
+      "perceived_effort": 0.2,
+      "perceived_control": 0.5,
+      "description": "Highly price-conscious"
+    },
+    "tech_savvy_optimistic": {
+      "cognitive_energy_mult": 0.95,
+      "perceived_value": 0.7,
+      "perceived_risk": 0.05,
+      "perceived_effort": 0.05,
+      "perceived_control": 0.8,
+      "description": "High digital literacy, optimistic"
+    }
+  },
+  "product_steps": {
+    "Landing Page": {
+      "cognitive_demand": 0.2,
+      "effort_demand": 0.0,
+      "risk_signal": 0.1,
+      "irreversibility": 0,
+      "delay_to_value": 5,
+      "explicit_value": 0.4,
+      "reassurance_signal": 0.5,
+      "authority_signal": 0.3,
+      "description": "Product explanation, value proposition"
+    },
+    "Mobile + OTP": {
+      "cognitive_demand": 0.3,
+      "effort_demand": 0.4,
+      "risk_signal": 0.2,
+      "irreversibility": 0,
+      "delay_to_value": 4,
+      "explicit_value": 0.3,
+      "reassurance_signal": 0.4,
+      "authority_signal": 0.2,
+      "description": "Phone verification step"
+    },
+    "KYC Document Upload": {
+      "cognitive_demand": 0.5,
+      "effort_demand": 0.7,
+      "risk_signal": 0.4,
+      "irreversibility": 0,
+      "delay_to_value": 3,
+      "explicit_value": 0.2,
+      "reassurance_signal": 0.6,
+      "authority_signal": 0.5,
+      "description": "Identity verification via documents"
+    },
+    "PAN + Bank Linking": {
+      "cognitive_demand": 0.4,
+      "effort_demand": 0.6,
+      "risk_signal": 0.7,
+      "irreversibility": 1,
+      "delay_to_value": 2,
+      "explicit_value": 0.5,
+      "reassurance_signal": 0.7,
+      "authority_signal": 0.6,
+      "description": "Financial data linking (irreversible)"
+    },
+    "Consent + Terms": {
+      "cognitive_demand": 0.6,
+      "effort_demand": 0.2,
+      "risk_signal": 0.3,
+      "irreversibility": 0,
+      "delay_to_value": 1,
+      "explicit_value": 0.3,
+      "reassurance_signal": 0.3,
+      "authority_signal": 0.4,
+      "description": "Legal consent and terms acceptance"
+    },
+    "First Transaction": {
+      "cognitive_demand": 0.3,
+      "effort_demand": 0.3,
+      "risk_signal": 0.2,
+      "irreversibility": 0,
+      "delay_to_value": 0,
+      "explicit_value": 1.0,
+      "reassurance_signal": 0.5,
+      "authority_signal": 0.3,
+      "description": "First transaction / test transfer (value delivery)"
+    }
+  },
+  "trajectories": [
+    {
+      "persona_name": "GenZ_UPI_Native_Metro",
+      "variant": "fresh_motivated",
+      "exit_step": "PAN + Bank Linking",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.746,
+            "perceived_risk": 0.224,
+            "perceived_effort": 0.1,
+            "perceived_value": 0.757,
+            "perceived_control": 1.219
+          },
+          "costs": {
+            "cognitive_cost": 0.046,
+            "effort_cost": 0.0,
+            "risk_cost": 0.124,
+            "total_cost": 0.17
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.662,
+            "perceived_risk": 0.472,
+            "perceived_effort": 0.172,
+            "perceived_value": 0.844,
+            "perceived_control": 1.687
+          },
+          "costs": {
+            "cognitive_cost": 0.084,
+            "effort_cost": 0.072,
+            "risk_cost": 0.248,
+            "total_cost": 0.404
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.477,
+            "perceived_risk": 0.968,
+            "perceived_effort": 0.298,
+            "perceived_value": 0.923,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.186,
+            "effort_cost": 0.126,
+            "risk_cost": 0.496,
+            "total_cost": 0.808
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.247,
+            "perceived_risk": 2.704,
+            "perceived_effort": 0.406,
+            "perceived_value": 1.192,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.23,
+            "effort_cost": 0.108,
+            "risk_cost": 1.736,
+            "total_cost": 2.074
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "GenZ_UPI_Native_Metro",
+      "variant": "tired_commuter",
+      "exit_step": "PAN + Bank Linking",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.317,
+            "perceived_risk": 0.324,
+            "perceived_effort": 0.3,
+            "perceived_value": 0.589,
+            "perceived_control": 1.049
+          },
+          "costs": {
+            "cognitive_cost": 0.123,
+            "effort_cost": 0.0,
+            "risk_cost": 0.124,
+            "total_cost": 0.247
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.091,
+            "perceived_risk": 0.572,
+            "perceived_effort": 0.372,
+            "perceived_value": 0.676,
+            "perceived_control": 1.517
+          },
+          "costs": {
+            "cognitive_cost": 0.225,
+            "effort_cost": 0.072,
+            "risk_cost": 0.248,
+            "total_cost": 0.545
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 1.068,
+            "perceived_effort": 0.498,
+            "perceived_value": 0.755,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.5,
+            "effort_cost": 0.126,
+            "risk_cost": 0.496,
+            "total_cost": 1.122
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 2.804,
+            "perceived_effort": 0.606,
+            "perceived_value": 1.024,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.44,
+            "effort_cost": 0.108,
+            "risk_cost": 1.736,
+            "total_cost": 2.284
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "GenZ_UPI_Native_Metro",
+      "variant": "distrustful_arrival",
+      "exit_step": "PAN + Bank Linking",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.639,
+            "perceived_risk": 0.524,
+            "perceived_effort": 0.2,
+            "perceived_value": 0.589,
+            "perceived_control": 0.879
+          },
+          "costs": {
+            "cognitive_cost": 0.065,
+            "effort_cost": 0.0,
+            "risk_cost": 0.124,
+            "total_cost": 0.189
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.52,
+            "perceived_risk": 0.772,
+            "perceived_effort": 0.272,
+            "perceived_value": 0.676,
+            "perceived_control": 1.347
+          },
+          "costs": {
+            "cognitive_cost": 0.119,
+            "effort_cost": 0.072,
+            "risk_cost": 0.248,
+            "total_cost": 0.439
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.256,
+            "perceived_risk": 1.268,
+            "perceived_effort": 0.398,
+            "perceived_value": 0.755,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.264,
+            "effort_cost": 0.126,
+            "risk_cost": 0.496,
+            "total_cost": 0.886
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.506,
+            "perceived_value": 1.024,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.328,
+            "effort_cost": 0.108,
+            "risk_cost": 1.736,
+            "total_cost": 2.172
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "GenZ_UPI_Native_Metro",
+      "variant": "browsing_casually",
+      "exit_step": "PAN + Bank Linking",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.746,
+            "perceived_risk": 0.224,
+            "perceived_effort": 0.2,
+            "perceived_value": 0.337,
+            "perceived_control": 1.134
+          },
+          "costs": {
+            "cognitive_cost": 0.046,
+            "effort_cost": 0.0,
+            "risk_cost": 0.124,
+            "total_cost": 0.17
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.662,
+            "perceived_risk": 0.472,
+            "perceived_effort": 0.272,
+            "perceived_value": 0.424,
+            "perceived_control": 1.602
+          },
+          "costs": {
+            "cognitive_cost": 0.084,
+            "effort_cost": 0.072,
+            "risk_cost": 0.248,
+            "total_cost": 0.404
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.477,
+            "perceived_risk": 0.968,
+            "perceived_effort": 0.398,
+            "perceived_value": 0.503,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.186,
+            "effort_cost": 0.126,
+            "risk_cost": 0.496,
+            "total_cost": 0.808
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.247,
+            "perceived_risk": 2.704,
+            "perceived_effort": 0.506,
+            "perceived_value": 0.772,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.23,
+            "effort_cost": 0.108,
+            "risk_cost": 1.736,
+            "total_cost": 2.074
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "GenZ_UPI_Native_Metro",
+      "variant": "urgent_need",
+      "exit_step": "PAN + Bank Linking",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.532,
+            "perceived_risk": 0.324,
+            "perceived_effort": 0.1,
+            "perceived_value": 0.841,
+            "perceived_control": 1.304
+          },
+          "costs": {
+            "cognitive_cost": 0.084,
+            "effort_cost": 0.0,
+            "risk_cost": 0.124,
+            "total_cost": 0.208
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.377,
+            "perceived_risk": 0.572,
+            "perceived_effort": 0.172,
+            "perceived_value": 0.928,
+            "perceived_control": 1.772
+          },
+          "costs": {
+            "cognitive_cost": 0.155,
+            "effort_cost": 0.072,
+            "risk_cost": 0.248,
+            "total_cost": 0.475
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.034,
+            "perceived_risk": 1.068,
+            "perceived_effort": 0.298,
+            "perceived_value": 1.007,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.343,
+            "effort_cost": 0.126,
+            "risk_cost": 0.496,
+            "total_cost": 0.965
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 2.804,
+            "perceived_effort": 0.406,
+            "perceived_value": 1.276,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.425,
+            "effort_cost": 0.108,
+            "risk_cost": 1.736,
+            "total_cost": 2.269
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "GenZ_UPI_Native_Metro",
+      "variant": "price_sensitive",
+      "exit_step": "PAN + Bank Linking",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.639,
+            "perceived_risk": 0.424,
+            "perceived_effort": 0.2,
+            "perceived_value": 0.421,
+            "perceived_control": 1.049
+          },
+          "costs": {
+            "cognitive_cost": 0.065,
+            "effort_cost": 0.0,
+            "risk_cost": 0.124,
+            "total_cost": 0.189
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.52,
+            "perceived_risk": 0.672,
+            "perceived_effort": 0.272,
+            "perceived_value": 0.508,
+            "perceived_control": 1.517
+          },
+          "costs": {
+            "cognitive_cost": 0.119,
+            "effort_cost": 0.072,
+            "risk_cost": 0.248,
+            "total_cost": 0.439
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.256,
+            "perceived_risk": 1.168,
+            "perceived_effort": 0.398,
+            "perceived_value": 0.587,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.264,
+            "effort_cost": 0.126,
+            "risk_cost": 0.496,
+            "total_cost": 0.886
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 2.904,
+            "perceived_effort": 0.506,
+            "perceived_value": 0.856,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.328,
+            "effort_cost": 0.108,
+            "risk_cost": 1.736,
+            "total_cost": 2.172
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "GenZ_UPI_Native_Metro",
+      "variant": "tech_savvy_optimistic",
+      "exit_step": "PAN + Bank Linking",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.8,
+            "perceived_risk": 0.174,
+            "perceived_effort": 0.05,
+            "perceived_value": 0.673,
+            "perceived_control": 1.304
+          },
+          "costs": {
+            "cognitive_cost": 0.036,
+            "effort_cost": 0.0,
+            "risk_cost": 0.124,
+            "total_cost": 0.16
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.734,
+            "perceived_risk": 0.422,
+            "perceived_effort": 0.122,
+            "perceived_value": 0.76,
+            "perceived_control": 1.772
+          },
+          "costs": {
+            "cognitive_cost": 0.066,
+            "effort_cost": 0.072,
+            "risk_cost": 0.248,
+            "total_cost": 0.386
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.588,
+            "perceived_risk": 0.918,
+            "perceived_effort": 0.248,
+            "perceived_value": 0.839,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.146,
+            "effort_cost": 0.126,
+            "risk_cost": 0.496,
+            "total_cost": 0.768
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.406,
+            "perceived_risk": 2.654,
+            "perceived_effort": 0.356,
+            "perceived_value": 1.108,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.181,
+            "effort_cost": 0.108,
+            "risk_cost": 1.736,
+            "total_cost": 2.025
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Salaried_Tier2_Cautious",
+      "variant": "fresh_motivated",
+      "exit_step": "Mobile + OTP",
+      "failure_reason": "Multi-factor failure",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.288,
+            "perceived_risk": 0.276,
+            "perceived_effort": 0.1,
+            "perceived_value": 0.378,
+            "perceived_control": 0.517
+          },
+          "costs": {
+            "cognitive_cost": 0.162,
+            "effort_cost": 0.0,
+            "risk_cost": 0.176,
+            "total_cost": 0.338
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.628,
+            "perceived_effort": 0.32,
+            "perceived_value": 0.411,
+            "perceived_control": 0.679
+          },
+          "costs": {
+            "cognitive_cost": 0.314,
+            "effort_cost": 0.22,
+            "risk_cost": 0.352,
+            "total_cost": 0.886
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Salaried_Tier2_Cautious",
+      "variant": "tired_commuter",
+      "exit_step": "Landing Page",
+      "failure_reason": "System 2 fatigue",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.03,
+            "perceived_risk": 0.376,
+            "perceived_effort": 0.3,
+            "perceived_value": 0.29,
+            "perceived_control": 0.431
+          },
+          "costs": {
+            "cognitive_cost": 0.22,
+            "effort_cost": 0.0,
+            "risk_cost": 0.176,
+            "total_cost": 0.396
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Salaried_Tier2_Cautious",
+      "variant": "distrustful_arrival",
+      "exit_step": "Landing Page",
+      "failure_reason": "System 2 fatigue",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.224,
+            "perceived_risk": 0.576,
+            "perceived_effort": 0.2,
+            "perceived_value": 0.29,
+            "perceived_control": 0.345
+          },
+          "costs": {
+            "cognitive_cost": 0.176,
+            "effort_cost": 0.0,
+            "risk_cost": 0.176,
+            "total_cost": 0.352
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Salaried_Tier2_Cautious",
+      "variant": "browsing_casually",
+      "exit_step": "Mobile + OTP",
+      "failure_reason": "Multi-factor failure",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.288,
+            "perceived_risk": 0.276,
+            "perceived_effort": 0.2,
+            "perceived_value": 0.158,
+            "perceived_control": 0.474
+          },
+          "costs": {
+            "cognitive_cost": 0.162,
+            "effort_cost": 0.0,
+            "risk_cost": 0.176,
+            "total_cost": 0.338
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.628,
+            "perceived_effort": 0.42,
+            "perceived_value": 0.191,
+            "perceived_control": 0.636
+          },
+          "costs": {
+            "cognitive_cost": 0.314,
+            "effort_cost": 0.22,
+            "risk_cost": 0.352,
+            "total_cost": 0.886
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Salaried_Tier2_Cautious",
+      "variant": "urgent_need",
+      "exit_step": "Mobile + OTP",
+      "failure_reason": "Multi-factor failure",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.159,
+            "perceived_risk": 0.376,
+            "perceived_effort": 0.1,
+            "perceived_value": 0.422,
+            "perceived_control": 0.56
+          },
+          "costs": {
+            "cognitive_cost": 0.191,
+            "effort_cost": 0.0,
+            "risk_cost": 0.176,
+            "total_cost": 0.367
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.728,
+            "perceived_effort": 0.32,
+            "perceived_value": 0.455,
+            "perceived_control": 0.722
+          },
+          "costs": {
+            "cognitive_cost": 0.371,
+            "effort_cost": 0.22,
+            "risk_cost": 0.352,
+            "total_cost": 0.943
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Salaried_Tier2_Cautious",
+      "variant": "price_sensitive",
+      "exit_step": "Landing Page",
+      "failure_reason": "System 2 fatigue",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.224,
+            "perceived_risk": 0.476,
+            "perceived_effort": 0.2,
+            "perceived_value": 0.202,
+            "perceived_control": 0.431
+          },
+          "costs": {
+            "cognitive_cost": 0.176,
+            "effort_cost": 0.0,
+            "risk_cost": 0.176,
+            "total_cost": 0.352
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Salaried_Tier2_Cautious",
+      "variant": "tech_savvy_optimistic",
+      "exit_step": "KYC Document Upload",
+      "failure_reason": "Multi-factor failure",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.321,
+            "perceived_risk": 0.226,
+            "perceived_effort": 0.05,
+            "perceived_value": 0.334,
+            "perceived_control": 0.56
+          },
+          "costs": {
+            "cognitive_cost": 0.154,
+            "effort_cost": 0.0,
+            "risk_cost": 0.176,
+            "total_cost": 0.33
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.021,
+            "perceived_risk": 0.578,
+            "perceived_effort": 0.27,
+            "perceived_value": 0.367,
+            "perceived_control": 0.722
+          },
+          "costs": {
+            "cognitive_cost": 0.3,
+            "effort_cost": 0.22,
+            "risk_cost": 0.352,
+            "total_cost": 0.872
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 1.282,
+            "perceived_effort": 0.655,
+            "perceived_value": 0.405,
+            "perceived_control": 1.019
+          },
+          "costs": {
+            "cognitive_cost": 0.72,
+            "effort_cost": 0.385,
+            "risk_cost": 0.704,
+            "total_cost": 1.809
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Self_Employed_Trader_HighRisk",
+      "variant": "fresh_motivated",
+      "exit_step": "PAN + Bank Linking",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.326,
+            "perceived_risk": 0.254,
+            "perceived_effort": 0.1,
+            "perceived_value": 0.552,
+            "perceived_control": 0.772
+          },
+          "costs": {
+            "cognitive_cost": 0.151,
+            "effort_cost": 0.0,
+            "risk_cost": 0.154,
+            "total_cost": 0.305
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.035,
+            "perceived_risk": 0.562,
+            "perceived_effort": 0.264,
+            "perceived_value": 0.584,
+            "perceived_control": 1.078
+          },
+          "costs": {
+            "cognitive_cost": 0.291,
+            "effort_cost": 0.164,
+            "risk_cost": 0.308,
+            "total_cost": 0.763
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 1.178,
+            "perceived_effort": 0.551,
+            "perceived_value": 0.622,
+            "perceived_control": 1.639
+          },
+          "costs": {
+            "cognitive_cost": 0.695,
+            "effort_cost": 0.287,
+            "risk_cost": 0.616,
+            "total_cost": 1.598
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.797,
+            "perceived_value": 0.785,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.576,
+            "effort_cost": 0.246,
+            "risk_cost": 2.156,
+            "total_cost": 2.978
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Self_Employed_Trader_HighRisk",
+      "variant": "tired_commuter",
+      "exit_step": "KYC Document Upload",
+      "failure_reason": "System 2 fatigue",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.053,
+            "perceived_risk": 0.354,
+            "perceived_effort": 0.3,
+            "perceived_value": 0.42,
+            "perceived_control": 0.668
+          },
+          "costs": {
+            "cognitive_cost": 0.212,
+            "effort_cost": 0.0,
+            "risk_cost": 0.154,
+            "total_cost": 0.366
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.662,
+            "perceived_effort": 0.464,
+            "perceived_value": 0.452,
+            "perceived_control": 0.974
+          },
+          "costs": {
+            "cognitive_cost": 0.409,
+            "effort_cost": 0.164,
+            "risk_cost": 0.308,
+            "total_cost": 0.881
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 1.278,
+            "perceived_effort": 0.751,
+            "perceived_value": 0.49,
+            "perceived_control": 1.535
+          },
+          "costs": {
+            "cognitive_cost": 0.72,
+            "effort_cost": 0.287,
+            "risk_cost": 0.616,
+            "total_cost": 1.623
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Self_Employed_Trader_HighRisk",
+      "variant": "distrustful_arrival",
+      "exit_step": "Mobile + OTP",
+      "failure_reason": "System 2 fatigue",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.258,
+            "perceived_risk": 0.554,
+            "perceived_effort": 0.2,
+            "perceived_value": 0.42,
+            "perceived_control": 0.564
+          },
+          "costs": {
+            "cognitive_cost": 0.166,
+            "effort_cost": 0.0,
+            "risk_cost": 0.154,
+            "total_cost": 0.32
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.862,
+            "perceived_effort": 0.364,
+            "perceived_value": 0.452,
+            "perceived_control": 0.87
+          },
+          "costs": {
+            "cognitive_cost": 0.32,
+            "effort_cost": 0.164,
+            "risk_cost": 0.308,
+            "total_cost": 0.792
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Self_Employed_Trader_HighRisk",
+      "variant": "browsing_casually",
+      "exit_step": "KYC Document Upload",
+      "failure_reason": "System 2 fatigue",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.326,
+            "perceived_risk": 0.254,
+            "perceived_effort": 0.2,
+            "perceived_value": 0.222,
+            "perceived_control": 0.72
+          },
+          "costs": {
+            "cognitive_cost": 0.151,
+            "effort_cost": 0.0,
+            "risk_cost": 0.154,
+            "total_cost": 0.305
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.035,
+            "perceived_risk": 0.562,
+            "perceived_effort": 0.364,
+            "perceived_value": 0.254,
+            "perceived_control": 1.026
+          },
+          "costs": {
+            "cognitive_cost": 0.291,
+            "effort_cost": 0.164,
+            "risk_cost": 0.308,
+            "total_cost": 0.763
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 1.178,
+            "perceived_effort": 0.651,
+            "perceived_value": 0.292,
+            "perceived_control": 1.587
+          },
+          "costs": {
+            "cognitive_cost": 0.695,
+            "effort_cost": 0.287,
+            "risk_cost": 0.616,
+            "total_cost": 1.598
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Self_Employed_Trader_HighRisk",
+      "variant": "urgent_need",
+      "exit_step": "PAN + Bank Linking",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.19,
+            "perceived_risk": 0.354,
+            "perceived_effort": 0.1,
+            "perceived_value": 0.618,
+            "perceived_control": 0.824
+          },
+          "costs": {
+            "cognitive_cost": 0.181,
+            "effort_cost": 0.0,
+            "risk_cost": 0.154,
+            "total_cost": 0.335
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.662,
+            "perceived_effort": 0.264,
+            "perceived_value": 0.65,
+            "perceived_control": 1.13
+          },
+          "costs": {
+            "cognitive_cost": 0.35,
+            "effort_cost": 0.164,
+            "risk_cost": 0.308,
+            "total_cost": 0.822
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 1.278,
+            "perceived_effort": 0.551,
+            "perceived_value": 0.688,
+            "perceived_control": 1.691
+          },
+          "costs": {
+            "cognitive_cost": 0.72,
+            "effort_cost": 0.287,
+            "risk_cost": 0.616,
+            "total_cost": 1.623
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.797,
+            "perceived_value": 0.851,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.576,
+            "effort_cost": 0.246,
+            "risk_cost": 2.156,
+            "total_cost": 2.978
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Self_Employed_Trader_HighRisk",
+      "variant": "price_sensitive",
+      "exit_step": "KYC Document Upload",
+      "failure_reason": "System 2 fatigue",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.258,
+            "perceived_risk": 0.454,
+            "perceived_effort": 0.2,
+            "perceived_value": 0.288,
+            "perceived_control": 0.668
+          },
+          "costs": {
+            "cognitive_cost": 0.166,
+            "effort_cost": 0.0,
+            "risk_cost": 0.154,
+            "total_cost": 0.32
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.762,
+            "perceived_effort": 0.364,
+            "perceived_value": 0.32,
+            "perceived_control": 0.974
+          },
+          "costs": {
+            "cognitive_cost": 0.32,
+            "effort_cost": 0.164,
+            "risk_cost": 0.308,
+            "total_cost": 0.792
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 1.378,
+            "perceived_effort": 0.651,
+            "perceived_value": 0.358,
+            "perceived_control": 1.535
+          },
+          "costs": {
+            "cognitive_cost": 0.72,
+            "effort_cost": 0.287,
+            "risk_cost": 0.616,
+            "total_cost": 1.623
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Self_Employed_Trader_HighRisk",
+      "variant": "tech_savvy_optimistic",
+      "exit_step": "PAN + Bank Linking",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.361,
+            "perceived_risk": 0.204,
+            "perceived_effort": 0.05,
+            "perceived_value": 0.486,
+            "perceived_control": 0.824
+          },
+          "costs": {
+            "cognitive_cost": 0.143,
+            "effort_cost": 0.0,
+            "risk_cost": 0.154,
+            "total_cost": 0.297
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.084,
+            "perceived_risk": 0.512,
+            "perceived_effort": 0.214,
+            "perceived_value": 0.518,
+            "perceived_control": 1.13
+          },
+          "costs": {
+            "cognitive_cost": 0.276,
+            "effort_cost": 0.164,
+            "risk_cost": 0.308,
+            "total_cost": 0.748
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 1.128,
+            "perceived_effort": 0.501,
+            "perceived_value": 0.556,
+            "perceived_control": 1.691
+          },
+          "costs": {
+            "cognitive_cost": 0.659,
+            "effort_cost": 0.287,
+            "risk_cost": 0.616,
+            "total_cost": 1.562
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.747,
+            "perceived_value": 0.719,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.576,
+            "effort_cost": 0.246,
+            "risk_cost": 2.156,
+            "total_cost": 2.978
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Rural_First_Time_User",
+      "variant": "fresh_motivated",
+      "exit_step": "Landing Page",
+      "failure_reason": "System 2 fatigue",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.29,
+            "perceived_effort": 0.1,
+            "perceived_value": 0.254,
+            "perceived_control": 0.22
+          },
+          "costs": {
+            "cognitive_cost": 0.265,
+            "effort_cost": 0.0,
+            "risk_cost": 0.19,
+            "total_cost": 0.455
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Rural_First_Time_User",
+      "variant": "tired_commuter",
+      "exit_step": "Landing Page",
+      "failure_reason": "System 2 fatigue",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.39,
+            "perceived_effort": 0.3,
+            "perceived_value": 0.194,
+            "perceived_control": 0.18
+          },
+          "costs": {
+            "cognitive_cost": 0.299,
+            "effort_cost": 0.0,
+            "risk_cost": 0.19,
+            "total_cost": 0.489
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Rural_First_Time_User",
+      "variant": "distrustful_arrival",
+      "exit_step": "Landing Page",
+      "failure_reason": "System 2 fatigue",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.59,
+            "perceived_effort": 0.2,
+            "perceived_value": 0.194,
+            "perceived_control": 0.14
+          },
+          "costs": {
+            "cognitive_cost": 0.274,
+            "effort_cost": 0.0,
+            "risk_cost": 0.19,
+            "total_cost": 0.464
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Rural_First_Time_User",
+      "variant": "browsing_casually",
+      "exit_step": "Landing Page",
+      "failure_reason": "System 2 fatigue",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.29,
+            "perceived_effort": 0.2,
+            "perceived_value": 0.104,
+            "perceived_control": 0.2
+          },
+          "costs": {
+            "cognitive_cost": 0.265,
+            "effort_cost": 0.0,
+            "risk_cost": 0.19,
+            "total_cost": 0.455
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Rural_First_Time_User",
+      "variant": "urgent_need",
+      "exit_step": "Landing Page",
+      "failure_reason": "System 2 fatigue",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.39,
+            "perceived_effort": 0.1,
+            "perceived_value": 0.284,
+            "perceived_control": 0.24
+          },
+          "costs": {
+            "cognitive_cost": 0.282,
+            "effort_cost": 0.0,
+            "risk_cost": 0.19,
+            "total_cost": 0.472
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Rural_First_Time_User",
+      "variant": "price_sensitive",
+      "exit_step": "Landing Page",
+      "failure_reason": "System 2 fatigue",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.49,
+            "perceived_effort": 0.2,
+            "perceived_value": 0.134,
+            "perceived_control": 0.18
+          },
+          "costs": {
+            "cognitive_cost": 0.274,
+            "effort_cost": 0.0,
+            "risk_cost": 0.19,
+            "total_cost": 0.464
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Rural_First_Time_User",
+      "variant": "tech_savvy_optimistic",
+      "exit_step": "Mobile + OTP",
+      "failure_reason": "System 2 fatigue",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.24,
+            "perceived_effort": 0.05,
+            "perceived_value": 0.224,
+            "perceived_control": 0.24
+          },
+          "costs": {
+            "cognitive_cost": 0.261,
+            "effort_cost": 0.0,
+            "risk_cost": 0.19,
+            "total_cost": 0.451
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.62,
+            "perceived_effort": 0.35,
+            "perceived_value": 0.245,
+            "perceived_control": 0.3
+          },
+          "costs": {
+            "cognitive_cost": 0.513,
+            "effort_cost": 0.3,
+            "risk_cost": 0.38,
+            "total_cost": 1.193
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Urban_Professional_Optimizer",
+      "variant": "fresh_motivated",
+      "exit_step": "Completed",
+      "failure_reason": null,
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.768,
+            "perceived_risk": 0.226,
+            "perceived_effort": 0.1,
+            "perceived_value": 0.809,
+            "perceived_control": 1.169
+          },
+          "costs": {
+            "cognitive_cost": 0.042,
+            "effort_cost": 0.0,
+            "risk_cost": 0.126,
+            "total_cost": 0.168
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.692,
+            "perceived_risk": 0.478,
+            "perceived_effort": 0.14,
+            "perceived_value": 0.886,
+            "perceived_control": 1.613
+          },
+          "costs": {
+            "cognitive_cost": 0.076,
+            "effort_cost": 0.04,
+            "risk_cost": 0.252,
+            "total_cost": 0.368
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.522,
+            "perceived_risk": 0.982,
+            "perceived_effort": 0.21,
+            "perceived_value": 0.958,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.17,
+            "effort_cost": 0.07,
+            "risk_cost": 0.504,
+            "total_cost": 0.744
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.312,
+            "perceived_risk": 2.746,
+            "perceived_effort": 0.27,
+            "perceived_value": 1.211,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.21,
+            "effort_cost": 0.06,
+            "risk_cost": 1.764,
+            "total_cost": 2.034
+          },
+          "dropped": false
+        },
+        {
+          "step": "Consent + Terms",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.29,
+            "perceived_value": 1.425,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.454,
+            "effort_cost": 0.02,
+            "risk_cost": 0.378,
+            "total_cost": 0.852
+          },
+          "dropped": false
+        },
+        {
+          "step": "First Transaction",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.32,
+            "perceived_value": 2.425,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.33,
+            "effort_cost": 0.03,
+            "risk_cost": 0.252,
+            "total_cost": 0.612
+          },
+          "dropped": false
+        }
+      ]
+    },
+    {
+      "persona_name": "Urban_Professional_Optimizer",
+      "variant": "tired_commuter",
+      "exit_step": "PAN + Bank Linking",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.329,
+            "perceived_risk": 0.326,
+            "perceived_effort": 0.3,
+            "perceived_value": 0.625,
+            "perceived_control": 1.004
+          },
+          "costs": {
+            "cognitive_cost": 0.121,
+            "effort_cost": 0.0,
+            "risk_cost": 0.126,
+            "total_cost": 0.247
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.108,
+            "perceived_risk": 0.578,
+            "perceived_effort": 0.34,
+            "perceived_value": 0.702,
+            "perceived_control": 1.449
+          },
+          "costs": {
+            "cognitive_cost": 0.221,
+            "effort_cost": 0.04,
+            "risk_cost": 0.252,
+            "total_cost": 0.513
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 1.082,
+            "perceived_effort": 0.41,
+            "perceived_value": 0.774,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.491,
+            "effort_cost": 0.07,
+            "risk_cost": 0.504,
+            "total_cost": 1.065
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 2.846,
+            "perceived_effort": 0.47,
+            "perceived_value": 1.027,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.44,
+            "effort_cost": 0.06,
+            "risk_cost": 1.764,
+            "total_cost": 2.264
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Urban_Professional_Optimizer",
+      "variant": "distrustful_arrival",
+      "exit_step": "PAN + Bank Linking",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.658,
+            "perceived_risk": 0.526,
+            "perceived_effort": 0.2,
+            "perceived_value": 0.625,
+            "perceived_control": 0.839
+          },
+          "costs": {
+            "cognitive_cost": 0.062,
+            "effort_cost": 0.0,
+            "risk_cost": 0.126,
+            "total_cost": 0.188
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.546,
+            "perceived_risk": 0.778,
+            "perceived_effort": 0.24,
+            "perceived_value": 0.702,
+            "perceived_control": 1.284
+          },
+          "costs": {
+            "cognitive_cost": 0.113,
+            "effort_cost": 0.04,
+            "risk_cost": 0.252,
+            "total_cost": 0.405
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.296,
+            "perceived_risk": 1.282,
+            "perceived_effort": 0.31,
+            "perceived_value": 0.774,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.25,
+            "effort_cost": 0.07,
+            "risk_cost": 0.504,
+            "total_cost": 0.824
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.37,
+            "perceived_value": 1.027,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.31,
+            "effort_cost": 0.06,
+            "risk_cost": 1.764,
+            "total_cost": 2.134
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Urban_Professional_Optimizer",
+      "variant": "browsing_casually",
+      "exit_step": "PAN + Bank Linking",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.768,
+            "perceived_risk": 0.226,
+            "perceived_effort": 0.2,
+            "perceived_value": 0.349,
+            "perceived_control": 1.087
+          },
+          "costs": {
+            "cognitive_cost": 0.042,
+            "effort_cost": 0.0,
+            "risk_cost": 0.126,
+            "total_cost": 0.168
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.692,
+            "perceived_risk": 0.478,
+            "perceived_effort": 0.24,
+            "perceived_value": 0.426,
+            "perceived_control": 1.531
+          },
+          "costs": {
+            "cognitive_cost": 0.076,
+            "effort_cost": 0.04,
+            "risk_cost": 0.252,
+            "total_cost": 0.368
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.522,
+            "perceived_risk": 0.982,
+            "perceived_effort": 0.31,
+            "perceived_value": 0.498,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.17,
+            "effort_cost": 0.07,
+            "risk_cost": 0.504,
+            "total_cost": 0.744
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.312,
+            "perceived_risk": 2.746,
+            "perceived_effort": 0.37,
+            "perceived_value": 0.751,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.21,
+            "effort_cost": 0.06,
+            "risk_cost": 1.764,
+            "total_cost": 2.034
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Urban_Professional_Optimizer",
+      "variant": "urgent_need",
+      "exit_step": "Completed",
+      "failure_reason": null,
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.549,
+            "perceived_risk": 0.326,
+            "perceived_effort": 0.1,
+            "perceived_value": 0.901,
+            "perceived_control": 1.252
+          },
+          "costs": {
+            "cognitive_cost": 0.081,
+            "effort_cost": 0.0,
+            "risk_cost": 0.126,
+            "total_cost": 0.207
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.4,
+            "perceived_risk": 0.578,
+            "perceived_effort": 0.14,
+            "perceived_value": 0.978,
+            "perceived_control": 1.696
+          },
+          "costs": {
+            "cognitive_cost": 0.149,
+            "effort_cost": 0.04,
+            "risk_cost": 0.252,
+            "total_cost": 0.441
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.069,
+            "perceived_risk": 1.082,
+            "perceived_effort": 0.21,
+            "perceived_value": 1.05,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.33,
+            "effort_cost": 0.07,
+            "risk_cost": 0.504,
+            "total_cost": 0.904
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 2.846,
+            "perceived_effort": 0.27,
+            "perceived_value": 1.303,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.409,
+            "effort_cost": 0.06,
+            "risk_cost": 1.764,
+            "total_cost": 2.233
+          },
+          "dropped": false
+        },
+        {
+          "step": "Consent + Terms",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.29,
+            "perceived_value": 1.517,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.66,
+            "effort_cost": 0.02,
+            "risk_cost": 0.378,
+            "total_cost": 1.058
+          },
+          "dropped": false
+        },
+        {
+          "step": "First Transaction",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.32,
+            "perceived_value": 2.517,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.33,
+            "effort_cost": 0.03,
+            "risk_cost": 0.252,
+            "total_cost": 0.612
+          },
+          "dropped": false
+        }
+      ]
+    },
+    {
+      "persona_name": "Urban_Professional_Optimizer",
+      "variant": "price_sensitive",
+      "exit_step": "PAN + Bank Linking",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.658,
+            "perceived_risk": 0.426,
+            "perceived_effort": 0.2,
+            "perceived_value": 0.441,
+            "perceived_control": 1.004
+          },
+          "costs": {
+            "cognitive_cost": 0.062,
+            "effort_cost": 0.0,
+            "risk_cost": 0.126,
+            "total_cost": 0.188
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.546,
+            "perceived_risk": 0.678,
+            "perceived_effort": 0.24,
+            "perceived_value": 0.518,
+            "perceived_control": 1.449
+          },
+          "costs": {
+            "cognitive_cost": 0.113,
+            "effort_cost": 0.04,
+            "risk_cost": 0.252,
+            "total_cost": 0.405
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.296,
+            "perceived_risk": 1.182,
+            "perceived_effort": 0.31,
+            "perceived_value": 0.59,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.25,
+            "effort_cost": 0.07,
+            "risk_cost": 0.504,
+            "total_cost": 0.824
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 2.946,
+            "perceived_effort": 0.37,
+            "perceived_value": 0.843,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.31,
+            "effort_cost": 0.06,
+            "risk_cost": 1.764,
+            "total_cost": 2.134
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Urban_Professional_Optimizer",
+      "variant": "tech_savvy_optimistic",
+      "exit_step": "Consent + Terms",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing Page",
+          "state": {
+            "cognitive_energy": 0.823,
+            "perceived_risk": 0.176,
+            "perceived_effort": 0.05,
+            "perceived_value": 0.717,
+            "perceived_control": 1.252
+          },
+          "costs": {
+            "cognitive_cost": 0.032,
+            "effort_cost": 0.0,
+            "risk_cost": 0.126,
+            "total_cost": 0.158
+          },
+          "dropped": false
+        },
+        {
+          "step": "Mobile + OTP",
+          "state": {
+            "cognitive_energy": 0.765,
+            "perceived_risk": 0.428,
+            "perceived_effort": 0.09,
+            "perceived_value": 0.794,
+            "perceived_control": 1.696
+          },
+          "costs": {
+            "cognitive_cost": 0.058,
+            "effort_cost": 0.04,
+            "risk_cost": 0.252,
+            "total_cost": 0.35
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC Document Upload",
+          "state": {
+            "cognitive_energy": 0.635,
+            "perceived_risk": 0.932,
+            "perceived_effort": 0.16,
+            "perceived_value": 0.866,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.129,
+            "effort_cost": 0.07,
+            "risk_cost": 0.504,
+            "total_cost": 0.703
+          },
+          "dropped": false
+        },
+        {
+          "step": "PAN + Bank Linking",
+          "state": {
+            "cognitive_energy": 0.475,
+            "perceived_risk": 2.696,
+            "perceived_effort": 0.22,
+            "perceived_value": 1.119,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.16,
+            "effort_cost": 0.06,
+            "risk_cost": 1.764,
+            "total_cost": 1.984
+          },
+          "dropped": false
+        },
+        {
+          "step": "Consent + Terms",
+          "state": {
+            "cognitive_energy": 0.128,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.24,
+            "perceived_value": 1.333,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.347,
+            "effort_cost": 0.02,
+            "risk_cost": 0.378,
+            "total_cost": 0.745
+          },
+          "dropped": true
+        }
+      ]
+    }
+  ]
+}

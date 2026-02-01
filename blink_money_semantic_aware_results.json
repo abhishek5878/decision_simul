@@ -1,0 +1,143 @@
+{
+  "simulation_type": "semantic_aware_behavioral_engine",
+  "product": "Blink Money (Credit against Mutual Funds)",
+  "timestamp": "2025-12-30T02:47:04.170780",
+  "total_personas": 1000,
+  "total_trajectories": 7000,
+  "overall_completion_rate": 0.027285714285714285,
+  "total_semantic_mismatches": 0,
+  "intent_distribution": {
+    "compare_options": 0.04127612004471579,
+    "validate_choice": 0.12073265113079372,
+    "learn_basics": 0.011178949178777195,
+    "quick_decision": 0.24765672026829474,
+    "price_check": 0.04815547338550175,
+    "eligibility_check": 0.5310000859919167
+  },
+  "semantic_insights": {
+    "Smart Credit against Mutual Funds": {
+      "avg_alignment_score": 0.9715142857142551,
+      "drop_rate": 0.5992857142857143,
+      "conflict_axes": {
+        "choice_availability": 309
+      },
+      "total_analyzed": 7000
+    },
+    "Check Your Eligibility - Mobile Number": {
+      "avg_alignment_score": 0.9688413547237237,
+      "drop_rate": 0.7547237076648842,
+      "conflict_axes": {
+        "choice_availability": 57
+      },
+      "total_analyzed": 2805
+    },
+    "Check Limit - PAN and DOB": {
+      "avg_alignment_score": 0.9763081395348806,
+      "drop_rate": 0.7223837209302325,
+      "conflict_axes": {
+        "choice_availability": 5
+      },
+      "total_analyzed": 688
+    }
+  },
+  "step_semantic_data": {
+    "Smart Credit against Mutual Funds": {
+      "drops": 4195,
+      "continues": 2805,
+      "drop_rate": 0.5992857142857143,
+      "sample_semantic_profile": {
+        "visual_load": 0.5,
+        "perceived_effort": 0.35,
+        "choice_overload": 0.2,
+        "trust_signal": 0.5,
+        "urgency": 0.3,
+        "reversibility": 0.7,
+        "implied_user_knowledge": "medium",
+        "intent_shift": {
+          "validate": 0.2,
+          "speed": 0.39999999999999997
+        },
+        "emotional_deltas": {},
+        "inferred_psychological_promises": [
+          "fast"
+        ],
+        "inferred_risks": [],
+        "extraction_confidence": 0.8,
+        "extraction_method": "rule_based"
+      },
+      "sample_alignment_result": {
+        "intent_alignment_score": 0.9,
+        "conflict_axes": [],
+        "predicted_effect": "decrease_drop_probability",
+        "semantic_reason": "User expects urgency but step doesn't signal it",
+        "friction_delta": 0.0
+      }
+    },
+    "Check Your Eligibility - Mobile Number": {
+      "drops": 2117,
+      "continues": 688,
+      "drop_rate": 0.7547237076648842,
+      "sample_semantic_profile": {
+        "visual_load": 0.5,
+        "perceived_effort": 0.35,
+        "choice_overload": 0.2,
+        "trust_signal": 0.5,
+        "urgency": 0.3,
+        "reversibility": 0.7,
+        "implied_user_knowledge": "medium",
+        "intent_shift": {},
+        "emotional_deltas": {},
+        "inferred_psychological_promises": [],
+        "inferred_risks": [],
+        "extraction_confidence": 0.8,
+        "extraction_method": "rule_based"
+      },
+      "sample_alignment_result": {
+        "intent_alignment_score": 0.9,
+        "conflict_axes": [],
+        "predicted_effect": "decrease_drop_probability",
+        "semantic_reason": "User expects urgency but step doesn't signal it",
+        "friction_delta": 0.0
+      }
+    },
+    "Check Limit - PAN and DOB": {
+      "drops": 497,
+      "continues": 191,
+      "drop_rate": 0.7223837209302325,
+      "sample_semantic_profile": {
+        "visual_load": 0.5,
+        "perceived_effort": 0.35,
+        "choice_overload": 0.2,
+        "trust_signal": 0.5,
+        "urgency": 0.3,
+        "reversibility": 0.7,
+        "implied_user_knowledge": "medium",
+        "intent_shift": {
+          "validate": 0.2
+        },
+        "emotional_deltas": {},
+        "inferred_psychological_promises": [],
+        "inferred_risks": [],
+        "extraction_confidence": 0.8,
+        "extraction_method": "rule_based"
+      },
+      "sample_alignment_result": {
+        "intent_alignment_score": 0.9,
+        "conflict_axes": [],
+        "predicted_effect": "decrease_drop_probability",
+        "semantic_reason": "User expects urgency but step doesn't signal it",
+        "friction_delta": 0.0
+      }
+    }
+  },
+  "failure_reasons": {
+    "Loss aversion": 604,
+    "System 2 fatigue": 6205
+  },
+  "exit_steps": {
+    "Check Limit - PAN and DOB": 497,
+    "Check Your Eligibility - Mobile Number": 2117,
+    "Smart Credit against Mutual Funds": 4195,
+    "Completed": 191
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "simulation_type": "improved_behavioral_engine",
+  "product": "Credigo.club",
+  "timestamp": "2025-12-29T23:33:27.625138",
+  "total_personas": 1000,
+  "total_trajectories": 7000,
+  "overall_completion_rate": 0.15185714285714286,
+  "funnel_analysis": {
+    "Find the Best Credit Card In 60 seconds": {
+      "entered": 7000,
+      "exited": 3593,
+      "drop_rate": 51.32857142857142
+    },
+    "What kind of perks excite you the most?": {
+      "entered": 3407,
+      "exited": 1676,
+      "drop_rate": 49.19283827414148
+    },
+    "Any preference on annual fee?": {
+      "entered": 1731,
+      "exited": 407,
+      "drop_rate": 23.512420566146737
+    },
+    "straightforward + options are clearly defined": {
+      "entered": 1324,
+      "exited": 9,
+      "drop_rate": 0.6797583081570997
+    },
+    "Your top 2 spend categories?": {
+      "entered": 1315,
+      "exited": 76,
+      "drop_rate": 5.779467680608365
+    },
+    "Do you track your monthly spending?": {
+      "entered": 1239,
+      "exited": 94,
+      "drop_rate": 7.586763518966909
+    },
+    "How much do you spend monthly?": {
+      "entered": 1145,
+      "exited": 24,
+      "drop_rate": 2.096069868995633
+    },
+    "Do you have any existing credit cards?": {
+      "entered": 1121,
+      "exited": 57,
+      "drop_rate": 5.084745762711865
+    },
+    "Help us personalise your card matches": {
+      "entered": 1064,
+      "exited": 0,
+      "drop_rate": 0.0
+    },
+    "Step 1 of 11": {
+      "entered": 1064,
+      "exited": 1,
+      "drop_rate": 0.09398496240601503
+    },
+    "Best Deals for You \u2013 Apply Now": {
+      "entered": 1063,
+      "exited": 0,
+      "drop_rate": 0.0
+    }
+  },
+  "failure_reasons": {
+    "System 2 fatigue": 5935,
+    "Loss aversion": 2
+  },
+  "exit_steps": {
+    "What kind of perks excite you the most?": 1676,
+    "Find the Best Credit Card In 60 seconds": 3593,
+    "Any preference on annual fee?": 407,
+    "Your top 2 spend categories?": 76,
+    "straightforward + options are clearly defined": 9,
+    "Completed": 1063,
+    "Do you track your monthly spending?": 94,
+    "Do you have any existing credit cards?": 57,
+    "How much do you spend monthly?": 24,
+    "Step 1 of 11": 1
+  },
+  "energy_recovery": {
+    "total_events": 515,
+    "recovery_rate": 3.5583500310923792,
+    "by_step": {
+      "Step 1 of 11": 497,
+      "Best Deals for You \u2013 Apply Now": 18
+    }
+  },
+  "persona_variance": {
+    "mean": 0.15185714285714283,
+    "median": 0.14285714285714285,
+    "std_dev": 0.14077272173142588,
+    "min": 0.0,
+    "max": 0.8571428571428571
+  }
+}

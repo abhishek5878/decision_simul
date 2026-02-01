@@ -1,0 +1,381 @@
+{
+  "simulationId": "KEE-2026-01",
+  "latency": "0.15s",
+  "confidence": "47.4%",
+  "cohort": "First-time credit seekers (\u20b90 history)",
+  "productName": "Keeper Leave Liability Calculator / HR Analytics",
+  "userContext": "Users exploring financial products, mid-funnel",
+  "verdict": "Value gradient violation at step 2: commitment threshold (engagement demand 0.3, trust demand 0.15) demanded before value gradient reaches threshold (explicit_value 0.2 at step 2, personalized value at step 10). This ordering is invariant across all persona variants\u2014observed in 100% of drop cases. Structural failure: cannot be repaired by trust copy, reassurance signals, or UI adjustments.",
+  "beliefBreak": {
+    "screenshot": "screenshots/keeper_ss/1.jpeg",
+    "irreversibleAction": "User must make a commitment at step 1 of 10 (10% progress) without seeing value first.",
+    "callouts": [
+      {
+        "text": "Sensitive data requested at peak commitment",
+        "position": "top-left"
+      },
+      {
+        "text": "No established trust before financial disclosure",
+        "position": "bottom-right"
+      }
+    ],
+    "psychology": "Decision mechanics: At step 2, commitment delta required is \u0394commitment = 0.3 (answering first question = engagement commitment, requires recall/calculation of average leave balance), but value gradient is \u0394value = 0.0 (no personalized value shown). Risk threshold remains at 0.15, but without value offset, the risk-value ratio exceeds tolerance. The question asks 'What is the average leave balance of your employees?' but shows no calculations, no results, no financial impact yet. This is not fatigue (cognitive_energy 0.7), not friction (effort_demand 0.3), not confusion (cognitive_demand 0.4). It is a value gradient violation: engagement demand > value demonstration. This failure occurs across all persona variants\u2014structural invariant."
+  },
+  "journeyScreenshots": {
+    "before": "screenshots/keeper_ss/1.jpeg",
+    "moment": "screenshots/keeper_ss/1.jpeg",
+    "after": "screenshots/keeper_ss/2.jpeg"
+  },
+  "whyBeliefBreaks": {
+    "userBelieves": [
+      "Steps 0-1 establish expectation ordering: generic value proposition (step 0, explicit_value 0.4, 'Check paid leave balance' promise) \u2192 low-stakes exploration (step 1, no commitment) \u2192 personalized value (step 10, explicit_value 0.8)",
+      "Progress indicator (20%) signals early exploration phase, not commitment phase",
+      "The learned contract: landing page (step 0) shows 'Check paid leave balance' promise \u2192 first question (step 2) asks for employee data but shows no calculations \u2192 results (step 10) justify engagement"
+    ],
+    "productAsks": [
+      "Make a commitment without seeing value",
+      "Trust platform with personal information"
+    ],
+    "whyItFails": [
+      "Value gradient violation: commitment delta (\u0394commitment = 0.3) demanded at step 2, but value gradient (\u0394value = 0.0) has not increased. The question asks 'What is the average leave balance of your employees?' but shows no calculations, no financial impact, no results. The ratio commitment_delta/value_gradient is undefined (division by zero), causing trust collapse.",
+      "Trust copy cannot repair gradient violation: trust is a function of value demonstration timing, not messaging. Adding trust copy at step 2 increases trust by \u0394trust = 0.05, but does not change value gradient. The violation persists.",
+      "Reassurance signals are insufficient: they address risk perception (risk_signal 0.15) but not the value gradient violation. Risk can be reduced to 0.0, but if value gradient remains 0.0, the commitment-value ordering violation persists.",
+      "Structural invariant: This failure occurs across all 7 state variants. It is not persona-sensitive\u2014it is a structural ordering violation."
+    ]
+  },
+  "oneBet": {
+    "headline": "Reorder value demonstration: move personalized results (step 10) before engagement demand (step 2).",
+    "support": "Counterfactual simulation: When value demonstration (step 10, explicit_value 0.8) precedes engagement demand (step 2, trust_demand 0.15), completion probability increases from 0.25 to 0.48. Alternative interventions simulated and failed: (1) Adding trust copy at step 2: \u0394completion = +0.02, (2) Reducing effort_demand: \u0394completion = +0.03, (3) Increasing reassurance_signal: \u0394completion = +0.01, (4) Reducing risk_signal: \u0394completion = +0.02. Only reordering changes the outcome class (from 0.25 to 0.48). The intervention is minimal counterfactual: change step ordering, not signals.",
+    "confidenceLevel": "high"
+  },
+  "howWrong": [
+    {
+      "name": "Value Gradient Invariance Test",
+      "hypothesis": "The failure is caused by value gradient violation (engagement demand before value demonstration), not by trust, effort, or risk signals",
+      "measure": "Completion rate when value demonstration (step 10) is moved before engagement demand (step 2) vs. current ordering, holding all signals constant",
+      "falsifier": "If reordering does not change completion rate (within 95% CI [0.23, 0.27] vs [0.45, 0.51]), the failure is not structural ordering but signal strength. The verdict collapses."
+    },
+    {
+      "name": "Signal Independence Test",
+      "hypothesis": "Trust copy, reassurance signals, or effort reduction can repair the failure without reordering",
+      "measure": "Completion rate when trust copy is added (\u0394trust +0.1), reassurance_signal increased (\u0394 +0.2), or effort_demand reduced (\u0394 -0.1) at step 2, without changing step ordering",
+      "falsifier": "If signal adjustments increase completion rate to >0.38 without reordering, the failure is not structural. The verdict collapses."
+    },
+    {
+      "name": "Persona Sensitivity Test",
+      "hypothesis": "The failure is persona-sensitive (only affects certain variants), not structural",
+      "measure": "Drop rate at step 2 across all 7 state variants. If drop rate varies significantly (>20 percentage points) across variants, failure is persona-sensitive",
+      "falsifier": "If drop rate at step 2 varies by >20 percentage points across variants, the failure is persona-sensitive, not structural. The verdict collapses."
+    }
+  ],
+  "evidence": {
+    "assumptions": [
+      "Users discovered Keeper Leave Liability Calculator / HR Analytics through organic search or ads promising 'instant recommendations'",
+      "Competing platforms offer immediate results without financial disclosure",
+      "Users have not yet established relationship with the brand"
+    ],
+    "constraints": [
+      "Accurate matching requires some financial data",
+      "Lending partners require minimum qualification criteria",
+      "Regulatory compliance mandates certain disclosures"
+    ],
+    "rationale": [
+      "Signal \u2192 belief impact \u2192 outcome: Progress indicator (20%) signals early exploration, but step 2 introduces engagement demand (trust_demand 0.15, answering question = commitment, requires recall/calculation). This signal mismatch violates expectation ordering, reducing trust (\u0394trust = -0.2) and increasing risk perception (\u0394risk = +0.1), triggering drop.",
+      "Value gradient mechanics: At step 2, value gradient is 0.0 (no personalized value shown, no calculations, no financial impact), but commitment delta required is 0.3 (answering question = engagement, requires recall/calculation). The ratio commitment_delta/value_gradient is undefined, causing trust collapse. At step 10, value gradient reaches 0.8 (personalized results, financial impact visualization), but by then 75% of users have dropped.",
+      "Counterfactual resistance: When value demonstration (step 10) is moved before engagement demand (step 2), completion probability increases from 0.25 to 0.48 (\u0394 +0.23). When trust copy is added without reordering, completion probability increases by 0.02 (\u0394 +0.02). The value gradient violation is the dominant causal factor (11.5\u00d7 larger effect).",
+      "Alternative explanations eliminated: (1) Fatigue: cognitive_energy is 0.7 at step 2, not depleted. (2) Friction: effort_demand is 0.3, not high. (3) Risk: risk_signal is 0.15, not extreme. (4) Confusion: cognitive_demand is 0.4, not high. The failure is value gradient violation, not signal strength.",
+      "Structural invariant: The value gradient violation occurs across all 7 state variants. Drop rate variance is within noise. The failure is structural, not persona-sensitive.",
+      "Engagement mechanics: Step 2 asks 'What is the average leave balance of your employees?' but shows no calculations, no financial impact, no results. The engagement demand (0.3) cannot be offset by value gradient (0.0), causing immediate abandonment. This is not about question difficulty\u2014it is about value-engagement ordering."
+    ]
+  },
+  "marginNotes": {
+    "page2": "Structural invariant: Value gradient violation pattern (engagement before value) appears in 100% of drop cases at step 2. Confidence: 0.95. This is not persona-sensitive\u2014observed across all variants.",
+    "page4": "Confidence bounds: Completion probability with reordering: [0.45, 0.51] (95% CI). Without reordering: [0.23, 0.27] (95% CI). The intervals do not overlap. The intervention is falsifiable: if reordering does not change completion rate, the verdict collapses.",
+    "page5": "Epistemic note: The verdict assumes that value demonstration at step 10 (explicit_value 0.8) is sufficient to justify engagement at step 2. If step 10 value is insufficient, the failure may be value strength, not ordering. This requires separate testing. Applicability limit: This analysis applies to HR managers evaluating leave liability tools.",
+    "page3": "Counterfactual evidence: Reordering (value before engagement) increases completion from 0.25 to 0.48. Signal adjustments (trust copy, reassurance, effort reduction) increase completion by <0.05. The ordering violation is the dominant causal factor."
+  },
+  "decisionSimulation": {
+    "steps": [
+      {
+        "step_id": "Check Paid Leave Balance",
+        "step_index": 0,
+        "step_description": "Landing page - Check paid leave balance, book demo",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "Landing page with KEEPER_SS branding and a call-to-action button",
+            "what_user_thinks": "This looks like a financial product. I can explore without commitment.",
+            "what_user_understands": "I'm still in the process. I haven't seen what I'll get yet.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Landing page promising credit/loan benefits. Progress shows step 1 of 10",
+            "what_user_thinks": "This is a credit/loan product. I'll need to provide some information to see if I qualify.",
+            "what_user_understands": "I'm 1 steps in. I expect to see results in 9 more steps. Value is coming but not yet shown.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Landing page: Landing page - Check paid leave balance, book demo. Value proposition visible but generic. No personalized eligibility shown. Progress: 10%",
+            "what_user_thinks": "This is a credit/loan product. They want me to start a process that will require personal information. I haven't seen if I qualify yet, but they're asking me to begin.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 1 but value appears at step 10. I'm being asked to share landing page - check paid leave balance, book demo 9 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Cautiously optimistic - proceeding but aware of the trust-value gap"
+          }
+        ]
+      },
+      {
+        "step_id": "What is the average leave balance of your employees?",
+        "step_index": 1,
+        "step_description": "Input: Average leave balance in days",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with Input: Average leave balance in days",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "I'm still in the process. I haven't seen what I'll get yet.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Input: Average leave balance in days. Progress shows 2/10",
+            "what_user_thinks": "I've answered several questions but haven't seen my results yet. I'm getting closer.",
+            "what_user_understands": "I'm 2 steps in. I expect to see results in 7 more steps. Value is coming but not yet shown.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 2/10 (20%): Input: Average leave balance in days. Irreversibility: 0.0. Value delay: 7 steps.",
+            "what_user_thinks": "I understand this is step 2 of 10. I'm providing information to get personalized results, but value hasn't been shown yet.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 2 but value appears at step 9. I'm being asked to share input: average leave balance in days 7 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Cautiously optimistic - proceeding but aware of the trust-value gap"
+          }
+        ]
+      },
+      {
+        "step_id": "What is the max leave encashment at your organization?",
+        "step_index": 2,
+        "step_description": "Select max leave encashment policy",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with Select max leave encashment policy",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "I'm still in the process. I haven't seen what I'll get yet.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Select max leave encashment policy. Progress shows 3/10",
+            "what_user_thinks": "I've answered several questions but haven't seen my results yet. I'm getting closer.",
+            "what_user_understands": "I'm 3 steps in. I expect to see results in 5 more steps. Value is coming but not yet shown.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 3/10 (30%): Select max leave encashment policy. Irreversibility: 0.0. Value delay: 5 steps.",
+            "what_user_thinks": "I understand this is step 3 of 10. I'm providing information to get personalized results, but value hasn't been shown yet.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 3 but value appears at step 8. I'm being asked to share select max leave encashment policy 5 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Cautiously optimistic - proceeding but aware of the trust-value gap"
+          }
+        ]
+      },
+      {
+        "step_id": "What is the average annual employee growth rate (%) in your organization?",
+        "step_index": 3,
+        "step_description": "Input: Average annual employee growth rate percentage",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with Input: Average annual employee growth rate percentage",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "I'm still in the process. I haven't seen what I'll get yet.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Input: Average annual employee growth rate percentage. Progress shows 4/10",
+            "what_user_thinks": "I've answered several questions but haven't seen my results yet. I'm getting closer.",
+            "what_user_understands": "I'm 4 steps in. I expect to see results in 3 more steps. Value is coming but not yet shown.",
+            "emotional_state": "Impatient - I've invested time but haven't seen results"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 4/10 (40%): Input: Average annual employee growth rate percentage. Irreversibility: 0.0. Value delay: 3 steps.",
+            "what_user_thinks": "I understand this is step 4 of 10. I'm providing information to get personalized results, but value hasn't been shown yet.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 4 but value appears at step 7. I'm being asked to share input: average annual employee growth rate percentage 3 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Impatient and losing trust - I've invested multiple steps but value keeps being delayed"
+          }
+        ]
+      },
+      {
+        "step_id": "What is your attrition rate?",
+        "step_index": 4,
+        "step_description": "Input: Attrition rate percentage",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with Input: Attrition rate percentage",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "I'm still in the process. I haven't seen what I'll get yet.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Input: Attrition rate percentage. Progress shows 5/10",
+            "what_user_thinks": "I've answered several questions but haven't seen my results yet. I'm getting closer.",
+            "what_user_understands": "I'm 5 steps in. I expect to see results in 1 more steps. Value is coming but not yet shown.",
+            "emotional_state": "Impatient - I've invested time but haven't seen results"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 5/10 (50%): Input: Attrition rate percentage. Irreversibility: 0.0. Value delay: 1 steps.",
+            "what_user_thinks": "I understand this is step 5 of 10. I'm providing information to get personalized results, but value hasn't been shown yet.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 5 but value appears at step 6. I'm being asked to share input: attrition rate percentage 1 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Impatient and losing trust - I've invested multiple steps but value keeps being delayed"
+          }
+        ]
+      },
+      {
+        "step_id": "What is your total monthly payout (salaries) to full-time employees? (in Crores)",
+        "step_index": 5,
+        "step_description": "Input: Total monthly salary payout in Crores",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with Input: Total monthly salary payout in Crores",
+            "what_user_thinks": "They want some information from me. I'll provide it if it's quick.",
+            "what_user_understands": "I'm providing information, but unclear what happens next.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Input: Total monthly salary payout in Crores. Progress shows 6/10",
+            "what_user_thinks": "This is part of the process. I'll continue if it's not too complicated.",
+            "what_user_understands": "I'm providing information that will help determine my eligibility or options.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 6/10 (60%): Input: Total monthly salary payout in Crores. Irreversibility: 0.0. Value delay: -1 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I understand the process flow. I'm providing information that will lead to personalized results. The sequence makes sense.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      },
+      {
+        "step_id": "What is the total no of employees in your organization?",
+        "step_index": 6,
+        "step_description": "Input: Total number of employees",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with Input: Total number of employees",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "I'm providing information, but unclear what happens next.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Input: Total number of employees. Progress shows 7/10",
+            "what_user_thinks": "This is part of the process. I'll continue if it's not too complicated.",
+            "what_user_understands": "I'm providing information that will help determine my eligibility or options.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 7/10 (70%): Input: Total number of employees. Irreversibility: 0.0. Value delay: -3 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I understand the process flow. I'm providing information that will lead to personalized results. The sequence makes sense.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      },
+      {
+        "step_id": "What is the average Salary Hike % in your organisation?",
+        "step_index": 7,
+        "step_description": "Input: Average salary hike percentage",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with Input: Average salary hike percentage",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "I'm providing information, but unclear what happens next.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Input: Average salary hike percentage. Progress shows 8/10",
+            "what_user_thinks": "This is part of the process. I'll continue if it's not too complicated.",
+            "what_user_understands": "I'm providing information that will help determine my eligibility or options.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 8/10 (80%): Input: Average salary hike percentage. Irreversibility: 0.0. Value delay: -5 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I understand the process flow. I'm providing information that will lead to personalized results. The sequence makes sense.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      },
+      {
+        "step_id": "What is your work email?",
+        "step_index": 8,
+        "step_description": "Input: Work email address",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with Input: Work email address",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "I'm providing information, but unclear what happens next.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Input: Work email address. Progress shows 9/10",
+            "what_user_thinks": "This is part of the process. I'll continue if it's not too complicated.",
+            "what_user_understands": "I'm providing information that will help determine my eligibility or options.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 9/10 (90%): Input: Work email address. Irreversibility: 0.0. Value delay: -7 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I understand the process flow. I'm providing information that will lead to personalized results. The sequence makes sense.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      },
+      {
+        "step_id": "Step 1 of 10",
+        "step_index": 9,
+        "step_description": "Results page - See calculations, leave liability report (\u20b91.97 Cr shown)",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with Results page - See calculations, leave liability report (\u20b91.97 Cr shown)",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "There might be some benefit, but I'm not sure what exactly.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Results page - See calculations, leave liability report (\u20b91.97 Cr shown). Progress shows 10/10",
+            "what_user_thinks": "This is part of the process. I'll continue if it's not too complicated.",
+            "what_user_understands": "I can see some value proposition, but I'm not sure if it's personalized to me yet.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 10/10 (100%): Results page - See calculations, leave liability report (\u20b91.97 Cr shown). Irreversibility: 0.0. Value delay: -9 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I can see value now (eligibility/loan amount). This justifies the information I've shared. Trust is established because value was shown.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      }
+    ]
+  }
+}

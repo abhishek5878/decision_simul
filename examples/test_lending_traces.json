@@ -1,0 +1,1295 @@
+{
+  "metadata": {
+    "scenario": "fintech_onboarding_demo",
+    "personas": 2,
+    "state_variants": 7,
+    "product_steps": 8,
+    "total_trajectories": 14
+  },
+  "personas": [
+    {
+      "name": "Young salaried professional",
+      "description": "mid SEC, metro, medium digital skill",
+      "raw_fields": {
+        "SEC": 0.5,
+        "UrbanRuralTier": 1.0,
+        "DigitalLiteracy": 0.6,
+        "FamilyInfluence": 0.2,
+        "AspirationalLevel": 0.8,
+        "PriceSensitivity": 0.5,
+        "RegionalCulture": 0.3,
+        "InfluencerTrust": 0.4,
+        "ProfessionalSector": 0.5,
+        "EnglishProficiency": 0.5,
+        "HobbyDiversity": 0.8,
+        "CareerAmbition": 0.8,
+        "AgeBucket": 0.9,
+        "GenderMarital": 0.7
+      },
+      "compiled_priors": {
+        "CC": 0.675,
+        "FR": 0.32999999999999996,
+        "RT": 0.8,
+        "LAM": 1.32,
+        "ET": 0.7000000000000001,
+        "TB": 0.67,
+        "DR": 0.44,
+        "CN": 0.2,
+        "MS": 0.85
+      }
+    },
+    {
+      "name": "Middle-aged salaried professional",
+      "description": "mid SEC, tier2, medium digital skill",
+      "raw_fields": {
+        "SEC": 0.5,
+        "UrbanRuralTier": 0.4,
+        "DigitalLiteracy": 0.6,
+        "FamilyInfluence": 0.2,
+        "AspirationalLevel": 0.5,
+        "PriceSensitivity": 0.5,
+        "RegionalCulture": 0.5,
+        "InfluencerTrust": 0.4,
+        "ProfessionalSector": 0.5,
+        "EnglishProficiency": 0.5,
+        "HobbyDiversity": 0.4,
+        "CareerAmbition": 0.5,
+        "AgeBucket": 0.5,
+        "GenderMarital": 0.7
+      },
+      "compiled_priors": {
+        "CC": 0.515,
+        "FR": 0.45000000000000007,
+        "RT": 0.8,
+        "LAM": 1.32,
+        "ET": 0.52,
+        "TB": 0.43000000000000005,
+        "DR": 0.5,
+        "CN": 0.37,
+        "MS": 0.85
+      }
+    }
+  ],
+  "state_variants": {
+    "fresh_motivated": {
+      "cognitive_energy_mult": 0.9,
+      "perceived_value": 0.8,
+      "perceived_risk": 0.1,
+      "perceived_effort": 0.1,
+      "perceived_control": 0.7,
+      "description": "Fresh arrival, high motivation"
+    },
+    "tired_commuter": {
+      "cognitive_energy_mult": 0.5,
+      "perceived_value": 0.6,
+      "perceived_risk": 0.2,
+      "perceived_effort": 0.3,
+      "perceived_control": 0.5,
+      "description": "Tired, lower energy"
+    },
+    "distrustful_arrival": {
+      "cognitive_energy_mult": 0.8,
+      "perceived_value": 0.6,
+      "perceived_risk": 0.4,
+      "perceived_effort": 0.2,
+      "perceived_control": 0.3,
+      "description": "Arrives with trust concerns"
+    },
+    "browsing_casually": {
+      "cognitive_energy_mult": 0.9,
+      "perceived_value": 0.3,
+      "perceived_risk": 0.1,
+      "perceived_effort": 0.2,
+      "perceived_control": 0.6,
+      "description": "Low urgency, exploring"
+    },
+    "urgent_need": {
+      "cognitive_energy_mult": 0.7,
+      "perceived_value": 0.9,
+      "perceived_risk": 0.2,
+      "perceived_effort": 0.1,
+      "perceived_control": 0.8,
+      "description": "High urgency, strong motivation"
+    },
+    "price_sensitive": {
+      "cognitive_energy_mult": 0.8,
+      "perceived_value": 0.4,
+      "perceived_risk": 0.3,
+      "perceived_effort": 0.2,
+      "perceived_control": 0.5,
+      "description": "Highly price-conscious"
+    },
+    "tech_savvy_optimistic": {
+      "cognitive_energy_mult": 0.95,
+      "perceived_value": 0.7,
+      "perceived_risk": 0.05,
+      "perceived_effort": 0.05,
+      "perceived_control": 0.8,
+      "description": "High digital literacy, optimistic"
+    }
+  },
+  "product_steps": {
+    "Landing page": {
+      "name": "Landing page",
+      "description": "landing step: Landing page",
+      "cognitive_demand": 0.2,
+      "effort_demand": 0.2,
+      "risk_signal": 0.1,
+      "irreversibility": 0,
+      "delay_to_value": 2,
+      "explicit_value": 0.8,
+      "reassurance_signal": 0.5,
+      "authority_signal": 0.5
+    },
+    "Phone verification": {
+      "name": "Phone verification",
+      "description": "signup step: Phone verification",
+      "cognitive_demand": 0.2,
+      "effort_demand": 0.5,
+      "risk_signal": 0.1,
+      "irreversibility": 0,
+      "delay_to_value": 2,
+      "explicit_value": 0.2,
+      "reassurance_signal": 0.5,
+      "authority_signal": 0.2
+    },
+    "KYC": {
+      "name": "KYC",
+      "description": "kyc step: KYC",
+      "cognitive_demand": 0.8,
+      "effort_demand": 0.8,
+      "risk_signal": 0.4,
+      "irreversibility": 0,
+      "delay_to_value": 4,
+      "explicit_value": 0.5,
+      "reassurance_signal": 0.7,
+      "authority_signal": 0.7
+    },
+    "Loan agreement": {
+      "name": "Loan agreement",
+      "description": "consent step: Loan agreement",
+      "cognitive_demand": 0.5,
+      "effort_demand": 0.5,
+      "risk_signal": 0.8,
+      "irreversibility": 1,
+      "delay_to_value": 4,
+      "explicit_value": 0.8,
+      "reassurance_signal": 0.7,
+      "authority_signal": 0.7
+    },
+    "Disbursement": {
+      "name": "Disbursement",
+      "description": "payment step: Disbursement",
+      "cognitive_demand": 0.2,
+      "effort_demand": 0.2,
+      "risk_signal": 0.6,
+      "irreversibility": 1,
+      "delay_to_value": 0,
+      "explicit_value": 0.8,
+      "reassurance_signal": 0.7,
+      "authority_signal": 0.5
+    },
+    "Income verification": {
+      "name": "Income verification",
+      "description": "other step: Income verification",
+      "cognitive_demand": 0.5,
+      "effort_demand": 0.8,
+      "risk_signal": 0.4,
+      "irreversibility": 0,
+      "delay_to_value": 4,
+      "explicit_value": 0.5,
+      "reassurance_signal": 0.5,
+      "authority_signal": 0.5
+    },
+    "Credit check": {
+      "name": "Credit check",
+      "description": "other step: Credit check",
+      "cognitive_demand": 0.2,
+      "effort_demand": 0.2,
+      "risk_signal": 0.8,
+      "irreversibility": 1,
+      "delay_to_value": 4,
+      "explicit_value": 0.5,
+      "reassurance_signal": 0.5,
+      "authority_signal": 0.5
+    },
+    "Bank account linking": {
+      "name": "Bank account linking",
+      "description": "other step: Bank account linking",
+      "cognitive_demand": 0.5,
+      "effort_demand": 0.5,
+      "risk_signal": 0.8,
+      "irreversibility": 1,
+      "delay_to_value": 4,
+      "explicit_value": 0.8,
+      "reassurance_signal": 0.5,
+      "authority_signal": 0.5
+    }
+  },
+  "trajectories": [
+    {
+      "persona_name": "Young salaried professional",
+      "variant": "fresh_motivated",
+      "exit_step": "Loan agreement",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing page",
+          "state": {
+            "cognitive_energy": 0.503,
+            "perceived_risk": 0.232,
+            "perceived_effort": 0.16,
+            "perceived_value": 1.012,
+            "perceived_control": 1.269
+          },
+          "costs": {
+            "cognitive_cost": 0.104,
+            "effort_cost": 0.06,
+            "risk_cost": 0.132,
+            "total_cost": 0.296
+          },
+          "dropped": false
+        },
+        {
+          "step": "Phone verification",
+          "state": {
+            "cognitive_energy": 0.371,
+            "perceived_risk": 0.364,
+            "perceived_effort": 0.31,
+            "perceived_value": 1.095,
+            "perceived_control": 1.829
+          },
+          "costs": {
+            "cognitive_cost": 0.132,
+            "effort_cost": 0.15,
+            "risk_cost": 0.132,
+            "total_cost": 0.414
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.892,
+            "perceived_effort": 0.55,
+            "perceived_value": 1.181,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.669,
+            "effort_cost": 0.24,
+            "risk_cost": 0.528,
+            "total_cost": 1.437
+          },
+          "dropped": false
+        },
+        {
+          "step": "Loan agreement",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.7,
+            "perceived_value": 1.318,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.665,
+            "effort_cost": 0.15,
+            "risk_cost": 2.112,
+            "total_cost": 2.927
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Young salaried professional",
+      "variant": "tired_commuter",
+      "exit_step": "Loan agreement",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing page",
+          "state": {
+            "cognitive_energy": 0.161,
+            "perceived_risk": 0.332,
+            "perceived_effort": 0.36,
+            "perceived_value": 0.842,
+            "perceived_control": 1.135
+          },
+          "costs": {
+            "cognitive_cost": 0.176,
+            "effort_cost": 0.06,
+            "risk_cost": 0.132,
+            "total_cost": 0.368
+          },
+          "dropped": false
+        },
+        {
+          "step": "Phone verification",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.464,
+            "perceived_effort": 0.51,
+            "perceived_value": 0.925,
+            "perceived_control": 1.695
+          },
+          "costs": {
+            "cognitive_cost": 0.223,
+            "effort_cost": 0.15,
+            "risk_cost": 0.132,
+            "total_cost": 0.505
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.992,
+            "perceived_effort": 0.75,
+            "perceived_value": 1.011,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 1.064,
+            "effort_cost": 0.24,
+            "risk_cost": 0.528,
+            "total_cost": 1.832
+          },
+          "dropped": false
+        },
+        {
+          "step": "Loan agreement",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.9,
+            "perceived_value": 1.148,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.665,
+            "effort_cost": 0.15,
+            "risk_cost": 2.112,
+            "total_cost": 2.927
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Young salaried professional",
+      "variant": "distrustful_arrival",
+      "exit_step": "Loan agreement",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing page",
+          "state": {
+            "cognitive_energy": 0.418,
+            "perceived_risk": 0.532,
+            "perceived_effort": 0.26,
+            "perceived_value": 0.842,
+            "perceived_control": 1.001
+          },
+          "costs": {
+            "cognitive_cost": 0.122,
+            "effort_cost": 0.06,
+            "risk_cost": 0.132,
+            "total_cost": 0.314
+          },
+          "dropped": false
+        },
+        {
+          "step": "Phone verification",
+          "state": {
+            "cognitive_energy": 0.263,
+            "perceived_risk": 0.664,
+            "perceived_effort": 0.41,
+            "perceived_value": 0.925,
+            "perceived_control": 1.561
+          },
+          "costs": {
+            "cognitive_cost": 0.155,
+            "effort_cost": 0.15,
+            "risk_cost": 0.132,
+            "total_cost": 0.437
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 1.192,
+            "perceived_effort": 0.65,
+            "perceived_value": 1.011,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.784,
+            "effort_cost": 0.24,
+            "risk_cost": 0.528,
+            "total_cost": 1.552
+          },
+          "dropped": false
+        },
+        {
+          "step": "Loan agreement",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.8,
+            "perceived_value": 1.148,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.665,
+            "effort_cost": 0.15,
+            "risk_cost": 2.112,
+            "total_cost": 2.927
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Young salaried professional",
+      "variant": "browsing_casually",
+      "exit_step": "Loan agreement",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing page",
+          "state": {
+            "cognitive_energy": 0.503,
+            "perceived_risk": 0.232,
+            "perceived_effort": 0.26,
+            "perceived_value": 0.587,
+            "perceived_control": 1.202
+          },
+          "costs": {
+            "cognitive_cost": 0.104,
+            "effort_cost": 0.06,
+            "risk_cost": 0.132,
+            "total_cost": 0.296
+          },
+          "dropped": false
+        },
+        {
+          "step": "Phone verification",
+          "state": {
+            "cognitive_energy": 0.371,
+            "perceived_risk": 0.364,
+            "perceived_effort": 0.41,
+            "perceived_value": 0.67,
+            "perceived_control": 1.762
+          },
+          "costs": {
+            "cognitive_cost": 0.132,
+            "effort_cost": 0.15,
+            "risk_cost": 0.132,
+            "total_cost": 0.414
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.892,
+            "perceived_effort": 0.65,
+            "perceived_value": 0.756,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.669,
+            "effort_cost": 0.24,
+            "risk_cost": 0.528,
+            "total_cost": 1.437
+          },
+          "dropped": false
+        },
+        {
+          "step": "Loan agreement",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.8,
+            "perceived_value": 0.893,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.665,
+            "effort_cost": 0.15,
+            "risk_cost": 2.112,
+            "total_cost": 2.927
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Young salaried professional",
+      "variant": "urgent_need",
+      "exit_step": "Loan agreement",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing page",
+          "state": {
+            "cognitive_energy": 0.332,
+            "perceived_risk": 0.332,
+            "perceived_effort": 0.16,
+            "perceived_value": 1.097,
+            "perceived_control": 1.336
+          },
+          "costs": {
+            "cognitive_cost": 0.14,
+            "effort_cost": 0.06,
+            "risk_cost": 0.132,
+            "total_cost": 0.332
+          },
+          "dropped": false
+        },
+        {
+          "step": "Phone verification",
+          "state": {
+            "cognitive_energy": 0.155,
+            "perceived_risk": 0.464,
+            "perceived_effort": 0.31,
+            "perceived_value": 1.18,
+            "perceived_control": 1.896
+          },
+          "costs": {
+            "cognitive_cost": 0.178,
+            "effort_cost": 0.15,
+            "risk_cost": 0.132,
+            "total_cost": 0.46
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.992,
+            "perceived_effort": 0.55,
+            "perceived_value": 1.266,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.9,
+            "effort_cost": 0.24,
+            "risk_cost": 0.528,
+            "total_cost": 1.668
+          },
+          "dropped": false
+        },
+        {
+          "step": "Loan agreement",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.7,
+            "perceived_value": 1.403,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.665,
+            "effort_cost": 0.15,
+            "risk_cost": 2.112,
+            "total_cost": 2.927
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Young salaried professional",
+      "variant": "price_sensitive",
+      "exit_step": "Loan agreement",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing page",
+          "state": {
+            "cognitive_energy": 0.418,
+            "perceived_risk": 0.432,
+            "perceived_effort": 0.26,
+            "perceived_value": 0.672,
+            "perceived_control": 1.135
+          },
+          "costs": {
+            "cognitive_cost": 0.122,
+            "effort_cost": 0.06,
+            "risk_cost": 0.132,
+            "total_cost": 0.314
+          },
+          "dropped": false
+        },
+        {
+          "step": "Phone verification",
+          "state": {
+            "cognitive_energy": 0.263,
+            "perceived_risk": 0.564,
+            "perceived_effort": 0.41,
+            "perceived_value": 0.755,
+            "perceived_control": 1.695
+          },
+          "costs": {
+            "cognitive_cost": 0.155,
+            "effort_cost": 0.15,
+            "risk_cost": 0.132,
+            "total_cost": 0.437
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 1.092,
+            "perceived_effort": 0.65,
+            "perceived_value": 0.841,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.784,
+            "effort_cost": 0.24,
+            "risk_cost": 0.528,
+            "total_cost": 1.552
+          },
+          "dropped": false
+        },
+        {
+          "step": "Loan agreement",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 0.8,
+            "perceived_value": 0.978,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.665,
+            "effort_cost": 0.15,
+            "risk_cost": 2.112,
+            "total_cost": 2.927
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Young salaried professional",
+      "variant": "tech_savvy_optimistic",
+      "exit_step": "Loan agreement",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing page",
+          "state": {
+            "cognitive_energy": 0.546,
+            "perceived_risk": 0.182,
+            "perceived_effort": 0.11,
+            "perceived_value": 0.927,
+            "perceived_control": 1.336
+          },
+          "costs": {
+            "cognitive_cost": 0.095,
+            "effort_cost": 0.06,
+            "risk_cost": 0.132,
+            "total_cost": 0.287
+          },
+          "dropped": false
+        },
+        {
+          "step": "Phone verification",
+          "state": {
+            "cognitive_energy": 0.425,
+            "perceived_risk": 0.314,
+            "perceived_effort": 0.26,
+            "perceived_value": 1.01,
+            "perceived_control": 1.896
+          },
+          "costs": {
+            "cognitive_cost": 0.121,
+            "effort_cost": 0.15,
+            "risk_cost": 0.132,
+            "total_cost": 0.403
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.842,
+            "perceived_effort": 0.5,
+            "perceived_value": 1.096,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.612,
+            "effort_cost": 0.24,
+            "risk_cost": 0.528,
+            "total_cost": 1.38
+          },
+          "dropped": false
+        },
+        {
+          "step": "Loan agreement",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 2.954,
+            "perceived_effort": 0.65,
+            "perceived_value": 1.233,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.665,
+            "effort_cost": 0.15,
+            "risk_cost": 2.112,
+            "total_cost": 2.927
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Middle-aged salaried professional",
+      "variant": "fresh_motivated",
+      "exit_step": "Loan agreement",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing page",
+          "state": {
+            "cognitive_energy": 0.308,
+            "perceived_risk": 0.232,
+            "perceived_effort": 0.196,
+            "perceived_value": 0.974,
+            "perceived_control": 0.931
+          },
+          "costs": {
+            "cognitive_cost": 0.156,
+            "effort_cost": 0.096,
+            "risk_cost": 0.132,
+            "total_cost": 0.384
+          },
+          "dropped": false
+        },
+        {
+          "step": "Phone verification",
+          "state": {
+            "cognitive_energy": 0.107,
+            "perceived_risk": 0.364,
+            "perceived_effort": 0.436,
+            "perceived_value": 1.048,
+            "perceived_control": 1.372
+          },
+          "costs": {
+            "cognitive_cost": 0.201,
+            "effort_cost": 0.24,
+            "risk_cost": 0.132,
+            "total_cost": 0.573
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.892,
+            "perceived_effort": 0.82,
+            "perceived_value": 1.116,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 1.036,
+            "effort_cost": 0.384,
+            "risk_cost": 0.528,
+            "total_cost": 1.948
+          },
+          "dropped": false
+        },
+        {
+          "step": "Loan agreement",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 1.06,
+            "perceived_value": 1.224,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.725,
+            "effort_cost": 0.24,
+            "risk_cost": 2.112,
+            "total_cost": 3.077
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Middle-aged salaried professional",
+      "variant": "tired_commuter",
+      "exit_step": "Loan agreement",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing page",
+          "state": {
+            "cognitive_energy": 0.042,
+            "perceived_risk": 0.332,
+            "perceived_effort": 0.396,
+            "perceived_value": 0.804,
+            "perceived_control": 0.845
+          },
+          "costs": {
+            "cognitive_cost": 0.215,
+            "effort_cost": 0.096,
+            "risk_cost": 0.132,
+            "total_cost": 0.443
+          },
+          "dropped": false
+        },
+        {
+          "step": "Phone verification",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.464,
+            "perceived_effort": 0.636,
+            "perceived_value": 0.878,
+            "perceived_control": 1.286
+          },
+          "costs": {
+            "cognitive_cost": 0.278,
+            "effort_cost": 0.24,
+            "risk_cost": 0.132,
+            "total_cost": 0.65
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.992,
+            "perceived_effort": 1.02,
+            "perceived_value": 0.946,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 1.16,
+            "effort_cost": 0.384,
+            "risk_cost": 0.528,
+            "total_cost": 2.072
+          },
+          "dropped": false
+        },
+        {
+          "step": "Loan agreement",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 1.26,
+            "perceived_value": 1.054,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.725,
+            "effort_cost": 0.24,
+            "risk_cost": 2.112,
+            "total_cost": 3.077
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Middle-aged salaried professional",
+      "variant": "distrustful_arrival",
+      "exit_step": "Loan agreement",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing page",
+          "state": {
+            "cognitive_energy": 0.241,
+            "perceived_risk": 0.532,
+            "perceived_effort": 0.296,
+            "perceived_value": 0.804,
+            "perceived_control": 0.759
+          },
+          "costs": {
+            "cognitive_cost": 0.171,
+            "effort_cost": 0.096,
+            "risk_cost": 0.132,
+            "total_cost": 0.399
+          },
+          "dropped": false
+        },
+        {
+          "step": "Phone verification",
+          "state": {
+            "cognitive_energy": 0.022,
+            "perceived_risk": 0.664,
+            "perceived_effort": 0.536,
+            "perceived_value": 0.878,
+            "perceived_control": 1.2
+          },
+          "costs": {
+            "cognitive_cost": 0.22,
+            "effort_cost": 0.24,
+            "risk_cost": 0.132,
+            "total_cost": 0.592
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 1.192,
+            "perceived_effort": 0.92,
+            "perceived_value": 0.946,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 1.135,
+            "effort_cost": 0.384,
+            "risk_cost": 0.528,
+            "total_cost": 2.047
+          },
+          "dropped": false
+        },
+        {
+          "step": "Loan agreement",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 1.16,
+            "perceived_value": 1.054,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.725,
+            "effort_cost": 0.24,
+            "risk_cost": 2.112,
+            "total_cost": 3.077
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Middle-aged salaried professional",
+      "variant": "browsing_casually",
+      "exit_step": "Loan agreement",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing page",
+          "state": {
+            "cognitive_energy": 0.308,
+            "perceived_risk": 0.232,
+            "perceived_effort": 0.296,
+            "perceived_value": 0.549,
+            "perceived_control": 0.888
+          },
+          "costs": {
+            "cognitive_cost": 0.156,
+            "effort_cost": 0.096,
+            "risk_cost": 0.132,
+            "total_cost": 0.384
+          },
+          "dropped": false
+        },
+        {
+          "step": "Phone verification",
+          "state": {
+            "cognitive_energy": 0.107,
+            "perceived_risk": 0.364,
+            "perceived_effort": 0.536,
+            "perceived_value": 0.623,
+            "perceived_control": 1.329
+          },
+          "costs": {
+            "cognitive_cost": 0.201,
+            "effort_cost": 0.24,
+            "risk_cost": 0.132,
+            "total_cost": 0.573
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.892,
+            "perceived_effort": 0.92,
+            "perceived_value": 0.691,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 1.036,
+            "effort_cost": 0.384,
+            "risk_cost": 0.528,
+            "total_cost": 1.948
+          },
+          "dropped": false
+        },
+        {
+          "step": "Loan agreement",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 1.16,
+            "perceived_value": 0.799,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.725,
+            "effort_cost": 0.24,
+            "risk_cost": 2.112,
+            "total_cost": 3.077
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Middle-aged salaried professional",
+      "variant": "urgent_need",
+      "exit_step": "Loan agreement",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing page",
+          "state": {
+            "cognitive_energy": 0.175,
+            "perceived_risk": 0.332,
+            "perceived_effort": 0.196,
+            "perceived_value": 1.059,
+            "perceived_control": 0.974
+          },
+          "costs": {
+            "cognitive_cost": 0.185,
+            "effort_cost": 0.096,
+            "risk_cost": 0.132,
+            "total_cost": 0.413
+          },
+          "dropped": false
+        },
+        {
+          "step": "Phone verification",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.464,
+            "perceived_effort": 0.436,
+            "perceived_value": 1.133,
+            "perceived_control": 1.415
+          },
+          "costs": {
+            "cognitive_cost": 0.239,
+            "effort_cost": 0.24,
+            "risk_cost": 0.132,
+            "total_cost": 0.611
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.992,
+            "perceived_effort": 0.82,
+            "perceived_value": 1.201,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 1.16,
+            "effort_cost": 0.384,
+            "risk_cost": 0.528,
+            "total_cost": 2.072
+          },
+          "dropped": false
+        },
+        {
+          "step": "Loan agreement",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 1.06,
+            "perceived_value": 1.309,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.725,
+            "effort_cost": 0.24,
+            "risk_cost": 2.112,
+            "total_cost": 3.077
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Middle-aged salaried professional",
+      "variant": "price_sensitive",
+      "exit_step": "Loan agreement",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing page",
+          "state": {
+            "cognitive_energy": 0.241,
+            "perceived_risk": 0.432,
+            "perceived_effort": 0.296,
+            "perceived_value": 0.634,
+            "perceived_control": 0.845
+          },
+          "costs": {
+            "cognitive_cost": 0.171,
+            "effort_cost": 0.096,
+            "risk_cost": 0.132,
+            "total_cost": 0.399
+          },
+          "dropped": false
+        },
+        {
+          "step": "Phone verification",
+          "state": {
+            "cognitive_energy": 0.022,
+            "perceived_risk": 0.564,
+            "perceived_effort": 0.536,
+            "perceived_value": 0.708,
+            "perceived_control": 1.286
+          },
+          "costs": {
+            "cognitive_cost": 0.22,
+            "effort_cost": 0.24,
+            "risk_cost": 0.132,
+            "total_cost": 0.592
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 1.092,
+            "perceived_effort": 0.92,
+            "perceived_value": 0.776,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 1.135,
+            "effort_cost": 0.384,
+            "risk_cost": 0.528,
+            "total_cost": 2.047
+          },
+          "dropped": false
+        },
+        {
+          "step": "Loan agreement",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 3.0,
+            "perceived_effort": 1.16,
+            "perceived_value": 0.884,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.725,
+            "effort_cost": 0.24,
+            "risk_cost": 2.112,
+            "total_cost": 3.077
+          },
+          "dropped": true
+        }
+      ]
+    },
+    {
+      "persona_name": "Middle-aged salaried professional",
+      "variant": "tech_savvy_optimistic",
+      "exit_step": "Loan agreement",
+      "failure_reason": "Loss aversion",
+      "journey": [
+        {
+          "step": "Landing page",
+          "state": {
+            "cognitive_energy": 0.341,
+            "perceived_risk": 0.182,
+            "perceived_effort": 0.146,
+            "perceived_value": 0.889,
+            "perceived_control": 0.974
+          },
+          "costs": {
+            "cognitive_cost": 0.148,
+            "effort_cost": 0.096,
+            "risk_cost": 0.132,
+            "total_cost": 0.376
+          },
+          "dropped": false
+        },
+        {
+          "step": "Phone verification",
+          "state": {
+            "cognitive_energy": 0.15,
+            "perceived_risk": 0.314,
+            "perceived_effort": 0.386,
+            "perceived_value": 0.963,
+            "perceived_control": 1.415
+          },
+          "costs": {
+            "cognitive_cost": 0.191,
+            "effort_cost": 0.24,
+            "risk_cost": 0.132,
+            "total_cost": 0.563
+          },
+          "dropped": false
+        },
+        {
+          "step": "KYC",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 0.842,
+            "perceived_effort": 0.77,
+            "perceived_value": 1.031,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.986,
+            "effort_cost": 0.384,
+            "risk_cost": 0.528,
+            "total_cost": 1.898
+          },
+          "dropped": false
+        },
+        {
+          "step": "Loan agreement",
+          "state": {
+            "cognitive_energy": 0.0,
+            "perceived_risk": 2.954,
+            "perceived_effort": 1.01,
+            "perceived_value": 1.139,
+            "perceived_control": 2.0
+          },
+          "costs": {
+            "cognitive_cost": 0.725,
+            "effort_cost": 0.24,
+            "risk_cost": 2.112,
+            "total_cost": 3.077
+          },
+          "dropped": true
+        }
+      ]
+    }
+  ]
+}

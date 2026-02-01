@@ -1,0 +1,298 @@
+Screenshot ss1: Here's a detailed analysis of the screenshot provided:
+
+1. **Step Number**: Not visible.
+2. **Progress Percentage**: Not visible.
+3. **Main Question, Heading, or Screen Purpose**: 
+   - The screen aims to inform users about unlocking the value of paid leaves, targeting both employees and employers. The heading emphasizes the potential financial benefit of paid leaves.
+
+4. **Input Fields, Options, or Actions Required**:
+   - There are no visible input fields. The actions available are primarily clicking on buttons associated with checking leave balance or booking a demo.
+
+5. **Any Buttons or CTAs**:
+   - **Buttons**: 
+     - "Check Paid Leave Balance"
+     - "Book a Demo"
+
+6. **Key UI Elements and What the User Needs to Do**:
+   - The user is presented with a clear call to action (CTA) through the buttons. Depending on their interest:
+     - Clicking "Check Paid Leave Balance" likely leads to a feature where users can find out the financial value of their accumulated paid leave.
+     - Clicking "Book a Demo" suggests an opportunity to learn more about the service’s offerings in a more detailed, interactive manner.
+
+### Cognitive/Effort/Risk Factors:
+
+- **Cognitive Load**: The user needs to quickly understand the benefits of using the service while deciding which CTA aligns with their needs. The text is succinct, which reduces cognitive overload.
+
+- **Effort**: Minimal effort is required to navigate at this stage, as the user only needs to recognize the purpose of the buttons and decide where to click.
+
+- **Risk**: Clicking on either CTA could lead to further engagement, potentially requiring the user to provide personal or company information later. Users might be hesitant if they are unsure of what information they will need to submit or if the service is legitimate.
+
+Overall, the screen effectively conveys its purpose and provides clear action steps, but the lack of details may leave some users wanting more information before they engage.
+---
+Screenshot ss2: ### Screen Analysis
+
+1. **Step Number**: Not explicitly visible in the screenshot (e.g., "Step 1 of 10" is not present).
+
+2. **Progress Percentage**: Not visible in the screenshot.
+
+3. **Main Question/Screen Purpose**: 
+   - The main question is: "What is the average leave balance of your employees?" This suggests that the screen is intended to gather data relevant to employee leave balances, likely for payroll or accounting purposes.
+
+4. **Input Fields/Options/Actions Required**: 
+   - The screen displays an input field where the user can enter the "average leave balance" (measured in days). The placeholder text indicates a placeholder value of "15 (days)."
+
+5. **Buttons or CTAs**: 
+   - There is a prominent button labeled "Proceed" at the bottom of the screen, which is likely the next action the user needs to take after entering the required information.
+
+6. **Key UI Elements and User Requirements**:
+   - **Input Field**: The user must enter a numerical value representing the average leave balance in days. The presence of a placeholder suggests that the user can either accept the default value or change it.
+   - **CTA Button**: The "Proceed" button must be clicked to advance to the next step.
+
+### Detailed Description
+
+In this onboarding step, the user is prompted to provide a specific metric—namely, the average leave balance of employees. The phrase "Every unused leave hits your books harder. Time to calculate." serves both as a warning and an encouragement to provide accurate data, reinforcing the importance of this information for financial or operational clarity.
+
+**Cognitive Factors**: 
+- Users may need to recall or consult records to provide an accurate average leave balance, which could be a point of cognitive load. It may require them to navigate away from the onboarding flow if they do not have the information readily available.
+
+**Effort Factors**: 
+- The task itself involves simple data entry, but if users are unsure of the average or must gather information from multiple sources, this could increase the effort involved.
+
+**Risk Factors**: 
+- Incorrect data entry might affect subsequent calculations or analytics within the application, which could lead to financial discrepancies or incorrect reporting. Therefore, clear communication regarding the importance of the data entry and potential consequences of errors should be considered.
+
+Overall, the screen aims to streamline the user input process while emphasizing accuracy and the financial impact of
+---
+Screenshot ss3: Here's a detailed analysis of the screenshot from the fintech onboarding flow:
+
+### 1. Step Number
+- **Not visible**: There's no indication of what step this is (e.g., "Step 1 of 10").
+
+### 2. Progress Percentage
+- **Not visible**: No percentage of progress is indicated.
+
+### 3. Main Question/Screen Purpose
+- The main question is: **"What is the max leave encashment at your organization?"**
+- The purpose of the screen is to gather information about the organization's policy on maximum leave encashment to facilitate calculations related to unused leaves.
+
+### 4. Input Fields, Options, or Actions Required
+- The screen presents several options to select from regarding the maximum leave encashment:
+  - **30 days**
+  - **35 days**
+  - **40 days**
+  - **45 days**
+  - **Others (Custom)** option for users who may have a different policy.
+
+### 5. Any Buttons or CTAs
+- There is a prominent button labeled **"Proceed"** at the bottom of the screen.
+
+### 6. Key UI Elements and User Actions
+- **Radio Buttons**: Users can select one of the specified options directly associated with maximum leave encashment. The option for "Others (Custom)" suggests users can input a different value if none of the provided options suit their organization’s policy.
+- **Proceed Button**: This button is the primary action the user needs to take after selecting a leave encashment option. It signals the completion of this step and moves them to the next part of the onboarding process.
+
+### User Experience Considerations
+- **Cognitive Load**: The user must understand their organization’s policy on leave encashment, which may require consulting relevant internal documents or other team members. This could add a slight cognitive load.
+- **Effort**: Selecting an option is straightforward; however, those who choose "Others (Custom)" might need to put in extra effort to determine and input the correct number.
+- **Risk Factors**: If incorrect information is inputted, it may lead to miscalculations in financial projections later on. Users need to be mindful of accuracy when making their selection.
+
+Overall, the screen is clear and encourages the user to make a decision with concise options. The use of a custom option provides flexibility, which is beneficial in accommodating variations in policy across different organizations.
+---
+Screenshot ss4: Based on the screenshot provided, here is the analysis:
+
+1. **Step Number**: Not visible.
+2. **Progress Percentage**: Not visible.
+3. **Main Question/Heading**: "What is the average annual employee growth rate (%) in your organization?"
+4. **Input Fields/Options/Actions Required**:
+   - The user needs to enter a percentage value indicating the average annual employee growth rate for their organization.
+   - Input options appear to be a numeric field with percentage signs available.
+5. **Buttons or CTAs**: A prominent button labeled "Proceed" at the bottom right.
+6. **Key UI Elements and User Actions**:
+   - The screen features a large, bold statement emphasizing the importance of tracking unused leave.
+   - The user is prompted to focus specifically on calculating the average employee growth rate.
+   - The interface suggests an interactive field where users can input the percentage.
+
+### Detailed Description:
+At this stage of the onboarding flow, the user is prompted to provide a critical metric regarding their organization—specifically, the average annual employee growth rate. The screen design features a clear and concise user prompt, which helps guide the user to understand what is required.
+
+**Cognitive Effort Factors**:
+- Users may need to recall historical data about employee growth, which could require some cognitive effort, especially if they aren't familiar with this information.
+- The prompt about unused leave adds context, highlighting the relevance of the metric being requested.
+
+**Risk Factors**:
+- If users are uncertain about the correct percentage to enter, there might be a risk of them providing inaccurate data, which could lead to incorrect calculations or insights later in the onboarding process.
+
+Overall, the screen is designed to be straightforward, encouraging user engagement while providing essential context for the task at hand.
+---
+Screenshot ss5: ### Analysis of the Onboarding Flow Screenshot
+
+1. **Step Number**: Not visible in the screenshot.
+2. **Progress Percentage**: Not visible in the screenshot.
+3. **Main Question / Screen Purpose**: The main question is "What is your attrition rate?". The screen aims to gather specific data related to the user's business or organization regarding employee attrition.
+4. **Input Fields / Options**: 
+   - An input field for the attrition rate is visible, presented as a percentage (unit labeled with a `%` symbol).
+5. **Buttons / CTAs**: 
+   - A prominent button labeled "Proceed" is located at the bottom of the screen, which the user must click after providing the information.
+6. **Key UI Elements**:
+   - **Text Prompt**: The screen contains a brief explanatory statement that highlights the importance of attrition rate in relation to financial impact, helping to frame the question for the user.
+   - **Input Field**: This is clearly labeled and requires numeric input (presumably a percentage representing the attrition rate).
+   - **Call to Action Button**: The "Proceed" button is styled to attract attention, indicating the next step in the onboarding flow.
+
+### User Actions Required:
+- **Input Data**: The user is required to input their attrition rate as a percentage into the provided field.
+- **Click Button**: After entering the data, the user must click the "Proceed" button to continue to the next step.
+
+### Cognitive/Effort/Risk Factors:
+- **Cognitive Load**: The task is relatively straightforward, requiring only basic numerical input. However, users may need to recall or calculate their attrition rate, which could introduce cognitive load if they do not have the information readily available.
+- **Effort**: Minimal effort is required in terms of physical interaction (just typing a number and pressing a button).
+- **Risk Factors**: 
+   - **Data Accuracy**: Users may feel pressure to provide accurate data based on their understanding of what an appropriate attrition rate is for their organization.
+   - **Relevance**: If users do not understand why this information is needed or how it affects their overall interaction with the fintech service, they may hesitate or second-guess their responses.
+
+Overall, the screen's design is user-friendly, with a clear prompt and action button, and minimizes complexity for a basic input task.
+---
+Screenshot ss6: ### Screen Analysis
+
+1. **Step Number**: Not visible.
+2. **Progress Percentage**: Not visible.
+3. **Main Question/Screen Purpose**: The main question on this screen is, "What is your total monthly payout (salaries) to full-time employees? (in Crores)." This indicates the purpose of this step is to gather financial information about employee salary expenditures.
+4. **Input Fields, Options, or Actions Required**: 
+   - There is an input field for users to enter a numerical value representing the total monthly salary payout. The caveat specifies to use a decimal for lakhs (a million in Indian numbering).
+5. **Buttons or CTAs**: There is a prominent button labeled "Proceed" at the bottom of the screen.
+6. **Key UI Elements and User Actions**: 
+   - **Input Field**: Users need to type in a number to answer the main question.
+   - **Instruction/Rationale Text**: A secondary text reads, "Every unused leave hits your books harder. Time to calculate," which suggests the reason for gathering this information may relate to managing leave balances and financial accounting.
+
+### User Actions and Cognitive Considerations
+
+- **User Task**: At this step, the user must focus on calculating and inputting the total monthly payout for full-time employees accurately. This requires some cognitive effort to ensure the number entered is correct and reflective of their payroll expenses.
+  
+- **Cognitive Load**: Users may experience cognitive load when:
+  - Calculating the total payout in the specific format required (Crores).
+  - Understanding how this figure relates to company finances, particularly in managing leave and payroll implications.
+
+- **Effort/Risk Factors**: 
+  - Miscalculating the figure may lead to inaccurate representations of the company’s financial health.
+  - Users may feel pressure to provide a precise number, potentially affecting their willingness to proceed without certainty.
+
+### Summary
+
+The user needs to enter a precise monthly salary figure for their full-time employees while considering the implications of this data on their financial management. The design encourages users to think critically about their payroll and its effects on overall business health.
+---
+Screenshot ss7: ### Screen Analysis
+
+1. **Step Number**: Not visible in the screenshot.
+2. **Progress Percentage**: Not visible in the screenshot.
+3. **Main Question/Heading**: "What is the total no of employees in your organization?"
+4. **Input Fields, Options, and Actions Required**:
+   - **Input Field**: A text box where the user can input a numerical value representing the total number of employees.
+5. **Buttons or CTAs**: 
+   - A prominent "Proceed" button at the bottom of the screen, encouraging the user to continue after inputting their answer.
+6. **Key UI Elements and User Actions**:
+   - **Text Prompt**: Explains the purpose of the inquiry: costs associated with unused leave.
+   - **Input Box**: The user must type in a number representing employee count.
+   - **Proceed Button**: After entering the number, the user must click this button to advance to the next step.
+
+### Detailed Description
+
+At this step in the onboarding flow, the user is prompted to enter the total number of employees in their organization. The screen features a clear question to guide them in providing the necessary information. The background text highlights the importance of the task—indicating the financial impact of unused leave on the business—creating a sense of urgency and relevance.
+
+**User Actions**:
+- The user is required to focus on inputting a precise numerical value in the input field. This implies that users may need to access organizational data or recall relevant figures—a task which could introduce cognitive effort if the number is not readily available.
+- After entering the number, the user must identify and press the "Proceed" button to move on to the next stage of the process.
+
+**Cognitive/Effort/Risk Factors**:
+- There is a potential cognitive load involved in recalling the correct number of employees, particularly for larger organizations where the count may vary.
+- Users might feel pressure to provide an accurate figure, especially since the context emphasizes financial implications, which could lead to anxiety or second-guessing about the right input.
+- The layout and design, with minimal distractions, aid in focusing attention on the task but could still lead to hesitation if users lack confidence in their data. 
+
+Overall, the screen effectively communicates its purpose and provides clear instructions, but it also introduces elements of cognitive challenge and risk associated with accuracy.
+---
+Screenshot ss8: ### Screenshot Analysis
+
+1. **Step Number**: Not visible in the provided information.
+2. **Progress Percentage**: Not visible in the provided information.
+3. **Main Question, Heading, or Screen Purpose**: The primary question on this screen is, "What is the average Salary Hike % in your organisation?" This implies that the screen is part of an onboarding process focused on salary or financial metrics relevant to the user’s organization.
+4. **Input Fields, Options, or Actions Required**: 
+   - The user is prompted to input a percentage value in response to the question about salary hikes. 
+   - There are input fields marked with "%" and "()" which likely indicate that the user needs to enter a numerical value representing the percentage of salary hikes.
+5. **Buttons or CTAs**: The screen includes a prominent purple button labeled "Proceed," suggesting that clicking this button will move the user to the next step in the onboarding flow.
+6. **Key UI Elements and User Actions**:
+   - **Input Field**: The user needs to click on the input field and type in the average percentage, indicating the necessity for numerical input.
+   - **Text Explanation**: There’s a message: "Every unused leave hits your books harder. Time to calculate," which serves as a contextual prompt, reinforcing the importance of the data being collected for financial assessment.
+
+### Detailed Description
+
+At this step in the onboarding flow, the user is required to provide a specific numerical percentage that reflects the average salary hike in their organization. The lack of additional context about previous steps or how this particular input will be utilized may add cognitive load for the user, especially if they do not have the information readily available, thus requiring them to curate data either from memory or additional sources.
+
+### Cognitive/Effort/Risk Factors
+- **Cognitive Effort**: The user must recall or estimate the average salary hike percentage, which may not be straightforward and could lead to frustration if they are unsure of the figure.
+- **Effort**: The task is relatively simple in execution—typing a number—but the mental effort to accurately assess that number is essential.
+- **Risk**: Providing incorrect input could lead to inaccurate calculations or further steps in the onboarding process, potentially affecting the user's experience or the outputs of the fintech product. Clear instructions and context could mitigate these risks, enhancing user confidence in their input.
+
+In summary, this screen emphasizes user engagement with financial data and encourages them to
+---
+Screenshot ss9: ### Screen Analysis
+
+1. **Step Number**: Not visible. There is no indication of how many steps are in the onboarding process.
+
+2. **Progress Percentage**: Not visible. There’s no percentage indicator showing how far along the user is in the onboarding process.
+
+3. **Main Question, Heading, or Screen Purpose**: 
+   - The main purpose is to collect the user's work email, as indicated by the prompt: "What is your work email?"
+
+4. **Input Fields, Options, or Actions Required**: 
+   - There is an input field where the user is expected to enter their work email address. The placeholder text shows the user's current input: "rahulbissa@credigo.club".
+
+5. **Buttons or CTAs**: 
+   - There is a prominent button labeled "Proceed" at the bottom of the screen, which the user needs to click to advance after entering their email address.
+
+6. **Key UI Elements and User Actions**: 
+   - **Input Field**: The user must click on this field to edit or confirm their work email.
+   - **Proceed Button**: After inputting the email, the user needs to click this button to move to the next step.
+
+### Screen Description and User Actions
+
+The screen highlights a critical step in a fintech onboarding flow, focusing on gathering the user’s work email. The accompanying text emphasizes the importance of tracking unused leave, hinting at a potential feature or service related to employee benefits or payroll management.
+
+#### User's Cognitive Load:
+- **Ease of Input**: The task is straightforward—entering an email address. However, a user might hesitate if unsure whether their work email will be used for marketing or communications.
+- **Fear of Mistakes**: Users may worry about typing errors when entering their email, which could affect account recovery or communications.
+
+#### Effort Factors:
+- **Minimal Interaction**: Only requires typing an email and clicking “Proceed”, making it low-effort.
+- **Emphasis on Importance**: The introductory statement could create a sense of urgency but may also add pressure, as users might feel they are jeopardizing their company's financial tracking.
+
+#### Risk Factors:
+- **Privacy Concerns**: Users might be cautious about sharing their work email, especially if they are unsure about how the data will be used or stored.
+- **Verification**: There’s no verification step on the email input, which could lead to mistakes if the wrong email is
+---
+Screenshot ss10: Based on the provided screenshot, here’s a detailed analysis of the fintech onboarding flow for the Leave Liability Report.
+
+### 1. Step Number
+- **Not Visible**: There is no indication of a specific step number (e.g., "Step 1 of 10").
+
+### 2. Progress Percentage
+- **Not Visible**: Progress percentage is not indicated.
+
+### 3. Main Question, Heading, or Screen Purpose
+- **Main Purpose**: The screen serves to calculate the financial impact of unused leave on a company’s books. It emphasizes that every unused leave affects the financial liability.
+
+### 4. Input Fields, Options, or Actions Required
+- **Input Fields/Options**: There are no specific input fields or options visible on this screen. The user isn't required to input any information at this moment.
+- **Actions Required**: The user is prompted to calculate the total leave liability.
+
+### 5. Any Buttons or CTAs
+- **Button/CTA**: 
+  - **"See Calculations"** button located in the lower section of the screen. Clicking this button likely leads to further calculations or details.
+
+### 6. Key UI Elements and User Actions
+- **Graph**: A bar chart displaying the impact on the balance sheet, segmented over several future years. This visualization shows the financial liability related to unused leave.
+- **Textual Information**: The explanatory text emphasizes the financial consequences of unused leave, aiming to provoke thought and urgency in the user.
+- **Total Leave Liability**: An amount is displayed at the bottom (₹1.97 Cr) summarizing the projected total leave liability over the next five years.
+
+### User Experience Considerations
+- **Cognitive Load**: Users must comprehend the financial implications of unused leave, requiring some level of understanding of financial concepts.
+- **Effort**: Since there are no fields for direct input, immediate effort is low, but users must be mindful of assessing the graph and contextual information.
+- **Risk Factors**: Users might face anxiety about financial liability if they do not have clear oversight or understanding of the unchecked leave or its impacts, which can lead to hesitancy in decision-making.
+- **Visual Clarity**: The use of a bar chart aids in quickly grasping the cumulative future liability, which is beneficial for decision-making.
+
+Overall, this screen is designed to engage users quickly by visually representing data and prompting them to consider the financial implications while encouraging action

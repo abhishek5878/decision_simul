@@ -1,0 +1,59 @@
+{
+  "version": "v1_3bf00386",
+  "created_at": "2026-01-03T08:57:55.355501",
+  "engine_module": "behavioral_engine_intent_aware",
+  "intent_model_module": "dropsim_intent_model",
+  "engine_commit_hash": null,
+  "intent_model_commit_hash": null,
+  "parameter_bounds": {
+    "BASE_COMPLETION_RATE": {
+      "min": 0.05,
+      "max": 0.9,
+      "default": 0.6
+    },
+    "PERSISTENCE_BONUS_START": {
+      "min": 0.0,
+      "max": 0.4,
+      "default": 0.18
+    },
+    "PERSISTENCE_BONUS_RATE": {
+      "min": 0.0,
+      "max": 0.5,
+      "default": 0.22
+    },
+    "INTENT_PENALTY_WEIGHT": {
+      "min": 0.0,
+      "max": 0.15,
+      "default": 0.025
+    },
+    "FRICTION_PENALTY_WEIGHT": {
+      "min": 0.3,
+      "max": 2.0,
+      "default": 1.0
+    },
+    "VALUE_SENSITIVITY": {
+      "min": 0.5,
+      "max": 2.0,
+      "default": 1.0
+    },
+    "COGNITIVE_PENALTY_WEIGHT": {
+      "min": 0.5,
+      "max": 2.0,
+      "default": 1.0
+    },
+    "EFFORT_PENALTY_WEIGHT": {
+      "min": 0.5,
+      "max": 2.0,
+      "default": 1.0
+    },
+    "RISK_PENALTY_WEIGHT": {
+      "min": 0.5,
+      "max": 2.0,
+      "default": 1.0
+    }
+  },
+  "calibrated_parameters": null,
+  "calibration_file": null,
+  "description": "Test policy",
+  "author": null
+}

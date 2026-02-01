@@ -1,0 +1,131 @@
+{
+  "signals": [
+    {
+      "source": "A/B test",
+      "confidence": 0.9,
+      "assertion": {
+        "top_drop_step": "What kind of perks excite you the most?",
+        "completion_rate": 0.65
+      },
+      "timestamp": "2025-12-29T19:35:08.146407",
+      "signal_id": "ref_20251229_193508"
+    },
+    {
+      "source": "expert label",
+      "confidence": 0.8,
+      "assertion": {
+        "drop_rate_at_step": {
+          "step_id": "Your top 2 spend categories?",
+          "drop_rate": 0.25
+        }
+      },
+      "timestamp": "2025-12-29T19:35:08.146607",
+      "signal_id": "ref_20251229_193508"
+    },
+    {
+      "source": "user interview",
+      "confidence": 0.7,
+      "assertion": {
+        "top_recommendation": "Help us personalise your card matches"
+      },
+      "timestamp": "2025-12-29T19:35:08.146710",
+      "signal_id": "ref_20251229_193508"
+    }
+  ],
+  "calibration_history": [
+    {
+      "signal_id": "ref_20251229_193508",
+      "reference_signal": {
+        "source": "A/B test",
+        "confidence": 0.9,
+        "assertion": {
+          "top_drop_step": "What kind of perks excite you the most?",
+          "completion_rate": 0.65
+        },
+        "timestamp": "2025-12-29T19:35:08.146407",
+        "signal_id": "ref_20251229_193508"
+      },
+      "system_prediction": {
+        "confidence_assessment": {
+          "raw_confidence": 0.5,
+          "adjusted_confidence": 0.5,
+          "confidence_band": "MODERATE"
+        },
+        "reference_calibration": {
+          "match_score": 0.5,
+          "recent_calibration": 0.5,
+          "calibration_trend": "insufficient_data"
+        }
+      },
+      "match_score": 0.5,
+      "timestamp": "2025-12-29T19:35:08.146780"
+    },
+    {
+      "signal_id": "ref_20251229_193508",
+      "reference_signal": {
+        "source": "expert label",
+        "confidence": 0.8,
+        "assertion": {
+          "drop_rate_at_step": {
+            "step_id": "Your top 2 spend categories?",
+            "drop_rate": 0.25
+          }
+        },
+        "timestamp": "2025-12-29T19:35:08.146607",
+        "signal_id": "ref_20251229_193508"
+      },
+      "system_prediction": {
+        "confidence_assessment": {
+          "raw_confidence": 0.5,
+          "adjusted_confidence": 0.5,
+          "confidence_band": "MODERATE"
+        },
+        "reference_calibration": {
+          "match_score": 0.5,
+          "recent_calibration": 0.5,
+          "calibration_trend": "insufficient_data"
+        }
+      },
+      "match_score": 0.5,
+      "timestamp": "2025-12-29T19:35:08.146856"
+    },
+    {
+      "signal_id": "ref_20251229_193508",
+      "reference_signal": {
+        "source": "user interview",
+        "confidence": 0.7,
+        "assertion": {
+          "top_recommendation": "Help us personalise your card matches"
+        },
+        "timestamp": "2025-12-29T19:35:08.146710",
+        "signal_id": "ref_20251229_193508"
+      },
+      "system_prediction": {
+        "confidence_assessment": {
+          "raw_confidence": 0.5,
+          "adjusted_confidence": 0.5,
+          "confidence_band": "MODERATE"
+        },
+        "reference_calibration": {
+          "match_score": 0.5,
+          "recent_calibration": 0.5,
+          "calibration_trend": "insufficient_data"
+        }
+      },
+      "match_score": 0.5,
+      "timestamp": "2025-12-29T19:35:08.146956"
+    },
+    {
+      "signal_id": "ref_20251229_193508",
+      "reference_signal": {
+        "source": "A/B test",
+        "confidence": 0.9,
+        "assertion": {
+          "top_drop_step": "What kind of perks excite you the most?",
+          "completion_rate": 0.65
+        },
+        "timestamp": "2025-12-29T19:35:08.146407",
+        "signal_id": "ref_20251229_193508"
+      },
+      "system_prediction": {
+        "result_df": 

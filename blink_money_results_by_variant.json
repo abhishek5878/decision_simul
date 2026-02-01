@@ -1,0 +1,422 @@
+{
+  "fresh_motivated": {
+    "completion_rate": 0.45,
+    "total_personas": 100,
+    "completion_count": 45,
+    "step_progression": {
+      "Smart Credit against Mutual Funds": {
+        "reached": 100,
+        "continued": 82,
+        "dropped": 18,
+        "drop_rate": 0.18
+      },
+      "Check Your Eligibility - Mobile Number": {
+        "reached": 82,
+        "continued": 71,
+        "dropped": 11,
+        "drop_rate": 0.13414634146341464
+      },
+      "Check Limit - PAN and DOB": {
+        "reached": 71,
+        "continued": 61,
+        "dropped": 10,
+        "drop_rate": 0.14084507042253522
+      },
+      "OTP Verification": {
+        "reached": 61,
+        "continued": 56,
+        "dropped": 5,
+        "drop_rate": 0.08196721311475409
+      },
+      "Bank Account Linking": {
+        "reached": 56,
+        "continued": 54,
+        "dropped": 2,
+        "drop_rate": 0.03571428571428571
+      },
+      "Eligibility Results": {
+        "reached": 54,
+        "continued": 49,
+        "dropped": 5,
+        "drop_rate": 0.09259259259259259
+      },
+      "Final Confirmation": {
+        "reached": 49,
+        "continued": 45,
+        "dropped": 4,
+        "drop_rate": 0.08163265306122448
+      }
+    },
+    "drop_force_percentages": {
+      "cognitive_energy": 8.512066986453426,
+      "intent": 0.0,
+      "effort_tolerance": 1.9540261199589755,
+      "risk_tolerance": 4.204543593420613,
+      "trust": 30.81773905929448,
+      "value": 28.96717301992669,
+      "effort": 9.574894567523643,
+      "risk": 15.969556653422174,
+      "intent_mismatch": 0.0
+    }
+  },
+  "tired_commuter": {
+    "completion_rate": 0.39,
+    "total_personas": 100,
+    "completion_count": 39,
+    "step_progression": {
+      "Smart Credit against Mutual Funds": {
+        "reached": 100,
+        "continued": 78,
+        "dropped": 22,
+        "drop_rate": 0.22
+      },
+      "Check Your Eligibility - Mobile Number": {
+        "reached": 78,
+        "continued": 62,
+        "dropped": 16,
+        "drop_rate": 0.20512820512820512
+      },
+      "Check Limit - PAN and DOB": {
+        "reached": 62,
+        "continued": 53,
+        "dropped": 9,
+        "drop_rate": 0.14516129032258066
+      },
+      "OTP Verification": {
+        "reached": 53,
+        "continued": 47,
+        "dropped": 6,
+        "drop_rate": 0.11320754716981132
+      },
+      "Bank Account Linking": {
+        "reached": 47,
+        "continued": 43,
+        "dropped": 4,
+        "drop_rate": 0.0851063829787234
+      },
+      "Eligibility Results": {
+        "reached": 43,
+        "continued": 42,
+        "dropped": 1,
+        "drop_rate": 0.023255813953488372
+      },
+      "Final Confirmation": {
+        "reached": 42,
+        "continued": 39,
+        "dropped": 3,
+        "drop_rate": 0.07142857142857142
+      }
+    },
+    "drop_force_percentages": {
+      "cognitive_energy": 15.224789543086883,
+      "intent": 0.0,
+      "effort_tolerance": 1.8833405164151336,
+      "risk_tolerance": 3.9252400241320164,
+      "trust": 28.157455444259146,
+      "value": 25.354276786598206,
+      "effort": 10.300545881383897,
+      "risk": 15.154351804124724,
+      "intent_mismatch": 0.0
+    }
+  },
+  "distrustful_arrival": {
+    "completion_rate": 0.41,
+    "total_personas": 100,
+    "completion_count": 41,
+    "step_progression": {
+      "Smart Credit against Mutual Funds": {
+        "reached": 100,
+        "continued": 78,
+        "dropped": 22,
+        "drop_rate": 0.22
+      },
+      "Check Your Eligibility - Mobile Number": {
+        "reached": 78,
+        "continued": 67,
+        "dropped": 11,
+        "drop_rate": 0.14102564102564102
+      },
+      "Check Limit - PAN and DOB": {
+        "reached": 67,
+        "continued": 60,
+        "dropped": 7,
+        "drop_rate": 0.1044776119402985
+      },
+      "OTP Verification": {
+        "reached": 60,
+        "continued": 57,
+        "dropped": 3,
+        "drop_rate": 0.05
+      },
+      "Bank Account Linking": {
+        "reached": 57,
+        "continued": 49,
+        "dropped": 8,
+        "drop_rate": 0.14035087719298245
+      },
+      "Eligibility Results": {
+        "reached": 49,
+        "continued": 43,
+        "dropped": 6,
+        "drop_rate": 0.12244897959183673
+      },
+      "Final Confirmation": {
+        "reached": 43,
+        "continued": 41,
+        "dropped": 2,
+        "drop_rate": 0.046511627906976744
+      }
+    },
+    "drop_force_percentages": {
+      "cognitive_energy": 10.411765523610839,
+      "intent": 0.0,
+      "effort_tolerance": 1.1993923738473802,
+      "risk_tolerance": 3.9853855879534597,
+      "trust": 32.305803066481516,
+      "value": 29.024940171193602,
+      "effort": 7.865428863992198,
+      "risk": 15.207284412921002,
+      "intent_mismatch": 0.0
+    }
+  },
+  "browsing_casually": {
+    "completion_rate": 0.39,
+    "total_personas": 100,
+    "completion_count": 39,
+    "step_progression": {
+      "Smart Credit against Mutual Funds": {
+        "reached": 100,
+        "continued": 74,
+        "dropped": 26,
+        "drop_rate": 0.26
+      },
+      "Check Your Eligibility - Mobile Number": {
+        "reached": 74,
+        "continued": 59,
+        "dropped": 15,
+        "drop_rate": 0.20270270270270271
+      },
+      "Check Limit - PAN and DOB": {
+        "reached": 59,
+        "continued": 49,
+        "dropped": 10,
+        "drop_rate": 0.1694915254237288
+      },
+      "OTP Verification": {
+        "reached": 49,
+        "continued": 45,
+        "dropped": 4,
+        "drop_rate": 0.08163265306122448
+      },
+      "Bank Account Linking": {
+        "reached": 45,
+        "continued": 43,
+        "dropped": 2,
+        "drop_rate": 0.044444444444444446
+      },
+      "Eligibility Results": {
+        "reached": 43,
+        "continued": 42,
+        "dropped": 1,
+        "drop_rate": 0.023255813953488372
+      },
+      "Final Confirmation": {
+        "reached": 42,
+        "continued": 39,
+        "dropped": 3,
+        "drop_rate": 0.07142857142857142
+      }
+    },
+    "drop_force_percentages": {
+      "cognitive_energy": 10.558739860689245,
+      "intent": 0.0,
+      "effort_tolerance": 1.3301839513654516,
+      "risk_tolerance": 3.644874476872924,
+      "trust": 31.474947472394234,
+      "value": 28.957545058096297,
+      "effort": 8.716260527222097,
+      "risk": 15.317448653359753,
+      "intent_mismatch": 0.0
+    }
+  },
+  "urgent_need": {
+    "completion_rate": 0.4,
+    "total_personas": 100,
+    "completion_count": 40,
+    "step_progression": {
+      "Smart Credit against Mutual Funds": {
+        "reached": 100,
+        "continued": 83,
+        "dropped": 17,
+        "drop_rate": 0.17
+      },
+      "Check Your Eligibility - Mobile Number": {
+        "reached": 83,
+        "continued": 69,
+        "dropped": 14,
+        "drop_rate": 0.1686746987951807
+      },
+      "Check Limit - PAN and DOB": {
+        "reached": 69,
+        "continued": 60,
+        "dropped": 9,
+        "drop_rate": 0.13043478260869565
+      },
+      "OTP Verification": {
+        "reached": 60,
+        "continued": 56,
+        "dropped": 4,
+        "drop_rate": 0.06666666666666667
+      },
+      "Bank Account Linking": {
+        "reached": 56,
+        "continued": 50,
+        "dropped": 6,
+        "drop_rate": 0.10714285714285714
+      },
+      "Eligibility Results": {
+        "reached": 50,
+        "continued": 47,
+        "dropped": 3,
+        "drop_rate": 0.06
+      },
+      "Final Confirmation": {
+        "reached": 47,
+        "continued": 40,
+        "dropped": 7,
+        "drop_rate": 0.14893617021276595
+      }
+    },
+    "drop_force_percentages": {
+      "cognitive_energy": 10.680402917041425,
+      "intent": 0.0,
+      "effort_tolerance": 1.4962939315391384,
+      "risk_tolerance": 4.017317608694401,
+      "trust": 28.91810003618881,
+      "value": 29.0677956005715,
+      "effort": 10.081860253853078,
+      "risk": 15.738229652111638,
+      "intent_mismatch": 0.0
+    }
+  },
+  "price_sensitive": {
+    "completion_rate": 0.29,
+    "total_personas": 100,
+    "completion_count": 29,
+    "step_progression": {
+      "Smart Credit against Mutual Funds": {
+        "reached": 100,
+        "continued": 75,
+        "dropped": 25,
+        "drop_rate": 0.25
+      },
+      "Check Your Eligibility - Mobile Number": {
+        "reached": 75,
+        "continued": 56,
+        "dropped": 19,
+        "drop_rate": 0.25333333333333335
+      },
+      "Check Limit - PAN and DOB": {
+        "reached": 56,
+        "continued": 46,
+        "dropped": 10,
+        "drop_rate": 0.17857142857142858
+      },
+      "OTP Verification": {
+        "reached": 46,
+        "continued": 44,
+        "dropped": 2,
+        "drop_rate": 0.043478260869565216
+      },
+      "Bank Account Linking": {
+        "reached": 44,
+        "continued": 38,
+        "dropped": 6,
+        "drop_rate": 0.13636363636363635
+      },
+      "Eligibility Results": {
+        "reached": 38,
+        "continued": 30,
+        "dropped": 8,
+        "drop_rate": 0.21052631578947367
+      },
+      "Final Confirmation": {
+        "reached": 30,
+        "continued": 29,
+        "dropped": 1,
+        "drop_rate": 0.03333333333333333
+      }
+    },
+    "drop_force_percentages": {
+      "cognitive_energy": 12.468924836956687,
+      "intent": 0.0,
+      "effort_tolerance": 1.5316186408364478,
+      "risk_tolerance": 3.9160043472830743,
+      "trust": 31.082346383580074,
+      "value": 27.37891391356965,
+      "effort": 9.07110567300928,
+      "risk": 14.551086204764784,
+      "intent_mismatch": 0.0
+    }
+  },
+  "tech_savvy_optimistic": {
+    "completion_rate": 0.5,
+    "total_personas": 100,
+    "completion_count": 50,
+    "step_progression": {
+      "Smart Credit against Mutual Funds": {
+        "reached": 100,
+        "continued": 87,
+        "dropped": 13,
+        "drop_rate": 0.13
+      },
+      "Check Your Eligibility - Mobile Number": {
+        "reached": 87,
+        "continued": 73,
+        "dropped": 14,
+        "drop_rate": 0.16091954022988506
+      },
+      "Check Limit - PAN and DOB": {
+        "reached": 73,
+        "continued": 65,
+        "dropped": 8,
+        "drop_rate": 0.1095890410958904
+      },
+      "OTP Verification": {
+        "reached": 65,
+        "continued": 62,
+        "dropped": 3,
+        "drop_rate": 0.046153846153846156
+      },
+      "Bank Account Linking": {
+        "reached": 62,
+        "continued": 60,
+        "dropped": 2,
+        "drop_rate": 0.03225806451612903
+      },
+      "Eligibility Results": {
+        "reached": 60,
+        "continued": 53,
+        "dropped": 7,
+        "drop_rate": 0.11666666666666667
+      },
+      "Final Confirmation": {
+        "reached": 53,
+        "continued": 50,
+        "dropped": 3,
+        "drop_rate": 0.05660377358490566
+      }
+    },
+    "drop_force_percentages": {
+      "cognitive_energy": 9.330571611196666,
+      "intent": 0.0,
+      "effort_tolerance": 2.1552958623393264,
+      "risk_tolerance": 4.406966882465498,
+      "trust": 28.861435758447882,
+      "value": 27.510741651521087,
+      "effort": 11.072555426696846,
+      "risk": 16.662432807332703,
+      "intent_mismatch": 0.0
+    }
+  }
+}

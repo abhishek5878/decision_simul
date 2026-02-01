@@ -1,0 +1,116 @@
+{
+  "scenario_name": "edtech_signup_demo",
+  "personas": [
+    {
+      "name": "GenZ_Student_Aspirational",
+      "description": "Gen Z student, high aspiration, tech-savvy",
+      "raw_fields": {
+        "SEC": 0.6,
+        "UrbanRuralTier": 0.8,
+        "DigitalLiteracy": 0.9,
+        "FamilyInfluence": 0.4,
+        "AspirationalLevel": 0.9,
+        "PriceSensitivity": 0.5,
+        "RegionalCulture": 0.5,
+        "InfluencerTrust": 0.7,
+        "ProfessionalSector": 0.7,
+        "EnglishProficiency": 0.9,
+        "HobbyDiversity": 0.8,
+        "CareerAmbition": 0.9,
+        "AgeBucket": 1.0,
+        "GenderMarital": 0.5
+      }
+    },
+    {
+      "name": "Working_Professional_Upskilling",
+      "description": "Working professional, mid-career, upskilling focus",
+      "raw_fields": {
+        "SEC": 0.7,
+        "UrbanRuralTier": 0.9,
+        "DigitalLiteracy": 0.8,
+        "FamilyInfluence": 0.5,
+        "AspirationalLevel": 0.8,
+        "PriceSensitivity": 0.4,
+        "RegionalCulture": 0.4,
+        "InfluencerTrust": 0.6,
+        "ProfessionalSector": 0.9,
+        "EnglishProficiency": 0.9,
+        "HobbyDiversity": 0.6,
+        "CareerAmbition": 0.8,
+        "AgeBucket": 0.7,
+        "GenderMarital": 0.6
+      }
+    },
+    {
+      "name": "Tier2_Conservative_Parent",
+      "description": "Tier-2 parent, conservative, price-sensitive",
+      "raw_fields": {
+        "SEC": 0.5,
+        "UrbanRuralTier": 0.4,
+        "DigitalLiteracy": 0.5,
+        "FamilyInfluence": 0.9,
+        "AspirationalLevel": 0.5,
+        "PriceSensitivity": 0.8,
+        "RegionalCulture": 0.8,
+        "InfluencerTrust": 0.4,
+        "ProfessionalSector": 0.5,
+        "EnglishProficiency": 0.5,
+        "HobbyDiversity": 0.3,
+        "CareerAmbition": 0.4,
+        "AgeBucket": 0.5,
+        "GenderMarital": 0.2
+      }
+    }
+  ],
+  "steps": [
+    {
+      "name": "Landing Page",
+      "description": "Course catalog, value proposition",
+      "cognitive_demand": 0.3,
+      "effort_demand": 0.0,
+      "risk_signal": 0.1,
+      "irreversibility": 0,
+      "delay_to_value": 4,
+      "explicit_value": 0.5,
+      "reassurance_signal": 0.4,
+      "authority_signal": 0.3
+    },
+    {
+      "name": "Email Signup",
+      "description": "Email registration",
+      "cognitive_demand": 0.2,
+      "effort_demand": 0.2,
+      "risk_signal": 0.1,
+      "irreversibility": 0,
+      "delay_to_value": 3,
+      "explicit_value": 0.3,
+      "reassurance_signal": 0.3,
+      "authority_signal": 0.2
+    },
+    {
+      "name": "Payment Selection",
+      "description": "Choose payment plan, enter card details",
+      "cognitive_demand": 0.4,
+      "effort_demand": 0.5,
+      "risk_signal": 0.6,
+      "irreversibility": 1,
+      "delay_to_value": 2,
+      "explicit_value": 0.4,
+      "reassurance_signal": 0.6,
+      "authority_signal": 0.5
+    },
+    {
+      "name": "Course Enrollment",
+      "description": "Confirm enrollment, access first lesson",
+      "cognitive_demand": 0.3,
+      "effort_demand": 0.2,
+      "risk_signal": 0.2,
+      "irreversibility": 0,
+      "delay_to_value": 0,
+      "explicit_value": 0.9,
+      "reassurance_signal": 0.5,
+      "authority_signal": 0.4
+    }
+  ]
+}
+

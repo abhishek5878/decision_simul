@@ -1,0 +1,12 @@
+product_name,category,india_relevance,total_onboarding_steps,first_value_step_index,first_value_type,gating_at_step0,skip_allowed_at_step0,personalization_present,onboarding_length,avg_effort_score,avg_risk_spike,avg_intent_alignment,dominant_onboarding_pattern,key_reason_it_works,key_reason_users_drop
+PhonePe,Payments/UPI,High,6,6,transaction,None,Yes,No,Short,0.2,0.15,0.95,Phone-first instant value,Phone-only entry + instant transaction value,Minimal friction - only OTP verification required
+Razorpay,Payments/Gateway,High,6,4,dashboard,Email,No,Medium,Medium,0.3,0.2,0.95,Value before full setup,Dashboard access before payment setup,Email required before value - but dashboard preview helps
+CRED,Credit Rewards,High,6,5,rewards_view,Phone,No,High,Medium,0.3,0.25,0.95,Rewards shown upfront,Rewards visible early increases intent alignment,Requires credit card linking before rewards visible
+Groww,Wealth/Investment,High,7,2,browse,None,Yes,Medium,Medium,0.2,0.15,0.95,Browse-first signup delayed,Can explore investments without signup - reduces commitment fear,Some users may not understand investment products without guidance
+Paytm,Payments/Wallet,High,6,4,wallet,Phone,No,Medium,Short,0.2,0.15,0.95,Phone-first wallet instant,Instant wallet activation - can use immediately,Requires adding money to wallet for transactions
+Zerodha,Trading/Stock Broker,High,6,6,account,Email/Phone,No,Low,Long,0.5,0.35,0.9,KYC required value delayed,Low brokerage value prop clear from start,Video KYC required before value - high friction
+CRED Pay Later,BNPL,High,6,4,credit_limit,Phone/Card,No,High,Medium,0.3,0.25,0.95,Credit visible early,Credit limit shown before full setup,Requires credit card linking
+Google Pay,Payments/UPI,High,6,5,send_screen,Phone,No,Medium,Short,0.2,0.15,0.95,Auto-linking instant value,Automatic bank linking reduces effort,Requires Google account
+Jupiter,Neobank,High,6,6,account,Phone,No,Medium,Long,0.5,0.35,0.9,KYC required value delayed,Clear value prop for savings account,Video KYC required before account activation
+CRED Stash,Wealth/Savings,High,6,5,dashboard,Phone/Card,No,High,Medium,0.3,0.25,0.95,Rewards visible early,Rewards shown upfront increases intent,Requires credit card linking
+

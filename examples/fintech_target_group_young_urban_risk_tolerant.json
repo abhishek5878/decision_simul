@@ -1,0 +1,7 @@
+{
+  "urban_rural": ["metro"],
+  "age_bucket": ["young"],
+  "risk_attitude": ["balanced", "risk_tolerant"],
+  "intent": ["medium", "high"]
+}
+

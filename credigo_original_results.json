@@ -1,0 +1,24 @@
+{
+  "simulation_type": "original_behavioral_engine",
+  "product": "Credigo.club",
+  "timestamp": "2025-12-30T04:00:05.754290",
+  "total_personas": 1000,
+  "total_trajectories": 7000,
+  "overall_completion_rate": 0.003,
+  "failure_reasons": {
+    "System 2 fatigue": 6385,
+    "Loss aversion": 583,
+    "Multi-factor failure": 11
+  },
+  "exit_steps": {
+    "Any preference on annual fee?": 288,
+    "What kind of perks excite you the most?": 3114,
+    "Find the Best Credit Card In 60 seconds": 3329,
+    "Your top 2 spend categories?": 38,
+    "Do you track your monthly spending?": 151,
+    "How much do you spend monthly?": 19,
+    "Do you have any existing credit cards?": 36,
+    "Completed": 21,
+    "straightforward + options are clearly defined": 4
+  }
+}

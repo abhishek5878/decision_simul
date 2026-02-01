@@ -1,0 +1,5130 @@
+{
+  "decision_boundaries": [
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "step_index": 0,
+      "persona_class": "medium_energy_low_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "medium_energy_low_risk_low_effort",
+        "trace_count": 916,
+        "energy_variance": 0.005155029100090774,
+        "risk_variance": 0.0006201980763143341,
+        "effort_variance": 0.0028440890715280033,
+        "value_variance": 0.007291874656006921,
+        "control_variance": 0.03153160359260884,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9620457644027609,
+        "is_stable": true
+      },
+      "accepted_count": 740,
+      "rejected_count": 176,
+      "cognitive_thresholds": {
+        "energy": [
+          0.30032308679211445,
+          0.5996605123144917
+        ],
+        "risk": [
+          0.196,
+          0.2772
+        ],
+        "effort": [
+          0.05,
+          0.2
+        ],
+        "value": [
+          0.1635,
+          0.916464
+        ],
+        "control": [
+          0.294,
+          1.048
+        ]
+      },
+      "supporting_trace_count": 916,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 916
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "9_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.30032308679211445,
+              "threshold_max": 0.5996605123144917,
+              "observed": 0.32011649131633846
+            },
+            "risk": {
+              "threshold_min": 0.196,
+              "threshold_max": 0.2772,
+              "observed": 0.2224
+            },
+            "effort": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2,
+              "observed": 0.05
+            },
+            "value": {
+              "threshold_min": 0.1635,
+              "threshold_max": 0.916464,
+              "observed": 0.29430000000000006
+            },
+            "control": {
+              "threshold_min": 0.294,
+              "threshold_max": 1.048,
+              "observed": 0.48000000000000004
+            }
+          }
+        },
+        {
+          "persona_id": "10_fresh_motivated",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.30032308679211445,
+              "threshold_max": 0.5996605123144917,
+              "observed": 0.592926160872944
+            },
+            "risk": {
+              "threshold_min": 0.196,
+              "threshold_max": 0.2772,
+              "observed": 0.26680000000000004
+            },
+            "effort": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2,
+              "observed": 0.1
+            },
+            "value": {
+              "threshold_min": 0.1635,
+              "threshold_max": 0.916464,
+              "observed": 0.34633600000000003
+            },
+            "control": {
+              "threshold_min": 0.294,
+              "threshold_max": 1.048,
+              "observed": 0.471
+            }
+          }
+        },
+        {
+          "persona_id": "35_fresh_motivated",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.30032308679211445,
+              "threshold_max": 0.5996605123144917,
+              "observed": 0.31962842069272174
+            },
+            "risk": {
+              "threshold_min": 0.196,
+              "threshold_max": 0.2772,
+              "observed": 0.274
+            },
+            "effort": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2,
+              "observed": 0.1
+            },
+            "value": {
+              "threshold_min": 0.1635,
+              "threshold_max": 0.916464,
+              "observed": 0.327
+            },
+            "control": {
+              "threshold_min": 0.294,
+              "threshold_max": 1.048,
+              "observed": 0.3989999999999999
+            }
+          }
+        },
+        {
+          "persona_id": "36_fresh_motivated",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.30032308679211445,
+              "threshold_max": 0.5996605123144917,
+              "observed": 0.39658384575842676
+            },
+            "risk": {
+              "threshold_min": 0.196,
+              "threshold_max": 0.2772,
+              "observed": 0.2732
+            },
+            "effort": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2,
+              "observed": 0.1
+            },
+            "value": {
+              "threshold_min": 0.1635,
+              "threshold_max": 0.916464,
+              "observed": 0.327
+            },
+            "control": {
+              "threshold_min": 0.294,
+              "threshold_max": 1.048,
+              "observed": 0.9139999999999999
+            }
+          }
+        },
+        {
+          "persona_id": "40_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.30032308679211445,
+              "threshold_max": 0.5996605123144917,
+              "observed": 0.33001988318248243
+            },
+            "risk": {
+              "threshold_min": 0.196,
+              "threshold_max": 0.2772,
+              "observed": 0.2224
+            },
+            "effort": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2,
+              "observed": 0.05
+            },
+            "value": {
+              "threshold_min": 0.1635,
+              "threshold_max": 0.916464,
+              "observed": 0.29430000000000006
+            },
+            "control": {
+              "threshold_min": 0.294,
+              "threshold_max": 1.048,
+              "observed": 0.43199999999999994
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.639050",
+      "last_observed_timestamp": "2026-01-03T11:41:17.360549",
+      "occurrence_count": 916,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "step_index": 0,
+      "persona_class": "low_energy_medium_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_low_effort",
+        "trace_count": 3568,
+        "energy_variance": 0.0060177193566405725,
+        "risk_variance": 0.006806465344366466,
+        "effort_variance": 0.00515534745193951,
+        "value_variance": 0.0037969360604094547,
+        "control_variance": 0.024213296537231803,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9632081881995298,
+        "is_stable": true
+      },
+      "accepted_count": 2813,
+      "rejected_count": 755,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.29994087663307883
+        ],
+        "risk": [
+          0.3396,
+          0.5772
+        ],
+        "effort": [
+          0.1,
+          0.3
+        ],
+        "value": [
+          0.1962,
+          0.651552
+        ],
+        "control": [
+          0.22799999999999998,
+          1.072
+        ]
+      },
+      "supporting_trace_count": 3568,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 3568
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 3568
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "0_tired_commuter",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.29994087663307883,
+              "observed": 0.1798640211306676
+            },
+            "risk": {
+              "threshold_min": 0.3396,
+              "threshold_max": 0.5772,
+              "observed": 0.37320000000000003
+            },
+            "effort": {
+              "threshold_min": 0.1,
+              "threshold_max": 0.3,
+              "observed": 0.3
+            },
+            "value": {
+              "threshold_min": 0.1962,
+              "threshold_max": 0.651552,
+              "observed": 0.2616
+            },
+            "control": {
+              "threshold_min": 0.22799999999999998,
+              "threshold_max": 1.072,
+              "observed": 0.681
+            }
+          }
+        },
+        {
+          "persona_id": "1_tired_commuter",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.29994087663307883,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.3396,
+              "threshold_max": 0.5772,
+              "observed": 0.3724
+            },
+            "effort": {
+              "threshold_min": 0.1,
+              "threshold_max": 0.3,
+              "observed": 0.3
+            },
+            "value": {
+              "threshold_min": 0.1962,
+              "threshold_max": 0.651552,
+              "observed": 0.2616
+            },
+            "control": {
+              "threshold_min": 0.22799999999999998,
+              "threshold_max": 1.072,
+              "observed": 0.5249999999999999
+            }
+          }
+        },
+        {
+          "persona_id": "1_distrustful_arrival",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.29994087663307883,
+              "observed": 0.13589138709355542
+            },
+            "risk": {
+              "threshold_min": 0.3396,
+              "threshold_max": 0.5772,
+              "observed": 0.5724
+            },
+            "effort": {
+              "threshold_min": 0.1,
+              "threshold_max": 0.3,
+              "observed": 0.2
+            },
+            "value": {
+              "threshold_min": 0.1962,
+              "threshold_max": 0.651552,
+              "observed": 0.2616
+            },
+            "control": {
+              "threshold_min": 0.22799999999999998,
+              "threshold_max": 1.072,
+              "observed": 0.42699999999999994
+            }
+          }
+        },
+        {
+          "persona_id": "3_tired_commuter",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.29994087663307883,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.3396,
+              "threshold_max": 0.5772,
+              "observed": 0.37560000000000004
+            },
+            "effort": {
+              "threshold_min": 0.1,
+              "threshold_max": 0.3,
+              "observed": 0.3
+            },
+            "value": {
+              "threshold_min": 0.1962,
+              "threshold_max": 0.651552,
+              "observed": 0.2616
+            },
+            "control": {
+              "threshold_min": 0.22799999999999998,
+              "threshold_max": 1.072,
+              "observed": 0.573
+            }
+          }
+        },
+        {
+          "persona_id": "3_distrustful_arrival",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.29994087663307883,
+              "observed": 0.1454913870935554
+            },
+            "risk": {
+              "threshold_min": 0.3396,
+              "threshold_max": 0.5772,
+              "observed": 0.5756
+            },
+            "effort": {
+              "threshold_min": 0.1,
+              "threshold_max": 0.3,
+              "observed": 0.2
+            },
+            "value": {
+              "threshold_min": 0.1962,
+              "threshold_max": 0.651552,
+              "observed": 0.2616
+            },
+            "control": {
+              "threshold_min": 0.22799999999999998,
+              "threshold_max": 1.072,
+              "observed": 0.475
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.639876",
+      "last_observed_timestamp": "2026-01-03T11:41:17.370004",
+      "occurrence_count": 3568,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "step_index": 0,
+      "persona_class": "medium_energy_medium_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "medium_energy_medium_risk_low_effort",
+        "trace_count": 430,
+        "energy_variance": 0.0043451538870348284,
+        "risk_variance": 0.007362185445970795,
+        "effort_variance": 0.002529421308815577,
+        "value_variance": 0.01621931388575498,
+        "control_variance": 0.035698841325040566,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9470760673179066,
+        "is_stable": true
+      },
+      "accepted_count": 349,
+      "rejected_count": 81,
+      "cognitive_thresholds": {
+        "energy": [
+          0.3001824950039784,
+          0.5947815561150884
+        ],
+        "risk": [
+          0.3396,
+          0.5772
+        ],
+        "effort": [
+          0.1,
+          0.3
+        ],
+        "value": [
+          0.1962,
+          1.021632
+        ],
+        "control": [
+          0.258,
+          1.1280000000000001
+        ]
+      },
+      "supporting_trace_count": 430,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 430
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "21_distrustful_arrival",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.3001824950039784,
+              "threshold_max": 0.5947815561150884,
+              "observed": 0.3058304283965958
+            },
+            "risk": {
+              "threshold_min": 0.3396,
+              "threshold_max": 0.5772,
+              "observed": 0.5772
+            },
+            "effort": {
+              "threshold_min": 0.1,
+              "threshold_max": 0.3,
+              "observed": 0.2
+            },
+            "value": {
+              "threshold_min": 0.1962,
+              "threshold_max": 1.021632,
+              "observed": 0.2616
+            },
+            "control": {
+              "threshold_min": 0.258,
+              "threshold_max": 1.1280000000000001,
+              "observed": 0.30600000000000005
+            }
+          }
+        },
+        {
+          "persona_id": "37_price_sensitive",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.3001824950039784,
+              "threshold_max": 0.5947815561150884,
+              "observed": 0.35948242430426397
+            },
+            "risk": {
+              "threshold_min": 0.3396,
+              "threshold_max": 0.5772,
+              "observed": 0.4716
+            },
+            "effort": {
+              "threshold_min": 0.1,
+              "threshold_max": 0.3,
+              "observed": 0.2
+            },
+            "value": {
+              "threshold_min": 0.1962,
+              "threshold_max": 1.021632,
+              "observed": 0.1962
+            },
+            "control": {
+              "threshold_min": 0.258,
+              "threshold_max": 1.1280000000000001,
+              "observed": 0.585
+            }
+          }
+        },
+        {
+          "persona_id": "38_urgent_need",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.3001824950039784,
+              "threshold_max": 0.5947815561150884,
+              "observed": 0.35832251427309353
+            },
+            "risk": {
+              "threshold_min": 0.3396,
+              "threshold_max": 0.5772,
+              "observed": 0.3748
+            },
+            "effort": {
+              "threshold_min": 0.1,
+              "threshold_max": 0.3,
+              "observed": 0.1
+            },
+            "value": {
+              "threshold_min": 0.1962,
+              "threshold_max": 1.021632,
+              "observed": 0.3597
+            },
+            "control": {
+              "threshold_min": 0.258,
+              "threshold_max": 1.1280000000000001,
+              "observed": 0.96
+            }
+          }
+        },
+        {
+          "persona_id": "42_price_sensitive",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.3001824950039784,
+              "threshold_max": 0.5947815561150884,
+              "observed": 0.33550392672621515
+            },
+            "risk": {
+              "threshold_min": 0.3396,
+              "threshold_max": 0.5772,
+              "observed": 0.458
+            },
+            "effort": {
+              "threshold_min": 0.1,
+              "threshold_max": 0.3,
+              "observed": 0.2
+            },
+            "value": {
+              "threshold_min": 0.1962,
+              "threshold_max": 1.021632,
+              "observed": 0.256728
+            },
+            "control": {
+              "threshold_min": 0.258,
+              "threshold_max": 1.1280000000000001,
+              "observed": 0.6659999999999999
+            }
+          }
+        },
+        {
+          "persona_id": "55_distrustful_arrival",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.3001824950039784,
+              "threshold_max": 0.5947815561150884,
+              "observed": 0.3399412632262756
+            },
+            "risk": {
+              "threshold_min": 0.3396,
+              "threshold_max": 0.5772,
+              "observed": 0.5772
+            },
+            "effort": {
+              "threshold_min": 0.1,
+              "threshold_max": 0.3,
+              "observed": 0.2
+            },
+            "value": {
+              "threshold_min": 0.1962,
+              "threshold_max": 1.021632,
+              "observed": 0.2616
+            },
+            "control": {
+              "threshold_min": 0.258,
+              "threshold_max": 1.1280000000000001,
+              "observed": 0.30300000000000005
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.640038",
+      "last_observed_timestamp": "2026-01-03T11:41:17.358703",
+      "occurrence_count": 430,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "step_index": 0,
+      "persona_class": "low_energy_low_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_low_risk_low_effort",
+        "trace_count": 2049,
+        "energy_variance": 0.006360678263699623,
+        "risk_variance": 0.0005736133794556547,
+        "effort_variance": 0.004133360534165269,
+        "value_variance": 0.005452038608101834,
+        "control_variance": 0.02492810072596686,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9668417667908886,
+        "is_stable": true
+      },
+      "accepted_count": 1619,
+      "rejected_count": 430,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.2999420418883671
+        ],
+        "risk": [
+          0.19840000000000002,
+          0.2772
+        ],
+        "effort": [
+          0.05,
+          0.2
+        ],
+        "value": [
+          0.1635,
+          0.4663840000000001
+        ],
+        "control": [
+          0.288,
+          1.072
+        ]
+      },
+      "supporting_trace_count": 2049,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 2049
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 2049
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "1_browsing_casually",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2999420418883671,
+              "observed": 0.12741485533676356
+            },
+            "risk": {
+              "threshold_min": 0.19840000000000002,
+              "threshold_max": 0.2772,
+              "observed": 0.2724
+            },
+            "effort": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2,
+              "observed": 0.2
+            },
+            "value": {
+              "threshold_min": 0.1635,
+              "threshold_max": 0.4663840000000001,
+              "observed": 0.1635
+            },
+            "control": {
+              "threshold_min": 0.288,
+              "threshold_max": 1.072,
+              "observed": 0.574
+            }
+          }
+        },
+        {
+          "persona_id": "3_browsing_casually",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2999420418883671,
+              "observed": 0.13701485533676355
+            },
+            "risk": {
+              "threshold_min": 0.19840000000000002,
+              "threshold_max": 0.2772,
+              "observed": 0.2756
+            },
+            "effort": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2,
+              "observed": 0.2
+            },
+            "value": {
+              "threshold_min": 0.1635,
+              "threshold_max": 0.4663840000000001,
+              "observed": 0.1635
+            },
+            "control": {
+              "threshold_min": 0.288,
+              "threshold_max": 1.072,
+              "observed": 0.6219999999999999
+            }
+          }
+        },
+        {
+          "persona_id": "4_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2999420418883671,
+              "observed": 0.2175456784772388
+            },
+            "risk": {
+              "threshold_min": 0.19840000000000002,
+              "threshold_max": 0.2772,
+              "observed": 0.2272
+            },
+            "effort": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2,
+              "observed": 0.05
+            },
+            "value": {
+              "threshold_min": 0.1635,
+              "threshold_max": 0.4663840000000001,
+              "observed": 0.29430000000000006
+            },
+            "control": {
+              "threshold_min": 0.288,
+              "threshold_max": 1.072,
+              "observed": 0.40800000000000003
+            }
+          }
+        },
+        {
+          "persona_id": "6_browsing_casually",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2999420418883671,
+              "observed": 0.24019695304206343
+            },
+            "risk": {
+              "threshold_min": 0.19840000000000002,
+              "threshold_max": 0.2772,
+              "observed": 0.2724
+            },
+            "effort": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2,
+              "observed": 0.2
+            },
+            "value": {
+              "threshold_min": 0.1635,
+              "threshold_max": 0.4663840000000001,
+              "observed": 0.1635
+            },
+            "control": {
+              "threshold_min": 0.288,
+              "threshold_max": 1.072,
+              "observed": 0.43800000000000006
+            }
+          }
+        },
+        {
+          "persona_id": "11_browsing_casually",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2999420418883671,
+              "observed": 0.2638284206927217
+            },
+            "risk": {
+              "threshold_min": 0.19840000000000002,
+              "threshold_max": 0.2772,
+              "observed": 0.2724
+            },
+            "effort": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2,
+              "observed": 0.2
+            },
+            "value": {
+              "threshold_min": 0.1635,
+              "threshold_max": 0.4663840000000001,
+              "observed": 0.1635
+            },
+            "control": {
+              "threshold_min": 0.288,
+              "threshold_max": 1.072,
+              "observed": 0.4620000000000001
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.644442",
+      "last_observed_timestamp": "2026-01-03T11:41:17.370604",
+      "occurrence_count": 2049,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "step_index": 0,
+      "persona_class": "high_energy_low_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "high_energy_low_risk_low_effort",
+        "trace_count": 35,
+        "energy_variance": 0.0016008093731487536,
+        "risk_variance": 0.0006284139102040815,
+        "effort_variance": 0.0010489795918367348,
+        "value_variance": 0.021739737617162438,
+        "control_variance": 0.03617494204081632,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9510456939734654,
+        "is_stable": true
+      },
+      "accepted_count": 32,
+      "rejected_count": 3,
+      "cognitive_thresholds": {
+        "energy": [
+          0.6000000000000001,
+          0.7411721760961001
+        ],
+        "risk": [
+          0.2016,
+          0.26839999999999997
+        ],
+        "effort": [
+          0.05,
+          0.2
+        ],
+        "value": [
+          0.20943599999999998,
+          0.7967439999999999
+        ],
+        "control": [
+          0.42600000000000005,
+          1.1280000000000001
+        ]
+      },
+      "supporting_trace_count": 35,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 35
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "10_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.6000000000000001,
+              "threshold_max": 0.7411721760961001,
+              "observed": 0.6158302325995896
+            },
+            "risk": {
+              "threshold_min": 0.2016,
+              "threshold_max": 0.26839999999999997,
+              "observed": 0.2168
+            },
+            "effort": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2,
+              "observed": 0.05
+            },
+            "value": {
+              "threshold_min": 0.20943599999999998,
+              "threshold_max": 0.7967439999999999,
+              "observed": 0.311264
+            },
+            "control": {
+              "threshold_min": 0.42600000000000005,
+              "threshold_max": 1.1280000000000001,
+              "observed": 0.504
+            }
+          }
+        },
+        {
+          "persona_id": "458_fresh_motivated",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.6000000000000001,
+              "threshold_max": 0.7411721760961001,
+              "observed": 0.6816775510494424
+            },
+            "risk": {
+              "threshold_min": 0.2016,
+              "threshold_max": 0.26839999999999997,
+              "observed": 0.2564
+            },
+            "effort": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2,
+              "observed": 0.1
+            },
+            "value": {
+              "threshold_min": 0.20943599999999998,
+              "threshold_max": 0.7967439999999999,
+              "observed": 0.593344
+            },
+            "control": {
+              "threshold_min": 0.42600000000000005,
+              "threshold_max": 1.1280000000000001,
+              "observed": 0.8659999999999999
+            }
+          }
+        },
+        {
+          "persona_id": "784_fresh_motivated",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.6000000000000001,
+              "threshold_max": 0.7411721760961001,
+              "observed": 0.720222391152655
+            },
+            "risk": {
+              "threshold_min": 0.2016,
+              "threshold_max": 0.26839999999999997,
+              "observed": 0.2652
+            },
+            "effort": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2,
+              "observed": 0.1
+            },
+            "value": {
+              "threshold_min": 0.20943599999999998,
+              "threshold_max": 0.7967439999999999,
+              "observed": 0.44589599999999996
+            },
+            "control": {
+              "threshold_min": 0.42600000000000005,
+              "threshold_max": 1.1280000000000001,
+              "observed": 0.887
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.695238",
+      "last_observed_timestamp": "2026-01-03T11:41:17.322765",
+      "occurrence_count": 35,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_high_risk_medium_effort",
+        "trace_count": 4742,
+        "energy_variance": 0.0001988210563551425,
+        "risk_variance": 0.029708493325409684,
+        "effort_variance": 0.005753666154820275,
+        "value_variance": 0.00911757524650698,
+        "control_variance": 0.03814882232007523,
+        "dominant_factor_variance": 0.04426144820468737,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.8893966493127788,
+        "is_stable": true
+      },
+      "accepted_count": 3791,
+      "rejected_count": 951,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.2976331772391898
+        ],
+        "risk": [
+          0.6023371999999999,
+          1.3217944
+        ],
+        "effort": [
+          0.30000000000000004,
+          0.6
+        ],
+        "value": [
+          0.252979090909091,
+          1.0653967878347108
+        ],
+        "control": [
+          0.33299999999999996,
+          1.2730000000000001
+        ]
+      },
+      "supporting_trace_count": 4742,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 4742
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 4742
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 4403
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "1_fresh_motivated",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2976331772391898,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6023371999999999,
+              "threshold_max": 1.3217944,
+              "observed": 0.7584818
+            },
+            "effort": {
+              "threshold_min": 0.30000000000000004,
+              "threshold_max": 0.6,
+              "observed": 0.4
+            },
+            "value": {
+              "threshold_min": 0.252979090909091,
+              "threshold_max": 1.0653967878347108,
+              "observed": 0.4562325619834711
+            },
+            "control": {
+              "threshold_min": 0.33299999999999996,
+              "threshold_max": 1.2730000000000001,
+              "observed": 0.798
+            }
+          }
+        },
+        {
+          "persona_id": "1_price_sensitive",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2976331772391898,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6023371999999999,
+              "threshold_max": 1.3217944,
+              "observed": 1.017615
+            },
+            "effort": {
+              "threshold_min": 0.30000000000000004,
+              "threshold_max": 0.6,
+              "observed": 0.5
+            },
+            "value": {
+              "threshold_min": 0.252979090909091,
+              "threshold_max": 1.0653967878347108,
+              "observed": 0.293629785123967
+            },
+            "control": {
+              "threshold_min": 0.33299999999999996,
+              "threshold_max": 1.2730000000000001,
+              "observed": 0.7
+            }
+          }
+        },
+        {
+          "persona_id": "3_price_sensitive",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2976331772391898,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6023371999999999,
+              "threshold_max": 1.3217944,
+              "observed": 1.0014342
+            },
+            "effort": {
+              "threshold_min": 0.30000000000000004,
+              "threshold_max": 0.6,
+              "observed": 0.52
+            },
+            "value": {
+              "threshold_min": 0.252979090909091,
+              "threshold_max": 1.0653967878347108,
+              "observed": 0.293629785123967
+            },
+            "control": {
+              "threshold_min": 0.33299999999999996,
+              "threshold_max": 1.2730000000000001,
+              "observed": 0.7779999999999999
+            }
+          }
+        },
+        {
+          "persona_id": "5_tired_commuter",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2976331772391898,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6023371999999999,
+              "threshold_max": 1.3217944,
+              "observed": 1.0042118
+            },
+            "effort": {
+              "threshold_min": 0.30000000000000004,
+              "threshold_max": 0.6,
+              "observed": 0.585
+            },
+            "value": {
+              "threshold_min": 0.252979090909091,
+              "threshold_max": 1.0653967878347108,
+              "observed": 0.374931173553719
+            },
+            "control": {
+              "threshold_min": 0.33299999999999996,
+              "threshold_max": 1.2730000000000001,
+              "observed": 0.534
+            }
+          }
+        },
+        {
+          "persona_id": "6_tired_commuter",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2976331772391898,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6023371999999999,
+              "threshold_max": 1.3217944,
+              "observed": 0.9900229999999999
+            },
+            "effort": {
+              "threshold_min": 0.30000000000000004,
+              "threshold_max": 0.6,
+              "observed": 0.575
+            },
+            "value": {
+              "threshold_min": 0.252979090909091,
+              "threshold_max": 1.0653967878347108,
+              "observed": 0.374931173553719
+            },
+            "control": {
+              "threshold_min": 0.33299999999999996,
+              "threshold_max": 1.2730000000000001,
+              "observed": 0.555
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.639188",
+      "last_observed_timestamp": "2026-01-03T11:41:17.370144",
+      "occurrence_count": 4742,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "persona_class": "low_energy_medium_risk_medium_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_medium_effort",
+        "trace_count": 154,
+        "energy_variance": 0.0011498314600772636,
+        "risk_variance": 0.0025406971959845187,
+        "effort_variance": 0.004426910102884128,
+        "value_variance": 0.005519663451841276,
+        "control_variance": 0.012057954840613934,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9794439543588791,
+        "is_stable": true
+      },
+      "accepted_count": 123,
+      "rejected_count": 31,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.2918721536601135
+        ],
+        "risk": [
+          0.39079679999999994,
+          0.599682
+        ],
+        "effort": [
+          0.305,
+          0.5800000000000001
+        ],
+        "value": [
+          0.252979090909091,
+          0.7149070429090908
+        ],
+        "control": [
+          0.9969999999999999,
+          1.437
+        ]
+      },
+      "supporting_trace_count": 154,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 154
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 154
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "98_fresh_motivated",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2918721536601135,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.39079679999999994,
+              "threshold_max": 0.599682,
+              "observed": 0.4771018
+            },
+            "effort": {
+              "threshold_min": 0.305,
+              "threshold_max": 0.5800000000000001,
+              "observed": 0.45499999999999996
+            },
+            "value": {
+              "threshold_min": 0.252979090909091,
+              "threshold_max": 0.7149070429090908,
+              "observed": 0.4562325619834711
+            },
+            "control": {
+              "threshold_min": 0.9969999999999999,
+              "threshold_max": 1.437,
+              "observed": 1.376
+            }
+          }
+        },
+        {
+          "persona_id": "98_browsing_casually",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2918721536601135,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.39079679999999994,
+              "threshold_max": 0.599682,
+              "observed": 0.50981
+            },
+            "effort": {
+              "threshold_min": 0.305,
+              "threshold_max": 0.5800000000000001,
+              "observed": 0.5549999999999999
+            },
+            "value": {
+              "threshold_min": 0.252979090909091,
+              "threshold_max": 0.7149070429090908,
+              "observed": 0.252979090909091
+            },
+            "control": {
+              "threshold_min": 0.9969999999999999,
+              "threshold_max": 1.437,
+              "observed": 1.315
+            }
+          }
+        },
+        {
+          "persona_id": "153_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2918721536601135,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.39079679999999994,
+              "threshold_max": 0.599682,
+              "observed": 0.5745568000000001
+            },
+            "effort": {
+              "threshold_min": 0.305,
+              "threshold_max": 0.5800000000000001,
+              "observed": 0.43
+            },
+            "value": {
+              "threshold_min": 0.252979090909091,
+              "threshold_max": 0.7149070429090908,
+              "observed": 0.4155818677685951
+            },
+            "control": {
+              "threshold_min": 0.9969999999999999,
+              "threshold_max": 1.437,
+              "observed": 1.0110000000000001
+            }
+          }
+        },
+        {
+          "persona_id": "351_fresh_motivated",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2918721536601135,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.39079679999999994,
+              "threshold_max": 0.599682,
+              "observed": 0.528577
+            },
+            "effort": {
+              "threshold_min": 0.305,
+              "threshold_max": 0.5800000000000001,
+              "observed": 0.45499999999999996
+            },
+            "value": {
+              "threshold_min": 0.252979090909091,
+              "threshold_max": 0.7149070429090908,
+              "observed": 0.4562325619834711
+            },
+            "control": {
+              "threshold_min": 0.9969999999999999,
+              "threshold_max": 1.437,
+              "observed": 1.22
+            }
+          }
+        },
+        {
+          "persona_id": "351_browsing_casually",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2918721536601135,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.39079679999999994,
+              "threshold_max": 0.599682,
+              "observed": 0.5612851999999999
+            },
+            "effort": {
+              "threshold_min": 0.305,
+              "threshold_max": 0.5800000000000001,
+              "observed": 0.5549999999999999
+            },
+            "value": {
+              "threshold_min": 0.252979090909091,
+              "threshold_max": 0.7149070429090908,
+              "observed": 0.252979090909091
+            },
+            "control": {
+              "threshold_min": 0.9969999999999999,
+              "threshold_max": 1.437,
+              "observed": 1.159
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.644067",
+      "last_observed_timestamp": "2026-01-03T11:41:17.360697",
+      "occurrence_count": 154,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "persona_class": "low_energy_high_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_high_risk_high_effort",
+        "trace_count": 437,
+        "energy_variance": 0.0,
+        "risk_variance": 0.009471046349696581,
+        "effort_variance": 0.0007397881331525005,
+        "value_variance": 3.835612373569214e-06,
+        "control_variance": 0.03332732710544643,
+        "dominant_factor_variance": 0.01200848151491613,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9531579207245485,
+        "is_stable": true
+      },
+      "accepted_count": 346,
+      "rejected_count": 91,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.05
+        ],
+        "risk": [
+          0.6425182,
+          1.0969864
+        ],
+        "effort": [
+          0.6000000000000001,
+          0.6799999999999999
+        ],
+        "value": [
+          0.374931173553719,
+          0.415919062214876
+        ],
+        "control": [
+          0.373,
+          1.254
+        ]
+      },
+      "supporting_trace_count": 437,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 437
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 437
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 429
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "39_tired_commuter",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6425182,
+              "threshold_max": 1.0969864,
+              "observed": 1.049231
+            },
+            "effort": {
+              "threshold_min": 0.6000000000000001,
+              "threshold_max": 0.6799999999999999,
+              "observed": 0.6799999999999999
+            },
+            "value": {
+              "threshold_min": 0.374931173553719,
+              "threshold_max": 0.415919062214876,
+              "observed": 0.374931173553719
+            },
+            "control": {
+              "threshold_min": 0.373,
+              "threshold_max": 1.254,
+              "observed": 0.49500000000000005
+            }
+          }
+        },
+        {
+          "persona_id": "44_tired_commuter",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6425182,
+              "threshold_max": 1.0969864,
+              "observed": 1.0268126
+            },
+            "effort": {
+              "threshold_min": 0.6000000000000001,
+              "threshold_max": 0.6799999999999999,
+              "observed": 0.6699999999999999
+            },
+            "value": {
+              "threshold_min": 0.374931173553719,
+              "threshold_max": 0.415919062214876,
+              "observed": 0.374931173553719
+            },
+            "control": {
+              "threshold_min": 0.373,
+              "threshold_max": 1.254,
+              "observed": 0.534
+            }
+          }
+        },
+        {
+          "persona_id": "46_tired_commuter",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6425182,
+              "threshold_max": 1.0969864,
+              "observed": 1.0343461999999999
+            },
+            "effort": {
+              "threshold_min": 0.6000000000000001,
+              "threshold_max": 0.6799999999999999,
+              "observed": 0.655
+            },
+            "value": {
+              "threshold_min": 0.374931173553719,
+              "threshold_max": 0.415919062214876,
+              "observed": 0.374931173553719
+            },
+            "control": {
+              "threshold_min": 0.373,
+              "threshold_max": 1.254,
+              "observed": 0.534
+            }
+          }
+        },
+        {
+          "persona_id": "49_tired_commuter",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6425182,
+              "threshold_max": 1.0969864,
+              "observed": 0.990047
+            },
+            "effort": {
+              "threshold_min": 0.6000000000000001,
+              "threshold_max": 0.6799999999999999,
+              "observed": 0.635
+            },
+            "value": {
+              "threshold_min": 0.374931173553719,
+              "threshold_max": 0.415919062214876,
+              "observed": 0.374931173553719
+            },
+            "control": {
+              "threshold_min": 0.373,
+              "threshold_max": 1.254,
+              "observed": 0.562
+            }
+          }
+        },
+        {
+          "persona_id": "65_tired_commuter",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6425182,
+              "threshold_max": 1.0969864,
+              "observed": 0.8798502
+            },
+            "effort": {
+              "threshold_min": 0.6000000000000001,
+              "threshold_max": 0.6799999999999999,
+              "observed": 0.6699999999999999
+            },
+            "value": {
+              "threshold_min": 0.374931173553719,
+              "threshold_max": 0.415919062214876,
+              "observed": 0.374931173553719
+            },
+            "control": {
+              "threshold_min": 0.373,
+              "threshold_max": 1.254,
+              "observed": 0.6379999999999999
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.648885",
+      "last_observed_timestamp": "2026-01-03T11:41:17.352701",
+      "occurrence_count": 437,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "persona_class": "low_energy_high_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_high_risk_low_effort",
+        "trace_count": 132,
+        "energy_variance": 0.005431836844555552,
+        "risk_variance": 0.006564251781193902,
+        "effort_variance": 0.00047465564738292015,
+        "value_variance": 0.015965138252268904,
+        "control_variance": 0.028738001836547292,
+        "dominant_factor_variance": 0.12337111573752799,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.8308897767729131,
+        "is_stable": true
+      },
+      "accepted_count": 117,
+      "rejected_count": 15,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.2826829334937313
+        ],
+        "risk": [
+          0.6020863999999999,
+          0.9699248
+        ],
+        "effort": [
+          0.21500000000000002,
+          0.3
+        ],
+        "value": [
+          0.4155818677685951,
+          1.045511184
+        ],
+        "control": [
+          0.44099999999999995,
+          1.1949999999999998
+        ]
+      },
+      "supporting_trace_count": 132,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 132
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 132
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 100
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "26_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2826829334937313,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6020863999999999,
+              "threshold_max": 0.9699248,
+              "observed": 0.8455280000000001
+            },
+            "effort": {
+              "threshold_min": 0.21500000000000002,
+              "threshold_max": 0.3,
+              "observed": 0.26999999999999996
+            },
+            "value": {
+              "threshold_min": 0.4155818677685951,
+              "threshold_max": 1.045511184,
+              "observed": 0.43907419398347114
+            },
+            "control": {
+              "threshold_min": 0.44099999999999995,
+              "threshold_max": 1.1949999999999998,
+              "observed": 0.5129999999999999
+            }
+          }
+        },
+        {
+          "persona_id": "128_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2826829334937313,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6020863999999999,
+              "threshold_max": 0.9699248,
+              "observed": 0.652928
+            },
+            "effort": {
+              "threshold_min": 0.21500000000000002,
+              "threshold_max": 0.3,
+              "observed": 0.3
+            },
+            "value": {
+              "threshold_min": 0.4155818677685951,
+              "threshold_max": 1.045511184,
+              "observed": 0.46300983550413227
+            },
+            "control": {
+              "threshold_min": 0.44099999999999995,
+              "threshold_max": 1.1949999999999998,
+              "observed": 0.8290000000000002
+            }
+          }
+        },
+        {
+          "persona_id": "149_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2826829334937313,
+              "observed": 0.14462172549232863
+            },
+            "risk": {
+              "threshold_min": 0.6020863999999999,
+              "threshold_max": 0.9699248,
+              "observed": 0.7836752
+            },
+            "effort": {
+              "threshold_min": 0.21500000000000002,
+              "threshold_max": 0.3,
+              "observed": 0.29
+            },
+            "value": {
+              "threshold_min": 0.4155818677685951,
+              "threshold_max": 1.045511184,
+              "observed": 0.4155818677685951
+            },
+            "control": {
+              "threshold_min": 0.44099999999999995,
+              "threshold_max": 1.1949999999999998,
+              "observed": 0.654
+            }
+          }
+        },
+        {
+          "persona_id": "186_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2826829334937313,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6020863999999999,
+              "threshold_max": 0.9699248,
+              "observed": 0.8165504
+            },
+            "effort": {
+              "threshold_min": 0.21500000000000002,
+              "threshold_max": 0.3,
+              "observed": 0.3
+            },
+            "value": {
+              "threshold_min": 0.4155818677685951,
+              "threshold_max": 1.045511184,
+              "observed": 0.48739224119008273
+            },
+            "control": {
+              "threshold_min": 0.44099999999999995,
+              "threshold_max": 1.1949999999999998,
+              "observed": 0.5369999999999999
+            }
+          }
+        },
+        {
+          "persona_id": "225_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2826829334937313,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6020863999999999,
+              "threshold_max": 0.9699248,
+              "observed": 0.6615824
+            },
+            "effort": {
+              "threshold_min": 0.21500000000000002,
+              "threshold_max": 0.3,
+              "observed": 0.295
+            },
+            "value": {
+              "threshold_min": 0.4155818677685951,
+              "threshold_max": 1.045511184,
+              "observed": 0.4155818677685951
+            },
+            "control": {
+              "threshold_min": 0.44099999999999995,
+              "threshold_max": 1.1949999999999998,
+              "observed": 0.871
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.775720",
+      "last_observed_timestamp": "2026-01-03T11:41:17.259367",
+      "occurrence_count": 132,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "persona_class": "low_energy_medium_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_low_effort",
+        "trace_count": 33,
+        "energy_variance": 0.006188572737445143,
+        "risk_variance": 0.0014134740490539582,
+        "effort_variance": 0.000504178145087236,
+        "value_variance": 0.00668824756992349,
+        "control_variance": 0.00907848668503215,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9809016326507665,
+        "is_stable": true
+      },
+      "accepted_count": 32,
+      "rejected_count": 1,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.293797025809068
+        ],
+        "risk": [
+          0.46628479999999994,
+          0.5987600000000001
+        ],
+        "effort": [
+          0.21000000000000002,
+          0.3
+        ],
+        "value": [
+          0.4155818677685951,
+          0.6989488597685949
+        ],
+        "control": [
+          0.9249999999999999,
+          1.3930000000000002
+        ]
+      },
+      "supporting_trace_count": 33,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 33
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 33
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "731_fresh_motivated",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.293797025809068,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.46628479999999994,
+              "threshold_max": 0.5987600000000001,
+              "observed": 0.5956378000000001
+            },
+            "effort": {
+              "threshold_min": 0.21000000000000002,
+              "threshold_max": 0.3,
+              "observed": 0.29499999999999993
+            },
+            "value": {
+              "threshold_min": 0.4155818677685951,
+              "threshold_max": 0.6989488597685949,
+              "observed": 0.5377974870743801
+            },
+            "control": {
+              "threshold_min": 0.9249999999999999,
+              "threshold_max": 1.3930000000000002,
+              "observed": 1.077
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.795958",
+      "last_observed_timestamp": "2026-01-03T11:41:17.320837",
+      "occurrence_count": 33,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "persona_class": "medium_energy_medium_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "medium_energy_medium_risk_low_effort",
+        "trace_count": 17,
+        "energy_variance": 0.006258376571492332,
+        "risk_variance": 0.0035878638311997242,
+        "effort_variance": 0.001085294117647059,
+        "value_variance": 0.09005897868631317,
+        "control_variance": 0.012041121107266439,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.909574692548865,
+        "is_stable": true
+      },
+      "accepted_count": 16,
+      "rejected_count": 1,
+      "cognitive_thresholds": {
+        "energy": [
+          0.30435899301675906,
+          0.5365532310789133
+        ],
+        "risk": [
+          0.3939151999999999,
+          0.5898298
+        ],
+        "effort": [
+          0.175,
+          0.295
+        ],
+        "value": [
+          0.4155818677685951,
+          1.3657357360661155
+        ],
+        "control": [
+          0.9969999999999999,
+          1.3930000000000002
+        ]
+      },
+      "supporting_trace_count": 17,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 17
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "940_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.30435899301675906,
+              "threshold_max": 0.5365532310789133,
+              "observed": 0.5217223018739386
+            },
+            "risk": {
+              "threshold_min": 0.3939151999999999,
+              "threshold_max": 0.5898298,
+              "observed": 0.407864
+            },
+            "effort": {
+              "threshold_min": 0.175,
+              "threshold_max": 0.295,
+              "observed": 0.18
+            },
+            "value": {
+              "threshold_min": 0.4155818677685951,
+              "threshold_max": 1.3657357360661155,
+              "observed": 0.5632545318347106
+            },
+            "control": {
+              "threshold_min": 0.9969999999999999,
+              "threshold_max": 1.3930000000000002,
+              "observed": 1.315
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.965706",
+      "last_observed_timestamp": "2026-01-03T11:41:17.322904",
+      "occurrence_count": 17,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "step_index": 2,
+      "persona_class": "low_energy_high_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_high_risk_high_effort",
+        "trace_count": 3910,
+        "energy_variance": 1.925929944387236e-34,
+        "risk_variance": 0.07753330886840036,
+        "effort_variance": 0.012147335901779818,
+        "value_variance": 0.013634935195039222,
+        "control_variance": 0.06093580234064404,
+        "dominant_factor_variance": 0.08604588575951137,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.7825530083957979,
+        "is_stable": true
+      },
+      "accepted_count": 3169,
+      "rejected_count": 741,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.05
+        ],
+        "risk": [
+          0.6007849999999999,
+          2.0012678
+        ],
+        "effort": [
+          0.6000000000000001,
+          1.06
+        ],
+        "value": [
+          0.4117203687453045,
+          1.2775930380438492
+        ],
+        "control": [
+          0.43799999999999994,
+          1.694
+        ]
+      },
+      "supporting_trace_count": 3910,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 3910
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 3910
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 3896
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 3072
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "0_distrustful_arrival",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6007849999999999,
+              "threshold_max": 2.0012678,
+              "observed": 1.4850114
+            },
+            "effort": {
+              "threshold_min": 0.6000000000000001,
+              "threshold_max": 1.06,
+              "observed": 0.71
+            },
+            "value": {
+              "threshold_min": 0.4117203687453045,
+              "threshold_max": 1.2775930380438492,
+              "observed": 0.5830983202568131
+            },
+            "control": {
+              "threshold_min": 0.43799999999999994,
+              "threshold_max": 1.694,
+              "observed": 1.029
+            }
+          }
+        },
+        {
+          "persona_id": "0_urgent_need",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6007849999999999,
+              "threshold_max": 2.0012678,
+              "observed": 0.9152294
+            },
+            "effort": {
+              "threshold_min": 0.6000000000000001,
+              "threshold_max": 1.06,
+              "observed": 0.61
+            },
+            "value": {
+              "threshold_min": 0.4117203687453045,
+              "threshold_max": 1.2775930380438492,
+              "observed": 0.754476271768322
+            },
+            "control": {
+              "threshold_min": 0.43799999999999994,
+              "threshold_max": 1.694,
+              "observed": 1.334
+            }
+          }
+        },
+        {
+          "persona_id": "2_price_sensitive",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6007849999999999,
+              "threshold_max": 2.0012678,
+              "observed": 1.563879
+            },
+            "effort": {
+              "threshold_min": 0.6000000000000001,
+              "threshold_max": 1.06,
+              "observed": 0.9600000000000001
+            },
+            "value": {
+              "threshold_min": 0.4117203687453045,
+              "threshold_max": 1.2775930380438492,
+              "observed": 0.46884635258247404
+            },
+            "control": {
+              "threshold_min": 0.43799999999999994,
+              "threshold_max": 1.694,
+              "observed": 0.815
+            }
+          }
+        },
+        {
+          "persona_id": "3_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6007849999999999,
+              "threshold_max": 2.0012678,
+              "observed": 0.970583
+            },
+            "effort": {
+              "threshold_min": 0.6000000000000001,
+              "threshold_max": 1.06,
+              "observed": 0.69
+            },
+            "value": {
+              "threshold_min": 0.4117203687453045,
+              "threshold_max": 1.2775930380438492,
+              "observed": 0.6402243040939828
+            },
+            "control": {
+              "threshold_min": 0.43799999999999994,
+              "threshold_max": 1.694,
+              "observed": 1.13
+            }
+          }
+        },
+        {
+          "persona_id": "4_distrustful_arrival",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6007849999999999,
+              "threshold_max": 2.0012678,
+              "observed": 1.8803288
+            },
+            "effort": {
+              "threshold_min": 0.6000000000000001,
+              "threshold_max": 1.06,
+              "observed": 0.8300000000000001
+            },
+            "value": {
+              "threshold_min": 0.4117203687453045,
+              "threshold_max": 1.2775930380438492,
+              "observed": 0.5830983202568131
+            },
+            "control": {
+              "threshold_min": 0.43799999999999994,
+              "threshold_max": 1.694,
+              "observed": 0.6030000000000001
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.639318",
+      "last_observed_timestamp": "2026-01-03T11:41:17.370283",
+      "occurrence_count": 3910,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "step_index": 2,
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_high_risk_medium_effort",
+        "trace_count": 496,
+        "energy_variance": 0.0014194390534402136,
+        "risk_variance": 0.07901576405116854,
+        "effort_variance": 0.0039056695499479718,
+        "value_variance": 0.053848643736787126,
+        "control_variance": 0.07758340672151406,
+        "dominant_factor_variance": 0.036773650483327903,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.7906080110263857,
+        "is_stable": true
+      },
+      "accepted_count": 424,
+      "rejected_count": 72,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.2975992704141223
+        ],
+        "risk": [
+          0.6002900000000001,
+          1.8793213999999998
+        ],
+        "effort": [
+          0.31,
+          0.6
+        ],
+        "value": [
+          0.44703760967252837,
+          2.043080864586942
+        ],
+        "control": [
+          0.46799999999999997,
+          1.5499999999999998
+        ]
+      },
+      "supporting_trace_count": 496,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 496
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 496
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 467
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "0_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2975992704141223,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6002900000000001,
+              "threshold_max": 1.8793213999999998,
+              "observed": 0.7652294000000001
+            },
+            "effort": {
+              "threshold_min": 0.31,
+              "threshold_max": 0.6,
+              "observed": 0.56
+            },
+            "value": {
+              "threshold_min": 0.44703760967252837,
+              "threshold_max": 2.043080864586942,
+              "observed": 0.6402243040939828
+            },
+            "control": {
+              "threshold_min": 0.46799999999999997,
+              "threshold_max": 1.5499999999999998,
+              "observed": 1.334
+            }
+          }
+        },
+        {
+          "persona_id": "26_urgent_need",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2975992704141223,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6002900000000001,
+              "threshold_max": 1.8793213999999998,
+              "observed": 1.5531110000000001
+            },
+            "effort": {
+              "threshold_min": 0.31,
+              "threshold_max": 0.6,
+              "observed": 0.5399999999999999
+            },
+            "value": {
+              "threshold_min": 0.44703760967252837,
+              "threshold_max": 2.043080864586942,
+              "observed": 0.8008360895875682
+            },
+            "control": {
+              "threshold_min": 0.46799999999999997,
+              "threshold_max": 1.5499999999999998,
+              "observed": 0.6179999999999999
+            }
+          }
+        },
+        {
+          "persona_id": "30_fresh_motivated",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2975992704141223,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6002900000000001,
+              "threshold_max": 1.8793213999999998,
+              "observed": 0.8160970000000001
+            },
+            "effort": {
+              "threshold_min": 0.31,
+              "threshold_max": 0.6,
+              "observed": 0.5399999999999999
+            },
+            "value": {
+              "threshold_min": 0.44703760967252837,
+              "threshold_max": 2.043080864586942,
+              "observed": 0.7388899017793955
+            },
+            "control": {
+              "threshold_min": 0.46799999999999997,
+              "threshold_max": 1.5499999999999998,
+              "observed": 1.3810000000000002
+            }
+          }
+        },
+        {
+          "persona_id": "31_urgent_need",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2975992704141223,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6002900000000001,
+              "threshold_max": 1.8793213999999998,
+              "observed": 1.5406686
+            },
+            "effort": {
+              "threshold_min": 0.31,
+              "threshold_max": 0.6,
+              "observed": 0.5499999999999999
+            },
+            "value": {
+              "threshold_min": 0.44703760967252837,
+              "threshold_max": 2.043080864586942,
+              "observed": 0.9476133038384852
+            },
+            "control": {
+              "threshold_min": 0.46799999999999997,
+              "threshold_max": 1.5499999999999998,
+              "observed": 0.6179999999999999
+            }
+          }
+        },
+        {
+          "persona_id": "61_browsing_casually",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.2975992704141223,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6002900000000001,
+              "threshold_max": 1.8793213999999998,
+              "observed": 1.0036214
+            },
+            "effort": {
+              "threshold_min": 0.31,
+              "threshold_max": 0.6,
+              "observed": 0.4799999999999999
+            },
+            "value": {
+              "threshold_min": 0.44703760967252837,
+              "threshold_max": 2.043080864586942,
+              "observed": 0.9655169725364201
+            },
+            "control": {
+              "threshold_min": 0.46799999999999997,
+              "threshold_max": 1.5499999999999998,
+              "observed": 1.0859999999999999
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.644203",
+      "last_observed_timestamp": "2026-01-03T11:41:17.321443",
+      "occurrence_count": 496,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "step_index": 2,
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_high_effort",
+        "trace_count": 29,
+        "energy_variance": 1.925929944387236e-34,
+        "risk_variance": 0.0045670897000313964,
+        "effort_variance": 0.00459809750297265,
+        "value_variance": 0.010236374841217252,
+        "control_variance": 0.0065679928656361556,
+        "dominant_factor_variance": 0.13793103448275865,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.8412933215893553,
+        "is_stable": true
+      },
+      "accepted_count": 25,
+      "rejected_count": 4,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.05
+        ],
+        "risk": [
+          0.3863245999999999,
+          0.5992188000000002
+        ],
+        "effort": [
+          0.6200000000000001,
+          0.8899999999999999
+        ],
+        "value": [
+          0.4117203687453045,
+          0.754476271768322
+        ],
+        "control": [
+          1.544,
+          1.802
+        ]
+      },
+      "supporting_trace_count": 29,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 29
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 29
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 21
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "351_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.3863245999999999,
+              "threshold_max": 0.5992188000000002,
+              "observed": 0.5249966
+            },
+            "effort": {
+              "threshold_min": 0.6200000000000001,
+              "threshold_max": 0.8899999999999999,
+              "observed": 0.76
+            },
+            "value": {
+              "threshold_min": 0.4117203687453045,
+              "threshold_max": 0.754476271768322,
+              "observed": 0.6402243040939828
+            },
+            "control": {
+              "threshold_min": 1.544,
+              "threshold_max": 1.802,
+              "observed": 1.5859999999999999
+            }
+          }
+        },
+        {
+          "persona_id": "783_fresh_motivated",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.3863245999999999,
+              "threshold_max": 0.5992188000000002,
+              "observed": 0.5728517999999999
+            },
+            "effort": {
+              "threshold_min": 0.6200000000000001,
+              "threshold_max": 0.8899999999999999,
+              "observed": 0.8099999999999999
+            },
+            "value": {
+              "threshold_min": 0.4117203687453045,
+              "threshold_max": 0.754476271768322,
+              "observed": 0.6973502879311523
+            },
+            "control": {
+              "threshold_min": 1.544,
+              "threshold_max": 1.802,
+              "observed": 1.633
+            }
+          }
+        },
+        {
+          "persona_id": "839_fresh_motivated",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.3863245999999999,
+              "threshold_max": 0.5992188000000002,
+              "observed": 0.5184360000000001
+            },
+            "effort": {
+              "threshold_min": 0.6200000000000001,
+              "threshold_max": 0.8899999999999999,
+              "observed": 0.6799999999999999
+            },
+            "value": {
+              "threshold_min": 0.4117203687453045,
+              "threshold_max": 0.754476271768322,
+              "observed": 0.6973502879311523
+            },
+            "control": {
+              "threshold_min": 1.544,
+              "threshold_max": 1.802,
+              "observed": 1.6869999999999998
+            }
+          }
+        },
+        {
+          "persona_id": "910_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.3863245999999999,
+              "threshold_max": 0.5992188000000002,
+              "observed": 0.4197523999999999
+            },
+            "effort": {
+              "threshold_min": 0.6200000000000001,
+              "threshold_max": 0.8899999999999999,
+              "observed": 0.71
+            },
+            "value": {
+              "threshold_min": 0.4117203687453045,
+              "threshold_max": 0.754476271768322,
+              "observed": 0.6402243040939828
+            },
+            "control": {
+              "threshold_min": 1.544,
+              "threshold_max": 1.802,
+              "observed": 1.7480000000000002
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:12.216826",
+      "last_observed_timestamp": "2026-01-03T11:41:16.861821",
+      "occurrence_count": 29,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "step_index": 2,
+      "persona_class": "low_energy_medium_risk_medium_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_medium_effort",
+        "trace_count": 10,
+        "energy_variance": 1.8915075992890597e-05,
+        "risk_variance": 0.002483555496480005,
+        "effort_variance": 0.0048810000000000025,
+        "value_variance": 0.00980542520243775,
+        "control_variance": 0.0026265600000000048,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9841476353800714,
+        "is_stable": true
+      },
+      "accepted_count": 8,
+      "rejected_count": 2,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.05
+        ],
+        "risk": [
+          0.5579785999999999,
+          0.5990077999999999
+        ],
+        "effort": [
+          0.4699999999999999,
+          0.5800000000000001
+        ],
+        "value": [
+          0.6402243040939828,
+          0.8757460995368422
+        ],
+        "control": [
+          1.5140000000000002,
+          1.5380000000000003
+        ]
+      },
+      "supporting_trace_count": 10,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 10
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 10
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "991_urgent_need",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.5579785999999999,
+              "threshold_max": 0.5990077999999999,
+              "observed": 0.5647813999999998
+            }
+          }
+        },
+        {
+          "persona_id": "991_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "value": {
+              "threshold_min": 0.6402243040939828,
+              "threshold_max": 0.8757460995368422,
+              "observed": 0.7533776372332515
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:13.222599",
+      "last_observed_timestamp": "2026-01-03T11:41:17.360846",
+      "occurrence_count": 10,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "step_index": 3,
+      "persona_class": "low_energy_high_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_high_risk_high_effort",
+        "trace_count": 3433,
+        "energy_variance": 0.001536702786759628,
+        "risk_variance": 0.08930242540918065,
+        "effort_variance": 0.017609813943273805,
+        "value_variance": 0.046176885576407346,
+        "control_variance": 0.09682816212157173,
+        "dominant_factor_variance": 0.051155842409847656,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.7476809657203979,
+        "is_stable": true
+      },
+      "accepted_count": 2907,
+      "rejected_count": 526,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.17754545454545456
+        ],
+        "risk": [
+          0.6106354,
+          2.1784678
+        ],
+        "effort": [
+          0.602,
+          1.174
+        ],
+        "value": [
+          0.7490519722224256,
+          3.0
+        ],
+        "control": [
+          0.5429999999999999,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 3433,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 3433
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 3433
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 3426
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 3045
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "2_fresh_motivated",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.17754545454545456,
+              "observed": 0.13954545454545456
+            },
+            "risk": {
+              "threshold_min": 0.6106354,
+              "threshold_max": 2.1784678,
+              "observed": 1.4492894
+            },
+            "effort": {
+              "threshold_min": 0.602,
+              "threshold_max": 1.174,
+              "observed": 0.974
+            },
+            "value": {
+              "threshold_min": 0.7490519722224256,
+              "threshold_max": 3.0,
+              "observed": 1.2124312571201035
+            },
+            "control": {
+              "threshold_min": 0.5429999999999999,
+              "threshold_max": 2.0,
+              "observed": 1.064
+            }
+          }
+        },
+        {
+          "persona_id": "3_urgent_need",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.17754545454545456,
+              "observed": 0.14554545454545453
+            },
+            "risk": {
+              "threshold_min": 0.6106354,
+              "threshold_max": 2.1784678,
+              "observed": 1.296183
+            },
+            "effort": {
+              "threshold_min": 0.602,
+              "threshold_max": 1.174,
+              "observed": 0.836
+            },
+            "value": {
+              "threshold_min": 0.7490519722224256,
+              "threshold_max": 3.0,
+              "observed": 1.3051071140996393
+            },
+            "control": {
+              "threshold_min": 0.5429999999999999,
+              "threshold_max": 2.0,
+              "observed": 1.335
+            }
+          }
+        },
+        {
+          "persona_id": "4_tired_commuter",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.17754545454545456,
+              "observed": 0.06644317835192862
+            },
+            "risk": {
+              "threshold_min": 0.6106354,
+              "threshold_max": 2.1784678,
+              "observed": 1.805432
+            },
+            "effort": {
+              "threshold_min": 0.602,
+              "threshold_max": 1.174,
+              "observed": 1.0245
+            },
+            "value": {
+              "threshold_min": 0.7490519722224256,
+              "threshold_max": 3.0,
+              "observed": 1.0270795431610322
+            },
+            "control": {
+              "threshold_min": 0.5429999999999999,
+              "threshold_max": 2.0,
+              "observed": 0.795
+            }
+          }
+        },
+        {
+          "persona_id": "6_price_sensitive",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.17754545454545456,
+              "observed": 0.05
+            },
+            "risk": {
+              "threshold_min": 0.6106354,
+              "threshold_max": 2.1784678,
+              "observed": 1.789536
+            },
+            "effort": {
+              "threshold_min": 0.602,
+              "threshold_max": 1.174,
+              "observed": 0.8325
+            },
+            "value": {
+              "threshold_min": 0.7490519722224256,
+              "threshold_max": 3.0,
+              "observed": 0.8417278292019611
+            },
+            "control": {
+              "threshold_min": 0.5429999999999999,
+              "threshold_max": 2.0,
+              "observed": 0.8550000000000001
+            }
+          }
+        },
+        {
+          "persona_id": "7_fresh_motivated",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.17754545454545456,
+              "observed": 0.13454545454545455
+            },
+            "risk": {
+              "threshold_min": 0.6106354,
+              "threshold_max": 2.1784678,
+              "observed": 1.5491416
+            },
+            "effort": {
+              "threshold_min": 0.602,
+              "threshold_max": 1.174,
+              "observed": 0.8015
+            },
+            "value": {
+              "threshold_min": 0.7490519722224256,
+              "threshold_max": 3.0,
+              "observed": 1.2124312571201035
+            },
+            "control": {
+              "threshold_min": 0.5429999999999999,
+              "threshold_max": 2.0,
+              "observed": 0.921
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.639450",
+      "last_observed_timestamp": "2026-01-03T11:41:17.370425",
+      "occurrence_count": 3433,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "step_index": 4,
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_high_effort",
+        "trace_count": 27,
+        "energy_variance": 4.81482486096809e-35,
+        "risk_variance": 0.007210162211590891,
+        "effort_variance": 0.02595634430727023,
+        "value_variance": 0.1293566887483858,
+        "control_variance": 0.0,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.8699814437862025,
+        "is_stable": true
+      },
+      "accepted_count": 26,
+      "rejected_count": 1,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.05
+        ],
+        "risk": [
+          0.31327419999999995,
+          0.5950199999999999
+        ],
+        "effort": [
+          0.8199999999999998,
+          1.4425
+        ],
+        "value": [
+          1.4954975065932934,
+          2.7695804880597668
+        ],
+        "control": [
+          2.0,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 27,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 27
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 27
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 27
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "880_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.05,
+              "threshold_max": 0.05,
+              "observed": 0.05
+            },
+            "effort": {
+              "threshold_min": 0.8199999999999998,
+              "threshold_max": 1.4425,
+              "observed": 1.2575
+            },
+            "value": {
+              "threshold_min": 1.4954975065932934,
+              "threshold_max": 2.7695804880597668,
+              "observed": 2.189302254481268
+            },
+            "control": {
+              "threshold_min": 2.0,
+              "threshold_max": 2.0,
+              "observed": 2.0
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:12.217103",
+      "last_observed_timestamp": "2026-01-03T11:41:16.944316",
+      "occurrence_count": 27,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Do you have any existing credit cards?",
+      "step_index": 7,
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "medium_energy_high_risk_high_effort",
+        "trace_count": 14,
+        "energy_variance": 0.008121221022678645,
+        "risk_variance": 0.16828171990404095,
+        "effort_variance": 0.02244769387755102,
+        "value_variance": 0.0,
+        "control_variance": 0.017287025510204057,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.8270898717484203,
+        "is_stable": true
+      },
+      "accepted_count": 13,
+      "rejected_count": 1,
+      "cognitive_thresholds": {
+        "energy": [
+          0.3129393452893956,
+          0.565
+        ],
+        "risk": [
+          1.2530406,
+          2.582118999999999
+        ],
+        "effort": [
+          0.828,
+          1.2759999999999998
+        ],
+        "value": [
+          3.0,
+          3.0
+        ],
+        "control": [
+          1.5435000000000005,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 14,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 14
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 14
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 14
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "823_tech_savvy_optimistic",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.3129393452893956,
+              "threshold_max": 0.565,
+              "observed": 0.3592123728243934
+            },
+            "risk": {
+              "threshold_min": 1.2530406,
+              "threshold_max": 2.582118999999999,
+              "observed": 1.7164406
+            },
+            "value": {
+              "threshold_min": 3.0,
+              "threshold_max": 3.0,
+              "observed": 3.0
+            },
+            "control": {
+              "threshold_min": 1.5435000000000005,
+              "threshold_max": 2.0,
+              "observed": 1.9664999999999997
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.961216",
+      "last_observed_timestamp": "2026-01-03T11:41:17.035420",
+      "occurrence_count": 14,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Help us personalise your card matches",
+      "step_index": 8,
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "medium_energy_high_risk_high_effort",
+        "trace_count": 12,
+        "energy_variance": 0.00719465078954933,
+        "risk_variance": 0.22317696812473395,
+        "effort_variance": 0.031090296875000003,
+        "value_variance": 0.0,
+        "control_variance": 0.005977354166666646,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.78604858403524,
+        "is_stable": true
+      },
+      "accepted_count": 11,
+      "rejected_count": 1,
+      "cognitive_thresholds": {
+        "energy": [
+          0.30244972918207413,
+          0.565
+        ],
+        "risk": [
+          1.0328406,
+          2.598110899999999
+        ],
+        "effort": [
+          0.971,
+          1.5069999999999997
+        ],
+        "value": [
+          3.0,
+          3.0
+        ],
+        "control": [
+          1.7250000000000005,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 12,
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 12
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 12
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 12
+        }
+      ],
+      "counterexamples": [
+        {
+          "persona_id": "823_fresh_motivated",
+          "violated_thresholds": {
+            "energy": {
+              "threshold_min": 0.30244972918207413,
+              "threshold_max": 0.565,
+              "observed": 0.5125471990945033
+            },
+            "risk": {
+              "threshold_min": 1.0328406,
+              "threshold_max": 2.598110899999999,
+              "observed": 1.7491375000000002
+            },
+            "effort": {
+              "threshold_min": 0.971,
+              "threshold_max": 1.5069999999999997,
+              "observed": 0.971
+            },
+            "value": {
+              "threshold_min": 3.0,
+              "threshold_max": 3.0,
+              "observed": 3.0
+            },
+            "control": {
+              "threshold_min": 1.7250000000000005,
+              "threshold_max": 2.0,
+              "observed": 2.0
+            }
+          }
+        }
+      ],
+      "first_observed_timestamp": "2026-01-03T11:41:11.961351",
+      "last_observed_timestamp": "2026-01-03T11:41:17.322296",
+      "occurrence_count": 12,
+      "is_stable_pattern": true
+    }
+  ],
+  "precedents_acceptance": [
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 3514
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 3514
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 3514
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 3514,
+      "first_observed_timestamp": "2026-01-03T11:41:11.640171",
+      "last_observed_timestamp": "2026-01-03T11:41:17.370144",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "persona_class": "low_energy_medium_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 2813
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 2813
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 2813,
+      "first_observed_timestamp": "2026-01-03T11:41:11.645300",
+      "last_observed_timestamp": "2026-01-03T11:41:17.370004",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 2632
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 2632
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 2632
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 2632
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 2632,
+      "first_observed_timestamp": "2026-01-03T11:41:11.639580",
+      "last_observed_timestamp": "2026-01-03T11:41:17.368658",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 2554
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 2554
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 2554
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 2554
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 2554,
+      "first_observed_timestamp": "2026-01-03T11:41:11.640869",
+      "last_observed_timestamp": "2026-01-03T11:41:17.368518",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 2469
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 2469
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 2469
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 2469
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 2469,
+      "first_observed_timestamp": "2026-01-03T11:41:11.640740",
+      "last_observed_timestamp": "2026-01-03T11:41:17.370283",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 2418
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 2418
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 2418
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 2418
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 2418,
+      "first_observed_timestamp": "2026-01-03T11:41:11.641115",
+      "last_observed_timestamp": "2026-01-03T11:41:17.368797",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "How much do you spend monthly?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 2223
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 2223
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 2223
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 2223
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 2223,
+      "first_observed_timestamp": "2026-01-03T11:41:11.641243",
+      "last_observed_timestamp": "2026-01-03T11:41:17.368941",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Do you have any existing credit cards?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 2022
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 2022
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 2022
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 2022
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 2022,
+      "first_observed_timestamp": "2026-01-03T11:41:11.641381",
+      "last_observed_timestamp": "2026-01-03T11:41:17.369083",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Help us personalise your card matches",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 1843
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 1843
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 1843
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 1843
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 1843,
+      "first_observed_timestamp": "2026-01-03T11:41:11.641533",
+      "last_observed_timestamp": "2026-01-03T11:41:17.369225",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "persona_class": "low_energy_low_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 1619
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 1619
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 1619,
+      "first_observed_timestamp": "2026-01-03T11:41:11.644442",
+      "last_observed_timestamp": "2026-01-03T11:41:17.368096",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Step 1 of 11",
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 1220
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 1220
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 1220
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 1220,
+      "first_observed_timestamp": "2026-01-03T11:41:11.641667",
+      "last_observed_timestamp": "2026-01-03T11:41:17.369366",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 1038
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 1038
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 1038
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 1038,
+      "first_observed_timestamp": "2026-01-03T11:41:11.641803",
+      "last_observed_timestamp": "2026-01-03T11:41:17.369509",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "persona_class": "medium_energy_low_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 740
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 740,
+      "first_observed_timestamp": "2026-01-03T11:41:11.639050",
+      "last_observed_timestamp": "2026-01-03T11:41:17.360549",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 688
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 688
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 688
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 688,
+      "first_observed_timestamp": "2026-01-03T11:41:11.639318",
+      "last_observed_timestamp": "2026-01-03T11:41:17.350600",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Step 1 of 11",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 438
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 438
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 438
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 438
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 438,
+      "first_observed_timestamp": "2026-01-03T11:41:11.650948",
+      "last_observed_timestamp": "2026-01-03T11:41:17.354759",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 398
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 398
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 398
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 398,
+      "first_observed_timestamp": "2026-01-03T11:41:11.690151",
+      "last_observed_timestamp": "2026-01-03T11:41:17.321443",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 382
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 382
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 382
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 382
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 382,
+      "first_observed_timestamp": "2026-01-03T11:41:11.651079",
+      "last_observed_timestamp": "2026-01-03T11:41:17.343645",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "persona_class": "medium_energy_medium_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 349
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 349,
+      "first_observed_timestamp": "2026-01-03T11:41:11.640038",
+      "last_observed_timestamp": "2026-01-03T11:41:17.356748",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 347
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 347
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 347
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 347,
+      "first_observed_timestamp": "2026-01-03T11:41:11.639450",
+      "last_observed_timestamp": "2026-01-03T11:41:17.360994",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 340
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 340
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 340
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 340,
+      "first_observed_timestamp": "2026-01-03T11:41:11.648885",
+      "last_observed_timestamp": "2026-01-03T11:41:17.352701",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 277
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 277
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 277,
+      "first_observed_timestamp": "2026-01-03T11:41:11.639188",
+      "last_observed_timestamp": "2026-01-03T11:41:17.358041",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 157
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 157
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 157
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 157,
+      "first_observed_timestamp": "2026-01-03T11:41:11.694172",
+      "last_observed_timestamp": "2026-01-03T11:41:17.321584",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_medium_risk_medium_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 123
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 123
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 123,
+      "first_observed_timestamp": "2026-01-03T11:41:11.644067",
+      "last_observed_timestamp": "2026-01-03T11:41:17.360697",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "persona_class": "high_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 100
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 100
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 100
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 100,
+      "first_observed_timestamp": "2026-01-03T11:41:11.835812",
+      "last_observed_timestamp": "2026-01-03T11:41:17.322577",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_high_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 89
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 89
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 89
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 89,
+      "first_observed_timestamp": "2026-01-03T11:41:11.803279",
+      "last_observed_timestamp": "2026-01-03T11:41:17.213376",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_medium_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 32
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 32
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 32,
+      "first_observed_timestamp": "2026-01-03T11:41:11.795958",
+      "last_observed_timestamp": "2026-01-03T11:41:17.320837",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "persona_class": "high_energy_low_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 32
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 32,
+      "first_observed_timestamp": "2026-01-03T11:41:12.032917",
+      "last_observed_timestamp": "2026-01-03T11:41:17.322765",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 31
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 31
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 31
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 31,
+      "first_observed_timestamp": "2026-01-03T11:41:11.866139",
+      "last_observed_timestamp": "2026-01-03T11:41:17.263002",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_high_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 28
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 28
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 28,
+      "first_observed_timestamp": "2026-01-03T11:41:11.858875",
+      "last_observed_timestamp": "2026-01-03T11:41:17.259367",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 26
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 26
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 26,
+      "first_observed_timestamp": "2026-01-03T11:41:11.796092",
+      "last_observed_timestamp": "2026-01-03T11:41:17.262721",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 26
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 26
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 26
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 26,
+      "first_observed_timestamp": "2026-01-03T11:41:12.217103",
+      "last_observed_timestamp": "2026-01-03T11:41:16.944316",
+      "time_span_seconds": 4,
+      "is_stable": true
+    },
+    {
+      "step_id": "Step 1 of 11",
+      "persona_class": "high_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 24
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 24
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 24
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 24,
+      "first_observed_timestamp": "2026-01-03T11:41:12.034154",
+      "last_observed_timestamp": "2026-01-03T11:41:17.322436",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "persona_class": "medium_energy_high_risk_medium_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 20
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 20
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 20,
+      "first_observed_timestamp": "2026-01-03T11:41:11.960654",
+      "last_observed_timestamp": "2026-01-03T11:41:17.034113",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 18
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 18
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 18
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 18,
+      "first_observed_timestamp": "2026-01-03T11:41:12.216826",
+      "last_observed_timestamp": "2026-01-03T11:41:16.860459",
+      "time_span_seconds": 4,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "medium_energy_medium_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 16
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 16,
+      "first_observed_timestamp": "2026-01-03T11:41:11.965706",
+      "last_observed_timestamp": "2026-01-03T11:41:17.322904",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 15
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 15
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 15
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 15,
+      "first_observed_timestamp": "2026-01-03T11:41:11.832200",
+      "last_observed_timestamp": "2026-01-03T11:41:17.361162",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 14
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 14
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 14
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 14,
+      "first_observed_timestamp": "2026-01-03T11:41:12.035158",
+      "last_observed_timestamp": "2026-01-03T11:41:16.961602",
+      "time_span_seconds": 4,
+      "is_stable": true
+    },
+    {
+      "step_id": "Do you have any existing credit cards?",
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 13
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 13
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 13
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 13,
+      "first_observed_timestamp": "2026-01-03T11:41:11.961216",
+      "last_observed_timestamp": "2026-01-03T11:41:17.035420",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "medium_energy_high_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 13
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 13
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 13,
+      "first_observed_timestamp": "2026-01-03T11:41:12.035740",
+      "last_observed_timestamp": "2026-01-03T11:41:16.583903",
+      "time_span_seconds": 4,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "medium_energy_high_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 11
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 11,
+      "first_observed_timestamp": "2026-01-03T11:41:11.960378",
+      "last_observed_timestamp": "2026-01-03T11:41:17.010604",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Help us personalise your card matches",
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 11
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 11
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 11
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 11,
+      "first_observed_timestamp": "2026-01-03T11:41:11.961351",
+      "last_observed_timestamp": "2026-01-03T11:41:17.322296",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 10
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 10
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 10
+        }
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 10,
+      "first_observed_timestamp": "2026-01-03T11:41:11.960793",
+      "last_observed_timestamp": "2026-01-03T11:41:16.886105",
+      "time_span_seconds": 4,
+      "is_stable": true
+    }
+  ],
+  "precedents_rejection": [
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 889
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 889
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 889
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 889,
+      "first_observed_timestamp": "2026-01-03T11:41:11.644577",
+      "last_observed_timestamp": "2026-01-03T11:41:17.369827",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "persona_class": "low_energy_medium_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 755
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 755
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 755,
+      "first_observed_timestamp": "2026-01-03T11:41:11.639876",
+      "last_observed_timestamp": "2026-01-03T11:41:17.367319",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 594
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 594
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 594
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 594
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 594,
+      "first_observed_timestamp": "2026-01-03T11:41:11.640306",
+      "last_observed_timestamp": "2026-01-03T11:41:17.363236",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 484
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 484
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 484
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 484
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 484,
+      "first_observed_timestamp": "2026-01-03T11:41:11.648575",
+      "last_observed_timestamp": "2026-01-03T11:41:17.370425",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "persona_class": "low_energy_low_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 430
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 430
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 430,
+      "first_observed_timestamp": "2026-01-03T11:41:11.645129",
+      "last_observed_timestamp": "2026-01-03T11:41:17.370604",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 357
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 357
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 357
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 357
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 357,
+      "first_observed_timestamp": "2026-01-03T11:41:11.665566",
+      "last_observed_timestamp": "2026-01-03T11:41:17.363977",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 269
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 269
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 269
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 269
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 269,
+      "first_observed_timestamp": "2026-01-03T11:41:11.639706",
+      "last_observed_timestamp": "2026-01-03T11:41:17.336335",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Do you have any existing credit cards?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 203
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 203
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 203
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 203
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 203,
+      "first_observed_timestamp": "2026-01-03T11:41:11.733431",
+      "last_observed_timestamp": "2026-01-03T11:41:17.286988",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "How much do you spend monthly?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 201
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 201
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 201
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 201
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 201,
+      "first_observed_timestamp": "2026-01-03T11:41:11.646123",
+      "last_observed_timestamp": "2026-01-03T11:41:17.357690",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "persona_class": "medium_energy_low_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 176
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 176,
+      "first_observed_timestamp": "2026-01-03T11:41:11.692163",
+      "last_observed_timestamp": "2026-01-03T11:41:17.319394",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Help us personalise your card matches",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 173
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 173
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 173
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 173
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 173,
+      "first_observed_timestamp": "2026-01-03T11:41:11.663456",
+      "last_observed_timestamp": "2026-01-03T11:41:17.365317",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 145
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 145
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 145
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 145,
+      "first_observed_timestamp": "2026-01-03T11:41:11.642233",
+      "last_observed_timestamp": "2026-01-03T11:41:17.344841",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Step 1 of 11",
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 135
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 135
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 135
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 135,
+      "first_observed_timestamp": "2026-01-03T11:41:11.657764",
+      "last_observed_timestamp": "2026-01-03T11:41:17.361989",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 97
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 97
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 97
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 97,
+      "first_observed_timestamp": "2026-01-03T11:41:11.647953",
+      "last_observed_timestamp": "2026-01-03T11:41:17.367140",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 89
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 89
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 89
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 89,
+      "first_observed_timestamp": "2026-01-03T11:41:11.843934",
+      "last_observed_timestamp": "2026-01-03T11:41:17.171863",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "persona_class": "medium_energy_medium_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 81
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 81,
+      "first_observed_timestamp": "2026-01-03T11:41:11.746190",
+      "last_observed_timestamp": "2026-01-03T11:41:17.358703",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 69
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 69
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 69
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 69,
+      "first_observed_timestamp": "2026-01-03T11:41:11.644203",
+      "last_observed_timestamp": "2026-01-03T11:41:17.192310",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 62
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 62
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 62,
+      "first_observed_timestamp": "2026-01-03T11:41:11.795182",
+      "last_observed_timestamp": "2026-01-03T11:41:17.344306",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 49
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 49
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 49
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 49
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 49,
+      "first_observed_timestamp": "2026-01-03T11:41:11.654325",
+      "last_observed_timestamp": "2026-01-03T11:41:17.354910",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Step 1 of 11",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 48
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 48
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 48
+        },
+        {
+          "factor_name": "effort_demand",
+          "present_in_traces": 48
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 48,
+      "first_observed_timestamp": "2026-01-03T11:41:11.876958",
+      "last_observed_timestamp": "2026-01-03T11:41:17.272396",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 41
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 41
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 41
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 41,
+      "first_observed_timestamp": "2026-01-03T11:41:11.695884",
+      "last_observed_timestamp": "2026-01-03T11:41:17.293232",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_medium_risk_medium_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 31
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 31
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 31,
+      "first_observed_timestamp": "2026-01-03T11:41:12.214981",
+      "last_observed_timestamp": "2026-01-03T11:41:17.356360",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 20
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 20
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 20
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 20,
+      "first_observed_timestamp": "2026-01-03T11:41:11.859160",
+      "last_observed_timestamp": "2026-01-03T11:41:17.171147",
+      "time_span_seconds": 5,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_high_risk_low_effort",
+      "factor_presence": [
+        {
+          "factor_name": "intent_mismatch",
+          "present_in_traces": 11
+        },
+        {
+          "factor_name": "cognitive_fatigue",
+          "present_in_traces": 11
+        },
+        {
+          "factor_name": "risk_spike",
+          "present_in_traces": 11
+        }
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 11,
+      "first_observed_timestamp": "2026-01-03T11:41:11.775720",
+      "last_observed_timestamp": "2026-01-03T11:41:17.006720",
+      "time_span_seconds": 5,
+      "is_stable": true
+    }
+  ],
+  "decision_termination_points": [
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "step_index": 0,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 1445,
+      "first_rejection_timestamp": "2026-01-03T11:41:11.639876",
+      "last_rejection_timestamp": "2026-01-03T11:41:17.370604"
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 1096,
+      "first_rejection_timestamp": "2026-01-03T11:41:11.644577",
+      "last_rejection_timestamp": "2026-01-03T11:41:17.369827"
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "step_index": 2,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 820,
+      "first_rejection_timestamp": "2026-01-03T11:41:11.640306",
+      "last_rejection_timestamp": "2026-01-03T11:41:17.363236"
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "step_index": 3,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 549,
+      "first_rejection_timestamp": "2026-01-03T11:41:11.648575",
+      "last_rejection_timestamp": "2026-01-03T11:41:17.370425"
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "step_index": 4,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 363,
+      "first_rejection_timestamp": "2026-01-03T11:41:11.665566",
+      "last_rejection_timestamp": "2026-01-03T11:41:17.363977"
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "step_index": 5,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 274,
+      "first_rejection_timestamp": "2026-01-03T11:41:11.639706",
+      "last_rejection_timestamp": "2026-01-03T11:41:17.336335"
+    },
+    {
+      "step_id": "How much do you spend monthly?",
+      "step_index": 6,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 205,
+      "first_rejection_timestamp": "2026-01-03T11:41:11.646123",
+      "last_rejection_timestamp": "2026-01-03T11:41:17.357690"
+    },
+    {
+      "step_id": "Do you have any existing credit cards?",
+      "step_index": 7,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 204,
+      "first_rejection_timestamp": "2026-01-03T11:41:11.733431",
+      "last_rejection_timestamp": "2026-01-03T11:41:17.286988"
+    },
+    {
+      "step_id": "Help us personalise your card matches",
+      "step_index": 8,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 177,
+      "first_rejection_timestamp": "2026-01-03T11:41:11.663456",
+      "last_rejection_timestamp": "2026-01-03T11:41:17.365317"
+    },
+    {
+      "step_id": "Step 1 of 11",
+      "step_index": 9,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 184,
+      "first_rejection_timestamp": "2026-01-03T11:41:11.657764",
+      "last_rejection_timestamp": "2026-01-03T11:41:17.361989"
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "step_index": 10,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 151,
+      "first_rejection_timestamp": "2026-01-03T11:41:11.647953",
+      "last_rejection_timestamp": "2026-01-03T11:41:17.367140"
+    }
+  ],
+  "non_binding_observations_excluded": [
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "persona_class": "high_energy_medium_risk_low_effort",
+      "trace_count": 2,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "medium_energy_high_risk_low_effort",
+      "trace_count": 27,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "high_energy_medium_risk_low_effort",
+      "trace_count": 2,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "medium_energy_high_risk_medium_effort",
+      "trace_count": 9,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "high_energy_high_risk_low_effort",
+      "trace_count": 2,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "high_energy_high_risk_low_effort",
+      "trace_count": 1,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "medium_energy_high_risk_medium_effort",
+      "trace_count": 8,
+      "coherence_stable": false,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "medium_energy_high_risk_low_effort",
+      "trace_count": 3,
+      "coherence_stable": false,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "medium_energy_medium_risk_medium_effort",
+      "trace_count": 1,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "high_energy_high_risk_medium_effort",
+      "trace_count": 1,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "trace_count": 177,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "persona_class": "medium_energy_high_risk_medium_effort",
+      "trace_count": 23,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "persona_class": "high_energy_high_risk_medium_effort",
+      "trace_count": 2,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "trace_count": 4,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "trace_count": 3037,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "trace_count": 13,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "high_energy_high_risk_medium_effort",
+      "trace_count": 2,
+      "coherence_stable": false,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "medium_energy_high_risk_medium_effort",
+      "trace_count": 9,
+      "coherence_stable": false,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "trace_count": 2,
+      "coherence_stable": false,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "trace_count": 2705,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "trace_count": 12,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "persona_class": "high_energy_high_risk_medium_effort",
+      "trace_count": 7,
+      "coherence_stable": false,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "persona_class": "medium_energy_high_risk_medium_effort",
+      "trace_count": 1,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "trace_count": 1,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "persona_class": "high_energy_high_risk_high_effort",
+      "trace_count": 1,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "How much do you spend monthly?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "trace_count": 2436,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "How much do you spend monthly?",
+      "persona_class": "high_energy_high_risk_medium_effort",
+      "trace_count": 2,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "How much do you spend monthly?",
+      "persona_class": "high_energy_high_risk_high_effort",
+      "trace_count": 7,
+      "coherence_stable": false,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "How much do you spend monthly?",
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "trace_count": 5,
+      "coherence_stable": false,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "How much do you spend monthly?",
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "trace_count": 3,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Do you have any existing credit cards?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "trace_count": 2225,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "Do you have any existing credit cards?",
+      "persona_class": "high_energy_high_risk_high_effort",
+      "trace_count": 9,
+      "coherence_stable": false,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Help us personalise your card matches",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "trace_count": 2019,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "Help us personalise your card matches",
+      "persona_class": "high_energy_high_risk_high_effort",
+      "trace_count": 11,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "Help us personalise your card matches",
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "trace_count": 2,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Step 1 of 11",
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "trace_count": 1355,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "Step 1 of 11",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "trace_count": 487,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "Step 1 of 11",
+      "persona_class": "high_energy_high_risk_high_effort",
+      "trace_count": 25,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "trace_count": 1136,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "trace_count": 434,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "persona_class": "high_energy_high_risk_high_effort",
+      "trace_count": 105,
+      "coherence_stable": false,
+      "meets_support_threshold": true
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "trace_count": 5,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "persona_class": "medium_energy_medium_risk_high_effort",
+      "trace_count": 3,
+      "coherence_stable": true,
+      "meets_support_threshold": false
+    }
+  ],
+  "generated_timestamp": "2026-01-03T11:58:33.404452",
+  "total_sequences": 7000,
+  "total_steps": 11
+}

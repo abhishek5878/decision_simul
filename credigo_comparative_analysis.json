@@ -1,0 +1,349 @@
+{
+  "comparisons": {
+    "zerodha": {
+      "step_comparisons": {
+        "step_3": {
+          "step_id": "step_3",
+          "drop_rate_ratio": Infinity,
+          "force_ratios": {
+            "effort": 0.0686604473691339,
+            "risk": 0.16572258652072527,
+            "value": 1.1434812687405695,
+            "trust": 0.3575319923522887,
+            "intent_mismatch": 1.0
+          }
+        },
+        "step_4": {
+          "step_id": "step_4",
+          "drop_rate_ratio": 1.0,
+          "force_ratios": {
+            "effort": 0.1885674058726726,
+            "risk": 0.22824972558052567,
+            "value": 0.8841070855755065,
+            "trust": 12.903788376080458,
+            "intent_mismatch": 1.0
+          }
+        },
+        "step_0": {
+          "step_id": "step_0",
+          "drop_rate_ratio": 0.19230769230769232,
+          "force_ratios": {
+            "effort": 0.0,
+            "risk": 1.0,
+            "value": 24.487643586413895,
+            "trust": 0.41987654807285746,
+            "intent_mismatch": 1.0
+          }
+        },
+        "step_5": {
+          "step_id": "step_5",
+          "drop_rate_ratio": Infinity,
+          "force_ratios": {
+            "effort": 1.0,
+            "risk": 1.0,
+            "value": 8.59876913779736,
+            "trust": 1.0,
+            "intent_mismatch": 1.0
+          }
+        },
+        "step_1": {
+          "step_id": "step_1",
+          "drop_rate_ratio": Infinity,
+          "force_ratios": {
+            "effort": 1.0,
+            "risk": 1.6805330415965425,
+            "value": 1.7622394846515195,
+            "trust": 0.16911216794791825,
+            "intent_mismatch": 1.0
+          }
+        },
+        "step_2": {
+          "step_id": "step_2",
+          "drop_rate_ratio": Infinity,
+          "force_ratios": {
+            "effort": 1.3763204795289259,
+            "risk": 1.6805330415965425,
+            "value": 1.2933741708406559,
+            "trust": 0.3575319923522887,
+            "intent_mismatch": 1.0
+          }
+        }
+      },
+      "overall": {
+        "target_completion_rate": 0.7916666666666666,
+        "benchmark_completion_rate": 0.6756756756756757,
+        "completion_rate_diff": 0.11599099099099097,
+        "target_avg_steps": 4.222222222222222,
+        "benchmark_avg_steps": 4.166666666666667,
+        "avg_steps_diff": 0.05555555555555536
+      },
+      "force_dominance": {
+        "target": {
+          "value": 0.7984057669039916,
+          "trust": 0.29282493839798335,
+          "risk": 0.3860637210830532,
+          "effort": 0.44139005829577144
+        },
+        "benchmark": {
+          "trust": 0.44085311193673204,
+          "risk": 0.4000334551717014,
+          "effort": 0.45270103967917646,
+          "value": 0.9021407094017483
+        },
+        "difference": {
+          "effort": -0.011310981383405028,
+          "risk": -0.013969734088648211,
+          "trust": -0.1480281735387487,
+          "value": -0.10373494249775672
+        }
+      },
+      "persona_survival": {
+        "medium_energy": {
+          "target_survival_rate": 0.85,
+          "benchmark_survival_rate": 0.475,
+          "difference": 0.375
+        },
+        "low_energy": {
+          "target_survival_rate": 0.925,
+          "benchmark_survival_rate": 0.575,
+          "difference": 0.3500000000000001
+        },
+        "high_energy": {
+          "target_survival_rate": 0.95,
+          "benchmark_survival_rate": 0.3,
+          "difference": 0.6499999999999999
+        }
+      }
+    },
+    "groww": {
+      "step_comparisons": {
+        "step_3": {
+          "step_id": "step_3",
+          "drop_rate_ratio": Infinity,
+          "force_ratios": {
+            "effort": 0.7265749619174966,
+            "risk": 1.0,
+            "value": 1.5580084148613376,
+            "trust": 0.16911216794791825,
+            "intent_mismatch": 1.0
+          }
+        },
+        "step_4": {
+          "step_id": "step_4",
+          "drop_rate_ratio": 1.0,
+          "force_ratios": {
+            "effort": 7.414336818536569,
+            "risk": 2.3610660831930845,
+            "value": 1.1434812687405695,
+            "trust": 1.0,
+            "intent_mismatch": 1.0
+          }
+        },
+        "step_0": {
+          "step_id": "step_0",
+          "drop_rate_ratio": 0.19230769230769232,
+          "force_ratios": {
+            "effort": 0.0,
+            "risk": 1.0,
+            "value": 24.487643586413895,
+            "trust": 0.41987654807285746,
+            "intent_mismatch": 1.0
+          }
+        },
+        "step_5": {
+          "step_id": "step_5",
+          "drop_rate_ratio": Infinity,
+          "force_ratios": {
+            "effort": 1.0,
+            "risk": 0.0,
+            "value": 1.3022228924340977,
+            "trust": 1.0,
+            "intent_mismatch": 1.0
+          }
+        },
+        "step_6": {
+          "step_id": "step_6",
+          "drop_rate_ratio": Infinity,
+          "force_ratios": {
+            "effort": 1.0,
+            "risk": null,
+            "value": 26.880149864645542,
+            "trust": 1.0,
+            "intent_mismatch": 1.0
+          }
+        },
+        "step_1": {
+          "step_id": "step_1",
+          "drop_rate_ratio": Infinity,
+          "force_ratios": {
+            "effort": 5.564059733926665,
+            "risk": 5.260428339741425,
+            "value": 40.73387594694003,
+            "trust": 0.3575319923522887,
+            "intent_mismatch": 1.0
+          }
+        },
+        "step_2": {
+          "step_id": "step_2",
+          "drop_rate_ratio": Infinity,
+          "force_ratios": {
+            "effort": 1.0,
+            "risk": 1.6805330415965425,
+            "value": 2.5556557555597634,
+            "trust": 0.3575319923522887,
+            "intent_mismatch": 1.0
+          }
+        }
+      },
+      "overall": {
+        "target_completion_rate": 0.7916666666666666,
+        "benchmark_completion_rate": 0.68,
+        "completion_rate_diff": 0.11166666666666658,
+        "target_avg_steps": 4.222222222222222,
+        "benchmark_avg_steps": 4.25,
+        "avg_steps_diff": -0.02777777777777768
+      },
+      "force_dominance": {
+        "target": {
+          "value": 0.7984057669039916,
+          "trust": 0.29282493839798335,
+          "risk": 0.3860637210830532,
+          "effort": 0.44139005829577144
+        },
+        "benchmark": {
+          "trust": 0.5210883201840633,
+          "risk": 0.5856940043544357,
+          "effort": 0.6456088963346931,
+          "value": 0.9666843073738777
+        },
+        "difference": {
+          "effort": -0.20421883803892166,
+          "risk": -0.19963028327138255,
+          "trust": -0.2282633817860799,
+          "value": -0.1682785404698861
+        }
+      },
+      "persona_survival": {
+        "medium_energy": {
+          "target_survival_rate": 0.85,
+          "benchmark_survival_rate": 0.475,
+          "difference": 0.375
+        },
+        "low_energy": {
+          "target_survival_rate": 0.925,
+          "benchmark_survival_rate": 0.575,
+          "difference": 0.3500000000000001
+        },
+        "high_energy": {
+          "target_survival_rate": 0.95,
+          "benchmark_survival_rate": 0.3,
+          "difference": 0.6499999999999999
+        }
+      }
+    },
+    "cred": {
+      "step_comparisons": {
+        "step_3": {
+          "step_id": "step_3",
+          "drop_rate_ratio": Infinity,
+          "force_ratios": {
+            "effort": 0.07207784545375821,
+            "risk": 0.09667231561424268,
+            "value": 2.2985262264071786,
+            "trust": 6.271961853878564,
+            "intent_mismatch": 1.0
+          }
+        },
+        "step_4": {
+          "step_id": "step_4",
+          "drop_rate_ratio": 0.9148936170212766,
+          "force_ratios": {
+            "effort": 11.384244244480643,
+            "risk": 2.361066083193085,
+            "value": 304.3321329310203,
+            "trust": null,
+            "intent_mismatch": 1.0
+          }
+        },
+        "step_0": {
+          "step_id": "step_0",
+          "drop_rate_ratio": 0.18867924528301888,
+          "force_ratios": {
+            "effort": 0.0,
+            "risk": 1.0,
+            "value": 144.99126471914545,
+            "trust": 0.41987654807285746,
+            "intent_mismatch": 1.0
+          }
+        },
+        "step_1": {
+          "step_id": "step_1",
+          "drop_rate_ratio": Infinity,
+          "force_ratios": {
+            "effort": 1.0,
+            "risk": 1.6805330415965427,
+            "value": 4.0120319751482105,
+            "trust": 0.31924788463331166,
+            "intent_mismatch": 1.0
+          }
+        },
+        "step_2": {
+          "step_id": "step_2",
+          "drop_rate_ratio": Infinity,
+          "force_ratios": {
+            "effort": 1.3763204795289259,
+            "risk": 1.6805330415965427,
+            "value": 2.605505398969407,
+            "trust": 0.31924788463331166,
+            "intent_mismatch": 1.0
+          }
+        }
+      },
+      "overall": {
+        "target_completion_rate": 0.7916666666666666,
+        "benchmark_completion_rate": 0.6527777777777778,
+        "completion_rate_diff": 0.13888888888888884,
+        "target_avg_steps": 4.222222222222222,
+        "benchmark_avg_steps": 4.0,
+        "avg_steps_diff": 0.22222222222222232
+      },
+      "force_dominance": {
+        "target": {
+          "value": 0.7984057669039916,
+          "trust": 0.29282493839798335,
+          "risk": 0.3860637210830532,
+          "effort": 0.44139005829577144
+        },
+        "benchmark": {
+          "trust": 0.6178358636880047,
+          "risk": 0.7009202352979933,
+          "effort": 0.5609175336378325,
+          "value": 0.9630296507807079
+        },
+        "difference": {
+          "effort": -0.11952747534206104,
+          "risk": -0.3148565142149401,
+          "trust": -0.32501092529002135,
+          "value": -0.16462388387671634
+        }
+      },
+      "persona_survival": {
+        "medium_energy": {
+          "target_survival_rate": 0.85,
+          "benchmark_survival_rate": 0.475,
+          "difference": 0.375
+        },
+        "low_energy": {
+          "target_survival_rate": 0.925,
+          "benchmark_survival_rate": 0.55,
+          "difference": 0.375
+        },
+        "high_energy": {
+          "target_survival_rate": 0.95,
+          "benchmark_survival_rate": 0.3,
+          "difference": 0.6499999999999999
+        }
+      }
+    }
+  }
+}

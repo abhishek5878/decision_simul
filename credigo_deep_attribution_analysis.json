@@ -1,0 +1,629 @@
+{
+  "continue_vs_drop": {
+    "continue": {
+      "cognitive_energy": {
+        "mean": -0.0009991794966553124,
+        "std": 0.004687987180728055,
+        "median": 0.0
+      },
+      "intent": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0
+      },
+      "effort_tolerance": {
+        "mean": 0.0029191047690882957,
+        "std": 0.03501544676142009,
+        "median": 0.0
+      },
+      "risk_tolerance": {
+        "mean": 0.0003515178691581553,
+        "std": 0.01982397769411578,
+        "median": 0.0
+      },
+      "trust": {
+        "mean": 0.47451426576798394,
+        "std": 0.4857625843919686,
+        "median": 0.16580358687188643
+      },
+      "value": {
+        "mean": 0.025959046138437785,
+        "std": 0.11317003917542255,
+        "median": 0.0
+      },
+      "effort": {
+        "mean": -0.0007692695896982976,
+        "std": 0.0036210363759900358,
+        "median": 0.0
+      },
+      "risk": {
+        "mean": -0.0006191267253052363,
+        "std": 0.0029101957733506665,
+        "median": 0.0
+      },
+      "intent_mismatch": {
+        "mean": -0.016983823602029876,
+        "std": 0.017188204483317305,
+        "median": 0.0
+      }
+    },
+    "drop": {
+      "cognitive_energy": {
+        "mean": 0.07542301964219006,
+        "std": 0.07456037570855173,
+        "median": 0.056292571684645194,
+        "total": 412.4130714034952
+      },
+      "intent": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "total": 0.0
+      },
+      "effort_tolerance": {
+        "mean": 0.006378360156502291,
+        "std": 0.010255282343579308,
+        "median": 0.0,
+        "total": 34.876873335754524
+      },
+      "risk_tolerance": {
+        "mean": 0.012812056577352349,
+        "std": 0.011285920644761428,
+        "median": 0.011745503737520015,
+        "total": 70.05632536496265
+      },
+      "trust": {
+        "mean": 0.17039647703886784,
+        "std": 0.16441955927276372,
+        "median": 0.13433889219527723,
+        "total": 931.7279364485294
+      },
+      "value": {
+        "mean": 0.05899956634835398,
+        "std": 0.06166820789573124,
+        "median": 0.04989208541177599,
+        "total": 322.6096287927996
+      },
+      "effort": {
+        "mean": 0.03726423260759652,
+        "std": 0.05060312120405585,
+        "median": 0.0,
+        "total": 203.76082389833778
+      },
+      "risk": {
+        "mean": 0.05156548212873848,
+        "std": 0.04153902843851003,
+        "median": 0.06044222111749262,
+        "total": 281.960056279942
+      },
+      "intent_mismatch": {
+        "mean": 0.5871608055003984,
+        "std": 0.30684289619762034,
+        "median": 0.416176987007569,
+        "total": 3210.5952844761787
+      }
+    },
+    "drop_percentages": {
+      "cognitive_energy": 7.542301964219006,
+      "intent": 0.0,
+      "effort_tolerance": 0.6378360156502291,
+      "risk_tolerance": 1.2812056577352349,
+      "trust": 17.039647703886786,
+      "value": 5.899956634835398,
+      "effort": 3.726423260759652,
+      "risk": 5.156548212873848,
+      "intent_mismatch": 58.71608055003984
+    }
+  },
+  "fragility": {
+    "Your top 2 spend categories?": {
+      "drop_rate": 0.11747572815533981,
+      "drop_count": 363,
+      "continue_count": 2727,
+      "total": 3090,
+      "dominant_force": "intent_mismatch",
+      "dominant_force_pct": 91.10703601524611
+    },
+    "Any preference on annual fee?": {
+      "drop_rate": 0.18389773491814307,
+      "drop_count": 820,
+      "continue_count": 3639,
+      "total": 4459,
+      "dominant_force": "intent_mismatch",
+      "dominant_force_pct": 49.343702972174825
+    },
+    "Step 1 of 11": {
+      "drop_rate": 0.09855382967327263,
+      "drop_count": 184,
+      "continue_count": 1683,
+      "total": 1867,
+      "dominant_force": "intent_mismatch",
+      "dominant_force_pct": 100.0
+    },
+    "Help us personalise your card matches": {
+      "drop_rate": 0.08659491193737769,
+      "drop_count": 177,
+      "continue_count": 1867,
+      "total": 2044,
+      "dominant_force": "intent_mismatch",
+      "dominant_force_pct": 100.0
+    },
+    "Find the Best Credit Card In 60 seconds": {
+      "drop_rate": 0.20642857142857143,
+      "drop_count": 1445,
+      "continue_count": 5555,
+      "total": 7000,
+      "dominant_force": "trust",
+      "dominant_force_pct": 38.258016905620686
+    },
+    "Do you track your monthly spending?": {
+      "drop_rate": 0.10047671433810047,
+      "drop_count": 274,
+      "continue_count": 2453,
+      "total": 2727,
+      "dominant_force": "intent_mismatch",
+      "dominant_force_pct": 100.0
+    },
+    "Best Deals for You \u2013 Apply Now": {
+      "drop_rate": 0.08972073677956031,
+      "drop_count": 151,
+      "continue_count": 1532,
+      "total": 1683,
+      "dominant_force": "intent_mismatch",
+      "dominant_force_pct": 100.0
+    },
+    "What kind of perks excite you the most?": {
+      "drop_rate": 0.1972997299729973,
+      "drop_count": 1096,
+      "continue_count": 4459,
+      "total": 5555,
+      "dominant_force": "intent_mismatch",
+      "dominant_force_pct": 29.915207846419236
+    },
+    "How much do you spend monthly?": {
+      "drop_rate": 0.08357113738279658,
+      "drop_count": 205,
+      "continue_count": 2248,
+      "total": 2453,
+      "dominant_force": "intent_mismatch",
+      "dominant_force_pct": 100.0
+    },
+    "Do you have any existing credit cards?": {
+      "drop_rate": 0.09074733096085409,
+      "drop_count": 204,
+      "continue_count": 2044,
+      "total": 2248,
+      "dominant_force": "intent_mismatch",
+      "dominant_force_pct": 100.0
+    },
+    "straightforward + options are clearly defined": {
+      "drop_rate": 0.1508656224237428,
+      "drop_count": 549,
+      "continue_count": 3090,
+      "total": 3639,
+      "dominant_force": "intent_mismatch",
+      "dominant_force_pct": 84.54450835496105
+    }
+  },
+  "transitions": {
+    "0": {
+      "dominant_force": "trust",
+      "dominant_pct": 38.258016905620686,
+      "all_forces": {
+        "cognitive_energy": 10.804592760632108,
+        "intent": 0.0,
+        "effort_tolerance": 0.0,
+        "risk_tolerance": 1.5390845020761685,
+        "trust": 38.258016905620686,
+        "value": 7.944707564093995,
+        "effort": 0.0,
+        "risk": 7.6654771254655145,
+        "intent_mismatch": 33.78812114211153
+      },
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "drop_count": 1445
+    },
+    "1": {
+      "dominant_force": "intent_mismatch",
+      "dominant_pct": 29.915207846419236,
+      "all_forces": {
+        "cognitive_energy": 15.02503449076445,
+        "intent": 0.0,
+        "effort_tolerance": 1.682339104573245,
+        "risk_tolerance": 2.4229262758250774,
+        "trust": 16.943427043553054,
+        "value": 13.15113184411171,
+        "effort": 11.363673471347628,
+        "risk": 9.496259923405605,
+        "intent_mismatch": 29.915207846419236
+      },
+      "step_id": "What kind of perks excite you the most?",
+      "drop_count": 1096
+    },
+    "2": {
+      "dominant_force": "intent_mismatch",
+      "dominant_pct": 49.343702972174825,
+      "all_forces": {
+        "cognitive_energy": 9.19168529602824,
+        "intent": 0.0,
+        "effort_tolerance": 1.5523287623364244,
+        "risk_tolerance": 2.097652652700696,
+        "trust": 16.545129755989414,
+        "value": 6.58503831222321,
+        "effort": 7.91157114903546,
+        "risk": 6.77289109951174,
+        "intent_mismatch": 49.343702972174825
+      },
+      "step_id": "Any preference on annual fee?",
+      "drop_count": 820
+    },
+    "3": {
+      "dominant_force": "intent_mismatch",
+      "dominant_pct": 84.54450835496105,
+      "all_forces": {
+        "cognitive_energy": 2.307550124926452,
+        "intent": 0.0,
+        "effort_tolerance": 0.3883863706625205,
+        "risk_tolerance": 0.4465854558338435,
+        "trust": 7.63317574463193,
+        "value": 1.413896151863486,
+        "effort": 1.8445800065915179,
+        "risk": 1.421317790529195,
+        "intent_mismatch": 84.54450835496105
+      },
+      "step_id": "straightforward + options are clearly defined",
+      "drop_count": 549
+    },
+    "4": {
+      "dominant_force": "intent_mismatch",
+      "dominant_pct": 91.10703601524611,
+      "all_forces": {
+        "cognitive_energy": 0.9840381212963427,
+        "intent": 0.0,
+        "effort_tolerance": 0.43446273375643873,
+        "risk_tolerance": 0.44318909703739506,
+        "trust": 4.303976013174935,
+        "value": 0.5268857978557218,
+        "effort": 1.1606983454791258,
+        "risk": 1.0397138761539249,
+        "intent_mismatch": 91.10703601524611
+      },
+      "step_id": "Your top 2 spend categories?",
+      "drop_count": 363
+    },
+    "5": {
+      "dominant_force": "intent_mismatch",
+      "dominant_pct": 100.0,
+      "all_forces": {
+        "cognitive_energy": 0.0,
+        "intent": 0.0,
+        "effort_tolerance": 0.0,
+        "risk_tolerance": 0.0,
+        "trust": 0.0,
+        "value": 0.0,
+        "effort": 0.0,
+        "risk": 0.0,
+        "intent_mismatch": 100.0
+      },
+      "step_id": "Do you track your monthly spending?",
+      "drop_count": 274
+    },
+    "6": {
+      "dominant_force": "intent_mismatch",
+      "dominant_pct": 100.0,
+      "all_forces": {
+        "cognitive_energy": 0.0,
+        "intent": 0.0,
+        "effort_tolerance": 0.0,
+        "risk_tolerance": 0.0,
+        "trust": 0.0,
+        "value": 0.0,
+        "effort": 0.0,
+        "risk": 0.0,
+        "intent_mismatch": 100.0
+      },
+      "step_id": "How much do you spend monthly?",
+      "drop_count": 205
+    },
+    "7": {
+      "dominant_force": "intent_mismatch",
+      "dominant_pct": 100.0,
+      "all_forces": {
+        "cognitive_energy": 0.0,
+        "intent": 0.0,
+        "effort_tolerance": 0.0,
+        "risk_tolerance": 0.0,
+        "trust": 0.0,
+        "value": 0.0,
+        "effort": 0.0,
+        "risk": 0.0,
+        "intent_mismatch": 100.0
+      },
+      "step_id": "Do you have any existing credit cards?",
+      "drop_count": 204
+    },
+    "8": {
+      "dominant_force": "intent_mismatch",
+      "dominant_pct": 100.0,
+      "all_forces": {
+        "cognitive_energy": 0.0,
+        "intent": 0.0,
+        "effort_tolerance": 0.0,
+        "risk_tolerance": 0.0,
+        "trust": 0.0,
+        "value": 0.0,
+        "effort": 0.0,
+        "risk": 0.0,
+        "intent_mismatch": 100.0
+      },
+      "step_id": "Help us personalise your card matches",
+      "drop_count": 177
+    },
+    "9": {
+      "dominant_force": "intent_mismatch",
+      "dominant_pct": 100.0,
+      "all_forces": {
+        "cognitive_energy": 0.0,
+        "intent": 0.0,
+        "effort_tolerance": 0.0,
+        "risk_tolerance": 0.0,
+        "trust": 0.0,
+        "value": 0.0,
+        "effort": 0.0,
+        "risk": 0.0,
+        "intent_mismatch": 100.0
+      },
+      "step_id": "Step 1 of 11",
+      "drop_count": 184
+    },
+    "10": {
+      "dominant_force": "intent_mismatch",
+      "dominant_pct": 100.0,
+      "all_forces": {
+        "cognitive_energy": 0.0,
+        "intent": 0.0,
+        "effort_tolerance": 0.0,
+        "risk_tolerance": 0.0,
+        "trust": 0.0,
+        "value": 0.0,
+        "effort": 0.0,
+        "risk": 0.0,
+        "intent_mismatch": 100.0
+      },
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "drop_count": 151
+    }
+  },
+  "interactions": {
+    "pairs": {
+      "('intent_mismatch', 'trust')": 2988,
+      "('cognitive_energy', 'intent_mismatch')": 2283,
+      "('intent_mismatch', 'value')": 192,
+      "('effort_tolerance', 'intent_mismatch')": 3,
+      "('effort', 'intent_mismatch')": 2
+    },
+    "triplets": {
+      "('cognitive_energy', 'intent_mismatch', 'trust')": 2135,
+      "('cognitive_energy', 'intent', 'intent_mismatch')": 1458,
+      "('cognitive_energy', 'intent_mismatch', 'value')": 675,
+      "('intent_mismatch', 'risk', 'trust')": 395,
+      "('intent_mismatch', 'trust', 'value')": 328,
+      "('cognitive_energy', 'effort', 'intent_mismatch')": 251,
+      "('effort', 'intent_mismatch', 'trust')": 206,
+      "('intent_mismatch', 'risk', 'value')": 11,
+      "('effort', 'intent_mismatch', 'value')": 3,
+      "('cognitive_energy', 'effort_tolerance', 'intent_mismatch')": 2
+    }
+  },
+  "progression": {
+    "0": {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "drop_count": 1445,
+      "forces": {
+        "cognitive_energy": 10.804592760632108,
+        "intent": 0.0,
+        "effort_tolerance": 0.0,
+        "risk_tolerance": 1.5390845020761685,
+        "trust": 38.258016905620686,
+        "value": 7.944707564093995,
+        "effort": 0.0,
+        "risk": 7.6654771254655145,
+        "intent_mismatch": 33.78812114211153
+      },
+      "dominant": [
+        "trust",
+        38.258016905620686
+      ]
+    },
+    "1": {
+      "step_id": "What kind of perks excite you the most?",
+      "drop_count": 1096,
+      "forces": {
+        "cognitive_energy": 15.02503449076445,
+        "intent": 0.0,
+        "effort_tolerance": 1.682339104573245,
+        "risk_tolerance": 2.4229262758250774,
+        "trust": 16.943427043553054,
+        "value": 13.15113184411171,
+        "effort": 11.363673471347628,
+        "risk": 9.496259923405605,
+        "intent_mismatch": 29.915207846419236
+      },
+      "dominant": [
+        "intent_mismatch",
+        29.915207846419236
+      ]
+    },
+    "2": {
+      "step_id": "Any preference on annual fee?",
+      "drop_count": 820,
+      "forces": {
+        "cognitive_energy": 9.19168529602824,
+        "intent": 0.0,
+        "effort_tolerance": 1.5523287623364244,
+        "risk_tolerance": 2.097652652700696,
+        "trust": 16.545129755989414,
+        "value": 6.58503831222321,
+        "effort": 7.91157114903546,
+        "risk": 6.77289109951174,
+        "intent_mismatch": 49.343702972174825
+      },
+      "dominant": [
+        "intent_mismatch",
+        49.343702972174825
+      ]
+    },
+    "3": {
+      "step_id": "straightforward + options are clearly defined",
+      "drop_count": 549,
+      "forces": {
+        "cognitive_energy": 2.307550124926452,
+        "intent": 0.0,
+        "effort_tolerance": 0.3883863706625205,
+        "risk_tolerance": 0.4465854558338435,
+        "trust": 7.63317574463193,
+        "value": 1.413896151863486,
+        "effort": 1.8445800065915179,
+        "risk": 1.421317790529195,
+        "intent_mismatch": 84.54450835496105
+      },
+      "dominant": [
+        "intent_mismatch",
+        84.54450835496105
+      ]
+    },
+    "4": {
+      "step_id": "Your top 2 spend categories?",
+      "drop_count": 363,
+      "forces": {
+        "cognitive_energy": 0.9840381212963427,
+        "intent": 0.0,
+        "effort_tolerance": 0.43446273375643873,
+        "risk_tolerance": 0.44318909703739506,
+        "trust": 4.303976013174935,
+        "value": 0.5268857978557218,
+        "effort": 1.1606983454791258,
+        "risk": 1.0397138761539249,
+        "intent_mismatch": 91.10703601524611
+      },
+      "dominant": [
+        "intent_mismatch",
+        91.10703601524611
+      ]
+    },
+    "5": {
+      "step_id": "Do you track your monthly spending?",
+      "drop_count": 274,
+      "forces": {
+        "cognitive_energy": 0.0,
+        "intent": 0.0,
+        "effort_tolerance": 0.0,
+        "risk_tolerance": 0.0,
+        "trust": 0.0,
+        "value": 0.0,
+        "effort": 0.0,
+        "risk": 0.0,
+        "intent_mismatch": 100.0
+      },
+      "dominant": [
+        "intent_mismatch",
+        100.0
+      ]
+    },
+    "6": {
+      "step_id": "How much do you spend monthly?",
+      "drop_count": 205,
+      "forces": {
+        "cognitive_energy": 0.0,
+        "intent": 0.0,
+        "effort_tolerance": 0.0,
+        "risk_tolerance": 0.0,
+        "trust": 0.0,
+        "value": 0.0,
+        "effort": 0.0,
+        "risk": 0.0,
+        "intent_mismatch": 100.0
+      },
+      "dominant": [
+        "intent_mismatch",
+        100.0
+      ]
+    },
+    "7": {
+      "step_id": "Do you have any existing credit cards?",
+      "drop_count": 204,
+      "forces": {
+        "cognitive_energy": 0.0,
+        "intent": 0.0,
+        "effort_tolerance": 0.0,
+        "risk_tolerance": 0.0,
+        "trust": 0.0,
+        "value": 0.0,
+        "effort": 0.0,
+        "risk": 0.0,
+        "intent_mismatch": 100.0
+      },
+      "dominant": [
+        "intent_mismatch",
+        100.0
+      ]
+    },
+    "8": {
+      "step_id": "Help us personalise your card matches",
+      "drop_count": 177,
+      "forces": {
+        "cognitive_energy": 0.0,
+        "intent": 0.0,
+        "effort_tolerance": 0.0,
+        "risk_tolerance": 0.0,
+        "trust": 0.0,
+        "value": 0.0,
+        "effort": 0.0,
+        "risk": 0.0,
+        "intent_mismatch": 100.0
+      },
+      "dominant": [
+        "intent_mismatch",
+        100.0
+      ]
+    },
+    "9": {
+      "step_id": "Step 1 of 11",
+      "drop_count": 184,
+      "forces": {
+        "cognitive_energy": 0.0,
+        "intent": 0.0,
+        "effort_tolerance": 0.0,
+        "risk_tolerance": 0.0,
+        "trust": 0.0,
+        "value": 0.0,
+        "effort": 0.0,
+        "risk": 0.0,
+        "intent_mismatch": 100.0
+      },
+      "dominant": [
+        "intent_mismatch",
+        100.0
+      ]
+    },
+    "10": {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "drop_count": 151,
+      "forces": {
+        "cognitive_energy": 0.0,
+        "intent": 0.0,
+        "effort_tolerance": 0.0,
+        "risk_tolerance": 0.0,
+        "trust": 0.0,
+        "value": 0.0,
+        "effort": 0.0,
+        "risk": 0.0,
+        "intent_mismatch": 100.0
+      },
+      "dominant": [
+        "intent_mismatch",
+        100.0
+      ]
+    }
+  }
+}

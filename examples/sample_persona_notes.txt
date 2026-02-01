@@ -1,0 +1,18 @@
+Our target users are:
+
+1. Young salaried professionals (25-35 years old) in Tier-1 metros like Mumbai, Delhi, Bangalore
+   - Monthly income between ₹30k-₹1.5L
+   - Comfortable with digital apps and online banking
+   - Need quick access to credit for emergencies or planned expenses
+   - Moderate to high risk tolerance (comfortable with unsecured loans)
+   - Individual decision-makers (not heavily family-influenced)
+   - Growth-oriented, aspirational lifestyle
+
+2. Middle-aged salaried workers (35-45 years old) in Tier-2 cities
+   - Monthly income between ₹25k-₹80k
+   - Moderate digital comfort (use UPI, netbanking)
+   - More cautious about loans but need credit for family expenses
+   - Lower risk tolerance than young professionals
+   - May consult family before taking loan
+   - Stability-focused but still aspirational
+

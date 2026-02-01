@@ -1,0 +1,104 @@
+{
+  "product_type": "fintech",
+  "personas": [
+    {
+      "name": "Rural Cautious",
+      "sec": "low",
+      "urban_rural": "rural",
+      "digital_skill": "low",
+      "family_influence": "high",
+      "aspiration": "low",
+      "price_sensitivity": "high",
+      "risk_attitude": "risk_averse",
+      "age_bucket": "middle",
+      "intent": "low"
+    },
+    {
+      "name": "Urban Young Risk-Taker",
+      "sec": "mid",
+      "urban_rural": "metro",
+      "digital_skill": "high",
+      "family_influence": "low",
+      "aspiration": "high",
+      "price_sensitivity": "low",
+      "risk_attitude": "risk_tolerant",
+      "age_bucket": "young",
+      "intent": "high"
+    },
+    {
+      "name": "Tier-2 Salaried Worker",
+      "sec": "mid",
+      "urban_rural": "tier2",
+      "digital_skill": "medium",
+      "family_influence": "high",
+      "aspiration": "medium",
+      "price_sensitivity": "high",
+      "risk_attitude": "balanced",
+      "age_bucket": "middle",
+      "intent": "medium"
+    }
+  ],
+  "steps": [
+    {
+      "name": "Landing Page",
+      "type": "landing",
+      "mental_complexity": "low",
+      "effort": "low",
+      "risk": "low",
+      "irreversible": false,
+      "value_visibility": "medium",
+      "delay_to_value": "later",
+      "reassurance": "medium",
+      "authority": "low"
+    },
+    {
+      "name": "Phone Verification",
+      "type": "signup",
+      "mental_complexity": "low",
+      "effort": "medium",
+      "risk": "low",
+      "irreversible": false,
+      "value_visibility": "low",
+      "delay_to_value": "soon",
+      "reassurance": "medium",
+      "authority": "low"
+    },
+    {
+      "name": "KYC Document Upload",
+      "type": "kyc",
+      "mental_complexity": "high",
+      "effort": "high",
+      "risk": "medium",
+      "irreversible": false,
+      "value_visibility": "low",
+      "delay_to_value": "soon",
+      "reassurance": "high",
+      "authority": "high"
+    },
+    {
+      "name": "Bank Account Linking",
+      "type": "payment",
+      "mental_complexity": "medium",
+      "effort": "medium",
+      "risk": "high",
+      "irreversible": true,
+      "value_visibility": "medium",
+      "delay_to_value": "soon",
+      "reassurance": "high",
+      "authority": "medium"
+    },
+    {
+      "name": "First Transaction",
+      "type": "other",
+      "mental_complexity": "low",
+      "effort": "low",
+      "risk": "low",
+      "irreversible": false,
+      "value_visibility": "high",
+      "delay_to_value": "instant",
+      "reassurance": "medium",
+      "authority": "low"
+    }
+  ]
+}
+

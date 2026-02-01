@@ -1,0 +1,237 @@
+{
+  "simulationId": "NOV-2026-01",
+  "latency": "0.01s",
+  "confidence": "50.0%",
+  "cohort": "Founders, startup operators, senior professionals, and early investors aged roughly 28\u201345 with first-generation wealth or rapid income acceleration, who are comfortable with complexity and allergic to fluff.",
+  "productName": "Novelty Wealth - Investing & Wealth Building",
+  "userContext": "Users are actively thinking about how to turn volatile or fast-growing income into long-term, compounding wealth. They are comparing tools, skeptical of marketing speak, and expect clear, high-signal explanations before committing serious capital.",
+  "verdict": "Users abandon when asked to share personal information before seeing what they'll get in return.",
+  "beliefBreak": {
+    "screenshot": "screenshots/novelty_wealth/1.jpeg",
+    "irreversibleAction": "User must make a commitment at step 1 of 5 (20% progress) without seeing value first.",
+    "callouts": [
+      {
+        "text": "Sensitive data requested at peak commitment",
+        "position": "top-left"
+      },
+      {
+        "text": "No established trust before financial disclosure",
+        "position": "bottom-right"
+      }
+    ],
+    "psychology": "Users arrive expecting to explore options, but immediately encounter a request for personal information. The mismatch between initial expectations and actual requirements triggers immediate abandonment."
+  },
+  "journeyScreenshots": {
+    "before": "screenshots/novelty_wealth/1.jpeg",
+    "moment": "screenshots/novelty_wealth/1.jpeg",
+    "after": "screenshots/novelty_wealth/2.jpeg"
+  },
+  "whyBeliefBreaks": {
+    "userBelieves": [
+      "This is a quick exploration tool",
+      "They can browse options without commitment",
+      "The platform will show value before asking for data"
+    ],
+    "productAsks": [
+      "Make a commitment without seeing value",
+      "Trust platform with personal information"
+    ],
+    "whyItFails": [
+      "Value not demonstrated before data request",
+      "Trust demand exceeds relationship depth"
+    ]
+  },
+  "oneBet": {
+    "headline": "Show personalized recommendations BEFORE requesting financial disclosure.",
+    "support": "If users see tailored results based solely on preferences, establishing value before trust demands, completion rates should increase.",
+    "confidenceLevel": "low"
+  },
+  "howWrong": [
+    {
+      "name": "Value-First Sequencing Test",
+      "hypothesis": "Users abandon due to premature data request, not data request itself",
+      "measure": "Completion rate when financial questions move to post-recommendation vs current placement",
+      "falsifier": "If post-recommendation placement shows equal abandonment, timing isn't the blocker."
+    },
+    {
+      "name": "Progressive Disclosure Test",
+      "hypothesis": "Users need gradual trust building through value demonstration",
+      "measure": "Engagement with initial recommendations (no financial data) vs refined recommendations (with data)",
+      "falsifier": "If users don't engage with initial recommendations, they don't value the output."
+    },
+    {
+      "name": "Framing Transparency Test",
+      "hypothesis": "Bait-and-switch perception drives exit more than data request",
+      "measure": "Completion rate when step 1 explicitly mentions 'financial info needed' vs silent",
+      "falsifier": "If transparency reduces starts, users actively avoid financial disclosure regardless of timing."
+    }
+  ],
+  "evidence": {
+    "assumptions": [
+      "Users discovered Novelty Wealth - Investing & Wealth Building through organic search or ads promising 'instant recommendations'",
+      "Competing platforms offer immediate results without financial disclosure",
+      "Users have not yet established relationship with the brand"
+    ],
+    "constraints": [
+      "Accurate matching requires some financial data",
+      "Lending partners require minimum qualification criteria",
+      "Regulatory compliance mandates certain disclosures"
+    ],
+    "rationale": [
+      "Privacy reassurance appears only AFTER request \u2014 too late for trust building",
+      "Landing page shows value proposition (9.99% p.a., up to \u20b91 Crore) but doesn't show personalized eligibility",
+      "Users see generic benefits but must start process to learn if they qualify",
+      "Competing platforms show initial matches without credit score disclosure"
+    ]
+  },
+  "marginNotes": {
+    "page2": "Note: 20% progress indicator creates expectation of completion, not new high-friction requirement.",
+    "page4": "High confidence: Pattern observed across fintech onboarding where value-before-trust sequencing improves conversion.",
+    "page5": "Alternative hypothesis: Users lack credit score knowledge, not willingness to share. Test 'Don't know my score' option.",
+    "page3": "Landing page promises exploration, but immediately requires personal information \u2014 expectation mismatch from the start."
+  },
+  "decisionSimulation": {
+    "steps": [
+      {
+        "step_id": "Landing & Promise (ss1)",
+        "step_index": 0,
+        "step_description": "Initial landing screen from ss1.PNG that introduces the Novelty Wealth proposition and promise, before any data or commitment is requested.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "Landing page with NOVELTY_WEALTH branding and a call-to-action button",
+            "what_user_thinks": "This looks like a financial product. I can explore without commitment.",
+            "what_user_understands": "I'm still in the process. I haven't seen what I'll get yet.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Landing page promising credit/loan benefits. Progress shows step 1 of 5",
+            "what_user_thinks": "This is a credit/loan product. I'll need to provide some information to see if I qualify.",
+            "what_user_understands": "I'm 1 steps in. I expect to see results in 4 more steps. Value is coming but not yet shown.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Landing page: Initial landing screen from ss1.PNG that introduces the Novelty Wealth proposition and promise, before any data or commitment is requested.. Value proposition visible but generic. No personalized eligibility shown. Progress: 20%",
+            "what_user_thinks": "This is a credit/loan product. They want me to start a process that will require personal information. I haven't seen if I qualify yet, but they're asking me to begin.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 1 but value appears at step 5. I'm being asked to share initial landing screen from ss1.png that introduces the novelty wealth proposition and promise, before any data or commitment is requested. 4 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Cautiously optimistic - proceeding but aware of the trust-value gap"
+          }
+        ]
+      },
+      {
+        "step_id": "Profile & Goals (ss2)",
+        "step_index": 1,
+        "step_description": "Questionnaire screen from ss2.PNG where users share basic profile / financial goals so the product can tailor a plan.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with Questionnaire screen from ss2.PNG where users share basic profile / financial goals so the product can tailor a plan.",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "I'm still in the process. I haven't seen what I'll get yet.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Questionnaire screen from ss2.PNG where users share basic profile / financial goals so the product can tailor a plan.. Progress shows 2/5",
+            "what_user_thinks": "I've answered several questions but haven't seen my results yet. I'm getting closer.",
+            "what_user_understands": "I'm 2 steps in. I expect to see results in 2 more steps. Value is coming but not yet shown.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 2/5 (40%): Questionnaire screen from ss2.PNG where users share basic profile / financial goals so the product can tailor a plan.. Irreversibility: 0.1. Value delay: 2 steps.",
+            "what_user_thinks": "I understand this is step 2 of 5. I'm providing information to get personalized results, but value hasn't been shown yet.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 2 but value appears at step 4. I'm being asked to share questionnaire screen from ss2.png where users share basic profile / financial goals so the product can tailor a plan. 2 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Cautiously optimistic - proceeding but aware of the trust-value gap"
+          }
+        ]
+      },
+      {
+        "step_id": "Income & Contributions (ss3)",
+        "step_index": 2,
+        "step_description": "Data entry screen from ss3.PNG where users provide income / contribution details so the engine can generate a wealth plan.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with Data entry screen from ss3.PNG where users provide income / contribution details so the engine can generate a wealth plan.",
+            "what_user_thinks": "They want some information from me. I'll provide it if it's quick.",
+            "what_user_understands": "I'm providing information, but unclear what happens next.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Data entry screen from ss3.PNG where users provide income / contribution details so the engine can generate a wealth plan.. Progress shows 3/5",
+            "what_user_thinks": "This is part of the process. I'll continue if it's not too complicated.",
+            "what_user_understands": "I'm providing information that will help determine my eligibility or options.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 3/5 (60%): Data entry screen from ss3.PNG where users provide income / contribution details so the engine can generate a wealth plan.. Irreversibility: 0.1. Value delay: 0 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I understand the process flow. I'm providing information that will lead to personalized results. The sequence makes sense.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      },
+      {
+        "step_id": "Plan / Options Preview (ss4)",
+        "step_index": 3,
+        "step_description": "Preview screen from ss4.PNG showing a proposed plan or investment options so users can see what they might get.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with Preview screen from ss4.PNG showing a proposed plan or investment options so users can see what they might get.",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "There might be some benefit, but I'm not sure what exactly.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Preview screen from ss4.PNG showing a proposed plan or investment options so users can see what they might get.. Progress shows 4/5",
+            "what_user_thinks": "This is part of the process. I'll continue if it's not too complicated.",
+            "what_user_understands": "I can see some value proposition, but I'm not sure if it's personalized to me yet.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 4/5 (80%): Preview screen from ss4.PNG showing a proposed plan or investment options so users can see what they might get.. Irreversibility: 0.2. Value delay: -2 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I can see value now (eligibility/loan amount). This justifies the information I've shared. Trust is established because value was shown.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      },
+      {
+        "step_id": "Account / KYC Commitment (ss5)",
+        "step_index": 4,
+        "step_description": "Final screen from ss5.PNG where users are asked to commit (e.g., create account, complete KYC, or link money) to activate their Novelty Wealth plan.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen asking to link bank account",
+            "what_user_thinks": "They want some information from me. I'll provide it if it's quick.",
+            "what_user_understands": "There might be some benefit, but I'm not sure what exactly.",
+            "emotional_state": "Cautious, slightly anxious about sharing information"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Final screen from ss5.PNG where users are asked to commit (e.g., create account, complete KYC, or link money) to activate their Novelty Wealth plan.. Progress shows 5/5",
+            "what_user_thinks": "They're asking for sensitive financial information. I should understand what I'm committing to.",
+            "what_user_understands": "I can see some value proposition, but I'm not sure if it's personalized to me yet.",
+            "emotional_state": "Hesitant - this feels like a commitment I can't easily undo"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 5/5 (100%): Final screen from ss5.PNG where users are asked to commit (e.g., create account, complete KYC, or link money) to activate their Novelty Wealth plan.. Irreversibility: 0.5. Value delay: -4 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I can see value now (eligibility/loan amount). This justifies the information I've shared. Trust is established because value was shown.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      }
+    ]
+  }
+}

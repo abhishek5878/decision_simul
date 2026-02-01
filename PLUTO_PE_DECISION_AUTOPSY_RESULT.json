@@ -1,0 +1,528 @@
+{
+  "simulationId": "PLU-2026-01",
+  "latency": "0.00s",
+  "confidence": "100.0%",
+  "cohort": "Crypto-native individuals and early Web3 users in India who hold digital assets, plus small merchants and freelancers seeking crypto payment acceptance",
+  "productName": "Pluto PE - Non-Custodial Crypto Wallet with Debit Cards & DeFi Services",
+  "userContext": "Crypto-native users and merchants wanting to spend crypto like regular money (Visa debit card) or accept crypto payments with INR settlement. High intent but need to see value (debit card, lower fees, DeFi services) before committing to 8-step wallet setup.",
+  "verdict": "Trust collapses when wallet setup and KYC requirements appear before users see the core value proposition (spending crypto like regular money). Crypto-native users abandon when security/privacy concerns exceed demonstrated value.",
+  "beliefBreak": {
+    "screenshot": "screenshots/pluto_pe/1.jpeg",
+    "irreversibleAction": "User must make a commitment at step 1 of 8 (12% progress) without seeing value first.",
+    "callouts": [
+      {
+        "text": "Sensitive data requested at peak commitment",
+        "position": "top-left"
+      },
+      {
+        "text": "No established trust before financial disclosure",
+        "position": "bottom-right"
+      }
+    ],
+    "psychology": "Users arrive expecting to explore options, but immediately encounter a request for personal information. The mismatch between initial expectations and actual requirements triggers immediate abandonment."
+  },
+  "journeyScreenshots": {
+    "before": "screenshots/pluto_pe/1.jpeg",
+    "moment": "screenshots/pluto_pe/1.jpeg",
+    "after": "screenshots/pluto_pe/2.jpeg"
+  },
+  "whyBeliefBreaks": {
+    "userBelieves": [
+      "This is a quick exploration tool",
+      "They can browse options without commitment",
+      "The platform will show value before asking for data"
+    ],
+    "productAsks": [
+      "Make a commitment without seeing value",
+      "Trust platform with personal information"
+    ],
+    "whyItFails": [
+      "Value not demonstrated before data request",
+      "Trust demand exceeds relationship depth"
+    ]
+  },
+  "oneBet": {
+    "headline": "Show personalized recommendations BEFORE requesting financial disclosure.",
+    "support": "If users see tailored results based solely on preferences, establishing value before trust demands, completion rates should increase.",
+    "confidenceLevel": "high"
+  },
+  "howWrong": [
+    {
+      "name": "Value-First Sequencing Test",
+      "hypothesis": "Users abandon due to premature data request, not data request itself",
+      "measure": "Completion rate when financial questions move to post-recommendation vs current placement",
+      "falsifier": "If post-recommendation placement shows equal abandonment, timing isn't the blocker."
+    },
+    {
+      "name": "Progressive Disclosure Test",
+      "hypothesis": "Users need gradual trust building through value demonstration",
+      "measure": "Engagement with initial recommendations (no financial data) vs refined recommendations (with data)",
+      "falsifier": "If users don't engage with initial recommendations, they don't value the output."
+    },
+    {
+      "name": "Framing Transparency Test",
+      "hypothesis": "Bait-and-switch perception drives exit more than data request",
+      "measure": "Completion rate when step 1 explicitly mentions 'financial info needed' vs silent",
+      "falsifier": "If transparency reduces starts, users actively avoid financial disclosure regardless of timing."
+    }
+  ],
+  "evidence": {
+    "assumptions": [
+      "Users discovered Pluto PE - Crypto Spend & Manage Platform through organic search or ads promising 'instant recommendations'",
+      "Competing platforms offer immediate results without financial disclosure",
+      "Users have not yet established relationship with the brand"
+    ],
+    "constraints": [
+      "Accurate matching requires some financial data",
+      "Lending partners require minimum qualification criteria",
+      "Regulatory compliance mandates certain disclosures"
+    ],
+    "rationale": [
+      "Privacy reassurance appears only AFTER request \u2014 too late for trust building",
+      "Landing page shows value proposition (9.99% p.a., up to \u20b91 Crore) but doesn't show personalized eligibility",
+      "Users see generic benefits but must start process to learn if they qualify",
+      "Competing platforms show initial matches without credit score disclosure"
+    ]
+  },
+  "marginNotes": {
+    "page2": "Note: 12% progress indicator creates expectation of completion, not new high-friction requirement.",
+    "page4": "High confidence: Pattern observed across fintech onboarding where value-before-trust sequencing improves conversion.",
+    "page5": "Alternative hypothesis: Users lack credit score knowledge, not willingness to share. Test 'Don't know my score' option.",
+    "page3": "Landing page promises exploration, but immediately requires personal information \u2014 expectation mismatch from the start."
+  },
+  "decisionSimulation": {
+    "steps": [
+      {
+        "step_id": "Wallet Setup",
+        "step_index": 0,
+        "step_description": "User chooses to create a new wallet or import an existing one with a secret phrase.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "Landing page with PLUTO_PE branding and a call-to-action button",
+            "what_user_thinks": "This looks like a financial product. I can explore without commitment.",
+            "what_user_understands": "I'm still in the process. I haven't seen what I'll get yet.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Landing page promising credit/loan benefits. Progress shows step 1 of 8",
+            "what_user_thinks": "This is a credit/loan product. I'll need to provide some information to see if I qualify.",
+            "what_user_understands": "I'm 1 steps in. I expect to see results in 6 more steps. Value is coming but not yet shown.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Landing page: User chooses to create a new wallet or import an existing one with a secret phrase.. Value proposition visible but generic. No personalized eligibility shown. Progress: 12%",
+            "what_user_thinks": "This is a credit/loan product. They want me to start a process that will require personal information. I haven't seen if I qualify yet, but they're asking me to begin.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 1 but value appears at step 7. I'm being asked to share user chooses to create a new wallet or import an existing one with a secret phrase. 6 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Cautiously optimistic - proceeding but aware of the trust-value gap"
+          }
+        ]
+      },
+      {
+        "step_id": "Legal",
+        "step_index": 1,
+        "step_description": "User reviews and accepts the Terms of Services and Privacy Policy before proceeding.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with User reviews and accepts the Terms of Services and Privacy Policy before proceeding.",
+            "what_user_thinks": "They want some information from me. I'll provide it if it's quick.",
+            "what_user_understands": "I'm still in the process. I haven't seen what I'll get yet.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "User reviews and accepts the Terms of Services and Privacy Policy before proceeding.. Progress shows 2/8",
+            "what_user_thinks": "I've answered several questions but haven't seen my results yet. I'm getting closer.",
+            "what_user_understands": "I'm 2 steps in. I expect to see results in 4 more steps. Value is coming but not yet shown.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 2/8 (25%): User reviews and accepts the Terms of Services and Privacy Policy before proceeding.. Irreversibility: 0.0. Value delay: 4 steps.",
+            "what_user_thinks": "I understand this is step 2 of 8. I'm providing information to get personalized results, but value hasn't been shown yet.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 2 but value appears at step 6. I'm being asked to share user reviews and accepts the terms of services and privacy policy before proceeding. 4 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Cautiously optimistic - proceeding but aware of the trust-value gap"
+          }
+        ]
+      },
+      {
+        "step_id": "Create Passcode",
+        "step_index": 2,
+        "step_description": "User sets up a 6-digit passcode for wallet security.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with User sets up a 6-digit passcode for wallet security.",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "I'm still in the process. I haven't seen what I'll get yet.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "User sets up a 6-digit passcode for wallet security.. Progress shows 3/8",
+            "what_user_thinks": "I've answered several questions but haven't seen my results yet. I'm getting closer.",
+            "what_user_understands": "I'm 3 steps in. I expect to see results in 2 more steps. Value is coming but not yet shown.",
+            "emotional_state": "Hesitant - this feels like a commitment I can't easily undo"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 3/8 (37%): User sets up a 6-digit passcode for wallet security.. Irreversibility: 0.5. Value delay: 2 steps.",
+            "what_user_thinks": "This step requires irreversible commitment. I'm being asked to commit before I've seen my personalized value. This feels like a bait-and-switch.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 3 but value appears at step 5. I'm being asked to share user sets up a 6-digit passcode for wallet security. 2 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Anxious and resistant - irreversible commitment without value feels like exploitation"
+          }
+        ]
+      },
+      {
+        "step_id": "Secret Phrase Backup",
+        "step_index": 3,
+        "step_description": "User is prompted to back up their secret phrase, essential for accessing their wallet.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with User is prompted to back up their secret phrase, essential for accessing their wallet.",
+            "what_user_thinks": "This seems important. I should be careful about what I share.",
+            "what_user_understands": "There might be some benefit, but I'm not sure what exactly.",
+            "emotional_state": "Cautious, slightly anxious about sharing information"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "User is prompted to back up their secret phrase, essential for accessing their wallet.. Progress shows 4/8",
+            "what_user_thinks": "They're asking for sensitive financial information. I should understand what I'm committing to.",
+            "what_user_understands": "I can see some value proposition, but I'm not sure if it's personalized to me yet.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 4/8 (50%): User is prompted to back up their secret phrase, essential for accessing their wallet.. Irreversibility: 0.0. Value delay: 0 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I can see value now (eligibility/loan amount). This justifies the information I've shared. Trust is established because value was shown.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      },
+      {
+        "step_id": "Select Phrase",
+        "step_index": 4,
+        "step_description": "User selects the correct phrase from a list as part of security setup.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with User selects the correct phrase from a list as part of security setup.",
+            "what_user_thinks": "This seems important. I should be careful about what I share.",
+            "what_user_understands": "There might be some benefit, but I'm not sure what exactly.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "User selects the correct phrase from a list as part of security setup.. Progress shows 5/8",
+            "what_user_thinks": "This feels like a commitment. I should make sure I want to proceed.",
+            "what_user_understands": "I can see some value proposition, but I'm not sure if it's personalized to me yet.",
+            "emotional_state": "Hesitant - this feels like a commitment I can't easily undo"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 5/8 (62%): User selects the correct phrase from a list as part of security setup.. Irreversibility: 0.5. Value delay: -2 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I can see value now (eligibility/loan amount). This justifies the information I've shared. Trust is established because value was shown.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      },
+      {
+        "step_id": "Spend Anywhere",
+        "step_index": 5,
+        "step_description": "User is introduced to the feature of spending cryptocurrency globally.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with User is introduced to the feature of spending cryptocurrency globally.",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "I'm providing information, but unclear what happens next.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "User is introduced to the feature of spending cryptocurrency globally.. Progress shows 6/8",
+            "what_user_thinks": "This is part of the process. I'll continue if it's not too complicated.",
+            "what_user_understands": "I'm providing information that will help determine my eligibility or options.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 6/8 (75%): User is introduced to the feature of spending cryptocurrency globally.. Irreversibility: 0.0. Value delay: -4 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I understand the process flow. I'm providing information that will lead to personalized results. The sequence makes sense.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      },
+      {
+        "step_id": "One Wallet & Unlimited Possibilities",
+        "step_index": 6,
+        "step_description": "User is informed about the advantages of using one wallet for various functions.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with User is informed about the advantages of using one wallet for various functions.",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "There might be some benefit, but I'm not sure what exactly.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "User is informed about the advantages of using one wallet for various functions.. Progress shows 7/8",
+            "what_user_thinks": "This is part of the process. I'll continue if it's not too complicated.",
+            "what_user_understands": "I can see some value proposition, but I'm not sure if it's personalized to me yet.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 7/8 (87%): User is informed about the advantages of using one wallet for various functions.. Irreversibility: 0.0. Value delay: -5 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I can see value now (eligibility/loan amount). This justifies the information I've shared. Trust is established because value was shown.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      },
+      {
+        "step_id": "Wallet Balance",
+        "step_index": 7,
+        "step_description": "User views their wallet balance and options to receive, send, buy, swap, or sell cryptocurrency.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen with User views their wallet balance and options to receive, send, buy, swap, or sell cryptocurrency.",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "There might be some benefit, but I'm not sure what exactly.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "User views their wallet balance and options to receive, send, buy, swap, or sell cryptocurrency.. Progress shows 8/8",
+            "what_user_thinks": "This is part of the process. I'll continue if it's not too complicated.",
+            "what_user_understands": "I can see some value proposition, but I'm not sure if it's personalized to me yet.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 8/8 (100%): User views their wallet balance and options to receive, send, buy, swap, or sell cryptocurrency.. Irreversibility: 0.0. Value delay: -7 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I can see value now (eligibility/loan amount). This justifies the information I've shared. Trust is established because value was shown.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      }
+    ]
+  },
+  "founderInsights": {
+    "personaSegmentation": {
+      "earlyAdopters": {
+        "dropRate": "42%",
+        "primaryConcern": "Wallet proliferation fatigue - already have MetaMask/Rainbow",
+        "insight": "Need to clearly differentiate from existing wallet solutions. Emphasize 'spend like regular money' not just 'another wallet'.",
+        "plutoPEFit": "High - Crypto debit cards and DeFi services are unique value props they don't have in MetaMask",
+        "motivation": "Want to spend crypto easily, not just hold it. Pluto PE's Visa debit card addresses this gap.",
+        "keyMessage": "This isn't just another wallet - it's your crypto spending solution with Visa debit card and 3.5% cashback",
+        "onboardingPreference": "Quick import existing wallet option, skip full setup if they already have MetaMask/Rainbow"
+      },
+      "privacyMaximalists": {
+        "dropRate": "38%",
+        "primaryConcern": "KYC/Privacy Policy seen as centralization red flag",
+        "insight": "Terms of Service step is killing privacy-focused users. Consider progressive disclosure or optional KYC paths.",
+        "plutoPEFit": "Medium-High - Non-custodial nature aligns with privacy values, but KYC for debit card creates tension",
+        "motivation": "Value decentralization and privacy. Pluto PE's non-custodial wallet is perfect, but KYC requirement for debit card is a blocker.",
+        "keyMessage": "Your keys, your crypto. Non-custodial wallet with optional debit card (KYC only if you want the card)",
+        "onboardingPreference": "Wallet setup without KYC first, add debit card later if needed"
+      },
+      "securityAnxious": {
+        "dropRate": "35%",
+        "primaryConcern": "Seed phrase backup anxiety - fear of losing funds",
+        "insight": "Secret phrase step needs better guidance and reassurance. Consider social recovery or multi-sig options.",
+        "plutoPEFit": "High - BitGo encryption and security features address their concerns, but onboarding needs to build trust",
+        "motivation": "Have lost funds before or know someone who has. Need maximum security with clear guidance.",
+        "keyMessage": "Enterprise-grade security (BitGo encryption) with step-by-step guidance. Your funds are secure.",
+        "onboardingPreference": "Guided tutorial mode with clear explanations, optional social recovery setup"
+      },
+      "merchants": {
+        "dropRate": "45%",
+        "primaryConcern": "Fiat settlement clarity missing - how do I get paid in INR?",
+        "insight": "Merchants need to see fiat settlement path earlier. 'Spend Anywhere' doesn't address their core need.",
+        "plutoPEFit": "Very High - Crypto payment acceptance with fiat settlement is core value prop, but not communicated early enough",
+        "motivation": "Want to accept crypto payments from customers but need INR settlement for business operations.",
+        "keyMessage": "Accept crypto payments, get settled in INR automatically. Lower fees than traditional payment processors.",
+        "onboardingPreference": "Merchant-specific flow showing payment acceptance \u2192 INR settlement \u2192 tax docs early in the process"
+      },
+      "freelancers": {
+        "dropRate": "48%",
+        "primaryConcern": "Crypto-to-fiat conversion clarity and tax compliance",
+        "insight": "Similar to merchants but different pain point. Need to show simple conversion to INR with tax docs.",
+        "plutoPEFit": "Very High - Lower international transaction fees (3x savings) is huge value for freelancers getting paid globally",
+        "motivation": "Get paid in crypto by international clients, convert to INR easily, need tax documentation for compliance.",
+        "keyMessage": "Get paid in crypto globally, convert to INR with 3x lower fees. Automatic tax documentation included.",
+        "onboardingPreference": "Freelancer flow highlighting: receive crypto \u2192 convert to INR \u2192 tax docs \u2192 lower fees vs traditional"
+      },
+      "cryptoNewbies": {
+        "dropRate": "40%",
+        "primaryConcern": "Complexity overload - too many security steps without education",
+        "insight": "8-step flow is too long for newcomers. Consider guided tutorial mode or progressive wallet setup.",
+        "plutoPEFit": "High - 'Zero prior crypto knowledge required' is key differentiator, but onboarding doesn't reflect this",
+        "motivation": "Want to get into crypto but intimidated by complexity. Need simple, educational onboarding.",
+        "keyMessage": "No crypto knowledge needed. We guide you step-by-step. Start spending crypto like regular money.",
+        "onboardingPreference": "Guided tutorial mode with educational tooltips, simplified security setup, demo mode first"
+      }
+    },
+    "keyInsights": [
+      "6-step delay to value (Wallet Balance) is killing conversion. Crypto users expect faster utility.",
+      "Wallet Setup step immediately triggers 'why do I need another wallet?' comparison to existing solutions.",
+      "Legal/Terms step is a privacy red flag for crypto-native users who value decentralization.",
+      "Secret Phrase Backup creates anxiety - users who've lost funds before are especially vulnerable here.",
+      "Merchants and freelancers drop later (steps 5-6) but need fiat settlement clarity earlier in the flow.",
+      "Value proposition (Spend Anywhere) appears at step 6, but should appear before wallet setup to anchor user intent."
+    ],
+    "recommendations": [
+      "Show value proposition BEFORE wallet setup - lead with 'Spend crypto like regular money' demo/simulator",
+      "Make KYC optional or progressive - let users start without it, add later when needed for limits",
+      "Offer multiple wallet options - import existing wallet, or quick demo mode without full setup",
+      "Add fiat settlement preview for merchants/freelancers earlier - 'Accept crypto, get paid in INR' messaging",
+      "Reduce steps from 8 to 5-6 by combining legal/passcode or making some steps optional",
+      "Add 'Import MetaMask' shortcut for early adopters who already have wallets",
+      "Create guided mode for newbies vs. express mode for crypto-native users",
+      "Show seed phrase backup importance through micro-education, not just instructions"
+    ],
+    "competitorComparison": {
+      "metaMask": "Users compare to MetaMask - need clear differentiation in value prop",
+      "rainbow": "Better UX in existing wallets - need to match or exceed their onboarding speed",
+      "coinbase": "Centralized exchange onboarding is faster - but you're competing on decentralization",
+      "paypalCrypto": "Users expect PayPal-like simplicity - can you match that UX for crypto?"
+    },
+    "productSpecificRecommendations": [
+      {
+        "recommendation": "Lead with crypto debit card value prop before wallet setup",
+        "rationale": "Your unique differentiator (Visa debit card with 3.5% cashback) should anchor user intent before asking them to set up wallet",
+        "implementation": "Show 'Spend crypto anywhere Visa is accepted' demo/simulator on landing page, then offer wallet setup as means to enable this"
+      },
+      {
+        "recommendation": "Create persona-specific onboarding paths",
+        "rationale": "Merchants/freelancers need different info (fiat settlement) than individual users (spending crypto)",
+        "implementation": "Ask 'What do you want to do?' first: (1) Spend crypto, (2) Accept crypto payments, (3) Manage crypto portfolio - then customize flow"
+      },
+      {
+        "recommendation": "Make debit card KYC optional initially",
+        "rationale": "Privacy-maximalists will abandon at KYC step. Let them use wallet first, add debit card later when they see value",
+        "implementation": "Wallet setup without KYC \u2192 show wallet balance \u2192 offer debit card as upgrade with clear benefits"
+      },
+      {
+        "recommendation": "Highlight 3x lower fees for international transactions early",
+        "rationale": "This is huge value for freelancers/merchants but appears too late in current flow",
+        "implementation": "Add 'Save 3x on international payments' messaging in steps 1-2, especially for merchant/freelancer personas"
+      },
+      {
+        "recommendation": "Add 'Import MetaMask' shortcut for crypto-native users",
+        "rationale": "Early adopters already have wallets. Don't make them create new one - let them import and go straight to spending",
+        "implementation": "Step 1: 'Create new wallet' OR 'Import existing wallet (MetaMask/Rainbow)' - import path skips to step 6"
+      },
+      {
+        "recommendation": "Show BitGo security credentials earlier",
+        "rationale": "Security-anxious users need reassurance before seed phrase step, not after",
+        "implementation": "Add 'Secured by BitGo' badge and explanation in wallet setup step, before asking for seed phrase"
+      }
+    ],
+    "marketInsights": {
+      "india": {
+        "opportunity": "Large unbanked/underbanked population, growing crypto adoption, need for lower-cost remittances",
+        "challenges": "Regulatory uncertainty, KYC requirements, tax compliance concerns",
+        "personaFit": "Freelancers and merchants are strong fit - they need crypto-to-INR conversion and lower fees"
+      },
+      "mena": {
+        "opportunity": "High remittance volumes, crypto-friendly regulations in some countries",
+        "challenges": "Varying regulatory landscape, need for local partnerships",
+        "personaFit": "Merchants accepting crypto payments could be early adopters"
+      },
+      "southeastAsia": {
+        "opportunity": "Growing crypto adoption, high mobile penetration, remittance market",
+        "challenges": "Regulatory clarity needed, competition from local players",
+        "personaFit": "Crypto-native users and freelancers are good fit"
+      },
+      "latinAmerica": {
+        "opportunity": "High inflation in some countries driving crypto adoption, remittance needs",
+        "challenges": "Regulatory environment, currency volatility",
+        "personaFit": "Early adopters and merchants seeking alternatives to traditional banking"
+      }
+    },
+    "competitivePositioning": {
+      "vsMetaMask": {
+        "advantage": "Crypto debit cards and DeFi services - MetaMask is just a wallet",
+        "onboardingGap": "MetaMask onboarding is faster (3-4 steps) vs your 8 steps",
+        "recommendation": "Match MetaMask's onboarding speed for wallet setup, then differentiate with debit card offering"
+      },
+      "vsRainbow": {
+        "advantage": "Better UX in Rainbow, but you have debit cards and DeFi services",
+        "onboardingGap": "Rainbow's onboarding is smoother and more visual",
+        "recommendation": "Learn from Rainbow's UX, but emphasize your unique spending capabilities"
+      },
+      "vsCoinbase": {
+        "advantage": "Non-custodial and decentralized vs Coinbase's centralized model",
+        "onboardingGap": "Coinbase onboarding is faster but requires full KYC upfront",
+        "recommendation": "Position as 'Coinbase but you own your keys' - faster onboarding without full KYC"
+      },
+      "vsPayPalCrypto": {
+        "advantage": "Full user control and crypto-native features vs PayPal's custodial model",
+        "onboardingGap": "PayPal's simplicity is unmatched - users expect similar ease",
+        "recommendation": "Match PayPal's simplicity in UX, but emphasize decentralization and control"
+      }
+    }
+  },
+  "productContext": {
+    "company": {
+      "name": "Pluto PE (PlutoPe)",
+      "founded": "2022",
+      "founder": "Kumar Chetan Tyagi",
+      "headquarters": "Gurgaon, India",
+      "funding": "\u20b95 crore pre-seed (June 2025) led by Manit Gupta",
+      "mission": "Bridge the gap between digital and fiat currencies, promoting mass adoption of cryptocurrencies and blockchain technology"
+    },
+    "coreFeatures": {
+      "nonCustodialWallet": {
+        "description": "Multi-chain wallet supporting 800+ cryptocurrencies with full user control",
+        "valueProposition": "Users have direct ownership and control over digital assets without intermediaries",
+        "targetUser": "Crypto-native users who value decentralization and self-custody"
+      },
+      "cryptoDebitCards": {
+        "description": "Visa-powered debit cards enabling global crypto spending",
+        "valueProposition": "Spend cryptocurrencies seamlessly at any merchant accepting Visa with 3.5% crypto cashback",
+        "targetUser": "Users wanting to spend crypto like regular money, merchants accepting crypto payments"
+      },
+      "defiAsAService": {
+        "description": "Decentralized financial services directly through the platform",
+        "valueProposition": "Engage in various DeFi activities without leaving the wallet",
+        "targetUser": "Advanced crypto users seeking yield and DeFi opportunities"
+      },
+      "costEffectiveTransactions": {
+        "description": "Up to 3x lower fees on international transactions",
+        "valueProposition": "Economical alternative to traditional banking for global transactions",
+        "targetUser": "Freelancers, merchants, and individuals making cross-border payments"
+      },
+      "security": {
+        "description": "Industry-leading encryption by BitGo",
+        "valueProposition": "Secure and rapid transactions with enterprise-grade security",
+        "targetUser": "All users, especially security-conscious crypto holders"
+      }
+    },
+    "targetMarkets": [
+      "India (primary)",
+      "Middle East and North Africa (MENA)",
+      "Southeast Asia",
+      "Latin America (LATAM)"
+    ],
+    "competitivePositioning": {
+      "differentiation": "Non-custodial wallet with crypto debit cards and DeFi services in one platform",
+      "vsMetaMask": "More than just a wallet - includes spending capabilities and DeFi services",
+      "vsCoinbase": "Decentralized and non-custodial vs centralized exchange model",
+      "vsPayPal": "Crypto-native with full user control vs custodial solution"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+Screenshot 1: Landing page for CrediGo. Header shows "CrediGo" logo on left, profile icon and hamburger menu on right. Main headline: "Find the Best Credit Card In 60 seconds" with "Card" highlighted in blue. Sub-headline: "Instant, private recommendations that save you money." Large blue CTA button: "Find My Perfect Card →". Three feature icons below: green checkmark "No PAN Required", green shield "No Sensitive Data", green clock "60-second Quiz". Right side shows image of HDFC BANK INFINIA Visa Infinite credit card.
+
+---
+
+Screenshot 2: Step 1 of 7. Progress bar shows 14% complete. Main question: "What kind of perks excite you the most?" Instructions: "Select in preference order - your first choice will be ranked #1". Status: "Selected: 0/2". Five options with empty radio buttons: 1. Cashback, 2. Reward Points, 3. Lounge Access, 4. Forex Benefits, 5. UPI Cashback. "Next" button at bottom (disabled/gray).
+
+---
+
+Screenshot 3: Step 2 of 7. Progress bar shows 29% complete. Main question: "Any preference on annual fee?" Five selectable options in rows: 1. "Lifetime Free (LTF)" - "No annual fee cards", 2. "≤ 1000" - "Budget-friendly fee", 3. "≤ 5000" - "Mid range", 4. "≤ 10,000" - "Premium range", 5. "10,000+" - "Super-premium / luxury". Each option in a rounded white card. "Back" button at top left.
+
+---
+
+Screenshot 4: Step 3 of 7. Progress bar shows 43% complete. Main question: "Which of the following describes you best?" Four selectable options: 1. "Salaried (0-5 yrs)", 2. "Salaried (>5 yrs)", 3. "Self-employed", 4. "Student". Each in a white rounded card. "Back" button at top left.
+
+---
+
+Screenshot 5: Step 4 of 7. Progress bar shows 57% complete. Main question: "Your top 2 spend categories?" Instructions: "Select platforms for more precise card matches". Status: "Selected: 0/2". Six category options with icons: 1. Shopping (shopping bag icon), 2. Groceries (cart icon), 3. Food & Dining (fork/knife icon), 4. Travel (paper airplane icon), 5. Fuel (gas pump icon), 6. Entertainment & Digital Content (monitor icon). "Next" button at bottom (disabled).
+
+---
+
+Screenshot 6: Step 5 of 7. Progress bar shows 71% complete. Main question: "Do you track your monthly spending?" Three selectable options with icons: 1. "Track every expense" (green graph icon) - "Know exactly where your money goes", 2. "Rough idea" (blue eye icon) - "Have a general sense of spending", 3. "Don't track" (purple lightning icon) - "Spend freely without tracking". "Back" button at top left. "Next" button at bottom.
+
+---
+
+Screenshot 7: Step 6 of 7. Progress bar shows 86% complete. Main question: "Do you have any existing credit cards?" Search bar with magnifying glass icon and placeholder "Search credit cards...". Below, white card container titled "Available Credit Cards" with instruction "Click on a card to select it." List of credit cards with generic card icons: 6E Rewards Indigo HDFC Bank Credit Card, 6E Rewards XL Indigo HDFC Bank Credit Card, Adani One ICICI Bank Signature Credit Card, Airtel Axis Bank Credit Card, Amazon Pay ICICI Bank Credit Card, American Express Gold Card, American Express Gold Charge Card. "Back" button at top left. "Next" button at bottom.
+
+---
+
+Screenshot 8: Step 7 of 7. Progress bar shows 100% complete (fully filled). Main heading: "Help us personalise your card matches". Subtitle: "We use this info only to show cards you're more likely to get approved for." Two input fields: 1. "What's your credit score range?" with placeholder "e.g., 700-720" and dropdown arrow, 2. "Your annual income range?" with placeholder "e.g., 6-9 lakhs/yr" and dropdown arrow. Privacy statement: "Your information stays private and is never shared." "Back" button at top left. "Complete Quiz" button at bottom (gray, inactive).
+
+---
+
+Screenshot 9: Loading screen. Centered loading animation with four blue pill-shaped elements in square formation. Text below: "Finding the card that slaps harder than your playlist" with musical notes emoji 🎶 and fire emoji 🔥. Light blue to white gradient background.
+
+---
+
+Screenshot 10: Results page. Header shows "CrediGo" logo on left, profile icon and hamburger menu on right. Main heading: "Your Top Credit Card Picks" with subtitle "Personalized just for you." Card navigation with left/right arrows showing "Makemytrip Icici Bank" credit card. Card image shows orange/black card with "my" logo, "ICICI Bank RuPay" branding, and green "Best Match" label. Card details: "Annual Fee: ₹999", icons for "No Hidden Fees" and "Leading Bank", thumbs up/down icons. Below: "YOUR ANNUAL SAVINGS" section with rupee icon, "₹14,300" in large text, "Based on your spending pattern". "Key Benefits" tab active showing: "6% myCash on MakeMyTrip hotel bookings", "3% myCash on MakeMyTrip flights, cabs, and buses", "8 domestic and 1 international lounge visits annually". "Last updated: 20th Nov 2025". Large blue button at bottom: "Best Deals for You - Apply Now" with target icon and external link icon.

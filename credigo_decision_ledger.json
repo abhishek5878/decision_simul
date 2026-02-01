@@ -1,0 +1,2573 @@
+{
+  "decision_boundaries": [
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "step_index": 0,
+      "persona_class": "medium_energy_low_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "medium_energy_low_risk_low_effort",
+        "trace_count": 916,
+        "energy_variance": 0.005155029100090774,
+        "risk_variance": 0.0006201980763143341,
+        "effort_variance": 0.0028440890715280033,
+        "value_variance": 0.007291874656006921,
+        "control_variance": 0.03153160359260884,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9620457644027609,
+        "is_stable": true
+      },
+      "accepted_count": 740,
+      "rejected_count": 176,
+      "cognitive_thresholds": {
+        "energy": [
+          0.30032308679211445,
+          0.5996605123144917
+        ],
+        "risk": [
+          0.196,
+          0.2772
+        ],
+        "effort": [
+          0.05,
+          0.2
+        ],
+        "value": [
+          0.1635,
+          0.916464
+        ],
+        "control": [
+          0.294,
+          1.048
+        ]
+      },
+      "supporting_trace_count": 916,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "9_tech_savvy_optimistic",
+      "first_observed_timestamp": "2026-01-03T11:09:45.956536",
+      "last_observed_timestamp": "2026-01-03T11:09:51.588337",
+      "occurrence_count": 916,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "step_index": 0,
+      "persona_class": "low_energy_medium_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_low_effort",
+        "trace_count": 3568,
+        "energy_variance": 0.0060177193566405725,
+        "risk_variance": 0.006806465344366466,
+        "effort_variance": 0.00515534745193951,
+        "value_variance": 0.0037969360604094547,
+        "control_variance": 0.024213296537231803,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9632081881995298,
+        "is_stable": true
+      },
+      "accepted_count": 2813,
+      "rejected_count": 755,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.29994087663307883
+        ],
+        "risk": [
+          0.3396,
+          0.5772
+        ],
+        "effort": [
+          0.1,
+          0.3
+        ],
+        "value": [
+          0.1962,
+          0.651552
+        ],
+        "control": [
+          0.22799999999999998,
+          1.072
+        ]
+      },
+      "supporting_trace_count": 3568,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "0_tired_commuter",
+      "first_observed_timestamp": "2026-01-03T11:09:45.957545",
+      "last_observed_timestamp": "2026-01-03T11:09:51.597226",
+      "occurrence_count": 3568,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "step_index": 0,
+      "persona_class": "medium_energy_medium_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "medium_energy_medium_risk_low_effort",
+        "trace_count": 430,
+        "energy_variance": 0.0043451538870348284,
+        "risk_variance": 0.007362185445970795,
+        "effort_variance": 0.002529421308815577,
+        "value_variance": 0.01621931388575498,
+        "control_variance": 0.035698841325040566,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9470760673179066,
+        "is_stable": true
+      },
+      "accepted_count": 349,
+      "rejected_count": 81,
+      "cognitive_thresholds": {
+        "energy": [
+          0.3001824950039784,
+          0.5947815561150884
+        ],
+        "risk": [
+          0.3396,
+          0.5772
+        ],
+        "effort": [
+          0.1,
+          0.3
+        ],
+        "value": [
+          0.1962,
+          1.021632
+        ],
+        "control": [
+          0.258,
+          1.1280000000000001
+        ]
+      },
+      "supporting_trace_count": 430,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "21_distrustful_arrival",
+      "first_observed_timestamp": "2026-01-03T11:09:45.957726",
+      "last_observed_timestamp": "2026-01-03T11:09:51.586628",
+      "occurrence_count": 430,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "step_index": 0,
+      "persona_class": "low_energy_low_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_low_risk_low_effort",
+        "trace_count": 2049,
+        "energy_variance": 0.006360678263699623,
+        "risk_variance": 0.0005736133794556547,
+        "effort_variance": 0.004133360534165269,
+        "value_variance": 0.005452038608101834,
+        "control_variance": 0.02492810072596686,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9668417667908886,
+        "is_stable": true
+      },
+      "accepted_count": 1619,
+      "rejected_count": 430,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.2999420418883671
+        ],
+        "risk": [
+          0.19840000000000002,
+          0.2772
+        ],
+        "effort": [
+          0.05,
+          0.2
+        ],
+        "value": [
+          0.1635,
+          0.4663840000000001
+        ],
+        "control": [
+          0.288,
+          1.072
+        ]
+      },
+      "supporting_trace_count": 2049,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "1_browsing_casually",
+      "first_observed_timestamp": "2026-01-03T11:09:45.962326",
+      "last_observed_timestamp": "2026-01-03T11:09:51.597894",
+      "occurrence_count": 2049,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "step_index": 0,
+      "persona_class": "high_energy_low_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "high_energy_low_risk_low_effort",
+        "trace_count": 35,
+        "energy_variance": 0.0016008093731487536,
+        "risk_variance": 0.0006284139102040815,
+        "effort_variance": 0.0010489795918367348,
+        "value_variance": 0.021739737617162438,
+        "control_variance": 0.03617494204081632,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9510456939734654,
+        "is_stable": true
+      },
+      "accepted_count": 32,
+      "rejected_count": 3,
+      "cognitive_thresholds": {
+        "energy": [
+          0.6000000000000001,
+          0.7411721760961001
+        ],
+        "risk": [
+          0.2016,
+          0.26839999999999997
+        ],
+        "effort": [
+          0.05,
+          0.2
+        ],
+        "value": [
+          0.20943599999999998,
+          0.7967439999999999
+        ],
+        "control": [
+          0.42600000000000005,
+          1.1280000000000001
+        ]
+      },
+      "supporting_trace_count": 35,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "10_tech_savvy_optimistic",
+      "first_observed_timestamp": "2026-01-03T11:09:46.013809",
+      "last_observed_timestamp": "2026-01-03T11:09:51.552250",
+      "occurrence_count": 35,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "step_index": 0,
+      "persona_class": "high_energy_medium_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "high_energy_medium_risk_low_effort",
+        "trace_count": 2,
+        "energy_variance": 3.6645039667656555e-05,
+        "risk_variance": 1.9359999999999645e-05,
+        "effort_variance": 0.0,
+        "value_variance": 0.0006868592640000005,
+        "control_variance": 0.018360249999999995,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9847175085570659,
+        "is_stable": true
+      },
+      "accepted_count": 2,
+      "rejected_count": 0,
+      "cognitive_thresholds": {
+        "energy": [
+          0.6041147761444849,
+          0.6162218054527268
+        ],
+        "risk": [
+          0.5516000000000001,
+          0.5604
+        ],
+        "effort": [
+          0.2,
+          0.2
+        ],
+        "value": [
+          0.563472,
+          0.615888
+        ],
+        "control": [
+          0.36300000000000004,
+          0.634
+        ]
+      },
+      "supporting_trace_count": 2,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": null,
+      "first_observed_timestamp": "2026-01-03T11:09:46.405401",
+      "last_observed_timestamp": "2026-01-03T11:09:50.016362",
+      "occurrence_count": 2,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_high_risk_medium_effort",
+        "trace_count": 4742,
+        "energy_variance": 0.0001988210563551425,
+        "risk_variance": 0.029708493325409684,
+        "effort_variance": 0.005753666154820275,
+        "value_variance": 0.00911757524650698,
+        "control_variance": 0.03814882232007523,
+        "dominant_factor_variance": 0.04426144820468737,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.8893966493127788,
+        "is_stable": true
+      },
+      "accepted_count": 3791,
+      "rejected_count": 951,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.2976331772391898
+        ],
+        "risk": [
+          0.6023371999999999,
+          1.3217944
+        ],
+        "effort": [
+          0.30000000000000004,
+          0.6
+        ],
+        "value": [
+          0.252979090909091,
+          1.0653967878347108
+        ],
+        "control": [
+          0.33299999999999996,
+          1.2730000000000001
+        ]
+      },
+      "supporting_trace_count": 4742,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "1_fresh_motivated",
+      "first_observed_timestamp": "2026-01-03T11:09:45.956769",
+      "last_observed_timestamp": "2026-01-03T11:09:51.597361",
+      "occurrence_count": 4742,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "persona_class": "low_energy_medium_risk_medium_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_medium_effort",
+        "trace_count": 154,
+        "energy_variance": 0.0011498314600772636,
+        "risk_variance": 0.0025406971959845187,
+        "effort_variance": 0.004426910102884128,
+        "value_variance": 0.005519663451841276,
+        "control_variance": 0.012057954840613934,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9794439543588791,
+        "is_stable": true
+      },
+      "accepted_count": 123,
+      "rejected_count": 31,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.2918721536601135
+        ],
+        "risk": [
+          0.39079679999999994,
+          0.599682
+        ],
+        "effort": [
+          0.305,
+          0.5800000000000001
+        ],
+        "value": [
+          0.252979090909091,
+          0.7149070429090908
+        ],
+        "control": [
+          0.9969999999999999,
+          1.437
+        ]
+      },
+      "supporting_trace_count": 154,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "98_fresh_motivated",
+      "first_observed_timestamp": "2026-01-03T11:09:45.961906",
+      "last_observed_timestamp": "2026-01-03T11:09:51.588468",
+      "occurrence_count": 154,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "persona_class": "low_energy_high_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_high_risk_high_effort",
+        "trace_count": 437,
+        "energy_variance": 0.0,
+        "risk_variance": 0.009471046349696581,
+        "effort_variance": 0.0007397881331525005,
+        "value_variance": 3.835612373569214e-06,
+        "control_variance": 0.03332732710544643,
+        "dominant_factor_variance": 0.01200848151491613,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9531579207245485,
+        "is_stable": true
+      },
+      "accepted_count": 346,
+      "rejected_count": 91,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.05
+        ],
+        "risk": [
+          0.6425182,
+          1.0969864
+        ],
+        "effort": [
+          0.6000000000000001,
+          0.6799999999999999
+        ],
+        "value": [
+          0.374931173553719,
+          0.415919062214876
+        ],
+        "control": [
+          0.373,
+          1.254
+        ]
+      },
+      "supporting_trace_count": 437,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "39_tired_commuter",
+      "first_observed_timestamp": "2026-01-03T11:09:45.967123",
+      "last_observed_timestamp": "2026-01-03T11:09:51.581239",
+      "occurrence_count": 437,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "persona_class": "low_energy_high_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_high_risk_low_effort",
+        "trace_count": 132,
+        "energy_variance": 0.005431836844555552,
+        "risk_variance": 0.006564251781193902,
+        "effort_variance": 0.00047465564738292015,
+        "value_variance": 0.015965138252268904,
+        "control_variance": 0.028738001836547292,
+        "dominant_factor_variance": 0.12337111573752799,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.8308897767729131,
+        "is_stable": true
+      },
+      "accepted_count": 117,
+      "rejected_count": 15,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.2826829334937313
+        ],
+        "risk": [
+          0.6020863999999999,
+          0.9699248
+        ],
+        "effort": [
+          0.21500000000000002,
+          0.3
+        ],
+        "value": [
+          0.4155818677685951,
+          1.045511184
+        ],
+        "control": [
+          0.44099999999999995,
+          1.1949999999999998
+        ]
+      },
+      "supporting_trace_count": 132,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "26_tech_savvy_optimistic",
+      "first_observed_timestamp": "2026-01-03T11:09:46.094722",
+      "last_observed_timestamp": "2026-01-03T11:09:51.490003",
+      "occurrence_count": 132,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "persona_class": "low_energy_medium_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_low_effort",
+        "trace_count": 33,
+        "energy_variance": 0.006188572737445143,
+        "risk_variance": 0.0014134740490539582,
+        "effort_variance": 0.000504178145087236,
+        "value_variance": 0.00668824756992349,
+        "control_variance": 0.00907848668503215,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9809016326507665,
+        "is_stable": true
+      },
+      "accepted_count": 32,
+      "rejected_count": 1,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.293797025809068
+        ],
+        "risk": [
+          0.46628479999999994,
+          0.5987600000000001
+        ],
+        "effort": [
+          0.21000000000000002,
+          0.3
+        ],
+        "value": [
+          0.4155818677685951,
+          0.6989488597685949
+        ],
+        "control": [
+          0.9249999999999999,
+          1.3930000000000002
+        ]
+      },
+      "supporting_trace_count": 33,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "731_fresh_motivated",
+      "first_observed_timestamp": "2026-01-03T11:09:46.115417",
+      "last_observed_timestamp": "2026-01-03T11:09:51.550433",
+      "occurrence_count": 33,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "persona_class": "medium_energy_medium_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "medium_energy_medium_risk_low_effort",
+        "trace_count": 17,
+        "energy_variance": 0.006258376571492332,
+        "risk_variance": 0.0035878638311997242,
+        "effort_variance": 0.001085294117647059,
+        "value_variance": 0.09005897868631317,
+        "control_variance": 0.012041121107266439,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.909574692548865,
+        "is_stable": true
+      },
+      "accepted_count": 16,
+      "rejected_count": 1,
+      "cognitive_thresholds": {
+        "energy": [
+          0.30435899301675906,
+          0.5365532310789133
+        ],
+        "risk": [
+          0.3939151999999999,
+          0.5898298
+        ],
+        "effort": [
+          0.175,
+          0.295
+        ],
+        "value": [
+          0.4155818677685951,
+          1.3657357360661155
+        ],
+        "control": [
+          0.9969999999999999,
+          1.3930000000000002
+        ]
+      },
+      "supporting_trace_count": 17,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "940_tech_savvy_optimistic",
+      "first_observed_timestamp": "2026-01-03T11:09:46.334948",
+      "last_observed_timestamp": "2026-01-03T11:09:51.552386",
+      "occurrence_count": 17,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "persona_class": "high_energy_medium_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "high_energy_medium_risk_low_effort",
+        "trace_count": 2,
+        "energy_variance": 0.0,
+        "risk_variance": 0.0018984320410000022,
+        "effort_variance": 0.0006250000000000003,
+        "value_variance": 0.003970778886087219,
+        "control_variance": 0.00122500000000001,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9938246312583302,
+        "is_stable": true
+      },
+      "accepted_count": 1,
+      "rejected_count": 1,
+      "cognitive_thresholds": {
+        "energy": [
+          0.6488750000000001,
+          0.6488750000000001
+        ],
+        "risk": [
+          0.5246316000000001,
+          0.5246316000000001
+        ],
+        "effort": [
+          0.19499999999999998,
+          0.19499999999999998
+        ],
+        "value": [
+          1.1661583568925618,
+          1.1661583568925618
+        ],
+        "control": [
+          1.1789999999999998,
+          1.1789999999999998
+        ]
+      },
+      "supporting_trace_count": 2,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "75_tech_savvy_optimistic",
+      "first_observed_timestamp": "2026-01-03T11:09:46.402865",
+      "last_observed_timestamp": "2026-01-03T11:09:46.409565",
+      "occurrence_count": 2,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "persona_class": "medium_energy_high_risk_medium_effort",
+      "persona_class_coherence": {
+        "persona_class": "medium_energy_high_risk_medium_effort",
+        "trace_count": 9,
+        "energy_variance": 0.0021224314918816514,
+        "risk_variance": 0.03603833716079508,
+        "effort_variance": 0.0005839506172839498,
+        "value_variance": 0.03339860187838564,
+        "control_variance": 0.02563399999999999,
+        "dominant_factor_variance": 0.1111111111111111,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.8106670319702118,
+        "is_stable": true
+      },
+      "accepted_count": 8,
+      "rejected_count": 1,
+      "cognitive_thresholds": {
+        "energy": [
+          0.30101124069909163,
+          0.40770218681457043
+        ],
+        "risk": [
+          0.643915,
+          1.1827252000000001
+        ],
+        "effort": [
+          0.30500000000000005,
+          0.38499999999999995
+        ],
+        "value": [
+          0.5025222236033057,
+          1.0653967878347108
+        ],
+        "control": [
+          0.44100000000000006,
+          0.9599999999999999
+        ]
+      },
+      "supporting_trace_count": 9,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "723_distrustful_arrival",
+      "first_observed_timestamp": "2026-01-03T11:09:46.769992",
+      "last_observed_timestamp": "2026-01-03T11:09:51.273461",
+      "occurrence_count": 9,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "persona_class": "high_energy_high_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "high_energy_high_risk_low_effort",
+        "trace_count": 2,
+        "energy_variance": 1.393902225000042e-05,
+        "risk_variance": 0.0011739600216099993,
+        "effort_variance": 0.0006250000000000003,
+        "value_variance": 0.003159739024224677,
+        "control_variance": 0.00027225000000000046,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9958040895455322,
+        "is_stable": true
+      },
+      "accepted_count": 1,
+      "rejected_count": 1,
+      "cognitive_thresholds": {
+        "energy": [
+          0.6783830000000001,
+          0.6783830000000001
+        ],
+        "risk": [
+          0.7845070000000001,
+          0.7845070000000001
+        ],
+        "effort": [
+          0.205,
+          0.205
+        ],
+        "value": [
+          1.0535080399338845,
+          1.0535080399338845
+        ],
+        "control": [
+          0.66,
+          0.66
+        ]
+      },
+      "supporting_trace_count": 2,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "723_tech_savvy_optimistic",
+      "first_observed_timestamp": "2026-01-03T11:09:50.015504",
+      "last_observed_timestamp": "2026-01-03T11:09:50.018515",
+      "occurrence_count": 2,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "step_index": 2,
+      "persona_class": "low_energy_high_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_high_risk_high_effort",
+        "trace_count": 3910,
+        "energy_variance": 1.925929944387236e-34,
+        "risk_variance": 0.07753330886840036,
+        "effort_variance": 0.012147335901779818,
+        "value_variance": 0.013634935195039222,
+        "control_variance": 0.06093580234064404,
+        "dominant_factor_variance": 0.08604588575951137,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.7825530083957979,
+        "is_stable": true
+      },
+      "accepted_count": 3169,
+      "rejected_count": 741,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.05
+        ],
+        "risk": [
+          0.6007849999999999,
+          2.0012678
+        ],
+        "effort": [
+          0.6000000000000001,
+          1.06
+        ],
+        "value": [
+          0.4117203687453045,
+          1.2775930380438492
+        ],
+        "control": [
+          0.43799999999999994,
+          1.694
+        ]
+      },
+      "supporting_trace_count": 3910,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "0_distrustful_arrival",
+      "first_observed_timestamp": "2026-01-03T11:09:45.956918",
+      "last_observed_timestamp": "2026-01-03T11:09:51.597498",
+      "occurrence_count": 3910,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "step_index": 2,
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_high_risk_medium_effort",
+        "trace_count": 496,
+        "energy_variance": 0.0014194390534402136,
+        "risk_variance": 0.07901576405116854,
+        "effort_variance": 0.0039056695499479718,
+        "value_variance": 0.053848643736787126,
+        "control_variance": 0.07758340672151406,
+        "dominant_factor_variance": 0.036773650483327903,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.7906080110263857,
+        "is_stable": true
+      },
+      "accepted_count": 424,
+      "rejected_count": 72,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.2975992704141223
+        ],
+        "risk": [
+          0.6002900000000001,
+          1.8793213999999998
+        ],
+        "effort": [
+          0.31,
+          0.6
+        ],
+        "value": [
+          0.44703760967252837,
+          2.043080864586942
+        ],
+        "control": [
+          0.46799999999999997,
+          1.5499999999999998
+        ]
+      },
+      "supporting_trace_count": 496,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "0_tech_savvy_optimistic",
+      "first_observed_timestamp": "2026-01-03T11:09:45.962045",
+      "last_observed_timestamp": "2026-01-03T11:09:51.551003",
+      "occurrence_count": 496,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "step_index": 2,
+      "persona_class": "high_energy_high_risk_low_effort",
+      "persona_class_coherence": {
+        "persona_class": "high_energy_high_risk_low_effort",
+        "trace_count": 1,
+        "energy_variance": 0.0,
+        "risk_variance": 0.0,
+        "effort_variance": 0.0,
+        "value_variance": 0.0,
+        "control_variance": 0.0,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 1.0,
+        "is_stable": true
+      },
+      "accepted_count": 1,
+      "rejected_count": 0,
+      "cognitive_thresholds": {
+        "energy": [
+          0.6286684659090911,
+          0.6286684659090911
+        ],
+        "risk": [
+          0.6570542000000001,
+          0.6570542000000001
+        ],
+        "effort": [
+          0.2899999999999999,
+          0.2899999999999999
+        ],
+        "value": [
+          1.9002676024061391,
+          1.9002676024061391
+        ],
+        "control": [
+          1.444,
+          1.444
+        ]
+      },
+      "supporting_trace_count": 1,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": null,
+      "first_observed_timestamp": "2026-01-03T11:09:46.403000",
+      "last_observed_timestamp": "2026-01-03T11:09:46.403000",
+      "occurrence_count": 1,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "step_index": 2,
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_high_effort",
+        "trace_count": 29,
+        "energy_variance": 1.925929944387236e-34,
+        "risk_variance": 0.0045670897000313964,
+        "effort_variance": 0.00459809750297265,
+        "value_variance": 0.010236374841217252,
+        "control_variance": 0.0065679928656361556,
+        "dominant_factor_variance": 0.13793103448275865,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.8412933215893553,
+        "is_stable": true
+      },
+      "accepted_count": 25,
+      "rejected_count": 4,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.05
+        ],
+        "risk": [
+          0.3863245999999999,
+          0.5992188000000002
+        ],
+        "effort": [
+          0.6200000000000001,
+          0.8899999999999999
+        ],
+        "value": [
+          0.4117203687453045,
+          0.754476271768322
+        ],
+        "control": [
+          1.544,
+          1.802
+        ]
+      },
+      "supporting_trace_count": 29,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "351_tech_savvy_optimistic",
+      "first_observed_timestamp": "2026-01-03T11:09:46.524319",
+      "last_observed_timestamp": "2026-01-03T11:09:51.114254",
+      "occurrence_count": 29,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "step_index": 2,
+      "persona_class": "medium_energy_medium_risk_medium_effort",
+      "persona_class_coherence": {
+        "persona_class": "medium_energy_medium_risk_medium_effort",
+        "trace_count": 1,
+        "energy_variance": 0.0,
+        "risk_variance": 0.0,
+        "effort_variance": 0.0,
+        "value_variance": 0.0,
+        "control_variance": 0.0,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 1.0,
+        "is_stable": true
+      },
+      "accepted_count": 0,
+      "rejected_count": 1,
+      "cognitive_thresholds": {},
+      "supporting_trace_count": 1,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": null,
+      "first_observed_timestamp": "2026-01-03T11:09:47.166420",
+      "last_observed_timestamp": "2026-01-03T11:09:47.166420",
+      "occurrence_count": 1,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "step_index": 2,
+      "persona_class": "low_energy_medium_risk_medium_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_medium_effort",
+        "trace_count": 10,
+        "energy_variance": 1.8915075992890597e-05,
+        "risk_variance": 0.002483555496480005,
+        "effort_variance": 0.0048810000000000025,
+        "value_variance": 0.00980542520243775,
+        "control_variance": 0.0026265600000000048,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9841476353800714,
+        "is_stable": true
+      },
+      "accepted_count": 8,
+      "rejected_count": 2,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.05
+        ],
+        "risk": [
+          0.5579785999999999,
+          0.5990077999999999
+        ],
+        "effort": [
+          0.4699999999999999,
+          0.5800000000000001
+        ],
+        "value": [
+          0.6402243040939828,
+          0.8757460995368422
+        ],
+        "control": [
+          1.5140000000000002,
+          1.5380000000000003
+        ]
+      },
+      "supporting_trace_count": 10,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "991_urgent_need",
+      "first_observed_timestamp": "2026-01-03T11:09:47.553211",
+      "last_observed_timestamp": "2026-01-03T11:09:51.588603",
+      "occurrence_count": 10,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "step_index": 2,
+      "persona_class": "high_energy_high_risk_medium_effort",
+      "persona_class_coherence": {
+        "persona_class": "high_energy_high_risk_medium_effort",
+        "trace_count": 1,
+        "energy_variance": 0.0,
+        "risk_variance": 0.0,
+        "effort_variance": 0.0,
+        "value_variance": 0.0,
+        "control_variance": 0.0,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 1.0,
+        "is_stable": true
+      },
+      "accepted_count": 1,
+      "rejected_count": 0,
+      "cognitive_thresholds": {
+        "energy": [
+          0.652590820909091,
+          0.652590820909091
+        ],
+        "risk": [
+          1.215983,
+          1.215983
+        ],
+        "effort": [
+          0.30999999999999994,
+          0.30999999999999994
+        ],
+        "value": [
+          1.6974136701862967,
+          1.6974136701862967
+        ],
+        "control": [
+          0.8250000000000001,
+          0.8250000000000001
+        ]
+      },
+      "supporting_trace_count": 1,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": null,
+      "first_observed_timestamp": "2026-01-03T11:09:50.015638",
+      "last_observed_timestamp": "2026-01-03T11:09:50.015638",
+      "occurrence_count": 1,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "step_index": 3,
+      "persona_class": "low_energy_high_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_high_risk_high_effort",
+        "trace_count": 3433,
+        "energy_variance": 0.001536702786759628,
+        "risk_variance": 0.08930242540918065,
+        "effort_variance": 0.017609813943273805,
+        "value_variance": 0.046176885576407346,
+        "control_variance": 0.09682816212157173,
+        "dominant_factor_variance": 0.051155842409847656,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.7476809657203979,
+        "is_stable": true
+      },
+      "accepted_count": 2907,
+      "rejected_count": 526,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.17754545454545456
+        ],
+        "risk": [
+          0.6106354,
+          2.1784678
+        ],
+        "effort": [
+          0.602,
+          1.174
+        ],
+        "value": [
+          0.7490519722224256,
+          3.0
+        ],
+        "control": [
+          0.5429999999999999,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 3433,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "2_fresh_motivated",
+      "first_observed_timestamp": "2026-01-03T11:09:45.957056",
+      "last_observed_timestamp": "2026-01-03T11:09:51.597659",
+      "occurrence_count": 3433,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "step_index": 3,
+      "persona_class": "high_energy_high_risk_medium_effort",
+      "persona_class_coherence": {
+        "persona_class": "high_energy_high_risk_medium_effort",
+        "trace_count": 2,
+        "energy_variance": 0.0004000000000000007,
+        "risk_variance": 0.08057899758736001,
+        "effort_variance": 0.00013225000000000023,
+        "value_variance": 0.0,
+        "control_variance": 0.12924025,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.831718801930112,
+        "is_stable": true
+      },
+      "accepted_count": 2,
+      "rejected_count": 0,
+      "cognitive_thresholds": {
+        "energy": [
+          0.6950000000000001,
+          0.7350000000000001
+        ],
+        "risk": [
+          0.8086542000000001,
+          1.3763830000000001
+        ],
+        "effort": [
+          0.3184999999999999,
+          0.3414999999999999
+        ],
+        "value": [
+          3.0,
+          3.0
+        ],
+        "control": [
+          0.9900000000000001,
+          1.709
+        ]
+      },
+      "supporting_trace_count": 2,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": null,
+      "first_observed_timestamp": "2026-01-03T11:09:46.403136",
+      "last_observed_timestamp": "2026-01-03T11:09:50.015769",
+      "occurrence_count": 2,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "step_index": 3,
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_high_effort",
+        "trace_count": 4,
+        "energy_variance": 2.112295806470221e-07,
+        "risk_variance": 7.203552402749986e-05,
+        "effort_variance": 0.0038021874999999952,
+        "value_variance": 0.0,
+        "control_variance": 0.0,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9969004525971135,
+        "is_stable": true
+      },
+      "accepted_count": 4,
+      "rejected_count": 0,
+      "cognitive_thresholds": {
+        "energy": [
+          0.15204074656883215,
+          0.15310214082331575
+        ],
+        "risk": [
+          0.5379246,
+          0.5603476
+        ],
+        "effort": [
+          0.7055000000000001,
+          0.8665
+        ],
+        "value": [
+          1.119755400140568,
+          1.119755400140568
+        ],
+        "control": [
+          2.0,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 4,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": null,
+      "first_observed_timestamp": "2026-01-03T11:09:46.526181",
+      "last_observed_timestamp": "2026-01-03T11:09:50.939714",
+      "occurrence_count": 4,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "step_index": 4,
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_high_effort",
+        "trace_count": 27,
+        "energy_variance": 4.81482486096809e-35,
+        "risk_variance": 0.007210162211590891,
+        "effort_variance": 0.02595634430727023,
+        "value_variance": 0.1293566887483858,
+        "control_variance": 0.0,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.8699814437862025,
+        "is_stable": true
+      },
+      "accepted_count": 26,
+      "rejected_count": 1,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.05
+        ],
+        "risk": [
+          0.31327419999999995,
+          0.5950199999999999
+        ],
+        "effort": [
+          0.8199999999999998,
+          1.4425
+        ],
+        "value": [
+          1.4954975065932934,
+          2.7695804880597668
+        ],
+        "control": [
+          2.0,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 27,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "880_tech_savvy_optimistic",
+      "first_observed_timestamp": "2026-01-03T11:09:46.524601",
+      "last_observed_timestamp": "2026-01-03T11:09:51.193777",
+      "occurrence_count": 27,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "step_index": 5,
+      "persona_class": "medium_energy_high_risk_medium_effort",
+      "persona_class_coherence": {
+        "persona_class": "medium_energy_high_risk_medium_effort",
+        "trace_count": 1,
+        "energy_variance": 0.0,
+        "risk_variance": 0.0,
+        "effort_variance": 0.0,
+        "value_variance": 0.0,
+        "control_variance": 0.0,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 1.0,
+        "is_stable": true
+      },
+      "accepted_count": 1,
+      "rejected_count": 0,
+      "cognitive_thresholds": {
+        "energy": [
+          0.5791673999625994,
+          0.5791673999625994
+        ],
+        "risk": [
+          1.1981448000000003,
+          1.1981448000000003
+        ],
+        "effort": [
+          0.6,
+          0.6
+        ],
+        "value": [
+          3.0,
+          3.0
+        ],
+        "control": [
+          2.0,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 1,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": null,
+      "first_observed_timestamp": "2026-01-03T11:09:48.500790",
+      "last_observed_timestamp": "2026-01-03T11:09:48.500790",
+      "occurrence_count": 1,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "step_index": 5,
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_high_risk_medium_effort",
+        "trace_count": 1,
+        "energy_variance": 0.0,
+        "risk_variance": 0.0,
+        "effort_variance": 0.0,
+        "value_variance": 0.0,
+        "control_variance": 0.0,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 1.0,
+        "is_stable": true
+      },
+      "accepted_count": 1,
+      "rejected_count": 0,
+      "cognitive_thresholds": {
+        "energy": [
+          0.2770498607039641,
+          0.2770498607039641
+        ],
+        "risk": [
+          1.3615832,
+          1.3615832
+        ],
+        "effort": [
+          0.5700000000000001,
+          0.5700000000000001
+        ],
+        "value": [
+          3.0,
+          3.0
+        ],
+        "control": [
+          1.6689999999999998,
+          1.6689999999999998
+        ]
+      },
+      "supporting_trace_count": 1,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": null,
+      "first_observed_timestamp": "2026-01-03T11:09:50.558307",
+      "last_observed_timestamp": "2026-01-03T11:09:50.558307",
+      "occurrence_count": 1,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "step_index": 5,
+      "persona_class": "high_energy_high_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "high_energy_high_risk_high_effort",
+        "trace_count": 1,
+        "energy_variance": 0.0,
+        "risk_variance": 0.0,
+        "effort_variance": 0.0,
+        "value_variance": 0.0,
+        "control_variance": 0.0,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 1.0,
+        "is_stable": true
+      },
+      "accepted_count": 1,
+      "rejected_count": 0,
+      "cognitive_thresholds": {
+        "energy": [
+          0.6940459606599119,
+          0.6940459606599119
+        ],
+        "risk": [
+          1.0339928000000005,
+          1.0339928000000005
+        ],
+        "effort": [
+          0.6199999999999999,
+          0.6199999999999999
+        ],
+        "value": [
+          3.0,
+          3.0
+        ],
+        "control": [
+          2.0,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 1,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": null,
+      "first_observed_timestamp": "2026-01-03T11:09:51.271864",
+      "last_observed_timestamp": "2026-01-03T11:09:51.271864",
+      "occurrence_count": 1,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "How much do you spend monthly?",
+      "step_index": 6,
+      "persona_class": "high_energy_high_risk_medium_effort",
+      "persona_class_coherence": {
+        "persona_class": "high_energy_high_risk_medium_effort",
+        "trace_count": 2,
+        "energy_variance": 0.0,
+        "risk_variance": 3.263836900000344e-05,
+        "effort_variance": 0.0,
+        "value_variance": 0.0,
+        "control_variance": 0.0,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9999738893048,
+        "is_stable": true
+      },
+      "accepted_count": 2,
+      "rejected_count": 0,
+      "cognitive_thresholds": {
+        "energy": [
+          0.6950000000000001,
+          0.6950000000000001
+        ],
+        "risk": [
+          0.8758327999999997,
+          0.8872588000000003
+        ],
+        "effort": [
+          0.5939999999999999,
+          0.5939999999999999
+        ],
+        "value": [
+          3.0,
+          3.0
+        ],
+        "control": [
+          2.0,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 2,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": null,
+      "first_observed_timestamp": "2026-01-03T11:09:46.403544",
+      "last_observed_timestamp": "2026-01-03T11:09:46.407983",
+      "occurrence_count": 2,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "How much do you spend monthly?",
+      "step_index": 6,
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_high_effort",
+        "trace_count": 3,
+        "energy_variance": 4.81482486096809e-35,
+        "risk_variance": 0.002311102466728909,
+        "effort_variance": 0.022002666666666625,
+        "value_variance": 0.0,
+        "control_variance": 0.0,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9805489846932836,
+        "is_stable": true
+      },
+      "accepted_count": 3,
+      "rejected_count": 0,
+      "cognitive_thresholds": {
+        "energy": [
+          0.05,
+          0.05
+        ],
+        "risk": [
+          0.46647419999999995,
+          0.5768578000000004
+        ],
+        "effort": [
+          1.5320000000000003,
+          1.894
+        ],
+        "value": [
+          3.0,
+          3.0
+        ],
+        "control": [
+          2.0,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 3,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": null,
+      "first_observed_timestamp": "2026-01-03T11:09:47.249692",
+      "last_observed_timestamp": "2026-01-03T11:09:50.933637",
+      "occurrence_count": 3,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "Do you have any existing credit cards?",
+      "step_index": 7,
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "medium_energy_high_risk_high_effort",
+        "trace_count": 14,
+        "energy_variance": 0.008121221022678645,
+        "risk_variance": 0.16828171990404095,
+        "effort_variance": 0.02244769387755102,
+        "value_variance": 0.0,
+        "control_variance": 0.017287025510204057,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.8270898717484203,
+        "is_stable": true
+      },
+      "accepted_count": 13,
+      "rejected_count": 1,
+      "cognitive_thresholds": {
+        "energy": [
+          0.3129393452893956,
+          0.565
+        ],
+        "risk": [
+          1.2530406,
+          2.582118999999999
+        ],
+        "effort": [
+          0.828,
+          1.2759999999999998
+        ],
+        "value": [
+          3.0,
+          3.0
+        ],
+        "control": [
+          1.5435000000000005,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 14,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "823_tech_savvy_optimistic",
+      "first_observed_timestamp": "2026-01-03T11:09:46.330399",
+      "last_observed_timestamp": "2026-01-03T11:09:51.278074",
+      "occurrence_count": 14,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Help us personalise your card matches",
+      "step_index": 8,
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "medium_energy_high_risk_high_effort",
+        "trace_count": 12,
+        "energy_variance": 0.00719465078954933,
+        "risk_variance": 0.22317696812473395,
+        "effort_variance": 0.031090296875000003,
+        "value_variance": 0.0,
+        "control_variance": 0.005977354166666646,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.78604858403524,
+        "is_stable": true
+      },
+      "accepted_count": 11,
+      "rejected_count": 1,
+      "cognitive_thresholds": {
+        "energy": [
+          0.30244972918207413,
+          0.565
+        ],
+        "risk": [
+          1.0328406,
+          2.598110899999999
+        ],
+        "effort": [
+          0.971,
+          1.5069999999999997
+        ],
+        "value": [
+          3.0,
+          3.0
+        ],
+        "control": [
+          1.7250000000000005,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 12,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": "823_fresh_motivated",
+      "first_observed_timestamp": "2026-01-03T11:09:46.330535",
+      "last_observed_timestamp": "2026-01-03T11:09:51.551814",
+      "occurrence_count": 12,
+      "is_stable_pattern": true
+    },
+    {
+      "step_id": "Help us personalise your card matches",
+      "step_index": 8,
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_high_effort",
+        "trace_count": 2,
+        "energy_variance": 1.6942318949968228e-06,
+        "risk_variance": 7.45925868900009e-05,
+        "effort_variance": 0.017955999999999972,
+        "value_variance": 0.0,
+        "control_variance": 0.0,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.985574170544972,
+        "is_stable": true
+      },
+      "accepted_count": 1,
+      "rejected_count": 1,
+      "cognitive_thresholds": {
+        "energy": [
+          0.13196087410423385,
+          0.13196087410423385
+        ],
+        "risk": [
+          0.5430742,
+          0.5430742
+        ],
+        "effort": [
+          2.2275,
+          2.2275
+        ],
+        "value": [
+          3.0,
+          3.0
+        ],
+        "control": [
+          2.0,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 2,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": null,
+      "first_observed_timestamp": "2026-01-03T11:09:47.249950",
+      "last_observed_timestamp": "2026-01-03T11:09:48.842842",
+      "occurrence_count": 2,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "step_index": 10,
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "low_energy_medium_risk_high_effort",
+        "trace_count": 5,
+        "energy_variance": 0.0009000000000000003,
+        "risk_variance": 0.0049297772060416046,
+        "effort_variance": 0.012594799999999962,
+        "value_variance": 0.0,
+        "control_variance": 0.0,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.9852603382351668,
+        "is_stable": true
+      },
+      "accepted_count": 5,
+      "rejected_count": 0,
+      "cognitive_thresholds": {
+        "energy": [
+          0.2,
+          0.275
+        ],
+        "risk": [
+          0.38987419999999995,
+          0.5900101999999999
+        ],
+        "effort": [
+          2.5525,
+          2.8564999999999996
+        ],
+        "value": [
+          3.0,
+          3.0
+        ],
+        "control": [
+          2.0,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 5,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": null,
+      "first_observed_timestamp": "2026-01-03T11:09:46.525419",
+      "last_observed_timestamp": "2026-01-03T11:09:50.937295",
+      "occurrence_count": 5,
+      "is_stable_pattern": false
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "step_index": 10,
+      "persona_class": "medium_energy_medium_risk_high_effort",
+      "persona_class_coherence": {
+        "persona_class": "medium_energy_medium_risk_high_effort",
+        "trace_count": 3,
+        "energy_variance": 0.0006722222222222221,
+        "risk_variance": 9.520184272888862e-05,
+        "effort_variance": 0.014336888888888838,
+        "value_variance": 0.0,
+        "control_variance": 0.0,
+        "dominant_factor_variance": 0.0,
+        "counterexample_rate": 0.0,
+        "coherence_score": 0.987916549636928,
+        "is_stable": true
+      },
+      "accepted_count": 3,
+      "rejected_count": 0,
+      "cognitive_thresholds": {
+        "energy": [
+          0.4,
+          0.455
+        ],
+        "risk": [
+          0.5720986000000001,
+          0.593042
+        ],
+        "effort": [
+          2.1790000000000003,
+          2.433
+        ],
+        "value": [
+          3.0,
+          3.0
+        ],
+        "control": [
+          2.0,
+          2.0
+        ]
+      },
+      "supporting_trace_count": 3,
+      "counterexample_accepted_trace_id": null,
+      "counterexample_rejected_trace_id": null,
+      "first_observed_timestamp": "2026-01-03T11:09:48.126943",
+      "last_observed_timestamp": "2026-01-03T11:09:50.639024",
+      "occurrence_count": 3,
+      "is_stable_pattern": false
+    }
+  ],
+  "precedents": [
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 4403,
+      "first_observed_timestamp": "2026-01-03T11:09:45.957867",
+      "last_observed_timestamp": "2026-01-03T11:09:51.597361",
+      "time_span_days": 6.52719212962963e-05,
+      "occurrence_rate": 4.4162487462387165,
+      "is_stable": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "persona_class": "low_energy_medium_risk_low_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 3568,
+      "first_observed_timestamp": "2026-01-03T11:09:45.957545",
+      "last_observed_timestamp": "2026-01-03T11:09:51.597226",
+      "time_span_days": 6.527408564814816e-05,
+      "occurrence_rate": 3.593152064451158,
+      "is_stable": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 3063,
+      "first_observed_timestamp": "2026-01-03T11:09:45.958001",
+      "last_observed_timestamp": "2026-01-03T11:09:51.597498",
+      "time_span_days": 6.527195601851852e-05,
+      "occurrence_rate": 3.3995560488346284,
+      "is_stable": true
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 3038,
+      "first_observed_timestamp": "2026-01-03T11:09:45.958602",
+      "last_observed_timestamp": "2026-01-03T11:09:51.597659",
+      "time_span_days": 6.526686342592593e-05,
+      "occurrence_rate": 3.225053078556263,
+      "is_stable": true
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 2989,
+      "first_observed_timestamp": "2026-01-03T11:09:45.957201",
+      "last_observed_timestamp": "2026-01-03T11:09:51.595927",
+      "time_span_days": 6.526303240740741e-05,
+      "occurrence_rate": 3.0406917599186163,
+      "is_stable": true
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 2687,
+      "first_observed_timestamp": "2026-01-03T11:09:45.957347",
+      "last_observed_timestamp": "2026-01-03T11:09:51.596063",
+      "time_span_days": 6.526291666666666e-05,
+      "occurrence_rate": 2.784455958549223,
+      "is_stable": true
+    },
+    {
+      "step_id": "How much do you spend monthly?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 2424,
+      "first_observed_timestamp": "2026-01-03T11:09:45.959013",
+      "last_observed_timestamp": "2026-01-03T11:09:51.596197",
+      "time_span_days": 6.52451851851852e-05,
+      "occurrence_rate": 2.5650793650793653,
+      "is_stable": true
+    },
+    {
+      "step_id": "Do you have any existing credit cards?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 2225,
+      "first_observed_timestamp": "2026-01-03T11:09:45.959152",
+      "last_observed_timestamp": "2026-01-03T11:09:51.596331",
+      "time_span_days": 6.524512731481481e-05,
+      "occurrence_rate": 2.408008658008658,
+      "is_stable": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "persona_class": "low_energy_low_risk_low_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch"
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 2049,
+      "first_observed_timestamp": "2026-01-03T11:09:45.962326",
+      "last_observed_timestamp": "2026-01-03T11:09:51.597894",
+      "time_span_days": 6.522648148148148e-05,
+      "occurrence_rate": 2.4627403846153846,
+      "is_stable": true
+    },
+    {
+      "step_id": "Help us personalise your card matches",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 2016,
+      "first_observed_timestamp": "2026-01-03T11:09:45.959293",
+      "last_observed_timestamp": "2026-01-03T11:09:51.596465",
+      "time_span_days": 6.52450462962963e-05,
+      "occurrence_rate": 2.237513873473918,
+      "is_stable": true
+    },
+    {
+      "step_id": "Step 1 of 11",
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 1355,
+      "first_observed_timestamp": "2026-01-03T11:09:45.959434",
+      "last_observed_timestamp": "2026-01-03T11:09:51.596601",
+      "time_span_days": 6.524498842592592e-05,
+      "occurrence_rate": 2.1338582677165356,
+      "is_stable": true
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 1135,
+      "first_observed_timestamp": "2026-01-03T11:09:45.959572",
+      "last_observed_timestamp": "2026-01-03T11:09:51.596738",
+      "time_span_days": 6.524497685185185e-05,
+      "occurrence_rate": 1.9636678200692042,
+      "is_stable": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "persona_class": "medium_energy_low_risk_low_effort",
+      "dominant_factors": [
+        "intent_mismatch"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 916,
+      "first_observed_timestamp": "2026-01-03T11:09:45.956536",
+      "last_observed_timestamp": "2026-01-03T11:09:51.588337",
+      "time_span_days": 6.518288194444445e-05,
+      "occurrence_rate": 2.330788804071247,
+      "is_stable": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 833,
+      "first_observed_timestamp": "2026-01-03T11:09:45.956918",
+      "last_observed_timestamp": "2026-01-03T11:09:51.579100",
+      "time_span_days": 6.507155092592592e-05,
+      "occurrence_rate": 1.6462450592885376,
+      "is_stable": true
+    },
+    {
+      "step_id": "Step 1 of 11",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 486,
+      "first_observed_timestamp": "2026-01-03T11:09:45.969166",
+      "last_observed_timestamp": "2026-01-03T11:09:51.583148",
+      "time_span_days": 6.497664351851853e-05,
+      "occurrence_rate": 2.050632911392405,
+      "is_stable": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 467,
+      "first_observed_timestamp": "2026-01-03T11:09:45.962045",
+      "last_observed_timestamp": "2026-01-03T11:09:51.551003",
+      "time_span_days": 6.468701388888889e-05,
+      "occurrence_rate": 2.192488262910798,
+      "is_stable": true
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 431,
+      "first_observed_timestamp": "2026-01-03T11:09:45.969295",
+      "last_observed_timestamp": "2026-01-03T11:09:51.583279",
+      "time_span_days": 6.497666666666666e-05,
+      "occurrence_rate": 1.8903508771929824,
+      "is_stable": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "persona_class": "medium_energy_medium_risk_low_effort",
+      "dominant_factors": [
+        "intent_mismatch"
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 430,
+      "first_observed_timestamp": "2026-01-03T11:09:45.957726",
+      "last_observed_timestamp": "2026-01-03T11:09:51.586628",
+      "time_span_days": 6.514932870370371e-05,
+      "occurrence_rate": 2.670807453416149,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 429,
+      "first_observed_timestamp": "2026-01-03T11:09:45.967123",
+      "last_observed_timestamp": "2026-01-03T11:09:51.581239",
+      "time_span_days": 6.497819444444445e-05,
+      "occurrence_rate": 1.0,
+      "is_stable": true
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 388,
+      "first_observed_timestamp": "2026-01-03T11:09:45.957056",
+      "last_observed_timestamp": "2026-01-03T11:09:51.588740",
+      "time_span_days": 6.518152777777778e-05,
+      "occurrence_rate": 1.515625,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 339,
+      "first_observed_timestamp": "2026-01-03T11:09:45.956769",
+      "last_observed_timestamp": "2026-01-03T11:09:51.586047",
+      "time_span_days": 6.515368055555556e-05,
+      "occurrence_rate": 1.3399209486166008,
+      "is_stable": true
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 177,
+      "first_observed_timestamp": "2026-01-03T11:09:46.012753",
+      "last_observed_timestamp": "2026-01-03T11:09:51.551141",
+      "time_span_days": 6.410171296296296e-05,
+      "occurrence_rate": 1.923913043478261,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_medium_risk_medium_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 154,
+      "first_observed_timestamp": "2026-01-03T11:09:45.961906",
+      "last_observed_timestamp": "2026-01-03T11:09:51.588468",
+      "time_span_days": 6.512224537037038e-05,
+      "occurrence_rate": 1.4951456310679612,
+      "is_stable": true
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "persona_class": "high_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 105,
+      "first_observed_timestamp": "2026-01-03T11:09:46.155102",
+      "last_observed_timestamp": "2026-01-03T11:09:51.552076",
+      "time_span_days": 6.246497685185185e-05,
+      "occurrence_rate": 2.5,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_high_risk_low_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 100,
+      "first_observed_timestamp": "2026-01-03T11:09:46.094722",
+      "last_observed_timestamp": "2026-01-03T11:09:51.445717",
+      "time_span_days": 6.193281250000001e-05,
+      "occurrence_rate": 1.3333333333333333,
+      "is_stable": true
+    },
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "persona_class": "high_energy_low_risk_low_effort",
+      "dominant_factors": [
+        "intent_mismatch"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 35,
+      "first_observed_timestamp": "2026-01-03T11:09:46.013809",
+      "last_observed_timestamp": "2026-01-03T11:09:51.552250",
+      "time_span_days": 6.410232638888889e-05,
+      "occurrence_rate": 1.8421052631578947,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_medium_risk_low_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 33,
+      "first_observed_timestamp": "2026-01-03T11:09:46.115417",
+      "last_observed_timestamp": "2026-01-03T11:09:51.550433",
+      "time_span_days": 6.290527777777778e-05,
+      "occurrence_rate": 1.064516129032258,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "low_energy_high_risk_low_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 32,
+      "first_observed_timestamp": "2026-01-03T11:09:46.224464",
+      "last_observed_timestamp": "2026-01-03T11:09:51.490003",
+      "time_span_days": 6.094373842592593e-05,
+      "occurrence_rate": 1.0666666666666667,
+      "is_stable": true
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 32,
+      "first_observed_timestamp": "2026-01-03T11:09:46.232179",
+      "last_observed_timestamp": "2026-01-03T11:09:51.493822",
+      "time_span_days": 6.089864583333334e-05,
+      "occurrence_rate": 1.5238095238095237,
+      "is_stable": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 29,
+      "first_observed_timestamp": "2026-01-03T11:09:46.115558",
+      "last_observed_timestamp": "2026-01-03T11:09:51.493544",
+      "time_span_days": 6.224520833333333e-05,
+      "occurrence_rate": 1.0,
+      "is_stable": true
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "effort_demand",
+        "intent_mismatch"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 27,
+      "first_observed_timestamp": "2026-01-03T11:09:46.524601",
+      "last_observed_timestamp": "2026-01-03T11:09:51.193777",
+      "time_span_days": 5.404138888888889e-05,
+      "occurrence_rate": 1.588235294117647,
+      "is_stable": true
+    },
+    {
+      "step_id": "Step 1 of 11",
+      "persona_class": "high_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 25,
+      "first_observed_timestamp": "2026-01-03T11:09:46.403951",
+      "last_observed_timestamp": "2026-01-03T11:09:51.551941",
+      "time_span_days": 5.9583217592592594e-05,
+      "occurrence_rate": 2.0833333333333335,
+      "is_stable": true
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "persona_class": "medium_energy_high_risk_medium_effort",
+      "dominant_factors": [
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 23,
+      "first_observed_timestamp": "2026-01-03T11:09:46.329855",
+      "last_observed_timestamp": "2026-01-03T11:09:51.276805",
+      "time_span_days": 5.725636574074074e-05,
+      "occurrence_rate": 1.9166666666666667,
+      "is_stable": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "low_energy_medium_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "effort_demand",
+        "intent_mismatch"
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 21,
+      "first_observed_timestamp": "2026-01-03T11:09:46.524319",
+      "last_observed_timestamp": "2026-01-03T11:09:51.114254",
+      "time_span_days": 5.312424768518518e-05,
+      "occurrence_rate": 1.6153846153846154,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "medium_energy_medium_risk_low_effort",
+      "dominant_factors": [
+        "intent_mismatch"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 17,
+      "first_observed_timestamp": "2026-01-03T11:09:46.334948",
+      "last_observed_timestamp": "2026-01-03T11:09:51.552386",
+      "time_span_days": 6.038701388888888e-05,
+      "occurrence_rate": 1.4166666666666667,
+      "is_stable": true
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "effort_demand",
+        "intent_mismatch"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 16,
+      "first_observed_timestamp": "2026-01-03T11:09:46.151515",
+      "last_observed_timestamp": "2026-01-03T11:09:51.588872",
+      "time_span_days": 6.293237268518519e-05,
+      "occurrence_rate": 1.0666666666666667,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "medium_energy_high_risk_low_effort",
+      "dominant_factors": [
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 15,
+      "first_observed_timestamp": "2026-01-03T11:09:46.405538",
+      "last_observed_timestamp": "2026-01-03T11:09:50.767795",
+      "time_span_days": 5.0489085648148144e-05,
+      "occurrence_rate": 1.875,
+      "is_stable": true
+    },
+    {
+      "step_id": "Do you have any existing credit cards?",
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 14,
+      "first_observed_timestamp": "2026-01-03T11:09:46.330399",
+      "last_observed_timestamp": "2026-01-03T11:09:51.278074",
+      "time_span_days": 5.726475694444445e-05,
+      "occurrence_rate": 1.4,
+      "is_stable": true
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 14,
+      "first_observed_timestamp": "2026-01-03T11:09:46.404940",
+      "last_observed_timestamp": "2026-01-03T11:09:51.210618",
+      "time_span_days": 5.562127314814815e-05,
+      "occurrence_rate": 1.1666666666666667,
+      "is_stable": true
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "persona_class": "medium_energy_high_risk_low_effort",
+      "dominant_factors": [
+        "intent_mismatch"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 12,
+      "first_observed_timestamp": "2026-01-03T11:09:46.329586",
+      "last_observed_timestamp": "2026-01-03T11:09:51.254473",
+      "time_span_days": 5.700100694444444e-05,
+      "occurrence_rate": 1.0,
+      "is_stable": true
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "persona_class": "low_energy_high_risk_medium_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 12,
+      "first_observed_timestamp": "2026-01-03T11:09:46.329989",
+      "last_observed_timestamp": "2026-01-03T11:09:51.137648",
+      "time_span_days": 5.5644201388888894e-05,
+      "occurrence_rate": 1.5,
+      "is_stable": true
+    },
+    {
+      "step_id": "Help us personalise your card matches",
+      "persona_class": "medium_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 12,
+      "first_observed_timestamp": "2026-01-03T11:09:46.330535",
+      "last_observed_timestamp": "2026-01-03T11:09:51.551814",
+      "time_span_days": 6.043146990740741e-05,
+      "occurrence_rate": 1.2,
+      "is_stable": true
+    },
+    {
+      "step_id": "How much do you spend monthly?",
+      "persona_class": "low_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "effort_demand",
+        "intent_mismatch"
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 12,
+      "first_observed_timestamp": "2026-01-03T11:09:46.524874",
+      "last_observed_timestamp": "2026-01-03T11:09:51.113469",
+      "time_span_days": 5.310873842592592e-05,
+      "occurrence_rate": 1.3333333333333333,
+      "is_stable": true
+    },
+    {
+      "step_id": "Help us personalise your card matches",
+      "persona_class": "high_energy_high_risk_high_effort",
+      "dominant_factors": [
+        "effort_demand",
+        "intent_mismatch",
+        "risk_spike"
+      ],
+      "outcome": "DROP",
+      "occurrence_count": 11,
+      "first_observed_timestamp": "2026-01-03T11:09:46.403816",
+      "last_observed_timestamp": "2026-01-03T11:09:51.272278",
+      "time_span_days": 5.634793981481482e-05,
+      "occurrence_rate": 1.5714285714285714,
+      "is_stable": true
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "persona_class": "low_energy_medium_risk_medium_effort",
+      "dominant_factors": [
+        "cognitive_fatigue",
+        "intent_mismatch"
+      ],
+      "outcome": "CONTINUE",
+      "occurrence_count": 10,
+      "first_observed_timestamp": "2026-01-03T11:09:47.553211",
+      "last_observed_timestamp": "2026-01-03T11:09:51.588603",
+      "time_span_days": 4.6705925925925926e-05,
+      "occurrence_rate": 1.1111111111111112,
+      "is_stable": true
+    }
+  ],
+  "decision_density": [
+    {
+      "step_id": "Find the Best Credit Card In 60 seconds",
+      "step_index": 0,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 1445,
+      "decision_density": 0.20642857142857143,
+      "is_last_decision_boundary": false,
+      "first_rejection_timestamp": "2026-01-03T11:09:45.957545",
+      "last_rejection_timestamp": "2026-01-03T11:09:51.597894"
+    },
+    {
+      "step_id": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 1096,
+      "decision_density": 0.1972997299729973,
+      "is_last_decision_boundary": false,
+      "first_rejection_timestamp": "2026-01-03T11:09:45.962471",
+      "last_rejection_timestamp": "2026-01-03T11:09:51.597052"
+    },
+    {
+      "step_id": "Any preference on annual fee?",
+      "step_index": 2,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 820,
+      "decision_density": 0.18389773491814307,
+      "is_last_decision_boundary": false,
+      "first_rejection_timestamp": "2026-01-03T11:09:45.958001",
+      "last_rejection_timestamp": "2026-01-03T11:09:51.590699"
+    },
+    {
+      "step_id": "straightforward + options are clearly defined",
+      "step_index": 3,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 549,
+      "decision_density": 0.1508656224237428,
+      "is_last_decision_boundary": false,
+      "first_rejection_timestamp": "2026-01-03T11:09:45.966823",
+      "last_rejection_timestamp": "2026-01-03T11:09:51.597659"
+    },
+    {
+      "step_id": "Your top 2 spend categories?",
+      "step_index": 4,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 363,
+      "decision_density": 0.11747572815533981,
+      "is_last_decision_boundary": false,
+      "first_rejection_timestamp": "2026-01-03T11:09:45.983891",
+      "last_rejection_timestamp": "2026-01-03T11:09:51.591416"
+    },
+    {
+      "step_id": "Do you track your monthly spending?",
+      "step_index": 5,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 274,
+      "decision_density": 0.10047671433810047,
+      "is_last_decision_boundary": false,
+      "first_rejection_timestamp": "2026-01-03T11:09:45.957347",
+      "last_rejection_timestamp": "2026-01-03T11:09:51.565082"
+    },
+    {
+      "step_id": "How much do you spend monthly?",
+      "step_index": 6,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 205,
+      "decision_density": 0.08357113738279658,
+      "is_last_decision_boundary": false,
+      "first_rejection_timestamp": "2026-01-03T11:09:45.964042",
+      "last_rejection_timestamp": "2026-01-03T11:09:51.585739"
+    },
+    {
+      "step_id": "Do you have any existing credit cards?",
+      "step_index": 7,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 204,
+      "decision_density": 0.09074733096085409,
+      "is_last_decision_boundary": false,
+      "first_rejection_timestamp": "2026-01-03T11:09:46.052022",
+      "last_rejection_timestamp": "2026-01-03T11:09:51.516934"
+    },
+    {
+      "step_id": "Help us personalise your card matches",
+      "step_index": 8,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 177,
+      "decision_density": 0.08659491193737769,
+      "is_last_decision_boundary": false,
+      "first_rejection_timestamp": "2026-01-03T11:09:45.981852",
+      "last_rejection_timestamp": "2026-01-03T11:09:51.592699"
+    },
+    {
+      "step_id": "Step 1 of 11",
+      "step_index": 9,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 184,
+      "decision_density": 0.09855382967327263,
+      "is_last_decision_boundary": false,
+      "first_rejection_timestamp": "2026-01-03T11:09:45.975917",
+      "last_rejection_timestamp": "2026-01-03T11:09:51.589554"
+    },
+    {
+      "step_id": "Best Deals for You \u2013 Apply Now",
+      "step_index": 10,
+      "has_observed_rejections": true,
+      "rejection_decision_count": 151,
+      "decision_density": 0.08972073677956031,
+      "is_last_decision_boundary": true,
+      "first_rejection_timestamp": "2026-01-03T11:09:45.966177",
+      "last_rejection_timestamp": "2026-01-03T11:09:51.594454"
+    }
+  ],
+  "generated_timestamp": "2026-01-03T11:36:15.638212",
+  "total_sequences": 7000,
+  "total_steps": 11
+}

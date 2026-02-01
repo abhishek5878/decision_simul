@@ -1,0 +1,118 @@
+{
+  "epistemic_health": "Poor",
+  "overconfidence_rate": 0.0,
+  "underconfidence_rate": 1.0,
+  "robust_zones": [
+    "What kind of perks excite you the most?",
+    "Your top 2 spend categories?"
+  ],
+  "fragile_zones": [
+    "Any preference on annual fee?",
+    "straightforward, reducing cognitive load",
+    "Help us personalise your card matches",
+    "Finding the card that slaps harder than your playlist! \ud83c\udfb6\ud83d\udd25"
+  ],
+  "recommendation": "System requires validation before use - high uncertainty",
+  "sanity_metrics": {
+    "false_confidence_rate": 0.0,
+    "missed_uncertainty_rate": 1.0,
+    "confidence_volatility": 2.7755575615628914e-17,
+    "overconfidence_count": 0,
+    "underconfidence_count": 8,
+    "correct_confidence_count": 0
+  },
+  "test_results": [
+    {
+      "test_id": "high_confidence_wrong_2824",
+      "test_type": "high_confidence_wrong",
+      "expected_confidence_band": "LOW",
+      "actual_confidence": 0.2304,
+      "actual_confidence_band": "LOW",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "test_id": "low_signal_1750",
+      "test_type": "low_signal",
+      "expected_confidence_band": "LOW",
+      "actual_confidence": 0.2304,
+      "actual_confidence_band": "LOW",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "test_id": "overfitting_trap_7227",
+      "test_type": "overfitting_trap",
+      "expected_confidence_band": "MODERATE",
+      "actual_confidence": 0.2304,
+      "actual_confidence_band": "LOW",
+      "passed": false,
+      "issue": "Confidence mismatch: expected MODERATE, got LOW"
+    },
+    {
+      "test_id": "overfitting_trap_5554",
+      "test_type": "overfitting_trap",
+      "expected_confidence_band": "MODERATE",
+      "actual_confidence": 0.2304,
+      "actual_confidence_band": "LOW",
+      "passed": false,
+      "issue": "Confidence mismatch: expected MODERATE, got LOW"
+    },
+    {
+      "test_id": "overfitting_trap_8428",
+      "test_type": "overfitting_trap",
+      "expected_confidence_band": "MODERATE",
+      "actual_confidence": 0.2304,
+      "actual_confidence_band": "LOW",
+      "passed": false,
+      "issue": "Confidence mismatch: expected MODERATE, got LOW"
+    },
+    {
+      "test_id": "overfitting_trap_6977",
+      "test_type": "overfitting_trap",
+      "expected_confidence_band": "MODERATE",
+      "actual_confidence": 0.2304,
+      "actual_confidence_band": "LOW",
+      "passed": false,
+      "issue": "Confidence mismatch: expected MODERATE, got LOW"
+    },
+    {
+      "test_id": "overfitting_trap_3664",
+      "test_type": "overfitting_trap",
+      "expected_confidence_band": "MODERATE",
+      "actual_confidence": 0.2304,
+      "actual_confidence_band": "LOW",
+      "passed": false,
+      "issue": "Confidence mismatch: expected MODERATE, got LOW"
+    },
+    {
+      "test_id": "true_positive_7065",
+      "test_type": "true_positive",
+      "expected_confidence_band": "HIGH",
+      "actual_confidence": 0.2304,
+      "actual_confidence_band": "LOW",
+      "passed": false,
+      "issue": "Underconfident: expected HIGH, got LOW"
+    }
+  ],
+  "reliability_boundary": {
+    "reliable_for": [
+      "Directional insights about user behavior",
+      "Identifying high-level failure patterns",
+      "Comparative analysis between products",
+      "Strategic planning with validation"
+    ],
+    "unreliable_for": [
+      "Precise conversion rate predictions",
+      "Exact magnitude of impact estimates",
+      "Point estimates without confidence intervals",
+      "High-stakes decisions without validation"
+    ],
+    "requires_validation": [
+      "Quantitative forecasts",
+      "Budget allocation decisions",
+      "Product launch decisions",
+      "Any decision with >$10k impact"
+    ]
+  }
+}

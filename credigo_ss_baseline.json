@@ -1,0 +1,33 @@
+{
+  "entry_rate": 0.48562500000000003,
+  "completion_rate": 0.6771428571428572,
+  "total_conversion": 0.3288375,
+  "step_completion_rates": {},
+  "parameters": {
+    "BASE_COMPLETION_RATE": 0.475,
+    "PERSISTENCE_BONUS_START": 0.18,
+    "PERSISTENCE_BONUS_RATE": 0.22,
+    "INTENT_PENALTY_WEIGHT": 0.025,
+    "FRICTION_PENALTY_WEIGHT": 1.0,
+    "VALUE_SENSITIVITY": 1.0,
+    "COGNITIVE_PENALTY_WEIGHT": 1.0,
+    "EFFORT_PENALTY_WEIGHT": 1.0,
+    "RISK_PENALTY_WEIGHT": 1.0,
+    "ENTRY_PROBABILITY_SCALE": 0.875
+  },
+  "dropoff_distribution": {
+    "Find the Best Credit Card In 60 seconds": 0.29742857142857143,
+    "What kind of perks excite you the most?": 0.03497356649044327,
+    "Any preference on annual fee?": 0.0012642225031605564,
+    "straightforward + options are clearly defined": 0.0,
+    "Your top 2 spend categories?": 0.0,
+    "Do you track your monthly spending?": 0.0,
+    "How much do you spend monthly?": 0.0,
+    "Do you have any existing credit cards?": 0.0,
+    "Help us personalise your card matches": 0.0,
+    "Step 1 of 11": 0.0,
+    "Best Deals for You \u2013 Apply Now": 0.0
+  },
+  "timestamp": "2026-01-02T16:50:50.555264",
+  "sample_size": 500
+}

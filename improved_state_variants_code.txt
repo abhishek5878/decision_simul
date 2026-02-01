@@ -1,0 +1,70 @@
+# ============================================================================
+# STATE VARIANT DEFINITIONS (Structured, Deterministic)
+# MODIFIED: Increased differentiation for realistic variant spread
+# ============================================================================
+
+STATE_VARIANTS = {
+    "fresh_motivated": {
+        "cognitive_energy_mult": 0.9,
+        "perceived_value": 0.8,
+        "perceived_risk": 0.1,
+        "perceived_effort": 0.1,
+        "perceived_control": 0.75,
+        "description": "Fresh arrival, high motivation",
+    },
+
+    "tired_commuter": {
+        "cognitive_energy_mult": 0.45,
+        "perceived_value": 0.55,
+        "perceived_risk": 0.25,
+        "perceived_effort": 0.35,
+        "perceived_control": 0.45,
+        "description": "Tired, lower energy - STRONGER PENALTIES",
+    },
+
+    "distrustful_arrival": {
+        "cognitive_energy_mult": 0.8,
+        "perceived_value": 0.55,
+        "perceived_risk": 0.5,
+        "perceived_effort": 0.25,
+        "perceived_control": 0.2,
+        "description": "Arrives with trust concerns - STRONGER PENALTIES",
+    },
+
+    "browsing_casually": {
+        "cognitive_energy_mult": 0.9,
+        "perceived_value": 0.25,
+        "perceived_risk": 0.1,
+        "perceived_effort": 0.2,
+        "perceived_control": 0.6,
+        "description": "Low urgency, exploring",
+    },
+
+    "urgent_need": {
+        "cognitive_energy_mult": 0.7,
+        "perceived_value": 0.95,
+        "perceived_risk": 0.15,
+        "perceived_effort": 0.08,
+        "perceived_control": 0.85,
+        "description": "High urgency, strong motivation - STRONGER BONUSES",
+    },
+
+    "price_sensitive": {
+        "cognitive_energy_mult": 0.8,
+        "perceived_value": 0.3,
+        "perceived_risk": 0.35,
+        "perceived_effort": 0.25,
+        "perceived_control": 0.45,
+        "description": "Highly price-conscious - STRONGER PENALTIES",
+    },
+
+    "tech_savvy_optimistic": {
+        "cognitive_energy_mult": 0.98,
+        "perceived_value": 0.75,
+        "perceived_risk": 0.02,
+        "perceived_effort": 0.03,
+        "perceived_control": 0.9,
+        "description": "High digital literacy, optimistic - STRONGER BONUSES",
+    },
+
+}

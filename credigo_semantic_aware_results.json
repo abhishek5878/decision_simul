@@ -1,0 +1,263 @@
+{
+  "simulation_type": "semantic_aware_behavioral_engine",
+  "product": "Credigo.club",
+  "timestamp": "2025-12-30T03:58:32.011482",
+  "total_personas": 1000,
+  "total_trajectories": 7000,
+  "overall_completion_rate": 0.0,
+  "total_semantic_mismatches": 0,
+  "intent_distribution": {
+    "compare_options": 0.3905552010210593,
+    "validate_choice": 0.14932992980216972,
+    "learn_basics": 0.04148053605615826,
+    "quick_decision": 0.22973835354179956,
+    "price_check": 0.08934269304403315,
+    "eligibility_check": 0.09955328653477981
+  },
+  "semantic_insights": {
+    "Find the Best Credit Card In 60 seconds": {
+      "avg_alignment_score": 0.9379571428570828,
+      "drop_rate": 0.6708571428571428,
+      "conflict_axes": {
+        "choice_availability": 2726
+      },
+      "total_analyzed": 7000
+    },
+    "What kind of perks excite you the most?": {
+      "avg_alignment_score": 0.9151041666666995,
+      "drop_rate": 0.8728298611111112,
+      "conflict_axes": {
+        "choice_availability": 1345
+      },
+      "total_analyzed": 2304
+    },
+    "Any preference on annual fee?": {
+      "avg_alignment_score": 0.9180887372013673,
+      "drop_rate": 0.8839590443686007,
+      "conflict_axes": {
+        "choice_availability": 156
+      },
+      "total_analyzed": 293
+    },
+    "straightforward + options are clearly defined": {
+      "avg_alignment_score": 0.9176470588235289,
+      "drop_rate": 0.7352941176470589,
+      "conflict_axes": {
+        "choice_availability": 15
+      },
+      "total_analyzed": 34
+    },
+    "Your top 2 spend categories?": {
+      "avg_alignment_score": 0.9000000000000001,
+      "drop_rate": 0.8888888888888888,
+      "conflict_axes": {
+        "choice_availability": 4
+      },
+      "total_analyzed": 9
+    },
+    "Do you track your monthly spending?": {
+      "avg_alignment_score": 0.9,
+      "drop_rate": 1.0,
+      "conflict_axes": {
+        "choice_availability": 1
+      },
+      "total_analyzed": 1
+    }
+  },
+  "step_semantic_data": {
+    "Find the Best Credit Card In 60 seconds": {
+      "drops": 4696,
+      "continues": 2304,
+      "drop_rate": 0.6708571428571428,
+      "sample_semantic_profile": {
+        "visual_load": 0.5,
+        "perceived_effort": 0.35,
+        "choice_overload": 0.2,
+        "trust_signal": 0.5,
+        "urgency": 0.3,
+        "reversibility": 0.7,
+        "implied_user_knowledge": "medium",
+        "intent_shift": {
+          "compare": 0.3,
+          "speed": 0.39999999999999997
+        },
+        "emotional_deltas": {},
+        "inferred_psychological_promises": [
+          "fast",
+          "fast"
+        ],
+        "inferred_risks": [],
+        "extraction_confidence": 0.8,
+        "extraction_method": "rule_based"
+      },
+      "sample_alignment_result": {
+        "intent_alignment_score": 0.9,
+        "conflict_axes": [
+          "choice_availability"
+        ],
+        "predicted_effect": "decrease_drop_probability",
+        "semantic_reason": "User wants to compare but step doesn't show options",
+        "friction_delta": 0.0
+      }
+    },
+    "What kind of perks excite you the most?": {
+      "drops": 2011,
+      "continues": 293,
+      "drop_rate": 0.8728298611111112,
+      "sample_semantic_profile": {
+        "visual_load": 0.5,
+        "perceived_effort": 0.35,
+        "choice_overload": 0.2,
+        "trust_signal": 0.5,
+        "urgency": 0.3,
+        "reversibility": 0.7,
+        "implied_user_knowledge": "medium",
+        "intent_shift": {},
+        "emotional_deltas": {},
+        "inferred_psychological_promises": [],
+        "inferred_risks": [],
+        "extraction_confidence": 0.8,
+        "extraction_method": "rule_based"
+      },
+      "sample_alignment_result": {
+        "intent_alignment_score": 0.9,
+        "conflict_axes": [
+          "choice_availability"
+        ],
+        "predicted_effect": "decrease_drop_probability",
+        "semantic_reason": "User wants to compare but step doesn't show options",
+        "friction_delta": 0.0
+      }
+    },
+    "Any preference on annual fee?": {
+      "drops": 259,
+      "continues": 34,
+      "drop_rate": 0.8839590443686007,
+      "sample_semantic_profile": {
+        "visual_load": 0.5,
+        "perceived_effort": 0.35,
+        "choice_overload": 0.2,
+        "trust_signal": 0.5,
+        "urgency": 0.3,
+        "reversibility": 0.7,
+        "implied_user_knowledge": "medium",
+        "intent_shift": {},
+        "emotional_deltas": {},
+        "inferred_psychological_promises": [],
+        "inferred_risks": [],
+        "extraction_confidence": 0.8,
+        "extraction_method": "rule_based"
+      },
+      "sample_alignment_result": {
+        "intent_alignment_score": 0.9,
+        "conflict_axes": [
+          "choice_availability"
+        ],
+        "predicted_effect": "decrease_drop_probability",
+        "semantic_reason": "User wants to compare but step doesn't show options",
+        "friction_delta": 0.0
+      }
+    },
+    "straightforward + options are clearly defined": {
+      "drops": 25,
+      "continues": 9,
+      "drop_rate": 0.7352941176470589,
+      "sample_semantic_profile": {
+        "visual_load": 0.5,
+        "perceived_effort": 0.35,
+        "choice_overload": 0.2,
+        "trust_signal": 0.5,
+        "urgency": 0.3,
+        "reversibility": 0.7,
+        "implied_user_knowledge": "medium",
+        "intent_shift": {
+          "compare": 0.3
+        },
+        "emotional_deltas": {},
+        "inferred_psychological_promises": [],
+        "inferred_risks": [],
+        "extraction_confidence": 0.8,
+        "extraction_method": "rule_based"
+      },
+      "sample_alignment_result": {
+        "intent_alignment_score": 0.9,
+        "conflict_axes": [
+          "choice_availability"
+        ],
+        "predicted_effect": "decrease_drop_probability",
+        "semantic_reason": "User wants to compare but step doesn't show options",
+        "friction_delta": 0.0
+      }
+    },
+    "Your top 2 spend categories?": {
+      "drops": 8,
+      "continues": 1,
+      "drop_rate": 0.8888888888888888,
+      "sample_semantic_profile": {
+        "visual_load": 0.5,
+        "perceived_effort": 0.35,
+        "choice_overload": 0.2,
+        "trust_signal": 0.5,
+        "urgency": 0.3,
+        "reversibility": 0.7,
+        "implied_user_knowledge": "medium",
+        "intent_shift": {},
+        "emotional_deltas": {},
+        "inferred_psychological_promises": [],
+        "inferred_risks": [],
+        "extraction_confidence": 0.8,
+        "extraction_method": "rule_based"
+      },
+      "sample_alignment_result": {
+        "intent_alignment_score": 0.9,
+        "conflict_axes": [
+          "choice_availability"
+        ],
+        "predicted_effect": "decrease_drop_probability",
+        "semantic_reason": "User wants to compare but step doesn't show options",
+        "friction_delta": 0.0
+      }
+    },
+    "Do you track your monthly spending?": {
+      "drops": 1,
+      "continues": 0,
+      "drop_rate": 1.0,
+      "sample_semantic_profile": {
+        "visual_load": 0.5,
+        "perceived_effort": 0.35,
+        "choice_overload": 0.2,
+        "trust_signal": 0.5,
+        "urgency": 0.3,
+        "reversibility": 0.7,
+        "implied_user_knowledge": "medium",
+        "intent_shift": {},
+        "emotional_deltas": {},
+        "inferred_psychological_promises": [],
+        "inferred_risks": [],
+        "extraction_confidence": 0.8,
+        "extraction_method": "rule_based"
+      },
+      "sample_alignment_result": {
+        "intent_alignment_score": 0.9,
+        "conflict_axes": [
+          "choice_availability"
+        ],
+        "predicted_effect": "decrease_drop_probability",
+        "semantic_reason": "User wants to compare but step doesn't show options",
+        "friction_delta": 0.0
+      }
+    }
+  },
+  "failure_reasons": {
+    "System 2 fatigue": 5986,
+    "Loss aversion": 1014
+  },
+  "exit_steps": {
+    "Any preference on annual fee?": 259,
+    "What kind of perks excite you the most?": 2011,
+    "Find the Best Credit Card In 60 seconds": 4696,
+    "Your top 2 spend categories?": 8,
+    "straightforward + options are clearly defined": 25,
+    "Do you track your monthly spending?": 1
+  }
+}

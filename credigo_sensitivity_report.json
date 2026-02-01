@@ -1,0 +1,171 @@
+{
+  "timestamp": "2026-01-02T14:53:04.419049",
+  "parameter_sensitivity": {
+    "BASE_COMPLETION_RATE": {
+      "parameter_name": "BASE_COMPLETION_RATE",
+      "baseline_value": 0.6,
+      "low_value": 0.48,
+      "high_value": 0.72,
+      "baseline_completion": 0.7777142857142857,
+      "low_completion": 0.6797142857142857,
+      "high_completion": 0.8605714285714285,
+      "sensitivity": 0.40833333333333327,
+      "relative_sensitivity": 0.6300514327700218,
+      "impact_rank": 1
+    },
+    "PERSISTENCE_BONUS_START": {
+      "parameter_name": "PERSISTENCE_BONUS_START",
+      "baseline_value": 0.18,
+      "low_value": 0.144,
+      "high_value": 0.216,
+      "baseline_completion": 0.7777142857142857,
+      "low_completion": 0.7471428571428571,
+      "high_completion": 0.8034285714285714,
+      "sensitivity": 0.4246031746031747,
+      "relative_sensitivity": 0.19654665686994865,
+      "impact_rank": 2
+    },
+    "PERSISTENCE_BONUS_RATE": {
+      "parameter_name": "PERSISTENCE_BONUS_RATE",
+      "baseline_value": 0.22,
+      "low_value": 0.17600000000000002,
+      "high_value": 0.264,
+      "baseline_completion": 0.7777142857142857,
+      "low_completion": 0.7774285714285715,
+      "high_completion": 0.7777142857142857,
+      "sensitivity": 0.003246753246752529,
+      "relative_sensitivity": 0.001836884643643973,
+      "impact_rank": 3
+    },
+    "INTENT_PENALTY_WEIGHT": {
+      "parameter_name": "INTENT_PENALTY_WEIGHT",
+      "baseline_value": 0.025,
+      "low_value": 0.020000000000000004,
+      "high_value": 0.03,
+      "baseline_completion": 0.7777142857142857,
+      "low_completion": 0.7777142857142857,
+      "high_completion": 0.7777142857142857,
+      "sensitivity": 0.0,
+      "relative_sensitivity": 0.0,
+      "impact_rank": 4
+    },
+    "FRICTION_PENALTY_WEIGHT": {
+      "parameter_name": "FRICTION_PENALTY_WEIGHT",
+      "baseline_value": 1.0,
+      "low_value": 0.8,
+      "high_value": 1.2,
+      "baseline_completion": 0.7777142857142857,
+      "low_completion": 0.7777142857142857,
+      "high_completion": 0.7777142857142857,
+      "sensitivity": 0.0,
+      "relative_sensitivity": 0.0,
+      "impact_rank": 5
+    },
+    "VALUE_SENSITIVITY": {
+      "parameter_name": "VALUE_SENSITIVITY",
+      "baseline_value": 1.0,
+      "low_value": 0.8,
+      "high_value": 1.2,
+      "baseline_completion": 0.7777142857142857,
+      "low_completion": 0.7777142857142857,
+      "high_completion": 0.7777142857142857,
+      "sensitivity": 0.0,
+      "relative_sensitivity": 0.0,
+      "impact_rank": 6
+    },
+    "COGNITIVE_PENALTY_WEIGHT": {
+      "parameter_name": "COGNITIVE_PENALTY_WEIGHT",
+      "baseline_value": 1.0,
+      "low_value": 0.8,
+      "high_value": 1.2,
+      "baseline_completion": 0.7777142857142857,
+      "low_completion": 0.7777142857142857,
+      "high_completion": 0.7777142857142857,
+      "sensitivity": 0.0,
+      "relative_sensitivity": 0.0,
+      "impact_rank": 7
+    },
+    "EFFORT_PENALTY_WEIGHT": {
+      "parameter_name": "EFFORT_PENALTY_WEIGHT",
+      "baseline_value": 1.0,
+      "low_value": 0.8,
+      "high_value": 1.2,
+      "baseline_completion": 0.7777142857142857,
+      "low_completion": 0.7777142857142857,
+      "high_completion": 0.7777142857142857,
+      "sensitivity": 0.0,
+      "relative_sensitivity": 0.0,
+      "impact_rank": 8
+    },
+    "RISK_PENALTY_WEIGHT": {
+      "parameter_name": "RISK_PENALTY_WEIGHT",
+      "baseline_value": 1.0,
+      "low_value": 0.8,
+      "high_value": 1.2,
+      "baseline_completion": 0.7777142857142857,
+      "low_completion": 0.7777142857142857,
+      "high_completion": 0.7777142857142857,
+      "sensitivity": 0.0,
+      "relative_sensitivity": 0.0,
+      "impact_rank": 9
+    }
+  },
+  "sensitivity_summary": {
+    "BASE_COMPLETION_RATE": 0.6300514327700218,
+    "PERSISTENCE_BONUS_START": 0.19654665686994865,
+    "PERSISTENCE_BONUS_RATE": 0.001836884643643973,
+    "INTENT_PENALTY_WEIGHT": 0.0,
+    "FRICTION_PENALTY_WEIGHT": 0.0,
+    "VALUE_SENSITIVITY": 0.0,
+    "COGNITIVE_PENALTY_WEIGHT": 0.0,
+    "EFFORT_PENALTY_WEIGHT": 0.0,
+    "RISK_PENALTY_WEIGHT": 0.0
+  },
+  "ranked_by_sensitivity": [
+    {
+      "parameter_name": "BASE_COMPLETION_RATE",
+      "relative_sensitivity": 0.6300514327700218,
+      "rank": 1
+    },
+    {
+      "parameter_name": "PERSISTENCE_BONUS_START",
+      "relative_sensitivity": 0.19654665686994865,
+      "rank": 2
+    },
+    {
+      "parameter_name": "PERSISTENCE_BONUS_RATE",
+      "relative_sensitivity": 0.001836884643643973,
+      "rank": 3
+    },
+    {
+      "parameter_name": "INTENT_PENALTY_WEIGHT",
+      "relative_sensitivity": 0.0,
+      "rank": 4
+    },
+    {
+      "parameter_name": "FRICTION_PENALTY_WEIGHT",
+      "relative_sensitivity": 0.0,
+      "rank": 5
+    },
+    {
+      "parameter_name": "VALUE_SENSITIVITY",
+      "relative_sensitivity": 0.0,
+      "rank": 6
+    },
+    {
+      "parameter_name": "COGNITIVE_PENALTY_WEIGHT",
+      "relative_sensitivity": 0.0,
+      "rank": 7
+    },
+    {
+      "parameter_name": "EFFORT_PENALTY_WEIGHT",
+      "relative_sensitivity": 0.0,
+      "rank": 8
+    },
+    {
+      "parameter_name": "RISK_PENALTY_WEIGHT",
+      "relative_sensitivity": 0.0,
+      "rank": 9
+    }
+  ]
+}

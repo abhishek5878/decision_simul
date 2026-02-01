@@ -1,0 +1,68 @@
+{
+  "timestamp": "2025-12-30T12:18:03.653428",
+  "cross_validation": {
+    "samples": [
+      0.1792857142857143,
+      0.18785714285714286,
+      0.18214285714285713,
+      0.18642857142857142,
+      0.18428571428571427
+    ],
+    "mean_completion": 0.184,
+    "std_completion": 0.0030505937862946564,
+    "coefficient_of_variation": 0.01657931405594922,
+    "is_consistent": "True"
+  },
+  "edge_cases": {
+    "edge_cases": [
+      {
+        "case": "Very High Friction",
+        "completion_rate": 0.7857142857142857,
+        "expected_minimum": 0.3,
+        "has_minimum": "True",
+        "status": "\u2705 PASS"
+      },
+      {
+        "case": "Very Low Friction",
+        "completion_rate": 0.92,
+        "expected_minimum": 0.6,
+        "has_high_completion": "True",
+        "status": "\u2705 PASS"
+      }
+    ],
+    "all_passed": true
+  },
+  "benchmark_validation": {
+    "completion_rate": 0.184,
+    "benchmark_range": [
+      0.15,
+      0.35
+    ],
+    "within_benchmark": "True",
+    "early_drop_rate": 0.25,
+    "early_drop_benchmark": [
+      0.2,
+      0.4
+    ],
+    "within_early_drop": true,
+    "confidence_boost": 1.0
+  },
+  "confidence_factors": {
+    "consistency": 0.9,
+    "edge_cases": 0.9,
+    "benchmark_match": 1.0,
+    "bootstrap_ci": 0.910995227094273
+  },
+  "overall_confidence": 0.9333333333333332,
+  "recommendations": [],
+  "bootstrap_confidence": {
+    "mean_completion": 0.18394285714285713,
+    "ci_lower": 0.17504237985228444,
+    "ci_upper": 0.19284333443342982,
+    "std_error": 0.004541059842128922,
+    "confidence_level": 0.95,
+    "n_bootstrap": 10,
+    "completion_range": "17.5% - 19.3%"
+  },
+  "updated_confidence": 0.9277488067735682
+}

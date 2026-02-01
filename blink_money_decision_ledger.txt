@@ -1,0 +1,1195 @@
+================================================================================
+DECISION LEDGER
+================================================================================
+
+Generated: 2026-01-04T05:48:07.958442
+Sequences recorded: 7000
+Steps recorded: 3
+
+This output is a decision ledger, not an analysis or recommendation.
+All assertions are machine-verifiable facts from DecisionTrace objects.
+
+--------------------------------------------------------------------------------
+DECISION BOUNDARIES
+--------------------------------------------------------------------------------
+
+Assertions recorded: 17
+
+[1] Step: Smart Credit against Mutual Funds
+     Step Index: 0
+     Persona Class: medium_energy_medium_risk_low_effort
+     Coherence Score: 0.953
+     Coherence Stable: True
+     Supporting Traces: 2081
+     Accepted Count: 1666
+     Rejected Count: 415
+     Cognitive Thresholds (accepted):
+       energy: [0.300, 0.600]
+       risk: [0.300, 0.566]
+       effort: [0.050, 0.300]
+       value: [0.214, 1.247]
+       control: [0.294, 1.181]
+     Factor Presence:
+       multi_factor: present_in_traces = 2081
+     Counterexamples recorded: 5
+       Persona ID: 6_browsing_casually
+         energy: threshold=[0.300, 0.600], observed=0.331
+         risk: threshold=[0.300, 0.566], observed=0.359
+         effort: threshold=[0.050, 0.300], observed=0.200
+         value: threshold=[0.214, 1.247], observed=0.316
+         control: threshold=[0.294, 1.181], observed=0.468
+       Persona ID: 9_tech_savvy_optimistic
+         energy: threshold=[0.300, 0.600], observed=0.403
+         risk: threshold=[0.300, 0.566], observed=0.309
+         effort: threshold=[0.050, 0.300], observed=0.050
+         value: threshold=[0.214, 1.247], observed=0.411
+         control: threshold=[0.294, 1.181], observed=0.510
+       Persona ID: 10_tired_commuter
+         energy: threshold=[0.300, 0.600], observed=0.349
+         risk: threshold=[0.300, 0.566], observed=0.450
+         effort: threshold=[0.050, 0.300], observed=0.300
+         value: threshold=[0.214, 1.247], observed=0.451
+         control: threshold=[0.294, 1.181], observed=0.435
+     First Observed: 2026-01-04T05:46:53.437159
+     Last Observed: 2026-01-04T05:46:56.599533
+     Occurrence Count: 2081
+
+[2] Step: Smart Credit against Mutual Funds
+     Step Index: 0
+     Persona Class: low_energy_medium_risk_low_effort
+     Coherence Score: 0.959
+     Coherence Stable: True
+     Supporting Traces: 3681
+     Accepted Count: 2903
+     Rejected Count: 778
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.300]
+       risk: [0.300, 0.566]
+       effort: [0.050, 0.300]
+       value: [0.207, 0.609]
+       control: [0.289, 1.145]
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 3681
+     Counterexamples recorded: 5
+       Persona ID: 0_tired_commuter
+         energy: threshold=[0.050, 0.300], observed=0.279
+         risk: threshold=[0.300, 0.566], observed=0.460
+         effort: threshold=[0.050, 0.300], observed=0.300
+         value: threshold=[0.207, 0.609], observed=0.435
+         control: threshold=[0.289, 1.145], observed=0.728
+       Persona ID: 1_tired_commuter
+         energy: threshold=[0.050, 0.300], observed=0.103
+         risk: threshold=[0.300, 0.566], observed=0.459
+         effort: threshold=[0.050, 0.300], observed=0.300
+         value: threshold=[0.207, 0.609], observed=0.349
+         control: threshold=[0.289, 1.145], observed=0.560
+       Persona ID: 1_browsing_casually
+         energy: threshold=[0.050, 0.300], observed=0.204
+         risk: threshold=[0.300, 0.566], observed=0.359
+         effort: threshold=[0.050, 0.300], observed=0.200
+         value: threshold=[0.207, 0.609], observed=0.250
+         control: threshold=[0.289, 1.145], observed=0.609
+     First Observed: 2026-01-04T05:46:53.437700
+     Last Observed: 2026-01-04T05:46:56.605106
+     Occurrence Count: 3681
+
+[3] Step: Smart Credit against Mutual Funds
+     Step Index: 0
+     Persona Class: medium_energy_high_risk_low_effort
+     Coherence Score: 0.980
+     Coherence Stable: True
+     Supporting Traces: 377
+     Accepted Count: 302
+     Rejected Count: 75
+     Cognitive Thresholds (accepted):
+       energy: [0.300, 0.579]
+       risk: [0.609, 0.666]
+       effort: [0.200, 0.200]
+       value: [0.313, 0.931]
+       control: [0.252, 0.786]
+     Factor Presence:
+       multi_factor: present_in_traces = 377
+     Counterexamples recorded: 5
+       Persona ID: 11_distrustful_arrival
+         energy: threshold=[0.300, 0.579], observed=0.350
+         risk: threshold=[0.609, 0.666], observed=0.659
+         effort: threshold=[0.200, 0.200], observed=0.200
+         value: threshold=[0.313, 0.931], observed=0.415
+         control: threshold=[0.252, 0.786], observed=0.396
+       Persona ID: 18_distrustful_arrival
+         energy: threshold=[0.300, 0.579], observed=0.333
+         risk: threshold=[0.609, 0.666], observed=0.666
+         effort: threshold=[0.200, 0.200], observed=0.200
+         value: threshold=[0.313, 0.931], observed=0.415
+         control: threshold=[0.252, 0.786], observed=0.396
+       Persona ID: 21_distrustful_arrival
+         energy: threshold=[0.300, 0.579], observed=0.388
+         risk: threshold=[0.609, 0.666], observed=0.666
+         effort: threshold=[0.200, 0.200], observed=0.200
+         value: threshold=[0.313, 0.931], observed=0.379
+         control: threshold=[0.252, 0.786], observed=0.333
+     First Observed: 2026-01-04T05:46:53.437901
+     Last Observed: 2026-01-04T05:46:56.597958
+     Occurrence Count: 377
+
+[4] Step: Smart Credit against Mutual Funds
+     Step Index: 0
+     Persona Class: low_energy_high_risk_low_effort
+     Coherence Score: 0.983
+     Coherence Stable: True
+     Supporting Traces: 607
+     Accepted Count: 475
+     Rejected Count: 132
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.299]
+       risk: [0.623, 0.666]
+       effort: [0.200, 0.200]
+       value: [0.305, 0.457]
+       control: [0.249, 0.840]
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 607
+     Counterexamples recorded: 5
+       Persona ID: 1_distrustful_arrival
+         energy: threshold=[0.050, 0.299], observed=0.213
+         risk: threshold=[0.623, 0.666], observed=0.659
+         effort: threshold=[0.200, 0.200], observed=0.200
+         value: threshold=[0.305, 0.457], observed=0.349
+         control: threshold=[0.249, 0.840], observed=0.462
+       Persona ID: 3_distrustful_arrival
+         energy: threshold=[0.050, 0.299], observed=0.224
+         risk: threshold=[0.623, 0.666], observed=0.663
+         effort: threshold=[0.200, 0.200], observed=0.200
+         value: threshold=[0.305, 0.457], observed=0.349
+         control: threshold=[0.249, 0.840], observed=0.516
+       Persona ID: 14_distrustful_arrival
+         energy: threshold=[0.050, 0.299], observed=0.246
+         risk: threshold=[0.623, 0.666], observed=0.663
+         effort: threshold=[0.200, 0.200], observed=0.200
+         value: threshold=[0.305, 0.457], observed=0.323
+         control: threshold=[0.249, 0.840], observed=0.633
+     First Observed: 2026-01-04T05:46:53.440813
+     Last Observed: 2026-01-04T05:46:56.603067
+     Occurrence Count: 607
+
+[5] Step: Smart Credit against Mutual Funds
+     Step Index: 0
+     Persona Class: high_energy_medium_risk_low_effort
+     Coherence Score: 0.942
+     Coherence Stable: True
+     Supporting Traces: 102
+     Accepted Count: 87
+     Rejected Count: 15
+     Cognitive Thresholds (accepted):
+       energy: [0.600, 0.770]
+       risk: [0.300, 0.551]
+       effort: [0.050, 0.200]
+       value: [0.345, 1.165]
+       control: [0.453, 1.181]
+     Factor Presence:
+       multi_factor: present_in_traces = 102
+     Counterexamples recorded: 5
+       Persona ID: 10_fresh_motivated
+         energy: threshold=[0.600, 0.770], observed=0.689
+         risk: threshold=[0.300, 0.551], observed=0.350
+         effort: threshold=[0.050, 0.200], observed=0.100
+         value: threshold=[0.345, 1.165], observed=0.521
+         control: threshold=[0.453, 1.181], observed=0.501
+       Persona ID: 10_tech_savvy_optimistic
+         energy: threshold=[0.600, 0.770], observed=0.712
+         risk: threshold=[0.300, 0.551], observed=0.300
+         effort: threshold=[0.050, 0.200], observed=0.050
+         value: threshold=[0.345, 1.165], observed=0.486
+         control: threshold=[0.453, 1.181], observed=0.534
+       Persona ID: 75_browsing_casually
+         energy: threshold=[0.600, 0.770], observed=0.695
+         risk: threshold=[0.300, 0.551], observed=0.327
+         effort: threshold=[0.050, 0.200], observed=0.200
+         value: threshold=[0.345, 1.165], observed=0.622
+         control: threshold=[0.453, 1.181], observed=0.897
+     First Observed: 2026-01-04T05:46:53.465000
+     Last Observed: 2026-01-04T05:46:56.581232
+     Occurrence Count: 102
+
+[6] Step: Smart Credit against Mutual Funds
+     Step Index: 0
+     Persona Class: medium_energy_low_risk_low_effort
+     Coherence Score: 0.938
+     Coherence Stable: True
+     Supporting Traces: 48
+     Accepted Count: 39
+     Rejected Count: 9
+     Cognitive Thresholds (accepted):
+       energy: [0.303, 0.587]
+       risk: [0.269, 0.299]
+       effort: [0.050, 0.050]
+       value: [0.345, 1.036]
+       control: [0.357, 1.118]
+     Factor Presence:
+       multi_factor: present_in_traces = 48
+     Counterexamples recorded: 5
+       Persona ID: 73_tech_savvy_optimistic
+         energy: threshold=[0.303, 0.587], observed=0.361
+         risk: threshold=[0.269, 0.299], observed=0.277
+         effort: threshold=[0.050, 0.050], observed=0.050
+         value: threshold=[0.345, 1.036], observed=0.411
+         control: threshold=[0.357, 1.118], observed=0.690
+       Persona ID: 185_tech_savvy_optimistic
+         energy: threshold=[0.303, 0.587], observed=0.345
+         risk: threshold=[0.269, 0.299], observed=0.298
+         effort: threshold=[0.050, 0.050], observed=0.050
+         value: threshold=[0.345, 1.036], observed=0.396
+         control: threshold=[0.357, 1.118], observed=0.435
+       Persona ID: 251_tech_savvy_optimistic
+         energy: threshold=[0.303, 0.587], observed=0.460
+         risk: threshold=[0.269, 0.299], observed=0.297
+         effort: threshold=[0.050, 0.050], observed=0.050
+         value: threshold=[0.345, 1.036], observed=0.411
+         control: threshold=[0.357, 1.118], observed=0.531
+     First Observed: 2026-01-04T05:46:53.530001
+     Last Observed: 2026-01-04T05:46:56.543247
+     Occurrence Count: 48
+
+[7] Step: Smart Credit against Mutual Funds
+     Step Index: 0
+     Persona Class: low_energy_low_risk_low_effort
+     Coherence Score: 0.964
+     Coherence Stable: True
+     Supporting Traces: 61
+     Accepted Count: 52
+     Rejected Count: 9
+     Cognitive Thresholds (accepted):
+       energy: [0.129, 0.285]
+       risk: [0.273, 0.294]
+       effort: [0.050, 0.050]
+       value: [0.338, 0.411]
+       control: [0.357, 1.145]
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 61
+     Counterexamples recorded: 5
+       Persona ID: 74_tech_savvy_optimistic
+         energy: threshold=[0.129, 0.285], observed=0.223
+         risk: threshold=[0.273, 0.294], observed=0.280
+         effort: threshold=[0.050, 0.050], observed=0.050
+         value: threshold=[0.338, 0.411], observed=0.338
+         control: threshold=[0.357, 1.145], observed=0.537
+       Persona ID: 112_tech_savvy_optimistic
+         energy: threshold=[0.129, 0.285], observed=0.140
+         risk: threshold=[0.273, 0.294], observed=0.280
+         effort: threshold=[0.050, 0.050], observed=0.050
+         value: threshold=[0.338, 0.411], observed=0.338
+         control: threshold=[0.357, 1.145], observed=0.591
+       Persona ID: 315_tech_savvy_optimistic
+         energy: threshold=[0.129, 0.285], observed=0.150
+         risk: threshold=[0.273, 0.294], observed=0.277
+         effort: threshold=[0.050, 0.050], observed=0.050
+         value: threshold=[0.338, 0.411], observed=0.338
+         control: threshold=[0.357, 1.145], observed=0.645
+     First Observed: 2026-01-04T05:46:53.584073
+     Last Observed: 2026-01-04T05:46:56.590401
+     Occurrence Count: 61
+
+[8] Step: Smart Credit against Mutual Funds
+     Step Index: 0
+     Persona Class: high_energy_high_risk_low_effort
+     Coherence Score: 0.977
+     Coherence Stable: True
+     Supporting Traces: 16
+     Accepted Count: 14
+     Rejected Count: 2
+     Cognitive Thresholds (accepted):
+       energy: [0.603, 0.712]
+       risk: [0.627, 0.653]
+       effort: [0.200, 0.200]
+       value: [0.482, 0.893]
+       control: [0.333, 0.741]
+     Factor Presence:
+       multi_factor: present_in_traces = 16
+     Counterexamples recorded: 2
+       Persona ID: 144_distrustful_arrival
+         energy: threshold=[0.603, 0.712], observed=0.638
+         risk: threshold=[0.627, 0.653], observed=0.648
+         effort: threshold=[0.200, 0.200], observed=0.200
+         value: threshold=[0.482, 0.893], observed=0.546
+         control: threshold=[0.333, 0.741], observed=0.462
+       Persona ID: 823_distrustful_arrival
+         energy: threshold=[0.603, 0.712], observed=0.616
+         risk: threshold=[0.627, 0.653], observed=0.647
+         effort: threshold=[0.200, 0.200], observed=0.200
+         value: threshold=[0.482, 0.893], observed=0.570
+         control: threshold=[0.333, 0.741], observed=0.534
+     First Observed: 2026-01-04T05:46:53.639851
+     Last Observed: 2026-01-04T05:46:56.578792
+     Occurrence Count: 16
+
+[9] Step: Smart Credit against Mutual Funds
+     Step Index: 0
+     Persona Class: high_energy_low_risk_low_effort
+     Coherence Score: 0.960
+     Coherence Stable: True
+     Supporting Traces: 27
+     Accepted Count: 25
+     Rejected Count: 2
+     Cognitive Thresholds (accepted):
+       energy: [0.600, 0.790]
+       risk: [0.277, 0.299]
+       effort: [0.050, 0.050]
+       value: [0.522, 0.984]
+       control: [0.483, 1.127]
+     Factor Presence:
+       multi_factor: present_in_traces = 27
+     Counterexamples recorded: 2
+       Persona ID: 125_tech_savvy_optimistic
+         energy: threshold=[0.600, 0.790], observed=0.630
+         risk: threshold=[0.277, 0.299], observed=0.291
+         effort: threshold=[0.050, 0.050], observed=0.050
+         value: threshold=[0.522, 0.984], observed=0.764
+         control: threshold=[0.483, 1.127], observed=0.507
+       Persona ID: 335_tech_savvy_optimistic
+         energy: threshold=[0.600, 0.790], observed=0.659
+         risk: threshold=[0.277, 0.299], observed=0.292
+         effort: threshold=[0.050, 0.050], observed=0.050
+         value: threshold=[0.522, 0.984], observed=0.579
+         control: threshold=[0.483, 1.127], observed=0.629
+     First Observed: 2026-01-04T05:46:53.641348
+     Last Observed: 2026-01-04T05:46:56.290225
+     Occurrence Count: 27
+
+[10] Step: Check Your Eligibility - Mobile Number
+     Step Index: 1
+     Persona Class: medium_energy_high_risk_medium_effort
+     Coherence Score: 0.867
+     Coherence Stable: True
+     Supporting Traces: 388
+     Accepted Count: 356
+     Rejected Count: 32
+     Cognitive Thresholds (accepted):
+       energy: [0.301, 0.599]
+       risk: [0.694, 1.509]
+       effort: [0.302, 0.552]
+       value: [1.019, 2.467]
+       control: [0.426, 1.432]
+     Factor Presence:
+       risk_spike: present_in_traces = 386
+       multi_factor: present_in_traces = 2
+     Counterexamples recorded: 5
+       Persona ID: 38_fresh_motivated
+         energy: threshold=[0.301, 0.599], observed=0.488
+         risk: threshold=[0.694, 1.509], observed=0.840
+         effort: threshold=[0.302, 0.552], observed=0.406
+         value: threshold=[1.019, 2.467], observed=1.350
+         control: threshold=[0.426, 1.432], observed=1.263
+       Persona ID: 125_browsing_casually
+         energy: threshold=[0.301, 0.599], observed=0.450
+         risk: threshold=[0.694, 1.509], observed=1.055
+         effort: threshold=[0.302, 0.552], observed=0.416
+         value: threshold=[1.019, 2.467], observed=1.513
+         control: threshold=[0.426, 1.432], observed=0.630
+       Persona ID: 128_tech_savvy_optimistic
+         energy: threshold=[0.301, 0.599], observed=0.362
+         risk: threshold=[0.694, 1.509], observed=0.867
+         effort: threshold=[0.302, 0.552], observed=0.350
+         value: threshold=[1.019, 2.467], observed=1.441
+         control: threshold=[0.426, 1.432], observed=0.952
+     First Observed: 2026-01-04T05:46:53.437335
+     Last Observed: 2026-01-04T05:46:56.599675
+     Occurrence Count: 388
+
+[11] Step: Check Your Eligibility - Mobile Number
+     Step Index: 1
+     Persona Class: low_energy_high_risk_medium_effort
+     Coherence Score: 0.892
+     Coherence Stable: True
+     Supporting Traces: 3621
+     Accepted Count: 3195
+     Rejected Count: 426
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.299]
+       risk: [0.614, 1.575]
+       effort: [0.302, 0.600]
+       value: [0.606, 1.733]
+       control: [0.396, 1.656]
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 3621
+       risk_spike: present_in_traces = 3599
+     Counterexamples recorded: 5
+       Persona ID: 1_price_sensitive
+         energy: threshold=[0.050, 0.299], observed=0.050
+         risk: threshold=[0.614, 1.575], observed=1.255
+         effort: threshold=[0.302, 0.600], observed=0.560
+         value: threshold=[0.606, 1.733], observed=0.844
+         control: threshold=[0.396, 1.656], observed=0.805
+       Persona ID: 6_distrustful_arrival
+         energy: threshold=[0.050, 0.299], observed=0.050
+         risk: threshold=[0.614, 1.575], observed=1.470
+         effort: threshold=[0.302, 0.600], observed=0.530
+         value: threshold=[0.606, 1.733], observed=1.170
+         control: threshold=[0.396, 1.656], observed=0.579
+       Persona ID: 6_urgent_need
+         energy: threshold=[0.050, 0.299], observed=0.090
+         risk: threshold=[0.614, 1.575], observed=1.171
+         effort: threshold=[0.302, 0.600], observed=0.430
+         value: threshold=[0.606, 1.733], observed=1.345
+         control: threshold=[0.396, 1.656], observed=0.744
+     First Observed: 2026-01-04T05:46:53.438050
+     Last Observed: 2026-01-04T05:46:56.604456
+     Occurrence Count: 3621
+
+[12] Step: Check Your Eligibility - Mobile Number
+     Step Index: 1
+     Persona Class: low_energy_high_risk_high_effort
+     Coherence Score: 0.820
+     Coherence Stable: True
+     Supporting Traces: 1400
+     Accepted Count: 1187
+     Rejected Count: 213
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.066]
+       risk: [0.694, 1.573]
+       effort: [0.602, 0.756]
+       value: [0.606, 1.360]
+       control: [0.396, 1.534]
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 1400
+       risk_spike: present_in_traces = 1399
+       effort_demand: present_in_traces = 251
+     Counterexamples recorded: 5
+       Persona ID: 5_tired_commuter
+         energy: threshold=[0.050, 0.066], observed=0.050
+         risk: threshold=[0.694, 1.573], observed=1.241
+         effort: threshold=[0.602, 0.756], observed=0.642
+         value: threshold=[0.606, 1.360], observed=0.961
+         control: threshold=[0.396, 1.534], observed=0.633
+       Persona ID: 6_tired_commuter
+         energy: threshold=[0.050, 0.066], observed=0.050
+         risk: threshold=[0.694, 1.573], observed=1.231
+         effort: threshold=[0.602, 0.756], observed=0.630
+         value: threshold=[0.606, 1.360], observed=1.170
+         control: threshold=[0.396, 1.534], observed=0.645
+       Persona ID: 15_distrustful_arrival
+         energy: threshold=[0.050, 0.066], observed=0.050
+         risk: threshold=[0.694, 1.573], observed=1.465
+         effort: threshold=[0.602, 0.756], observed=0.638
+         value: threshold=[0.606, 1.360], observed=0.877
+         control: threshold=[0.396, 1.534], observed=0.671
+     First Observed: 2026-01-04T05:46:53.442978
+     Last Observed: 2026-01-04T05:46:56.604787
+     Occurrence Count: 1400
+
+[13] Step: Check Your Eligibility - Mobile Number
+     Step Index: 1
+     Persona Class: high_energy_high_risk_medium_effort
+     Coherence Score: 0.828
+     Coherence Stable: True
+     Supporting Traces: 60
+     Accepted Count: 57
+     Rejected Count: 3
+     Cognitive Thresholds (accepted):
+       energy: [0.600, 0.790]
+       risk: [0.688, 1.411]
+       effort: [0.302, 0.446]
+       value: [1.291, 2.401]
+       control: [0.522, 1.432]
+     Factor Presence:
+       risk_spike: present_in_traces = 59
+       multi_factor: present_in_traces = 1
+     Counterexamples recorded: 3
+       Persona ID: 139_distrustful_arrival
+         energy: threshold=[0.600, 0.790], observed=0.717
+         effort: threshold=[0.302, 0.446], observed=0.356
+         value: threshold=[1.291, 2.401], observed=1.725
+       Persona ID: 369_distrustful_arrival
+         energy: threshold=[0.600, 0.790], observed=0.649
+         risk: threshold=[0.688, 1.411], observed=1.372
+         value: threshold=[1.291, 2.401], observed=1.523
+         control: threshold=[0.522, 1.432], observed=0.707
+       Persona ID: 739_urgent_need
+         energy: threshold=[0.600, 0.790], observed=0.652
+         risk: threshold=[0.688, 1.411], observed=0.980
+         effort: threshold=[0.302, 0.446], observed=0.334
+         value: threshold=[1.291, 2.401], observed=1.916
+         control: threshold=[0.522, 1.432], observed=1.048
+     First Observed: 2026-01-04T05:46:53.639540
+     Last Observed: 2026-01-04T05:46:56.579017
+     Occurrence Count: 60
+
+[14] Step: Check Limit - PAN and DOB
+     Step Index: 2
+     Persona Class: medium_energy_high_risk_medium_effort
+     Coherence Score: 0.860
+     Coherence Stable: True
+     Supporting Traces: 349
+     Accepted Count: 331
+     Rejected Count: 18
+     Cognitive Thresholds (accepted):
+       energy: [0.339, 0.599]
+       risk: [1.324, 2.176]
+       effort: [0.330, 0.600]
+       value: [3.000, 3.000]
+       control: [0.636, 1.962]
+     Factor Presence:
+       risk_spike: present_in_traces = 349
+     Counterexamples recorded: 5
+       Persona ID: 26_urgent_need
+         energy: threshold=[0.339, 0.599], observed=0.403
+         risk: threshold=[1.324, 2.176], observed=1.940
+         effort: threshold=[0.330, 0.600], observed=0.540
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.636, 1.962], observed=0.786
+       Persona ID: 30_fresh_motivated
+         energy: threshold=[0.339, 0.599], observed=0.475
+         risk: threshold=[1.324, 2.176], observed=1.550
+         effort: threshold=[0.330, 0.600], observed=0.540
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.636, 1.962], observed=1.805
+       Persona ID: 61_browsing_casually
+         energy: threshold=[0.339, 0.599], observed=0.530
+         risk: threshold=[1.324, 2.176], observed=1.564
+         effort: threshold=[0.330, 0.600], observed=0.480
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.636, 1.962], observed=1.414
+     First Observed: 2026-01-04T05:46:53.439930
+     Last Observed: 2026-01-04T05:46:56.599820
+     Occurrence Count: 349
+
+[15] Step: Check Limit - PAN and DOB
+     Step Index: 2
+     Persona Class: low_energy_high_risk_high_effort
+     Coherence Score: 0.835
+     Coherence Stable: True
+     Supporting Traces: 1645
+     Accepted Count: 1496
+     Rejected Count: 149
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.300]
+       risk: [1.186, 2.282]
+       effort: [0.610, 1.060]
+       value: [2.701, 3.000]
+       control: [0.606, 2.000]
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 1645
+       risk_spike: present_in_traces = 1645
+       effort_demand: present_in_traces = 1612
+     Counterexamples recorded: 5
+       Persona ID: 2_price_sensitive
+         energy: threshold=[0.050, 0.300], observed=0.142
+         risk: threshold=[1.186, 2.282], observed=2.028
+         effort: threshold=[0.610, 1.060], observed=0.960
+         value: threshold=[2.701, 3.000], observed=3.000
+         control: threshold=[0.606, 2.000], observed=1.095
+       Persona ID: 5_browsing_casually
+         energy: threshold=[0.050, 0.300], observed=0.236
+         risk: threshold=[1.186, 2.282], observed=1.811
+         effort: threshold=[0.610, 1.060], observed=0.770
+         value: threshold=[2.701, 3.000], observed=3.000
+         control: threshold=[0.606, 2.000], observed=0.984
+       Persona ID: 17_tech_savvy_optimistic
+         energy: threshold=[0.050, 0.300], observed=0.220
+         risk: threshold=[1.186, 2.282], observed=1.850
+         effort: threshold=[0.610, 1.060], observed=0.760
+         value: threshold=[2.701, 3.000], observed=3.000
+         control: threshold=[0.606, 2.000], observed=0.714
+     First Observed: 2026-01-04T05:46:53.442671
+     Last Observed: 2026-01-04T05:46:56.604928
+     Occurrence Count: 1645
+
+[16] Step: Check Limit - PAN and DOB
+     Step Index: 2
+     Persona Class: high_energy_high_risk_high_effort
+     Coherence Score: 0.818
+     Coherence Stable: True
+     Supporting Traces: 69
+     Accepted Count: 66
+     Rejected Count: 3
+     Cognitive Thresholds (accepted):
+       energy: [0.603, 0.790]
+       risk: [1.497, 2.212]
+       effort: [0.600, 0.720]
+       value: [3.000, 3.000]
+       control: [0.636, 1.816]
+     Factor Presence:
+       risk_spike: present_in_traces = 69
+       effort_demand: present_in_traces = 7
+     Counterexamples recorded: 3
+       Persona ID: 125_tired_commuter
+         energy: threshold=[0.603, 0.790], observed=0.630
+         risk: threshold=[1.497, 2.212], observed=1.816
+         effort: threshold=[0.600, 0.720], observed=0.660
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.636, 1.816], observed=0.867
+       Persona ID: 701_price_sensitive
+         energy: threshold=[0.603, 0.790], observed=0.735
+         risk: threshold=[1.497, 2.212], observed=1.846
+         effort: threshold=[0.600, 0.720], observed=0.690
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.636, 1.816], observed=1.308
+       Persona ID: 991_tired_commuter
+         energy: threshold=[0.603, 0.790], observed=0.675
+         risk: threshold=[1.497, 2.212], observed=1.589
+         effort: threshold=[0.600, 0.720], observed=0.610
+         value: threshold=[3.000, 3.000], observed=3.000
+     First Observed: 2026-01-04T05:46:53.465602
+     Last Observed: 2026-01-04T05:46:56.578013
+     Occurrence Count: 69
+
+[17] Step: Check Limit - PAN and DOB
+     Step Index: 2
+     Persona Class: high_energy_high_risk_medium_effort
+     Coherence Score: 0.878
+     Coherence Stable: True
+     Supporting Traces: 190
+     Accepted Count: 177
+     Rejected Count: 13
+     Cognitive Thresholds (accepted):
+       energy: [0.600, 0.790]
+       risk: [1.311, 2.160]
+       effort: [0.300, 0.600]
+       value: [3.000, 3.000]
+       control: [0.756, 1.962]
+     Factor Presence:
+       risk_spike: present_in_traces = 190
+     Counterexamples recorded: 5
+       Persona ID: 132_browsing_casually
+         energy: threshold=[0.600, 0.790], observed=0.650
+         risk: threshold=[1.311, 2.160], observed=1.633
+         effort: threshold=[0.300, 0.600], observed=0.570
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.756, 1.962], observed=1.204
+       Persona ID: 274_tech_savvy_optimistic
+         energy: threshold=[0.600, 0.790], observed=0.640
+         risk: threshold=[1.311, 2.160], observed=1.609
+         effort: threshold=[0.300, 0.600], observed=0.440
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.756, 1.962], observed=1.062
+       Persona ID: 369_urgent_need
+         energy: threshold=[0.600, 0.790], observed=0.755
+         risk: threshold=[1.311, 2.160], observed=1.691
+         effort: threshold=[0.300, 0.600], observed=0.520
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.756, 1.962], observed=1.302
+     First Observed: 2026-01-04T05:46:53.466484
+     Last Observed: 2026-01-04T05:46:56.581549
+     Occurrence Count: 190
+
+--------------------------------------------------------------------------------
+PRECEDENTS — ACCEPTANCE
+--------------------------------------------------------------------------------
+
+Assertions recorded: 24
+
+[1] Step: Check Your Eligibility - Mobile Number
+     Persona Class: low_energy_high_risk_medium_effort
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 3174
+       risk_spike: present_in_traces = 3174
+     Outcome: CONTINUE
+     Occurrence Count: 3174
+     First Observed: 2026-01-04T05:46:53.438050
+     Last Observed: 2026-01-04T05:46:56.602562
+     Time Span (seconds): 3
+     Stable: True
+
+[2] Step: Smart Credit against Mutual Funds
+     Persona Class: low_energy_medium_risk_low_effort
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 2903
+     Outcome: CONTINUE
+     Occurrence Count: 2903
+     First Observed: 2026-01-04T05:46:53.440189
+     Last Observed: 2026-01-04T05:46:56.604643
+     Time Span (seconds): 3
+     Stable: True
+
+[3] Step: Smart Credit against Mutual Funds
+     Persona Class: medium_energy_medium_risk_low_effort
+     Factor Presence:
+       multi_factor: present_in_traces = 1666
+     Outcome: CONTINUE
+     Occurrence Count: 1666
+     First Observed: 2026-01-04T05:46:53.437159
+     Last Observed: 2026-01-04T05:46:56.599533
+     Time Span (seconds): 3
+     Stable: True
+
+[4] Step: Check Limit - PAN and DOB
+     Persona Class: medium_energy_high_risk_high_effort
+     Factor Presence:
+       risk_spike: present_in_traces = 1595
+       effort_demand: present_in_traces = 1595
+     Outcome: CONTINUE
+     Occurrence Count: 1595
+     First Observed: 2026-01-04T05:46:53.438189
+     Last Observed: 2026-01-04T05:46:56.602701
+     Time Span (seconds): 3
+     Stable: True
+
+[5] Step: Check Limit - PAN and DOB
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 1466
+       risk_spike: present_in_traces = 1466
+       effort_demand: present_in_traces = 1466
+     Outcome: CONTINUE
+     Occurrence Count: 1466
+     First Observed: 2026-01-04T05:46:53.442671
+     Last Observed: 2026-01-04T05:46:56.604928
+     Time Span (seconds): 3
+     Stable: True
+
+[6] Step: Check Your Eligibility - Mobile Number
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 969
+       risk_spike: present_in_traces = 969
+     Outcome: CONTINUE
+     Occurrence Count: 969
+     First Observed: 2026-01-04T05:46:53.443426
+     Last Observed: 2026-01-04T05:46:56.604787
+     Time Span (seconds): 3
+     Stable: True
+
+[7] Step: Check Limit - PAN and DOB
+     Persona Class: medium_energy_high_risk_high_effort
+     Factor Presence:
+       risk_spike: present_in_traces = 808
+     Outcome: CONTINUE
+     Occurrence Count: 808
+     First Observed: 2026-01-04T05:46:53.437480
+     Last Observed: 2026-01-04T05:46:56.593940
+     Time Span (seconds): 3
+     Stable: True
+
+[8] Step: Smart Credit against Mutual Funds
+     Persona Class: low_energy_high_risk_low_effort
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 475
+     Outcome: CONTINUE
+     Occurrence Count: 475
+     First Observed: 2026-01-04T05:46:53.443290
+     Last Observed: 2026-01-04T05:46:56.603067
+     Time Span (seconds): 3
+     Stable: True
+
+[9] Step: Check Your Eligibility - Mobile Number
+     Persona Class: medium_energy_high_risk_medium_effort
+     Factor Presence:
+       risk_spike: present_in_traces = 354
+     Outcome: CONTINUE
+     Occurrence Count: 354
+     First Observed: 2026-01-04T05:46:53.437335
+     Last Observed: 2026-01-04T05:46:56.599675
+     Time Span (seconds): 3
+     Stable: True
+
+[10] Step: Check Limit - PAN and DOB
+     Persona Class: medium_energy_high_risk_medium_effort
+     Factor Presence:
+       risk_spike: present_in_traces = 331
+     Outcome: CONTINUE
+     Occurrence Count: 331
+     First Observed: 2026-01-04T05:46:53.439930
+     Last Observed: 2026-01-04T05:46:56.599820
+     Time Span (seconds): 3
+     Stable: True
+
+[11] Step: Smart Credit against Mutual Funds
+     Persona Class: medium_energy_high_risk_low_effort
+     Factor Presence:
+       multi_factor: present_in_traces = 302
+     Outcome: CONTINUE
+     Occurrence Count: 302
+     First Observed: 2026-01-04T05:46:53.437901
+     Last Observed: 2026-01-04T05:46:56.597958
+     Time Span (seconds): 3
+     Stable: True
+
+[12] Step: Check Your Eligibility - Mobile Number
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 217
+       risk_spike: present_in_traces = 217
+       effort_demand: present_in_traces = 217
+     Outcome: CONTINUE
+     Occurrence Count: 217
+     First Observed: 2026-01-04T05:46:53.442978
+     Last Observed: 2026-01-04T05:46:56.595316
+     Time Span (seconds): 3
+     Stable: True
+
+[13] Step: Check Limit - PAN and DOB
+     Persona Class: high_energy_high_risk_medium_effort
+     Factor Presence:
+       risk_spike: present_in_traces = 177
+     Outcome: CONTINUE
+     Occurrence Count: 177
+     First Observed: 2026-01-04T05:46:53.466484
+     Last Observed: 2026-01-04T05:46:56.580967
+     Time Span (seconds): 3
+     Stable: True
+
+[14] Step: Smart Credit against Mutual Funds
+     Persona Class: high_energy_medium_risk_low_effort
+     Factor Presence:
+       multi_factor: present_in_traces = 87
+     Outcome: CONTINUE
+     Occurrence Count: 87
+     First Observed: 2026-01-04T05:46:53.465773
+     Last Observed: 2026-01-04T05:46:56.581232
+     Time Span (seconds): 3
+     Stable: True
+
+[15] Step: Check Limit - PAN and DOB
+     Persona Class: high_energy_high_risk_high_effort
+     Factor Presence:
+       risk_spike: present_in_traces = 59
+     Outcome: CONTINUE
+     Occurrence Count: 59
+     First Observed: 2026-01-04T05:46:53.465602
+     Last Observed: 2026-01-04T05:46:56.380060
+     Time Span (seconds): 2
+     Stable: True
+
+[16] Step: Check Your Eligibility - Mobile Number
+     Persona Class: high_energy_high_risk_medium_effort
+     Factor Presence:
+       risk_spike: present_in_traces = 56
+     Outcome: CONTINUE
+     Occurrence Count: 56
+     First Observed: 2026-01-04T05:46:53.639540
+     Last Observed: 2026-01-04T05:46:56.579017
+     Time Span (seconds): 2
+     Stable: True
+
+[17] Step: Smart Credit against Mutual Funds
+     Persona Class: low_energy_low_risk_low_effort
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 52
+     Outcome: CONTINUE
+     Occurrence Count: 52
+     First Observed: 2026-01-04T05:46:53.584073
+     Last Observed: 2026-01-04T05:46:56.590401
+     Time Span (seconds): 3
+     Stable: True
+
+[18] Step: Check Your Eligibility - Mobile Number
+     Persona Class: high_energy_high_risk_low_effort
+     Factor Presence:
+       risk_spike: present_in_traces = 48
+     Outcome: CONTINUE
+     Occurrence Count: 48
+     First Observed: 2026-01-04T05:46:53.617996
+     Last Observed: 2026-01-04T05:46:56.580109
+     Time Span (seconds): 2
+     Stable: True
+
+[19] Step: Smart Credit against Mutual Funds
+     Persona Class: medium_energy_low_risk_low_effort
+     Factor Presence:
+       multi_factor: present_in_traces = 39
+     Outcome: CONTINUE
+     Occurrence Count: 39
+     First Observed: 2026-01-04T05:46:53.530001
+     Last Observed: 2026-01-04T05:46:56.543247
+     Time Span (seconds): 3
+     Stable: True
+
+[20] Step: Check Limit - PAN and DOB
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 30
+       risk_spike: present_in_traces = 30
+     Outcome: CONTINUE
+     Occurrence Count: 30
+     First Observed: 2026-01-04T05:46:53.527794
+     Last Observed: 2026-01-04T05:46:56.468028
+     Time Span (seconds): 2
+     Stable: True
+
+[21] Step: Check Your Eligibility - Mobile Number
+     Persona Class: medium_energy_high_risk_low_effort
+     Factor Presence:
+       risk_spike: present_in_traces = 26
+     Outcome: CONTINUE
+     Occurrence Count: 26
+     First Observed: 2026-01-04T05:46:53.553768
+     Last Observed: 2026-01-04T05:46:56.543395
+     Time Span (seconds): 2
+     Stable: True
+
+[22] Step: Smart Credit against Mutual Funds
+     Persona Class: high_energy_low_risk_low_effort
+     Factor Presence:
+       multi_factor: present_in_traces = 25
+     Outcome: CONTINUE
+     Occurrence Count: 25
+     First Observed: 2026-01-04T05:46:53.641348
+     Last Observed: 2026-01-04T05:46:56.290225
+     Time Span (seconds): 2
+     Stable: True
+
+[23] Step: Check Your Eligibility - Mobile Number
+     Persona Class: low_energy_high_risk_medium_effort
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 21
+     Outcome: CONTINUE
+     Occurrence Count: 21
+     First Observed: 2026-01-04T05:46:54.022529
+     Last Observed: 2026-01-04T05:46:56.160923
+     Time Span (seconds): 2
+     Stable: True
+
+[24] Step: Smart Credit against Mutual Funds
+     Persona Class: high_energy_high_risk_low_effort
+     Factor Presence:
+       multi_factor: present_in_traces = 14
+     Outcome: CONTINUE
+     Occurrence Count: 14
+     First Observed: 2026-01-04T05:46:53.639851
+     Last Observed: 2026-01-04T05:46:56.578792
+     Time Span (seconds): 2
+     Stable: True
+
+--------------------------------------------------------------------------------
+PRECEDENTS — REJECTION
+--------------------------------------------------------------------------------
+
+Assertions recorded: 14
+
+[1] Step: Smart Credit against Mutual Funds
+     Persona Class: low_energy_medium_risk_low_effort
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 778
+     Outcome: DROP
+     Occurrence Count: 778
+     First Observed: 2026-01-04T05:46:53.437700
+     Last Observed: 2026-01-04T05:46:56.605106
+     Time Span (seconds): 3
+     Stable: True
+
+[2] Step: Check Your Eligibility - Mobile Number
+     Persona Class: low_energy_high_risk_medium_effort
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 425
+       risk_spike: present_in_traces = 425
+     Outcome: DROP
+     Occurrence Count: 425
+     First Observed: 2026-01-04T05:46:53.441698
+     Last Observed: 2026-01-04T05:46:56.604456
+     Time Span (seconds): 3
+     Stable: True
+
+[3] Step: Smart Credit against Mutual Funds
+     Persona Class: medium_energy_medium_risk_low_effort
+     Factor Presence:
+       multi_factor: present_in_traces = 415
+     Outcome: DROP
+     Occurrence Count: 415
+     First Observed: 2026-01-04T05:46:53.454699
+     Last Observed: 2026-01-04T05:46:56.598890
+     Time Span (seconds): 3
+     Stable: True
+
+[4] Step: Check Your Eligibility - Mobile Number
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 179
+       risk_spike: present_in_traces = 179
+     Outcome: DROP
+     Occurrence Count: 179
+     First Observed: 2026-01-04T05:46:53.451221
+     Last Observed: 2026-01-04T05:46:56.600631
+     Time Span (seconds): 3
+     Stable: True
+
+[5] Step: Check Limit - PAN and DOB
+     Persona Class: medium_energy_high_risk_high_effort
+     Factor Presence:
+       risk_spike: present_in_traces = 153
+       effort_demand: present_in_traces = 153
+     Outcome: DROP
+     Occurrence Count: 153
+     First Observed: 2026-01-04T05:46:53.458465
+     Last Observed: 2026-01-04T05:46:56.489188
+     Time Span (seconds): 3
+     Stable: True
+
+[6] Step: Check Limit - PAN and DOB
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 146
+       risk_spike: present_in_traces = 146
+       effort_demand: present_in_traces = 146
+     Outcome: DROP
+     Occurrence Count: 146
+     First Observed: 2026-01-04T05:46:53.445042
+     Last Observed: 2026-01-04T05:46:56.601091
+     Time Span (seconds): 3
+     Stable: True
+
+[7] Step: Smart Credit against Mutual Funds
+     Persona Class: low_energy_high_risk_low_effort
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 132
+     Outcome: DROP
+     Occurrence Count: 132
+     First Observed: 2026-01-04T05:46:53.440813
+     Last Observed: 2026-01-04T05:46:56.595683
+     Time Span (seconds): 3
+     Stable: True
+
+[8] Step: Smart Credit against Mutual Funds
+     Persona Class: medium_energy_high_risk_low_effort
+     Factor Presence:
+       multi_factor: present_in_traces = 75
+     Outcome: DROP
+     Occurrence Count: 75
+     First Observed: 2026-01-04T05:46:53.468200
+     Last Observed: 2026-01-04T05:46:56.526327
+     Time Span (seconds): 3
+     Stable: True
+
+[9] Step: Check Limit - PAN and DOB
+     Persona Class: medium_energy_high_risk_high_effort
+     Factor Presence:
+       risk_spike: present_in_traces = 67
+     Outcome: DROP
+     Occurrence Count: 67
+     First Observed: 2026-01-04T05:46:53.439076
+     Last Observed: 2026-01-04T05:46:56.568481
+     Time Span (seconds): 3
+     Stable: True
+
+[10] Step: Check Your Eligibility - Mobile Number
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       cognitive_fatigue: present_in_traces = 34
+       risk_spike: present_in_traces = 34
+       effort_demand: present_in_traces = 34
+     Outcome: DROP
+     Occurrence Count: 34
+     First Observed: 2026-01-04T05:46:53.557282
+     Last Observed: 2026-01-04T05:46:56.196529
+     Time Span (seconds): 2
+     Stable: True
+
+[11] Step: Check Your Eligibility - Mobile Number
+     Persona Class: medium_energy_high_risk_medium_effort
+     Factor Presence:
+       risk_spike: present_in_traces = 32
+     Outcome: DROP
+     Occurrence Count: 32
+     First Observed: 2026-01-04T05:46:53.540390
+     Last Observed: 2026-01-04T05:46:56.597594
+     Time Span (seconds): 3
+     Stable: True
+
+[12] Step: Check Limit - PAN and DOB
+     Persona Class: medium_energy_high_risk_medium_effort
+     Factor Presence:
+       risk_spike: present_in_traces = 18
+     Outcome: DROP
+     Occurrence Count: 18
+     First Observed: 2026-01-04T05:46:53.509450
+     Last Observed: 2026-01-04T05:46:56.100103
+     Time Span (seconds): 2
+     Stable: True
+
+[13] Step: Smart Credit against Mutual Funds
+     Persona Class: high_energy_medium_risk_low_effort
+     Factor Presence:
+       multi_factor: present_in_traces = 15
+     Outcome: DROP
+     Occurrence Count: 15
+     First Observed: 2026-01-04T05:46:53.465000
+     Last Observed: 2026-01-04T05:46:56.577462
+     Time Span (seconds): 3
+     Stable: True
+
+[14] Step: Check Limit - PAN and DOB
+     Persona Class: high_energy_high_risk_medium_effort
+     Factor Presence:
+       risk_spike: present_in_traces = 13
+     Outcome: DROP
+     Occurrence Count: 13
+     First Observed: 2026-01-04T05:46:53.928720
+     Last Observed: 2026-01-04T05:46:56.581549
+     Time Span (seconds): 2
+     Stable: True
+
+--------------------------------------------------------------------------------
+DECISION TERMINATION POINTS
+--------------------------------------------------------------------------------
+
+Assertions recorded: 3
+
+Step: Smart Credit against Mutual Funds
+     Step Index: 0
+     Has Observed Rejections: True
+     Rejection Decision Count: 1437
+     First Rejection: 2026-01-04T05:46:53.437700
+     Last Rejection: 2026-01-04T05:46:56.605106
+
+Step: Check Your Eligibility - Mobile Number
+     Step Index: 1
+     Has Observed Rejections: True
+     Rejection Decision Count: 683
+     First Rejection: 2026-01-04T05:46:53.441698
+     Last Rejection: 2026-01-04T05:46:56.604456
+
+Step: Check Limit - PAN and DOB
+     Step Index: 2
+     Has Observed Rejections: True
+     Rejection Decision Count: 403
+     First Rejection: 2026-01-04T05:46:53.439076
+     Last Rejection: 2026-01-04T05:46:56.601091
+
+--------------------------------------------------------------------------------
+NON-BINDING OBSERVATIONS (EXCLUDED)
+--------------------------------------------------------------------------------
+
+Patterns recorded: 7
+
+These patterns do not meet stability requirements:
+- Pattern Stable == True
+- Supporting Traces >= MIN_BOUNDARY_SUPPORT
+
+[1] Step: Check Your Eligibility - Mobile Number
+     Persona Class: medium_energy_high_risk_low_effort
+     Trace Count: 28
+     Coherence Stable: False
+     Meets Support Threshold: True
+
+[2] Step: Check Your Eligibility - Mobile Number
+     Persona Class: high_energy_high_risk_low_effort
+     Trace Count: 55
+     Coherence Stable: False
+     Meets Support Threshold: True
+
+[3] Step: Check Your Eligibility - Mobile Number
+     Persona Class: low_energy_medium_risk_medium_effort
+     Trace Count: 8
+     Coherence Stable: True
+     Meets Support Threshold: False
+
+[4] Step: Check Your Eligibility - Mobile Number
+     Persona Class: low_energy_high_risk_low_effort
+     Trace Count: 3
+     Coherence Stable: True
+     Meets Support Threshold: False
+
+[5] Step: Check Limit - PAN and DOB
+     Persona Class: medium_energy_high_risk_high_effort
+     Trace Count: 2623
+     Coherence Stable: False
+     Meets Support Threshold: True
+
+[6] Step: Check Limit - PAN and DOB
+     Persona Class: high_energy_high_risk_low_effort
+     Trace Count: 3
+     Coherence Stable: True
+     Meets Support Threshold: False
+
+[7] Step: Check Limit - PAN and DOB
+     Persona Class: low_energy_high_risk_medium_effort
+     Trace Count: 1
+     Coherence Stable: True
+     Meets Support Threshold: False

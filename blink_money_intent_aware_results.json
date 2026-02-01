@@ -1,0 +1,45 @@
+{
+  "simulation_type": "intent_aware_behavioral_engine",
+  "product": "Blink Money",
+  "timestamp": "2025-12-30T21:09:30.256005",
+  "total_personas": 1000,
+  "total_trajectories": 7000,
+  "overall_completion_rate": 0.6395714285714286,
+  "completion_rate_ci_lower": 0.620317649131022,
+  "completion_rate_ci_upper": 0.6494252080118352,
+  "completion_rate_std_error": 0.007425397673676813,
+  "completion_rate_range": "62.0% - 64.9%",
+  "confidence_level": 0.95,
+  "total_intent_mismatches": 0,
+  "fixed_intent": {
+    "intent_id": "compare_credit_cards",
+    "description": "User wants to compare credit card options before choosing",
+    "primary_goal": "Get a credit card recommendation based on comparison",
+    "tolerance_for_effort": 0.6,
+    "tolerance_for_risk": 0.5,
+    "expected_value_type": "comparison",
+    "commitment_threshold": 0.4,
+    "expected_reward": "Clear credit card recommendation with comparison",
+    "acceptable_friction": 0.5,
+    "typical_exit_triggers": [
+      "Asked for too much personal info before showing options",
+      "Forced to commit before seeing recommendation",
+      "No comparison view available",
+      "High friction data collection steps"
+    ],
+    "expected_completion_behavior": "Compares options, sees recommendation, then decides"
+  },
+  "intent_profile": {
+    "compare_credit_cards": 1.0
+  },
+  "failure_reasons": {
+    "Loss aversion": 1954,
+    "System 2 fatigue": 569
+  },
+  "exit_steps": {
+    "Completed": 4477,
+    "Smart Credit against Mutual Funds": 1437,
+    "Check Limit - PAN and DOB": 403,
+    "Check Your Eligibility - Mobile Number": 683
+  }
+}

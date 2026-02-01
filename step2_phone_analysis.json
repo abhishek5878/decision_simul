@@ -1,0 +1,18 @@
+{
+  "phone_number_field": {
+    "exists": false,
+    "label": "",
+    "placeholder": "",
+    "position": "",
+    "is_primary_action": false
+  },
+  "mutual_fund_field": {
+    "exists": false,
+    "label": "",
+    "position": ""
+  },
+  "primary_action_flow": "",
+  "all_input_fields": [],
+  "button_text": "",
+  "layout_description": "The layout contains content about mutual funds and user eligibility, but there are no visible input fields for phone numbers or mutual fund amounts."
+}

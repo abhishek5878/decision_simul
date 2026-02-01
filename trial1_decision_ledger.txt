@@ -1,0 +1,2207 @@
+================================================================================
+DECISION LEDGER
+================================================================================
+
+Generated: 2026-01-03T20:06:39.084510
+Sequences recorded: 7000
+Steps recorded: 5
+
+This output is a decision ledger, not an analysis or recommendation.
+All assertions are machine-verifiable facts from DecisionTrace objects.
+
+--------------------------------------------------------------------------------
+DECISION BOUNDARIES
+--------------------------------------------------------------------------------
+
+Assertions recorded: 31
+
+[1] Step: Landing Page - AI Tool Value Proposition
+     Step Index: 0
+     Persona Class: medium_energy_low_risk_low_effort
+     Coherence Score: 0.962
+     Coherence Stable: True
+     Supporting Traces: 943
+     Accepted Count: 767
+     Rejected Count: 176
+     Cognitive Thresholds (accepted):
+       energy: [0.300, 0.599]
+       risk: [0.196, 0.277]
+       effort: [0.050, 0.200]
+       value: [0.207, 1.047]
+       control: [0.294, 1.048]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 943
+     Counterexamples recorded: 5
+       Persona ID: 9_tech_savvy_optimistic
+         energy: threshold=[0.300, 0.599], observed=0.330
+         risk: threshold=[0.196, 0.277], observed=0.222
+         effort: threshold=[0.050, 0.200], observed=0.050
+         value: threshold=[0.207, 1.047], observed=0.340
+         control: threshold=[0.294, 1.048], observed=0.480
+       Persona ID: 35_fresh_motivated
+         energy: threshold=[0.300, 0.599], observed=0.337
+         risk: threshold=[0.196, 0.277], observed=0.274
+         effort: threshold=[0.050, 0.200], observed=0.100
+         value: threshold=[0.207, 1.047], observed=0.402
+         control: threshold=[0.294, 1.048], observed=0.399
+       Persona ID: 36_fresh_motivated
+         energy: threshold=[0.300, 0.599], observed=0.410
+         risk: threshold=[0.196, 0.277], observed=0.273
+         effort: threshold=[0.050, 0.200], observed=0.100
+         value: threshold=[0.207, 1.047], observed=0.386
+         control: threshold=[0.294, 1.048], observed=0.914
+     First Observed: 2026-01-03T20:05:22.488739
+     Last Observed: 2026-01-03T20:05:27.246130
+     Occurrence Count: 943
+
+[2] Step: Landing Page - AI Tool Value Proposition
+     Step Index: 0
+     Persona Class: low_energy_medium_risk_low_effort
+     Coherence Score: 0.963
+     Coherence Stable: True
+     Supporting Traces: 3488
+     Accepted Count: 2744
+     Rejected Count: 744
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.300]
+       risk: [0.340, 0.577]
+       effort: [0.100, 0.300]
+       value: [0.240, 0.612]
+       control: [0.228, 1.072]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 3488
+       cognitive_fatigue: present_in_traces = 3488
+     Counterexamples recorded: 5
+       Persona ID: 0_tired_commuter
+         energy: threshold=[0.050, 0.300], observed=0.201
+         risk: threshold=[0.340, 0.577], observed=0.373
+         effort: threshold=[0.100, 0.300], observed=0.300
+         value: threshold=[0.240, 0.612], observed=0.355
+         control: threshold=[0.228, 1.072], observed=0.681
+       Persona ID: 1_tired_commuter
+         energy: threshold=[0.050, 0.300], observed=0.050
+         risk: threshold=[0.340, 0.577], observed=0.372
+         effort: threshold=[0.100, 0.300], observed=0.300
+         value: threshold=[0.240, 0.612], observed=0.305
+         control: threshold=[0.228, 1.072], observed=0.525
+       Persona ID: 1_distrustful_arrival
+         energy: threshold=[0.050, 0.300], observed=0.146
+         risk: threshold=[0.340, 0.577], observed=0.572
+         effort: threshold=[0.100, 0.300], observed=0.200
+         value: threshold=[0.240, 0.612], observed=0.305
+         control: threshold=[0.228, 1.072], observed=0.427
+     First Observed: 2026-01-03T20:05:22.490980
+     Last Observed: 2026-01-03T20:05:27.252241
+     Occurrence Count: 3488
+
+[3] Step: Landing Page - AI Tool Value Proposition
+     Step Index: 0
+     Persona Class: medium_energy_medium_risk_low_effort
+     Coherence Score: 0.948
+     Coherence Stable: True
+     Supporting Traces: 503
+     Accepted Count: 416
+     Rejected Count: 87
+     Cognitive Thresholds (accepted):
+       energy: [0.300, 0.591]
+       risk: [0.340, 0.577]
+       effort: [0.100, 0.300]
+       value: [0.240, 1.152]
+       control: [0.231, 1.128]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 503
+     Counterexamples recorded: 5
+       Persona ID: 21_distrustful_arrival
+         energy: threshold=[0.300, 0.591], observed=0.316
+         risk: threshold=[0.340, 0.577], observed=0.577
+         effort: threshold=[0.100, 0.300], observed=0.200
+         value: threshold=[0.240, 1.152], observed=0.307
+         control: threshold=[0.231, 1.128], observed=0.306
+       Persona ID: 37_price_sensitive
+         energy: threshold=[0.300, 0.591], observed=0.381
+         risk: threshold=[0.340, 0.577], observed=0.472
+         effort: threshold=[0.100, 0.300], observed=0.200
+         value: threshold=[0.240, 1.152], observed=0.289
+         control: threshold=[0.231, 1.128], observed=0.585
+       Persona ID: 38_urgent_need
+         energy: threshold=[0.300, 0.591], observed=0.380
+         risk: threshold=[0.340, 0.577], observed=0.375
+         effort: threshold=[0.100, 0.300], observed=0.100
+         value: threshold=[0.240, 1.152], observed=0.453
+         control: threshold=[0.231, 1.128], observed=0.960
+     First Observed: 2026-01-03T20:05:22.491151
+     Last Observed: 2026-01-03T20:05:27.245381
+     Occurrence Count: 503
+
+[4] Step: Landing Page - AI Tool Value Proposition
+     Step Index: 0
+     Persona Class: low_energy_low_risk_low_effort
+     Coherence Score: 0.967
+     Coherence Stable: True
+     Supporting Traces: 2005
+     Accepted Count: 1584
+     Rejected Count: 421
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.300]
+       risk: [0.198, 0.277]
+       effort: [0.050, 0.200]
+       value: [0.207, 0.512]
+       control: [0.288, 1.072]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 2005
+       cognitive_fatigue: present_in_traces = 2005
+     Counterexamples recorded: 5
+       Persona ID: 1_browsing_casually
+         energy: threshold=[0.050, 0.300], observed=0.137
+         risk: threshold=[0.198, 0.277], observed=0.272
+         effort: threshold=[0.050, 0.200], observed=0.200
+         value: threshold=[0.207, 0.512], observed=0.207
+         control: threshold=[0.288, 1.072], observed=0.574
+       Persona ID: 3_browsing_casually
+         energy: threshold=[0.050, 0.300], observed=0.147
+         risk: threshold=[0.198, 0.277], observed=0.276
+         effort: threshold=[0.050, 0.200], observed=0.200
+         value: threshold=[0.207, 0.512], observed=0.207
+         control: threshold=[0.288, 1.072], observed=0.622
+       Persona ID: 4_tech_savvy_optimistic
+         energy: threshold=[0.050, 0.300], observed=0.228
+         risk: threshold=[0.198, 0.277], observed=0.227
+         effort: threshold=[0.050, 0.200], observed=0.050
+         value: threshold=[0.207, 0.512], observed=0.338
+         control: threshold=[0.288, 1.072], observed=0.408
+     First Observed: 2026-01-03T20:05:22.494440
+     Last Observed: 2026-01-03T20:05:27.253016
+     Occurrence Count: 2005
+
+[5] Step: Landing Page - AI Tool Value Proposition
+     Step Index: 0
+     Persona Class: high_energy_low_risk_low_effort
+     Coherence Score: 0.952
+     Coherence Stable: True
+     Supporting Traces: 52
+     Accepted Count: 45
+     Rejected Count: 7
+     Cognitive Thresholds (accepted):
+       energy: [0.600, 0.772]
+       risk: [0.202, 0.268]
+       effort: [0.050, 0.200]
+       value: [0.350, 0.978]
+       control: [0.426, 1.128]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 52
+     Counterexamples recorded: 5
+       Persona ID: 10_fresh_motivated
+         energy: threshold=[0.600, 0.772], observed=0.614
+         risk: threshold=[0.202, 0.268], observed=0.267
+         effort: threshold=[0.050, 0.200], observed=0.100
+         value: threshold=[0.350, 0.978], observed=0.440
+         control: threshold=[0.426, 1.128], observed=0.471
+       Persona ID: 10_tech_savvy_optimistic
+         energy: threshold=[0.600, 0.772], observed=0.637
+         risk: threshold=[0.202, 0.268], observed=0.217
+         effort: threshold=[0.050, 0.200], observed=0.050
+         value: threshold=[0.350, 0.978], observed=0.405
+         control: threshold=[0.426, 1.128], observed=0.504
+       Persona ID: 75_browsing_casually
+         energy: threshold=[0.600, 0.772], observed=0.615
+         risk: threshold=[0.202, 0.268], observed=0.252
+         effort: threshold=[0.050, 0.200], observed=0.200
+         value: threshold=[0.350, 0.978], observed=0.526
+         control: threshold=[0.426, 1.128], observed=0.844
+     First Observed: 2026-01-03T20:05:22.528061
+     Last Observed: 2026-01-03T20:05:27.221829
+     Occurrence Count: 52
+
+[6] Step: Sign Up / Email Entry
+     Step Index: 1
+     Persona Class: medium_energy_medium_risk_low_effort
+     Coherence Score: 0.931
+     Coherence Stable: True
+     Supporting Traces: 677
+     Accepted Count: 614
+     Rejected Count: 63
+     Cognitive Thresholds (accepted):
+       energy: [0.302, 0.598]
+       risk: [0.415, 0.599]
+       effort: [0.102, 0.298]
+       value: [0.430, 1.963]
+       control: [0.441, 1.468]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 677
+     Counterexamples recorded: 5
+       Persona ID: 9_fresh_motivated
+         energy: threshold=[0.302, 0.598], observed=0.333
+         risk: threshold=[0.415, 0.599], observed=0.531
+         effort: threshold=[0.102, 0.298], observed=0.198
+         value: threshold=[0.430, 1.963], observed=0.677
+         control: threshold=[0.441, 1.468], observed=0.630
+       Persona ID: 10_browsing_casually
+         energy: threshold=[0.302, 0.598], observed=0.529
+         risk: threshold=[0.415, 0.599], observed=0.517
+         effort: threshold=[0.102, 0.298], observed=0.282
+         value: threshold=[0.430, 1.963], observed=0.569
+         control: threshold=[0.441, 1.468], observed=0.618
+       Persona ID: 28_fresh_motivated
+         energy: threshold=[0.302, 0.598], observed=0.343
+         risk: threshold=[0.415, 0.599], observed=0.543
+         effort: threshold=[0.102, 0.298], observed=0.222
+         value: threshold=[0.430, 1.963], observed=0.748
+         control: threshold=[0.441, 1.468], observed=0.525
+     First Observed: 2026-01-03T20:05:22.488993
+     Last Observed: 2026-01-03T20:05:27.246273
+     Occurrence Count: 677
+
+[7] Step: Sign Up / Email Entry
+     Step Index: 1
+     Persona Class: medium_energy_high_risk_medium_effort
+     Coherence Score: 0.745
+     Coherence Stable: True
+     Supporting Traces: 118
+     Accepted Count: 97
+     Rejected Count: 21
+     Cognitive Thresholds (accepted):
+       energy: [0.301, 0.558]
+       risk: [0.601, 0.843]
+       effort: [0.300, 0.398]
+       value: [0.523, 1.305]
+       control: [0.393, 1.182]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 118
+       risk_spike: present_in_traces = 87
+     Counterexamples recorded: 5
+       Persona ID: 51_distrustful_arrival
+         energy: threshold=[0.301, 0.558], observed=0.362
+         risk: threshold=[0.601, 0.843], observed=0.825
+         effort: threshold=[0.300, 0.398], observed=0.312
+         value: threshold=[0.523, 1.305], observed=0.696
+         control: threshold=[0.393, 1.182], observed=0.670
+       Persona ID: 69_price_sensitive
+         energy: threshold=[0.301, 0.558], observed=0.381
+         risk: threshold=[0.601, 0.843], observed=0.737
+         effort: threshold=[0.300, 0.398], observed=0.302
+         value: threshold=[0.523, 1.305], observed=0.602
+         control: threshold=[0.393, 1.182], observed=1.023
+       Persona ID: 134_distrustful_arrival
+         energy: threshold=[0.301, 0.558], observed=0.390
+         risk: threshold=[0.601, 0.843], observed=0.837
+         effort: threshold=[0.300, 0.398], observed=0.306
+         value: threshold=[0.523, 1.305], observed=0.696
+         control: threshold=[0.393, 1.182], observed=0.637
+     First Observed: 2026-01-03T20:05:22.491281
+     Last Observed: 2026-01-03T20:05:27.245507
+     Occurrence Count: 118
+
+[8] Step: Sign Up / Email Entry
+     Step Index: 1
+     Persona Class: medium_energy_medium_risk_medium_effort
+     Coherence Score: 0.917
+     Coherence Stable: True
+     Supporting Traces: 41
+     Accepted Count: 38
+     Rejected Count: 3
+     Cognitive Thresholds (accepted):
+       energy: [0.301, 0.535]
+       risk: [0.495, 0.595]
+       effort: [0.300, 0.374]
+       value: [0.416, 1.615]
+       control: [0.492, 1.180]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 41
+     Counterexamples recorded: 3
+       Persona ID: 36_browsing_casually
+         energy: threshold=[0.301, 0.535], observed=0.309
+         risk: threshold=[0.495, 0.595], observed=0.533
+         effort: threshold=[0.300, 0.374], observed=0.308
+         value: threshold=[0.416, 1.615], observed=0.476
+         control: threshold=[0.492, 1.180], observed=1.162
+       Persona ID: 297_browsing_casually
+         energy: threshold=[0.301, 0.535], observed=0.322
+         risk: threshold=[0.495, 0.595], observed=0.533
+         effort: threshold=[0.300, 0.374], observed=0.308
+         value: threshold=[0.416, 1.615], observed=0.555
+         control: threshold=[0.492, 1.180], observed=0.618
+       Persona ID: 925_tired_commuter
+         energy: threshold=[0.301, 0.535], observed=0.390
+         effort: threshold=[0.300, 0.374], observed=0.362
+         value: threshold=[0.416, 1.615], observed=0.992
+         control: threshold=[0.492, 1.180], observed=0.603
+     First Observed: 2026-01-03T20:05:22.491707
+     Last Observed: 2026-01-03T20:05:27.244106
+     Occurrence Count: 41
+
+[9] Step: Sign Up / Email Entry
+     Step Index: 1
+     Persona Class: low_energy_medium_risk_low_effort
+     Coherence Score: 0.946
+     Coherence Stable: True
+     Supporting Traces: 1016
+     Accepted Count: 861
+     Rejected Count: 155
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.299]
+       risk: [0.421, 0.599]
+       effort: [0.144, 0.298]
+       value: [0.397, 0.884]
+       control: [0.420, 1.510]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 1016
+       cognitive_fatigue: present_in_traces = 1016
+     Counterexamples recorded: 5
+       Persona ID: 16_fresh_motivated
+         energy: threshold=[0.050, 0.299], observed=0.109
+         risk: threshold=[0.421, 0.599], observed=0.543
+         effort: threshold=[0.144, 0.298], observed=0.246
+         value: threshold=[0.397, 0.884], observed=0.632
+         control: threshold=[0.420, 1.510], observed=0.749
+       Persona ID: 19_fresh_motivated
+         energy: threshold=[0.050, 0.299], observed=0.050
+         risk: threshold=[0.421, 0.599], observed=0.543
+         effort: threshold=[0.144, 0.298], observed=0.252
+         value: threshold=[0.397, 0.884], observed=0.620
+         control: threshold=[0.420, 1.510], observed=0.441
+       Persona ID: 39_fresh_motivated
+         energy: threshold=[0.050, 0.299], observed=0.050
+         risk: threshold=[0.421, 0.599], observed=0.543
+         effort: threshold=[0.144, 0.298], observed=0.252
+         value: threshold=[0.397, 0.884], observed=0.620
+         control: threshold=[0.420, 1.510], observed=0.567
+     First Observed: 2026-01-03T20:05:22.494567
+     Last Observed: 2026-01-03T20:05:27.249808
+     Occurrence Count: 1016
+
+[10] Step: Sign Up / Email Entry
+     Step Index: 1
+     Persona Class: low_energy_high_risk_low_effort
+     Coherence Score: 0.906
+     Coherence Stable: True
+     Supporting Traces: 558
+     Accepted Count: 470
+     Rejected Count: 88
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.300]
+       risk: [0.603, 0.843]
+       effort: [0.188, 0.298]
+       value: [0.444, 0.871]
+       control: [0.357, 1.260]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 558
+       cognitive_fatigue: present_in_traces = 558
+       risk_spike: present_in_traces = 47
+     Counterexamples recorded: 5
+       Persona ID: 6_urgent_need
+         energy: threshold=[0.050, 0.300], observed=0.300
+         risk: threshold=[0.603, 0.843], observed=0.631
+         effort: threshold=[0.188, 0.298], observed=0.210
+         value: threshold=[0.444, 0.871], observed=0.795
+         control: threshold=[0.357, 1.260], observed=0.684
+       Persona ID: 17_urgent_need
+         energy: threshold=[0.050, 0.300], observed=0.050
+         risk: threshold=[0.603, 0.843], observed=0.639
+         effort: threshold=[0.188, 0.298], observed=0.242
+         value: threshold=[0.444, 0.871], observed=0.667
+         control: threshold=[0.357, 1.260], observed=0.462
+       Persona ID: 26_price_sensitive
+         energy: threshold=[0.050, 0.300], observed=0.196
+         risk: threshold=[0.603, 0.843], observed=0.735
+         effort: threshold=[0.188, 0.298], observed=0.288
+         value: threshold=[0.444, 0.871], observed=0.506
+         control: threshold=[0.357, 1.260], observed=0.444
+     First Observed: 2026-01-03T20:05:22.495787
+     Last Observed: 2026-01-03T20:05:27.252070
+     Occurrence Count: 558
+
+[11] Step: Sign Up / Email Entry
+     Step Index: 1
+     Persona Class: low_energy_high_risk_medium_effort
+     Coherence Score: 0.799
+     Coherence Stable: True
+     Supporting Traces: 1960
+     Accepted Count: 1624
+     Rejected Count: 336
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.299]
+       risk: [0.601, 0.843]
+       effort: [0.300, 0.452]
+       value: [0.431, 0.988]
+       control: [0.354, 1.327]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 1960
+       cognitive_fatigue: present_in_traces = 1960
+       risk_spike: present_in_traces = 1215
+     Counterexamples recorded: 5
+       Persona ID: 1_price_sensitive
+         energy: threshold=[0.050, 0.299], observed=0.050
+         risk: threshold=[0.601, 0.843], observed=0.731
+         effort: threshold=[0.300, 0.452], observed=0.320
+         value: threshold=[0.431, 0.988], observed=0.463
+         control: threshold=[0.354, 1.327], observed=0.735
+       Persona ID: 3_price_sensitive
+         energy: threshold=[0.050, 0.299], observed=0.064
+         risk: threshold=[0.601, 0.843], observed=0.739
+         effort: threshold=[0.300, 0.452], observed=0.328
+         value: threshold=[0.431, 0.988], observed=0.463
+         control: threshold=[0.354, 1.327], observed=0.819
+       Persona ID: 5_tired_commuter
+         energy: threshold=[0.050, 0.299], observed=0.050
+         risk: threshold=[0.601, 0.843], observed=0.627
+         effort: threshold=[0.300, 0.452], observed=0.414
+         value: threshold=[0.431, 0.988], observed=0.557
+         control: threshold=[0.354, 1.327], observed=0.567
+     First Observed: 2026-01-03T20:05:22.496465
+     Last Observed: 2026-01-03T20:05:27.252384
+     Occurrence Count: 1960
+
+[12] Step: Sign Up / Email Entry
+     Step Index: 1
+     Persona Class: low_energy_medium_risk_medium_effort
+     Coherence Score: 0.954
+     Coherence Stable: True
+     Supporting Traces: 701
+     Accepted Count: 580
+     Rejected Count: 121
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.300]
+       risk: [0.465, 0.599]
+       effort: [0.300, 0.452]
+       value: [0.384, 0.928]
+       control: [0.414, 1.388]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 701
+       cognitive_fatigue: present_in_traces = 701
+     Counterexamples recorded: 5
+       Persona ID: 7_browsing_casually
+         energy: threshold=[0.050, 0.300], observed=0.209
+         risk: threshold=[0.465, 0.599], observed=0.543
+         effort: threshold=[0.300, 0.452], observed=0.322
+         value: threshold=[0.384, 0.928], observed=0.513
+         control: threshold=[0.414, 1.388], observed=0.618
+       Persona ID: 20_browsing_casually
+         energy: threshold=[0.050, 0.300], observed=0.055
+         risk: threshold=[0.465, 0.599], observed=0.531
+         effort: threshold=[0.300, 0.452], observed=0.314
+         value: threshold=[0.384, 0.928], observed=0.416
+         control: threshold=[0.414, 1.388], observed=0.628
+       Persona ID: 58_browsing_casually
+         energy: threshold=[0.050, 0.300], observed=0.050
+         risk: threshold=[0.465, 0.599], observed=0.543
+         effort: threshold=[0.300, 0.452], observed=0.342
+         value: threshold=[0.384, 0.928], observed=0.416
+         control: threshold=[0.414, 1.388], observed=0.420
+     First Observed: 2026-01-03T20:05:22.499531
+     Last Observed: 2026-01-03T20:05:27.251293
+     Occurrence Count: 701
+
+[13] Step: Sign Up / Email Entry
+     Step Index: 1
+     Persona Class: high_energy_medium_risk_low_effort
+     Coherence Score: 0.899
+     Coherence Stable: True
+     Supporting Traces: 97
+     Accepted Count: 90
+     Rejected Count: 7
+     Cognitive Thresholds (accepted):
+       energy: [0.600, 0.790]
+       risk: [0.441, 0.599]
+       effort: [0.098, 0.284]
+       value: [0.717, 1.996]
+       control: [0.588, 1.446]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 97
+     Counterexamples recorded: 5
+       Persona ID: 75_tech_savvy_optimistic
+         energy: threshold=[0.600, 0.790], observed=0.695
+         value: threshold=[0.717, 1.996], observed=1.704
+         control: threshold=[0.588, 1.446], observed=1.302
+       Persona ID: 149_tech_savvy_optimistic
+         energy: threshold=[0.600, 0.790], observed=0.610
+         risk: threshold=[0.441, 0.599], observed=0.483
+         effort: threshold=[0.098, 0.284], observed=0.146
+         value: threshold=[0.717, 1.996], observed=0.743
+         control: threshold=[0.588, 1.446], observed=0.684
+       Persona ID: 213_fresh_motivated
+         energy: threshold=[0.600, 0.790], observed=0.660
+         risk: threshold=[0.441, 0.599], observed=0.495
+         effort: threshold=[0.098, 0.284], observed=0.164
+         value: threshold=[0.717, 1.996], observed=1.239
+         control: threshold=[0.588, 1.446], observed=0.735
+     First Observed: 2026-01-03T20:05:23.527763
+     Last Observed: 2026-01-03T20:05:27.221967
+     Occurrence Count: 97
+
+[14] Step: Onboarding - Use Case Selection
+     Step Index: 2
+     Persona Class: medium_energy_high_risk_medium_effort
+     Coherence Score: 0.716
+     Coherence Stable: True
+     Supporting Traces: 365
+     Accepted Count: 340
+     Rejected Count: 25
+     Cognitive Thresholds (accepted):
+       energy: [0.301, 0.597]
+       risk: [0.600, 1.432]
+       effort: [0.306, 0.596]
+       value: [1.538, 3.000]
+       control: [0.510, 1.644]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 365
+       risk_spike: present_in_traces = 325
+     Counterexamples recorded: 5
+       Persona ID: 0_urgent_need
+         energy: threshold=[0.301, 0.597], observed=0.452
+         risk: threshold=[0.600, 1.432], observed=0.804
+         effort: threshold=[0.306, 0.596], observed=0.508
+         value: threshold=[1.538, 3.000], observed=2.032
+         control: threshold=[0.510, 1.644], observed=1.428
+       Persona ID: 61_browsing_casually
+         energy: threshold=[0.301, 0.597], observed=0.450
+         risk: threshold=[0.600, 1.432], observed=0.796
+         effort: threshold=[0.306, 0.596], observed=0.424
+         value: threshold=[1.538, 3.000], observed=2.225
+         control: threshold=[0.510, 1.644], observed=1.168
+       Persona ID: 125_tired_commuter
+         energy: threshold=[0.301, 0.597], observed=0.401
+         risk: threshold=[0.600, 1.432], observed=1.098
+         effort: threshold=[0.306, 0.596], observed=0.588
+         value: threshold=[1.538, 3.000], observed=2.947
+         control: threshold=[0.510, 1.644], observed=0.705
+     First Observed: 2026-01-03T20:05:22.489149
+     Last Observed: 2026-01-03T20:05:27.244948
+     Occurrence Count: 365
+
+[15] Step: Onboarding - Use Case Selection
+     Step Index: 2
+     Persona Class: low_energy_high_risk_high_effort
+     Coherence Score: 0.745
+     Coherence Stable: True
+     Supporting Traces: 3044
+     Accepted Count: 2714
+     Rejected Count: 330
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.278]
+       risk: [0.605, 1.509]
+       effort: [0.600, 0.908]
+       value: [0.955, 2.464]
+       control: [0.480, 1.765]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 3044
+       cognitive_fatigue: present_in_traces = 3044
+       risk_spike: present_in_traces = 3008
+       effort_demand: present_in_traces = 1538
+     Counterexamples recorded: 5
+       Persona ID: 0_distrustful_arrival
+         energy: threshold=[0.050, 0.278], observed=0.276
+         risk: threshold=[0.605, 1.509], observed=1.189
+         effort: threshold=[0.600, 0.908], observed=0.608
+         value: threshold=[0.955, 2.464], observed=1.753
+         control: threshold=[0.480, 1.765], observed=1.123
+       Persona ID: 2_price_sensitive
+         energy: threshold=[0.050, 0.278], observed=0.050
+         risk: threshold=[0.605, 1.509], observed=1.210
+         effort: threshold=[0.600, 0.908], observed=0.808
+         value: threshold=[0.955, 2.464], observed=1.072
+         control: threshold=[0.480, 1.765], observed=0.885
+       Persona ID: 4_distrustful_arrival
+         energy: threshold=[0.050, 0.278], observed=0.050
+         risk: threshold=[0.605, 1.509], observed=1.429
+         effort: threshold=[0.600, 0.908], observed=0.704
+         value: threshold=[0.955, 2.464], observed=1.381
+         control: threshold=[0.480, 1.765], observed=0.663
+     First Observed: 2026-01-03T20:05:22.491412
+     Last Observed: 2026-01-03T20:05:27.252536
+     Occurrence Count: 3044
+
+[16] Step: Onboarding - Use Case Selection
+     Step Index: 2
+     Persona Class: low_energy_high_risk_medium_effort
+     Coherence Score: 0.855
+     Coherence Stable: True
+     Supporting Traces: 1082
+     Accepted Count: 993
+     Rejected Count: 89
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.299]
+       risk: [0.606, 1.481]
+       effort: [0.362, 0.596]
+       value: [1.032, 2.269]
+       control: [0.483, 1.620]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 1082
+       cognitive_fatigue: present_in_traces = 1082
+       risk_spike: present_in_traces = 1029
+     Counterexamples recorded: 5
+       Persona ID: 3_tech_savvy_optimistic
+         energy: threshold=[0.050, 0.299], observed=0.050
+         risk: threshold=[0.606, 1.481], observed=0.773
+         effort: threshold=[0.362, 0.596], observed=0.562
+         value: threshold=[1.032, 2.269], observed=1.474
+         control: threshold=[0.483, 1.620], observed=1.212
+       Persona ID: 9_browsing_casually
+         energy: threshold=[0.050, 0.299], observed=0.050
+         risk: threshold=[0.606, 1.481], observed=1.031
+         effort: threshold=[0.362, 0.596], observed=0.592
+         value: threshold=[1.032, 2.269], observed=1.188
+         control: threshold=[0.483, 1.620], observed=0.780
+       Persona ID: 18_fresh_motivated
+         energy: threshold=[0.050, 0.299], observed=0.208
+         risk: threshold=[0.606, 1.481], observed=0.999
+         effort: threshold=[0.362, 0.596], observed=0.588
+         value: threshold=[1.032, 2.269], observed=1.834
+         control: threshold=[0.483, 1.620], observed=0.891
+     First Observed: 2026-01-03T20:05:22.494695
+     Last Observed: 2026-01-03T20:05:27.238842
+     Occurrence Count: 1082
+
+[17] Step: Onboarding - Use Case Selection
+     Step Index: 2
+     Persona Class: high_energy_high_risk_medium_effort
+     Coherence Score: 0.701
+     Coherence Stable: True
+     Supporting Traces: 125
+     Accepted Count: 115
+     Rejected Count: 10
+     Cognitive Thresholds (accepted):
+       energy: [0.600, 0.790]
+       risk: [0.624, 1.380]
+       effort: [0.300, 0.592]
+       value: [1.882, 3.000]
+       control: [0.630, 1.644]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 125
+       risk_spike: present_in_traces = 109
+     Counterexamples recorded: 5
+       Persona ID: 274_tech_savvy_optimistic
+         energy: threshold=[0.600, 0.790], observed=0.640
+         risk: threshold=[0.624, 1.380], observed=0.866
+         effort: threshold=[0.300, 0.592], observed=0.362
+         value: threshold=[1.882, 3.000], observed=2.103
+         control: threshold=[0.630, 1.644], observed=0.900
+       Persona ID: 369_urgent_need
+         energy: threshold=[0.600, 0.790], observed=0.755
+         risk: threshold=[0.624, 1.380], observed=0.929
+         effort: threshold=[0.300, 0.592], observed=0.436
+         value: threshold=[1.882, 3.000], observed=2.637
+         control: threshold=[0.630, 1.644], observed=1.092
+       Persona ID: 723_browsing_casually
+         energy: threshold=[0.600, 0.790], observed=0.735
+         risk: threshold=[0.624, 1.380], observed=0.932
+         effort: threshold=[0.300, 0.592], observed=0.368
+         value: threshold=[1.882, 3.000], observed=2.630
+         control: threshold=[0.630, 1.644], observed=0.858
+     First Observed: 2026-01-03T20:05:22.529680
+     Last Observed: 2026-01-03T20:05:27.221385
+     Occurrence Count: 125
+
+[18] Step: Onboarding - Use Case Selection
+     Step Index: 2
+     Persona Class: low_energy_medium_risk_medium_effort
+     Coherence Score: 0.966
+     Coherence Stable: True
+     Supporting Traces: 23
+     Accepted Count: 21
+     Rejected Count: 2
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.291]
+       risk: [0.389, 0.598]
+       effort: [0.362, 0.580]
+       value: [1.352, 1.699]
+       control: [1.468, 1.948]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 23
+       cognitive_fatigue: present_in_traces = 23
+     Counterexamples recorded: 2
+       Persona ID: 839_fresh_motivated
+         energy: threshold=[0.050, 0.291], observed=0.061
+         risk: threshold=[0.389, 0.598], observed=0.476
+         effort: threshold=[0.362, 0.580], observed=0.564
+         value: threshold=[1.352, 1.699], observed=1.531
+         control: threshold=[1.468, 1.948], observed=1.827
+       Persona ID: 910_tech_savvy_optimistic
+         energy: threshold=[0.050, 0.291], observed=0.050
+         risk: threshold=[0.389, 0.598], observed=0.408
+         effort: threshold=[0.362, 0.580], observed=0.578
+         value: threshold=[1.352, 1.699], observed=1.404
+         control: threshold=[1.468, 1.948], observed=1.888
+     First Observed: 2026-01-03T20:05:22.632704
+     Last Observed: 2026-01-03T20:05:27.162007
+     Occurrence Count: 23
+
+[19] Step: Onboarding - Use Case Selection
+     Step Index: 2
+     Persona Class: medium_energy_high_risk_high_effort
+     Coherence Score: 0.855
+     Coherence Stable: True
+     Supporting Traces: 10
+     Accepted Count: 10
+     Rejected Count: 0
+     Cognitive Thresholds (accepted):
+       energy: [0.311, 0.460]
+       risk: [0.811, 1.300]
+       effort: [0.600, 0.692]
+       value: [1.753, 2.703]
+       control: [0.825, 1.425]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 10
+       risk_spike: present_in_traces = 10
+     First Observed: 2026-01-03T20:05:22.634428
+     Last Observed: 2026-01-03T20:05:26.959714
+     Occurrence Count: 10
+
+[20] Step: Onboarding - Use Case Selection
+     Step Index: 2
+     Persona Class: low_energy_medium_risk_high_effort
+     Coherence Score: 0.821
+     Coherence Stable: True
+     Supporting Traces: 37
+     Accepted Count: 34
+     Rejected Count: 3
+     Cognitive Thresholds (accepted):
+       energy: [0.050, 0.050]
+       risk: [0.386, 0.599]
+       effort: [0.602, 0.808]
+       value: [0.955, 1.590]
+       control: [1.456, 1.948]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 37
+       cognitive_fatigue: present_in_traces = 37
+       effort_demand: present_in_traces = 10
+     Counterexamples recorded: 3
+       Persona ID: 351_tech_savvy_optimistic
+         energy: threshold=[0.050, 0.050], observed=0.050
+         risk: threshold=[0.386, 0.599], observed=0.479
+         effort: threshold=[0.602, 0.808], observed=0.618
+         value: threshold=[0.955, 1.590], observed=1.327
+         control: threshold=[1.456, 1.948], observed=1.708
+       Persona ID: 783_fresh_motivated
+         energy: threshold=[0.050, 0.050], observed=0.050
+         risk: threshold=[0.386, 0.599], observed=0.517
+         effort: threshold=[0.602, 0.808], observed=0.668
+         value: threshold=[0.955, 1.590], observed=1.420
+         control: threshold=[1.456, 1.948], observed=1.767
+       Persona ID: 950_browsing_casually
+         energy: threshold=[0.050, 0.050], observed=0.050
+         risk: threshold=[0.386, 0.599], observed=0.588
+         effort: threshold=[0.602, 0.808], observed=0.768
+         value: threshold=[0.955, 1.590], observed=1.032
+         control: threshold=[1.456, 1.948], observed=1.634
+     First Observed: 2026-01-03T20:05:23.648274
+     Last Observed: 2026-01-03T20:05:27.062667
+     Occurrence Count: 37
+
+[21] Step: Onboarding - Use Case Selection
+     Step Index: 2
+     Persona Class: medium_energy_medium_risk_medium_effort
+     Coherence Score: 0.952
+     Coherence Stable: True
+     Supporting Traces: 14
+     Accepted Count: 14
+     Rejected Count: 0
+     Cognitive Thresholds (accepted):
+       energy: [0.306, 0.585]
+       risk: [0.536, 0.599]
+       effort: [0.346, 0.498]
+       value: [1.560, 2.223]
+       control: [1.524, 1.644]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 14
+     First Observed: 2026-01-03T20:05:24.054792
+     Last Observed: 2026-01-03T20:05:27.246410
+     Occurrence Count: 14
+
+[22] Step: Setup / Configuration
+     Step Index: 3
+     Persona Class: medium_energy_high_risk_high_effort
+     Coherence Score: 0.788
+     Coherence Stable: True
+     Supporting Traces: 1867
+     Accepted Count: 1722
+     Rejected Count: 145
+     Cognitive Thresholds (accepted):
+       energy: [0.300, 0.595]
+       risk: [0.697, 1.840]
+       effort: [0.602, 1.212]
+       value: [3.000, 3.000]
+       control: [0.678, 2.000]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 1867
+       risk_spike: present_in_traces = 1866
+       effort_demand: present_in_traces = 1594
+     Counterexamples recorded: 5
+       Persona ID: 3_urgent_need
+         energy: threshold=[0.300, 0.595], observed=0.316
+         risk: threshold=[0.697, 1.840], observed=1.274
+         effort: threshold=[0.602, 1.212], observed=0.868
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.678, 2.000], observed=1.540
+       Persona ID: 9_tired_commuter
+         energy: threshold=[0.300, 0.595], observed=0.304
+         risk: threshold=[0.697, 1.840], observed=1.494
+         effort: threshold=[0.602, 1.212], observed=0.888
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.678, 2.000], observed=0.990
+       Persona ID: 11_fresh_motivated
+         energy: threshold=[0.300, 0.595], observed=0.485
+         risk: threshold=[0.697, 1.840], observed=1.320
+         effort: threshold=[0.602, 1.212], observed=0.724
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.678, 2.000], observed=1.155
+     First Observed: 2026-01-03T20:05:22.490641
+     Last Observed: 2026-01-03T20:05:27.246553
+     Occurrence Count: 1867
+
+[23] Step: Setup / Configuration
+     Step Index: 3
+     Persona Class: low_energy_high_risk_high_effort
+     Coherence Score: 0.857
+     Coherence Stable: True
+     Supporting Traces: 2098
+     Accepted Count: 1923
+     Rejected Count: 175
+     Cognitive Thresholds (accepted):
+       energy: [0.129, 0.300]
+       risk: [0.689, 1.864]
+       effort: [0.614, 1.212]
+       value: [3.000, 3.000]
+       control: [0.648, 2.000]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 2098
+       cognitive_fatigue: present_in_traces = 2098
+       risk_spike: present_in_traces = 2095
+       effort_demand: present_in_traces = 2072
+     Counterexamples recorded: 5
+       Persona ID: 4_tired_commuter
+         energy: threshold=[0.129, 0.300], observed=0.299
+         risk: threshold=[0.689, 1.864], observed=1.558
+         effort: threshold=[0.614, 1.212], observed=1.056
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.648, 2.000], observed=0.945
+       Persona ID: 16_urgent_need
+         energy: threshold=[0.129, 0.300], observed=0.260
+         risk: threshold=[0.689, 1.864], observed=1.396
+         effort: threshold=[0.614, 1.212], observed=0.976
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.648, 2.000], observed=1.276
+       Persona ID: 17_browsing_casually
+         energy: threshold=[0.129, 0.300], observed=0.155
+         risk: threshold=[0.689, 1.864], observed=1.510
+         effort: threshold=[0.614, 1.212], observed=1.052
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.648, 2.000], observed=0.714
+     First Observed: 2026-01-03T20:05:22.497740
+     Last Observed: 2026-01-03T20:05:27.252679
+     Occurrence Count: 2098
+
+[24] Step: Setup / Configuration
+     Step Index: 3
+     Persona Class: high_energy_high_risk_high_effort
+     Coherence Score: 0.716
+     Coherence Stable: True
+     Supporting Traces: 108
+     Accepted Count: 102
+     Rejected Count: 6
+     Cognitive Thresholds (accepted):
+       energy: [0.600, 0.790]
+       risk: [0.892, 1.718]
+       effort: [0.604, 0.888]
+       value: [3.000, 3.000]
+       control: [0.828, 2.000]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 108
+       risk_spike: present_in_traces = 108
+       effort_demand: present_in_traces = 42
+     Counterexamples recorded: 5
+       Persona ID: 459_distrustful_arrival
+         energy: threshold=[0.600, 0.790], observed=0.630
+         risk: threshold=[0.892, 1.718], observed=1.694
+         effort: threshold=[0.604, 0.888], observed=0.704
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.828, 2.000], observed=0.855
+       Persona ID: 603_fresh_motivated
+         energy: threshold=[0.600, 0.790], observed=0.610
+         risk: threshold=[0.892, 1.718], observed=1.368
+         effort: threshold=[0.604, 0.888], observed=0.772
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.828, 2.000], observed=1.071
+       Persona ID: 688_fresh_motivated
+         energy: threshold=[0.600, 0.790], observed=0.610
+         risk: threshold=[0.892, 1.718], observed=0.986
+         effort: threshold=[0.604, 0.888], observed=0.688
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.828, 2.000], observed=1.995
+     First Observed: 2026-01-03T20:05:22.528787
+     Last Observed: 2026-01-03T20:05:27.067928
+     Occurrence Count: 108
+
+[25] Step: Setup / Configuration
+     Step Index: 3
+     Persona Class: high_energy_high_risk_medium_effort
+     Coherence Score: 0.865
+     Coherence Stable: True
+     Supporting Traces: 116
+     Accepted Count: 99
+     Rejected Count: 17
+     Cognitive Thresholds (accepted):
+       energy: [0.600, 0.790]
+       risk: [0.868, 1.725]
+       effort: [0.328, 0.600]
+       value: [3.000, 3.000]
+       control: [0.798, 2.000]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 116
+       risk_spike: present_in_traces = 116
+     Counterexamples recorded: 5
+       Persona ID: 67_tech_savvy_optimistic
+         energy: threshold=[0.600, 0.790], observed=0.680
+         risk: threshold=[0.868, 1.725], observed=1.261
+         effort: threshold=[0.328, 0.600], observed=0.446
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.798, 2.000], observed=1.080
+       Persona ID: 139_tech_savvy_optimistic
+         energy: threshold=[0.600, 0.790], observed=0.755
+         risk: threshold=[0.868, 1.725], observed=1.222
+         effort: threshold=[0.328, 0.600], observed=0.362
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.798, 2.000], observed=0.972
+       Persona ID: 144_tech_savvy_optimistic
+         energy: threshold=[0.600, 0.790], observed=0.755
+         risk: threshold=[0.868, 1.725], observed=1.109
+         effort: threshold=[0.328, 0.600], observed=0.554
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.798, 2.000], observed=1.372
+     First Observed: 2026-01-03T20:05:22.529822
+     Last Observed: 2026-01-03T20:05:27.221521
+     Occurrence Count: 116
+
+[26] Step: Setup / Configuration
+     Step Index: 3
+     Persona Class: medium_energy_high_risk_medium_effort
+     Coherence Score: 0.849
+     Coherence Stable: True
+     Supporting Traces: 76
+     Accepted Count: 68
+     Rejected Count: 8
+     Cognitive Thresholds (accepted):
+       energy: [0.321, 0.590]
+       risk: [0.871, 1.520]
+       effort: [0.386, 0.592]
+       value: [3.000, 3.000]
+       control: [0.735, 2.000]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 76
+       risk_spike: present_in_traces = 76
+     Counterexamples recorded: 5
+       Persona ID: 42_fresh_motivated
+         energy: threshold=[0.321, 0.590], observed=0.550
+         risk: threshold=[0.871, 1.520], observed=1.013
+         effort: threshold=[0.386, 0.592], observed=0.544
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.735, 2.000], observed=1.722
+       Persona ID: 67_price_sensitive
+         energy: threshold=[0.321, 0.590], observed=0.524
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.735, 2.000], observed=0.990
+       Persona ID: 216_distrustful_arrival
+         energy: threshold=[0.321, 0.590], observed=0.565
+         risk: threshold=[0.871, 1.520], observed=1.319
+         effort: threshold=[0.386, 0.592], observed=0.512
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.735, 2.000], observed=1.667
+     First Observed: 2026-01-03T20:05:22.593770
+     Last Observed: 2026-01-03T20:05:27.181241
+     Occurrence Count: 76
+
+[27] Step: First Use / Value Delivery
+     Step Index: 4
+     Persona Class: medium_energy_high_risk_high_effort
+     Coherence Score: 0.828
+     Coherence Stable: True
+     Supporting Traces: 2623
+     Accepted Count: 2394
+     Rejected Count: 229
+     Cognitive Thresholds (accepted):
+       energy: [0.305, 0.595]
+       risk: [0.846, 2.041]
+       effort: [0.604, 1.364]
+       value: [3.000, 3.000]
+       control: [0.858, 2.000]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 2623
+       risk_spike: present_in_traces = 2623
+       effort_demand: present_in_traces = 2567
+     Counterexamples recorded: 5
+       Persona ID: 1_fresh_motivated
+         energy: threshold=[0.305, 0.595], observed=0.350
+         risk: threshold=[0.846, 2.041], observed=1.408
+         effort: threshold=[0.604, 1.364], observed=0.940
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.858, 2.000], observed=1.673
+       Persona ID: 5_fresh_motivated
+         energy: threshold=[0.305, 0.595], observed=0.355
+         risk: threshold=[0.846, 2.041], observed=1.529
+         effort: threshold=[0.604, 1.364], observed=0.898
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.858, 2.000], observed=1.401
+       Persona ID: 5_distrustful_arrival
+         energy: threshold=[0.305, 0.595], observed=0.355
+         risk: threshold=[0.846, 2.041], observed=1.880
+         effort: threshold=[0.604, 1.364], observed=0.998
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.858, 2.000], observed=1.317
+     First Observed: 2026-01-03T20:05:22.490778
+     Last Observed: 2026-01-03T20:05:27.252817
+     Occurrence Count: 2623
+
+[28] Step: First Use / Value Delivery
+     Step Index: 4
+     Persona Class: low_energy_high_risk_high_effort
+     Coherence Score: 0.827
+     Coherence Stable: True
+     Supporting Traces: 1012
+     Accepted Count: 928
+     Rejected Count: 84
+     Cognitive Thresholds (accepted):
+       energy: [0.200, 0.295]
+       risk: [0.849, 2.039]
+       effort: [0.848, 1.364]
+       value: [3.000, 3.000]
+       control: [0.858, 2.000]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 1012
+       cognitive_fatigue: present_in_traces = 1012
+       risk_spike: present_in_traces = 1012
+       effort_demand: present_in_traces = 1012
+     Counterexamples recorded: 5
+       Persona ID: 27_tired_commuter
+         energy: threshold=[0.200, 0.295], observed=0.275
+         risk: threshold=[0.849, 2.039], observed=1.735
+         effort: threshold=[0.848, 1.364], observed=1.294
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.858, 2.000], observed=1.245
+       Persona ID: 65_distrustful_arrival
+         energy: threshold=[0.200, 0.295], observed=0.200
+         risk: threshold=[0.849, 2.039], observed=1.654
+         effort: threshold=[0.848, 1.364], observed=1.236
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.858, 2.000], observed=1.621
+       Persona ID: 65_urgent_need
+         energy: threshold=[0.200, 0.295], observed=0.200
+         risk: threshold=[0.849, 2.039], observed=1.398
+         effort: threshold=[0.848, 1.364], observed=1.136
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.858, 2.000], observed=1.726
+     First Observed: 2026-01-03T20:05:22.497869
+     Last Observed: 2026-01-03T20:05:27.249260
+     Occurrence Count: 1012
+
+[29] Step: First Use / Value Delivery
+     Step Index: 4
+     Persona Class: high_energy_high_risk_high_effort
+     Coherence Score: 0.727
+     Coherence Stable: True
+     Supporting Traces: 206
+     Accepted Count: 189
+     Rejected Count: 17
+     Cognitive Thresholds (accepted):
+       energy: [0.600, 0.790]
+       risk: [1.037, 2.017]
+       effort: [0.604, 1.112]
+       value: [3.000, 3.000]
+       control: [0.888, 2.000]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 206
+       risk_spike: present_in_traces = 206
+       effort_demand: present_in_traces = 143
+     Counterexamples recorded: 5
+       Persona ID: 10_distrustful_arrival
+         energy: threshold=[0.600, 0.790], observed=0.735
+         risk: threshold=[1.037, 2.017], observed=1.848
+         effort: threshold=[0.604, 1.112], observed=0.774
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.888, 2.000], observed=1.239
+       Persona ID: 10_urgent_need
+         energy: threshold=[0.600, 0.790], observed=0.735
+         risk: threshold=[1.037, 2.017], observed=1.552
+         effort: threshold=[0.604, 1.112], observed=0.674
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.888, 2.000], observed=1.404
+       Persona ID: 37_browsing_casually
+         energy: threshold=[0.600, 0.790], observed=0.625
+         risk: threshold=[1.037, 2.017], observed=1.388
+         effort: threshold=[0.604, 1.112], observed=0.928
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[0.888, 2.000], observed=1.696
+     First Observed: 2026-01-03T20:05:22.528927
+     Last Observed: 2026-01-03T20:05:27.221655
+     Occurrence Count: 206
+
+[30] Step: First Use / Value Delivery
+     Step Index: 4
+     Persona Class: medium_energy_high_risk_medium_effort
+     Coherence Score: 0.912
+     Coherence Stable: True
+     Supporting Traces: 21
+     Accepted Count: 20
+     Rejected Count: 1
+     Cognitive Thresholds (accepted):
+       energy: [0.465, 0.585]
+       risk: [1.029, 1.683]
+       effort: [0.442, 0.596]
+       value: [3.000, 3.000]
+       control: [1.086, 2.000]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 21
+       risk_spike: present_in_traces = 21
+     Counterexamples recorded: 1
+       Persona ID: 122_urgent_need
+         energy: threshold=[0.465, 0.585], observed=0.540
+         risk: threshold=[1.029, 1.683], observed=1.346
+         effort: threshold=[0.442, 0.596], observed=0.576
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[1.086, 2.000], observed=2.000
+     First Observed: 2026-01-03T20:05:22.657423
+     Last Observed: 2026-01-03T20:05:27.181382
+     Occurrence Count: 21
+
+[31] Step: First Use / Value Delivery
+     Step Index: 4
+     Persona Class: high_energy_high_risk_medium_effort
+     Coherence Score: 0.888
+     Coherence Stable: True
+     Supporting Traces: 52
+     Accepted Count: 47
+     Rejected Count: 5
+     Cognitive Thresholds (accepted):
+       energy: [0.600, 0.790]
+       risk: [1.025, 1.807]
+       effort: [0.366, 0.596]
+       value: [3.000, 3.000]
+       control: [1.038, 2.000]
+     Factor Presence:
+       intent_mismatch: present_in_traces = 52
+       risk_spike: present_in_traces = 52
+     Counterexamples recorded: 5
+       Persona ID: 75_price_sensitive
+         energy: threshold=[0.600, 0.790], observed=0.695
+         risk: threshold=[1.025, 1.807], observed=1.312
+         effort: threshold=[0.366, 0.596], observed=0.466
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[1.038, 2.000], observed=2.000
+       Persona ID: 139_fresh_motivated
+         energy: threshold=[0.600, 0.790], observed=0.755
+         risk: threshold=[1.025, 1.807], observed=1.464
+         effort: threshold=[0.366, 0.596], observed=0.464
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[1.038, 2.000], observed=1.134
+       Persona ID: 650_tech_savvy_optimistic
+         energy: threshold=[0.600, 0.790], observed=0.610
+         risk: threshold=[1.025, 1.807], observed=1.289
+         effort: threshold=[0.366, 0.596], observed=0.596
+         value: threshold=[3.000, 3.000], observed=3.000
+         control: threshold=[1.038, 2.000], observed=1.698
+     First Observed: 2026-01-03T20:05:23.528152
+     Last Observed: 2026-01-03T20:05:27.027252
+     Occurrence Count: 52
+
+--------------------------------------------------------------------------------
+PRECEDENTS — ACCEPTANCE
+--------------------------------------------------------------------------------
+
+Assertions recorded: 49
+
+[1] Step: Landing Page - AI Tool Value Proposition
+     Persona Class: low_energy_medium_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 2744
+       cognitive_fatigue: present_in_traces = 2744
+     Outcome: CONTINUE
+     Occurrence Count: 2744
+     First Observed: 2026-01-03T20:05:22.495660
+     Last Observed: 2026-01-03T20:05:27.252241
+     Time Span (seconds): 4
+     Stable: True
+
+[2] Step: First Use / Value Delivery
+     Persona Class: medium_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 2340
+       risk_spike: present_in_traces = 2340
+       effort_demand: present_in_traces = 2340
+     Outcome: CONTINUE
+     Occurrence Count: 2340
+     First Observed: 2026-01-03T20:05:22.490778
+     Last Observed: 2026-01-03T20:05:27.252817
+     Time Span (seconds): 4
+     Stable: True
+
+[3] Step: Setup / Configuration
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 1898
+       cognitive_fatigue: present_in_traces = 1898
+       risk_spike: present_in_traces = 1898
+       effort_demand: present_in_traces = 1898
+     Outcome: CONTINUE
+     Occurrence Count: 1898
+     First Observed: 2026-01-03T20:05:22.497740
+     Last Observed: 2026-01-03T20:05:27.252679
+     Time Span (seconds): 4
+     Stable: True
+
+[4] Step: Landing Page - AI Tool Value Proposition
+     Persona Class: low_energy_low_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 1584
+       cognitive_fatigue: present_in_traces = 1584
+     Outcome: CONTINUE
+     Occurrence Count: 1584
+     First Observed: 2026-01-03T20:05:22.494440
+     Last Observed: 2026-01-03T20:05:27.251158
+     Time Span (seconds): 4
+     Stable: True
+
+[5] Step: Setup / Configuration
+     Persona Class: medium_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 1463
+       risk_spike: present_in_traces = 1463
+       effort_demand: present_in_traces = 1463
+     Outcome: CONTINUE
+     Occurrence Count: 1463
+     First Observed: 2026-01-03T20:05:22.490641
+     Last Observed: 2026-01-03T20:05:27.245776
+     Time Span (seconds): 4
+     Stable: True
+
+[6] Step: Onboarding - Use Case Selection
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 1359
+       cognitive_fatigue: present_in_traces = 1359
+       risk_spike: present_in_traces = 1359
+       effort_demand: present_in_traces = 1359
+     Outcome: CONTINUE
+     Occurrence Count: 1359
+     First Observed: 2026-01-03T20:05:22.497611
+     Last Observed: 2026-01-03T20:05:27.252536
+     Time Span (seconds): 4
+     Stable: True
+
+[7] Step: Onboarding - Use Case Selection
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 1322
+       cognitive_fatigue: present_in_traces = 1322
+       risk_spike: present_in_traces = 1322
+     Outcome: CONTINUE
+     Occurrence Count: 1322
+     First Observed: 2026-01-03T20:05:22.491838
+     Last Observed: 2026-01-03T20:05:27.249948
+     Time Span (seconds): 4
+     Stable: True
+
+[8] Step: Sign Up / Email Entry
+     Persona Class: low_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 1005
+       cognitive_fatigue: present_in_traces = 1005
+       risk_spike: present_in_traces = 1005
+     Outcome: CONTINUE
+     Occurrence Count: 1005
+     First Observed: 2026-01-03T20:05:22.498848
+     Last Observed: 2026-01-03T20:05:27.252384
+     Time Span (seconds): 4
+     Stable: True
+
+[9] Step: Onboarding - Use Case Selection
+     Persona Class: low_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 946
+       cognitive_fatigue: present_in_traces = 946
+       risk_spike: present_in_traces = 946
+     Outcome: CONTINUE
+     Occurrence Count: 946
+     First Observed: 2026-01-03T20:05:22.494695
+     Last Observed: 2026-01-03T20:05:27.238842
+     Time Span (seconds): 4
+     Stable: True
+
+[10] Step: First Use / Value Delivery
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 928
+       cognitive_fatigue: present_in_traces = 928
+       risk_spike: present_in_traces = 928
+       effort_demand: present_in_traces = 928
+     Outcome: CONTINUE
+     Occurrence Count: 928
+     First Observed: 2026-01-03T20:05:22.497869
+     Last Observed: 2026-01-03T20:05:27.249260
+     Time Span (seconds): 4
+     Stable: True
+
+[11] Step: Sign Up / Email Entry
+     Persona Class: low_energy_medium_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 861
+       cognitive_fatigue: present_in_traces = 861
+     Outcome: CONTINUE
+     Occurrence Count: 861
+     First Observed: 2026-01-03T20:05:22.494567
+     Last Observed: 2026-01-03T20:05:27.249808
+     Time Span (seconds): 4
+     Stable: True
+
+[12] Step: Landing Page - AI Tool Value Proposition
+     Persona Class: medium_energy_low_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 767
+     Outcome: CONTINUE
+     Occurrence Count: 767
+     First Observed: 2026-01-03T20:05:22.488739
+     Last Observed: 2026-01-03T20:05:27.246130
+     Time Span (seconds): 4
+     Stable: True
+
+[13] Step: Sign Up / Email Entry
+     Persona Class: low_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 619
+       cognitive_fatigue: present_in_traces = 619
+     Outcome: CONTINUE
+     Occurrence Count: 619
+     First Observed: 2026-01-03T20:05:22.498166
+     Last Observed: 2026-01-03T20:05:27.240050
+     Time Span (seconds): 4
+     Stable: True
+
+[14] Step: Sign Up / Email Entry
+     Persona Class: medium_energy_medium_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 614
+     Outcome: CONTINUE
+     Occurrence Count: 614
+     First Observed: 2026-01-03T20:05:22.488993
+     Last Observed: 2026-01-03T20:05:27.246273
+     Time Span (seconds): 4
+     Stable: True
+
+[15] Step: Sign Up / Email Entry
+     Persona Class: low_energy_medium_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 580
+       cognitive_fatigue: present_in_traces = 580
+     Outcome: CONTINUE
+     Occurrence Count: 580
+     First Observed: 2026-01-03T20:05:22.499531
+     Last Observed: 2026-01-03T20:05:27.251293
+     Time Span (seconds): 4
+     Stable: True
+
+[16] Step: Sign Up / Email Entry
+     Persona Class: low_energy_high_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 428
+       cognitive_fatigue: present_in_traces = 428
+     Outcome: CONTINUE
+     Occurrence Count: 428
+     First Observed: 2026-01-03T20:05:22.495787
+     Last Observed: 2026-01-03T20:05:27.248127
+     Time Span (seconds): 4
+     Stable: True
+
+[17] Step: Landing Page - AI Tool Value Proposition
+     Persona Class: medium_energy_medium_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 416
+     Outcome: CONTINUE
+     Occurrence Count: 416
+     First Observed: 2026-01-03T20:05:22.491151
+     Last Observed: 2026-01-03T20:05:27.245381
+     Time Span (seconds): 4
+     Stable: True
+
+[18] Step: Onboarding - Use Case Selection
+     Persona Class: medium_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 302
+       risk_spike: present_in_traces = 302
+     Outcome: CONTINUE
+     Occurrence Count: 302
+     First Observed: 2026-01-03T20:05:22.489149
+     Last Observed: 2026-01-03T20:05:27.244948
+     Time Span (seconds): 4
+     Stable: True
+
+[19] Step: Setup / Configuration
+     Persona Class: medium_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 258
+       risk_spike: present_in_traces = 258
+     Outcome: CONTINUE
+     Occurrence Count: 258
+     First Observed: 2026-01-03T20:05:22.494032
+     Last Observed: 2026-01-03T20:05:27.246553
+     Time Span (seconds): 4
+     Stable: True
+
+[20] Step: Sign Up / Email Entry
+     Persona Class: medium_energy_high_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 196
+     Outcome: CONTINUE
+     Occurrence Count: 196
+     First Observed: 2026-01-03T20:05:22.492640
+     Last Observed: 2026-01-03T20:05:27.244807
+     Time Span (seconds): 4
+     Stable: True
+
+[21] Step: First Use / Value Delivery
+     Persona Class: high_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 128
+       risk_spike: present_in_traces = 128
+       effort_demand: present_in_traces = 128
+     Outcome: CONTINUE
+     Occurrence Count: 128
+     First Observed: 2026-01-03T20:05:22.530651
+     Last Observed: 2026-01-03T20:05:27.120670
+     Time Span (seconds): 4
+     Stable: True
+
+[22] Step: Sign Up / Email Entry
+     Persona Class: medium_energy_high_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 111
+       risk_spike: present_in_traces = 111
+     Outcome: CONTINUE
+     Occurrence Count: 111
+     First Observed: 2026-01-03T20:05:22.528514
+     Last Observed: 2026-01-03T20:05:27.221250
+     Time Span (seconds): 4
+     Stable: True
+
+[23] Step: Onboarding - Use Case Selection
+     Persona Class: high_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 100
+       risk_spike: present_in_traces = 100
+     Outcome: CONTINUE
+     Occurrence Count: 100
+     First Observed: 2026-01-03T20:05:22.529680
+     Last Observed: 2026-01-03T20:05:27.221385
+     Time Span (seconds): 4
+     Stable: True
+
+[24] Step: Setup / Configuration
+     Persona Class: high_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 99
+       risk_spike: present_in_traces = 99
+     Outcome: CONTINUE
+     Occurrence Count: 99
+     First Observed: 2026-01-03T20:05:22.529822
+     Last Observed: 2026-01-03T20:05:27.221521
+     Time Span (seconds): 4
+     Stable: True
+
+[25] Step: Sign Up / Email Entry
+     Persona Class: high_energy_medium_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 90
+     Outcome: CONTINUE
+     Occurrence Count: 90
+     First Observed: 2026-01-03T20:05:23.527763
+     Last Observed: 2026-01-03T20:05:27.221967
+     Time Span (seconds): 3
+     Stable: True
+
+[26] Step: Sign Up / Email Entry
+     Persona Class: medium_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 70
+       risk_spike: present_in_traces = 70
+     Outcome: CONTINUE
+     Occurrence Count: 70
+     First Observed: 2026-01-03T20:05:22.491281
+     Last Observed: 2026-01-03T20:05:27.245507
+     Time Span (seconds): 4
+     Stable: True
+
+[27] Step: Setup / Configuration
+     Persona Class: medium_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 68
+       risk_spike: present_in_traces = 68
+     Outcome: CONTINUE
+     Occurrence Count: 68
+     First Observed: 2026-01-03T20:05:22.593770
+     Last Observed: 2026-01-03T20:05:27.181241
+     Time Span (seconds): 4
+     Stable: True
+
+[28] Step: Setup / Configuration
+     Persona Class: high_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 64
+       risk_spike: present_in_traces = 64
+     Outcome: CONTINUE
+     Occurrence Count: 64
+     First Observed: 2026-01-03T20:05:22.528787
+     Last Observed: 2026-01-03T20:05:27.067928
+     Time Span (seconds): 4
+     Stable: True
+
+[29] Step: First Use / Value Delivery
+     Persona Class: high_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 61
+       risk_spike: present_in_traces = 61
+     Outcome: CONTINUE
+     Occurrence Count: 61
+     First Observed: 2026-01-03T20:05:23.529528
+     Last Observed: 2026-01-03T20:05:27.221655
+     Time Span (seconds): 3
+     Stable: True
+
+[30] Step: First Use / Value Delivery
+     Persona Class: medium_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 54
+       risk_spike: present_in_traces = 54
+     Outcome: CONTINUE
+     Occurrence Count: 54
+     First Observed: 2026-01-03T20:05:22.593912
+     Last Observed: 2026-01-03T20:05:27.179938
+     Time Span (seconds): 4
+     Stable: True
+
+[31] Step: Onboarding - Use Case Selection
+     Persona Class: low_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 47
+       cognitive_fatigue: present_in_traces = 47
+     Outcome: CONTINUE
+     Occurrence Count: 47
+     First Observed: 2026-01-03T20:05:22.547914
+     Last Observed: 2026-01-03T20:05:27.195947
+     Time Span (seconds): 4
+     Stable: True
+
+[32] Step: First Use / Value Delivery
+     Persona Class: high_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 47
+       risk_spike: present_in_traces = 47
+     Outcome: CONTINUE
+     Occurrence Count: 47
+     First Observed: 2026-01-03T20:05:23.528152
+     Last Observed: 2026-01-03T20:05:27.027252
+     Time Span (seconds): 3
+     Stable: True
+
+[33] Step: Landing Page - AI Tool Value Proposition
+     Persona Class: high_energy_low_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 45
+     Outcome: CONTINUE
+     Occurrence Count: 45
+     First Observed: 2026-01-03T20:05:23.556586
+     Last Observed: 2026-01-03T20:05:27.221829
+     Time Span (seconds): 3
+     Stable: True
+
+[34] Step: Sign Up / Email Entry
+     Persona Class: low_energy_high_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 42
+       cognitive_fatigue: present_in_traces = 42
+       risk_spike: present_in_traces = 42
+     Outcome: CONTINUE
+     Occurrence Count: 42
+     First Observed: 2026-01-03T20:05:22.525115
+     Last Observed: 2026-01-03T20:05:27.113947
+     Time Span (seconds): 4
+     Stable: True
+
+[35] Step: Sign Up / Email Entry
+     Persona Class: medium_energy_medium_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 38
+     Outcome: CONTINUE
+     Occurrence Count: 38
+     First Observed: 2026-01-03T20:05:22.491707
+     Last Observed: 2026-01-03T20:05:27.244106
+     Time Span (seconds): 4
+     Stable: True
+
+[36] Step: Onboarding - Use Case Selection
+     Persona Class: medium_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 38
+     Outcome: CONTINUE
+     Occurrence Count: 38
+     First Observed: 2026-01-03T20:05:22.493900
+     Last Observed: 2026-01-03T20:05:27.197003
+     Time Span (seconds): 4
+     Stable: True
+
+[37] Step: Setup / Configuration
+     Persona Class: high_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 38
+       risk_spike: present_in_traces = 38
+       effort_demand: present_in_traces = 38
+     Outcome: CONTINUE
+     Occurrence Count: 38
+     First Observed: 2026-01-03T20:05:22.633562
+     Last Observed: 2026-01-03T20:05:27.066474
+     Time Span (seconds): 4
+     Stable: True
+
+[38] Step: Sign Up / Email Entry
+     Persona Class: medium_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 27
+     Outcome: CONTINUE
+     Occurrence Count: 27
+     First Observed: 2026-01-03T20:05:23.505842
+     Last Observed: 2026-01-03T20:05:27.219307
+     Time Span (seconds): 3
+     Stable: True
+
+[39] Step: Onboarding - Use Case Selection
+     Persona Class: low_energy_medium_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 25
+       cognitive_fatigue: present_in_traces = 25
+     Outcome: CONTINUE
+     Occurrence Count: 25
+     First Observed: 2026-01-03T20:05:23.648951
+     Last Observed: 2026-01-03T20:05:27.060770
+     Time Span (seconds): 3
+     Stable: True
+
+[40] Step: Sign Up / Email Entry
+     Persona Class: high_energy_high_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 23
+       risk_spike: present_in_traces = 23
+     Outcome: CONTINUE
+     Occurrence Count: 23
+     First Observed: 2026-01-03T20:05:23.558190
+     Last Observed: 2026-01-03T20:05:27.219772
+     Time Span (seconds): 3
+     Stable: True
+
+[41] Step: Setup / Configuration
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 22
+       cognitive_fatigue: present_in_traces = 22
+       risk_spike: present_in_traces = 22
+     Outcome: CONTINUE
+     Occurrence Count: 22
+     First Observed: 2026-01-03T20:05:23.509914
+     Last Observed: 2026-01-03T20:05:27.151895
+     Time Span (seconds): 3
+     Stable: True
+
+[42] Step: Onboarding - Use Case Selection
+     Persona Class: low_energy_medium_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 21
+       cognitive_fatigue: present_in_traces = 21
+     Outcome: CONTINUE
+     Occurrence Count: 21
+     First Observed: 2026-01-03T20:05:22.632704
+     Last Observed: 2026-01-03T20:05:27.162007
+     Time Span (seconds): 4
+     Stable: True
+
+[43] Step: Sign Up / Email Entry
+     Persona Class: high_energy_high_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 21
+     Outcome: CONTINUE
+     Occurrence Count: 21
+     First Observed: 2026-01-03T20:05:23.560205
+     Last Observed: 2026-01-03T20:05:27.220807
+     Time Span (seconds): 3
+     Stable: True
+
+[44] Step: First Use / Value Delivery
+     Persona Class: medium_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 20
+       risk_spike: present_in_traces = 20
+     Outcome: CONTINUE
+     Occurrence Count: 20
+     First Observed: 2026-01-03T20:05:22.657423
+     Last Observed: 2026-01-03T20:05:27.181382
+     Time Span (seconds): 4
+     Stable: True
+
+[45] Step: Onboarding - Use Case Selection
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 18
+       cognitive_fatigue: present_in_traces = 18
+     Outcome: CONTINUE
+     Occurrence Count: 18
+     First Observed: 2026-01-03T20:05:22.543849
+     Last Observed: 2026-01-03T20:05:27.244235
+     Time Span (seconds): 4
+     Stable: True
+
+[46] Step: Onboarding - Use Case Selection
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 15
+       cognitive_fatigue: present_in_traces = 15
+       effort_demand: present_in_traces = 15
+     Outcome: CONTINUE
+     Occurrence Count: 15
+     First Observed: 2026-01-03T20:05:23.646860
+     Last Observed: 2026-01-03T20:05:26.904075
+     Time Span (seconds): 3
+     Stable: True
+
+[47] Step: Onboarding - Use Case Selection
+     Persona Class: high_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 15
+     Outcome: CONTINUE
+     Occurrence Count: 15
+     First Observed: 2026-01-03T20:05:24.234348
+     Last Observed: 2026-01-03T20:05:27.026275
+     Time Span (seconds): 2
+     Stable: True
+
+[48] Step: Onboarding - Use Case Selection
+     Persona Class: medium_energy_medium_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 14
+     Outcome: CONTINUE
+     Occurrence Count: 14
+     First Observed: 2026-01-03T20:05:24.054792
+     Last Observed: 2026-01-03T20:05:27.246410
+     Time Span (seconds): 3
+     Stable: True
+
+[49] Step: Onboarding - Use Case Selection
+     Persona Class: medium_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 10
+       risk_spike: present_in_traces = 10
+     Outcome: CONTINUE
+     Occurrence Count: 10
+     First Observed: 2026-01-03T20:05:22.634428
+     Last Observed: 2026-01-03T20:05:26.959714
+     Time Span (seconds): 4
+     Stable: True
+
+--------------------------------------------------------------------------------
+PRECEDENTS — REJECTION
+--------------------------------------------------------------------------------
+
+Assertions recorded: 24
+
+[1] Step: Landing Page - AI Tool Value Proposition
+     Persona Class: low_energy_medium_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 744
+       cognitive_fatigue: present_in_traces = 744
+     Outcome: DROP
+     Occurrence Count: 744
+     First Observed: 2026-01-03T20:05:22.490980
+     Last Observed: 2026-01-03T20:05:27.250395
+     Time Span (seconds): 4
+     Stable: True
+
+[2] Step: Landing Page - AI Tool Value Proposition
+     Persona Class: low_energy_low_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 421
+       cognitive_fatigue: present_in_traces = 421
+     Outcome: DROP
+     Occurrence Count: 421
+     First Observed: 2026-01-03T20:05:22.495497
+     Last Observed: 2026-01-03T20:05:27.253016
+     Time Span (seconds): 4
+     Stable: True
+
+[3] Step: First Use / Value Delivery
+     Persona Class: medium_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 227
+       risk_spike: present_in_traces = 227
+       effort_demand: present_in_traces = 227
+     Outcome: DROP
+     Occurrence Count: 227
+     First Observed: 2026-01-03T20:05:22.494952
+     Last Observed: 2026-01-03T20:05:27.244509
+     Time Span (seconds): 4
+     Stable: True
+
+[4] Step: Sign Up / Email Entry
+     Persona Class: low_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 210
+       cognitive_fatigue: present_in_traces = 210
+       risk_spike: present_in_traces = 210
+     Outcome: DROP
+     Occurrence Count: 210
+     First Observed: 2026-01-03T20:05:22.496465
+     Last Observed: 2026-01-03T20:05:27.247396
+     Time Span (seconds): 4
+     Stable: True
+
+[5] Step: Landing Page - AI Tool Value Proposition
+     Persona Class: medium_energy_low_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 176
+     Outcome: DROP
+     Occurrence Count: 176
+     First Observed: 2026-01-03T20:05:22.527811
+     Last Observed: 2026-01-03T20:05:27.214089
+     Time Span (seconds): 4
+     Stable: True
+
+[6] Step: Setup / Configuration
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 171
+       cognitive_fatigue: present_in_traces = 171
+       risk_spike: present_in_traces = 171
+       effort_demand: present_in_traces = 171
+     Outcome: DROP
+     Occurrence Count: 171
+     First Observed: 2026-01-03T20:05:22.505571
+     Last Observed: 2026-01-03T20:05:27.250986
+     Time Span (seconds): 4
+     Stable: True
+
+[7] Step: Onboarding - Use Case Selection
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 165
+       cognitive_fatigue: present_in_traces = 165
+       risk_spike: present_in_traces = 165
+     Outcome: DROP
+     Occurrence Count: 165
+     First Observed: 2026-01-03T20:05:22.491412
+     Last Observed: 2026-01-03T20:05:27.242520
+     Time Span (seconds): 4
+     Stable: True
+
+[8] Step: Onboarding - Use Case Selection
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 162
+       cognitive_fatigue: present_in_traces = 162
+       risk_spike: present_in_traces = 162
+       effort_demand: present_in_traces = 162
+     Outcome: DROP
+     Occurrence Count: 162
+     First Observed: 2026-01-03T20:05:22.501022
+     Last Observed: 2026-01-03T20:05:27.247835
+     Time Span (seconds): 4
+     Stable: True
+
+[9] Step: Sign Up / Email Entry
+     Persona Class: low_energy_medium_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 155
+       cognitive_fatigue: present_in_traces = 155
+     Outcome: DROP
+     Occurrence Count: 155
+     First Observed: 2026-01-03T20:05:22.552587
+     Last Observed: 2026-01-03T20:05:27.206908
+     Time Span (seconds): 4
+     Stable: True
+
+[10] Step: Setup / Configuration
+     Persona Class: medium_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 130
+       risk_spike: present_in_traces = 130
+       effort_demand: present_in_traces = 130
+     Outcome: DROP
+     Occurrence Count: 130
+     First Observed: 2026-01-03T20:05:22.503538
+     Last Observed: 2026-01-03T20:05:27.194268
+     Time Span (seconds): 4
+     Stable: True
+
+[11] Step: Sign Up / Email Entry
+     Persona Class: low_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 126
+       cognitive_fatigue: present_in_traces = 126
+     Outcome: DROP
+     Occurrence Count: 126
+     First Observed: 2026-01-03T20:05:22.509040
+     Last Observed: 2026-01-03T20:05:27.234073
+     Time Span (seconds): 4
+     Stable: True
+
+[12] Step: Sign Up / Email Entry
+     Persona Class: low_energy_medium_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 121
+       cognitive_fatigue: present_in_traces = 121
+     Outcome: DROP
+     Occurrence Count: 121
+     First Observed: 2026-01-03T20:05:22.518259
+     Last Observed: 2026-01-03T20:05:27.208663
+     Time Span (seconds): 4
+     Stable: True
+
+[13] Step: Landing Page - AI Tool Value Proposition
+     Persona Class: medium_energy_medium_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 87
+     Outcome: DROP
+     Occurrence Count: 87
+     First Observed: 2026-01-03T20:05:22.571333
+     Last Observed: 2026-01-03T20:05:27.151305
+     Time Span (seconds): 4
+     Stable: True
+
+[14] Step: First Use / Value Delivery
+     Persona Class: low_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 84
+       cognitive_fatigue: present_in_traces = 84
+       risk_spike: present_in_traces = 84
+       effort_demand: present_in_traces = 84
+     Outcome: DROP
+     Occurrence Count: 84
+     First Observed: 2026-01-03T20:05:22.595336
+     Last Observed: 2026-01-03T20:05:27.248566
+     Time Span (seconds): 4
+     Stable: True
+
+[15] Step: Onboarding - Use Case Selection
+     Persona Class: low_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 83
+       cognitive_fatigue: present_in_traces = 83
+       risk_spike: present_in_traces = 83
+     Outcome: DROP
+     Occurrence Count: 83
+     First Observed: 2026-01-03T20:05:22.504280
+     Last Observed: 2026-01-03T20:05:27.206551
+     Time Span (seconds): 4
+     Stable: True
+
+[16] Step: Sign Up / Email Entry
+     Persona Class: low_energy_high_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 83
+       cognitive_fatigue: present_in_traces = 83
+     Outcome: DROP
+     Occurrence Count: 83
+     First Observed: 2026-01-03T20:05:22.514145
+     Last Observed: 2026-01-03T20:05:27.252070
+     Time Span (seconds): 4
+     Stable: True
+
+[17] Step: Sign Up / Email Entry
+     Persona Class: medium_energy_medium_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 63
+     Outcome: DROP
+     Occurrence Count: 63
+     First Observed: 2026-01-03T20:05:22.524231
+     Last Observed: 2026-01-03T20:05:27.242920
+     Time Span (seconds): 4
+     Stable: True
+
+[18] Step: Onboarding - Use Case Selection
+     Persona Class: medium_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 23
+       risk_spike: present_in_traces = 23
+     Outcome: DROP
+     Occurrence Count: 23
+     First Observed: 2026-01-03T20:05:22.492770
+     Last Observed: 2026-01-03T20:05:27.219446
+     Time Span (seconds): 4
+     Stable: True
+
+[19] Step: Sign Up / Email Entry
+     Persona Class: medium_energy_high_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 23
+       risk_spike: present_in_traces = 23
+     Outcome: DROP
+     Occurrence Count: 23
+     First Observed: 2026-01-03T20:05:23.897228
+     Last Observed: 2026-01-03T20:05:27.199430
+     Time Span (seconds): 3
+     Stable: True
+
+[20] Step: Sign Up / Email Entry
+     Persona Class: medium_energy_high_risk_low_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 18
+     Outcome: DROP
+     Occurrence Count: 18
+     First Observed: 2026-01-03T20:05:22.561890
+     Last Observed: 2026-01-03T20:05:27.201449
+     Time Span (seconds): 4
+     Stable: True
+
+[21] Step: Sign Up / Email Entry
+     Persona Class: medium_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 17
+       risk_spike: present_in_traces = 17
+     Outcome: DROP
+     Occurrence Count: 17
+     First Observed: 2026-01-03T20:05:23.470667
+     Last Observed: 2026-01-03T20:05:26.880543
+     Time Span (seconds): 3
+     Stable: True
+
+[22] Step: Setup / Configuration
+     Persona Class: high_energy_high_risk_medium_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 17
+       risk_spike: present_in_traces = 17
+     Outcome: DROP
+     Occurrence Count: 17
+     First Observed: 2026-01-03T20:05:23.530974
+     Last Observed: 2026-01-03T20:05:27.121254
+     Time Span (seconds): 3
+     Stable: True
+
+[23] Step: First Use / Value Delivery
+     Persona Class: high_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 15
+       risk_spike: present_in_traces = 15
+       effort_demand: present_in_traces = 15
+     Outcome: DROP
+     Occurrence Count: 15
+     First Observed: 2026-01-03T20:05:22.528927
+     Last Observed: 2026-01-03T20:05:27.065700
+     Time Span (seconds): 4
+     Stable: True
+
+[24] Step: Setup / Configuration
+     Persona Class: medium_energy_high_risk_high_effort
+     Factor Presence:
+       intent_mismatch: present_in_traces = 15
+       risk_spike: present_in_traces = 15
+     Outcome: DROP
+     Occurrence Count: 15
+     First Observed: 2026-01-03T20:05:23.739456
+     Last Observed: 2026-01-03T20:05:27.045742
+     Time Span (seconds): 3
+     Stable: True
+
+--------------------------------------------------------------------------------
+DECISION TERMINATION POINTS
+--------------------------------------------------------------------------------
+
+Assertions recorded: 5
+
+Step: Landing Page - AI Tool Value Proposition
+     Step Index: 0
+     Has Observed Rejections: True
+     Rejection Decision Count: 1436
+     First Rejection: 2026-01-03T20:05:22.490980
+     Last Rejection: 2026-01-03T20:05:27.253016
+
+Step: Sign Up / Email Entry
+     Step Index: 1
+     Has Observed Rejections: True
+     Rejection Decision Count: 838
+     First Rejection: 2026-01-03T20:05:22.496465
+     Last Rejection: 2026-01-03T20:05:27.252070
+
+Step: Onboarding - Use Case Selection
+     Step Index: 2
+     Has Observed Rejections: True
+     Rejection Decision Count: 461
+     First Rejection: 2026-01-03T20:05:22.491412
+     Last Rejection: 2026-01-03T20:05:27.247835
+
+Step: Setup / Configuration
+     Step Index: 3
+     Has Observed Rejections: True
+     Rejection Decision Count: 351
+     First Rejection: 2026-01-03T20:05:22.503538
+     Last Rejection: 2026-01-03T20:05:27.250986
+
+Step: First Use / Value Delivery
+     Step Index: 4
+     Has Observed Rejections: True
+     Rejection Decision Count: 336
+     First Rejection: 2026-01-03T20:05:22.494952
+     Last Rejection: 2026-01-03T20:05:27.248566
+
+--------------------------------------------------------------------------------
+NON-BINDING OBSERVATIONS (EXCLUDED)
+--------------------------------------------------------------------------------
+
+Patterns recorded: 9
+
+These patterns do not meet stability requirements:
+- Pattern Stable == True
+- Supporting Traces >= MIN_BOUNDARY_SUPPORT
+
+[1] Step: Landing Page - AI Tool Value Proposition
+     Persona Class: high_energy_medium_risk_low_effort
+     Trace Count: 9
+     Coherence Stable: True
+     Meets Support Threshold: False
+
+[2] Step: Sign Up / Email Entry
+     Persona Class: medium_energy_high_risk_low_effort
+     Trace Count: 348
+     Coherence Stable: False
+     Meets Support Threshold: True
+
+[3] Step: Sign Up / Email Entry
+     Persona Class: high_energy_medium_risk_medium_effort
+     Trace Count: 1
+     Coherence Stable: True
+     Meets Support Threshold: False
+
+[4] Step: Sign Up / Email Entry
+     Persona Class: high_energy_high_risk_low_effort
+     Trace Count: 47
+     Coherence Stable: False
+     Meets Support Threshold: True
+
+[5] Step: Onboarding - Use Case Selection
+     Persona Class: medium_energy_high_risk_low_effort
+     Trace Count: 1
+     Coherence Stable: True
+     Meets Support Threshold: False
+
+[6] Step: Onboarding - Use Case Selection
+     Persona Class: high_energy_medium_risk_low_effort
+     Trace Count: 4
+     Coherence Stable: True
+     Meets Support Threshold: False
+
+[7] Step: Onboarding - Use Case Selection
+     Persona Class: high_energy_high_risk_low_effort
+     Trace Count: 12
+     Coherence Stable: False
+     Meets Support Threshold: True
+
+[8] Step: Onboarding - Use Case Selection
+     Persona Class: medium_energy_medium_risk_low_effort
+     Trace Count: 1
+     Coherence Stable: True
+     Meets Support Threshold: False
+
+[9] Step: Onboarding - Use Case Selection
+     Persona Class: high_energy_medium_risk_medium_effort
+     Trace Count: 8
+     Coherence Stable: True
+     Meets Support Threshold: False

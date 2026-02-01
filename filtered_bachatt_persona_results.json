@@ -1,0 +1,223 @@
+{
+  "bachatt_steps": [],
+  "persona_steps": [],
+  "all_steps_with_context": [
+    {
+      "step_index": 0,
+      "step": {
+        "step_id": "Smart Credit against Mutual Funds",
+        "step_index": 0,
+        "step_description": "Landing page - Credit against mutual funds, wedding loan, eligibility check promise",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A landing page with information about getting credit against mutual funds, a section about wedding loans, and a button for an eligibility check. There are some images and text but not much detail.",
+            "what_user_thinks": "This page is about getting a loan using my mutual funds. It seems like I can check if I qualify for something related to weddings.",
+            "what_user_understands": "I might be able to borrow money based on my investments, but I'm not sure how it works or if it's a good idea. There are a few steps to go through before I get any value.",
+            "emotional_state": "Curious but slightly confused; there's a hint of hope about getting financial help for a wedding."
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "A clean landing page with options for credit against mutual funds, a section for wedding loans, and a prominent eligibility check feature. There are some graphics related to mutual funds and loans, along with a few testimonials.",
+            "what_user_thinks": "This seems like a straightforward way to get a loan using my mutual funds. The wedding loan option is interesting, and the eligibility check looks easy to use. I wonder if I qualify for this.",
+            "what_user_understands": "I have some understanding that I can leverage my mutual funds for credit, which could be useful for significant expenses like a wedding. However, I'm not fully aware of the terms or any potential risks involved. The eligibility check seems promising, but I need to know more about the process and any commitments I might be making.",
+            "emotional_state": "Cautiously optimistic, feeling a mix of curiosity and slight apprehension about the implications of taking a loan against my investments."
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "A clean landing page with a prominent headline about getting credit against mutual funds. There are sections highlighting wedding loans and an eligibility check feature. Visuals include graphs or icons representing mutual funds and loans, along with a clear call-to-action button for checking eligibility.",
+            "what_user_thinks": "This page is offering me a way to leverage my mutual funds for credit, which could be useful for my wedding expenses. The eligibility check seems straightforward, and I might qualify for a loan without much hassle.",
+            "what_user_understands": "I realize that I can use my existing investments in mutual funds to secure a loan, which could help me manage my finances better for significant expenses like a wedding. However, I need to consider the implications of taking on debt and how it might affect my financial stability. The promise of an easy eligibility check builds some trust, but I remain cautious about the commitment involved.",
+            "emotional_state": "Cautiously optimistic, feeling hopeful about the potential financial support but also slightly anxious about the responsibilities that come with taking a loan."
+          }
+        ]
+      }
+    },
+    {
+      "step_index": 1,
+      "step": {
+        "step_id": "Check Your Eligibility - Mobile Number",
+        "step_index": 1,
+        "step_description": "Mobile number entry - linked to mutual funds, referral code option",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen prompting for their mobile number with a text box to enter it, a note about linking to mutual funds, and an option to enter a referral code.",
+            "what_user_thinks": "They need to provide their mobile number to proceed, and it might be related to some investment or referral benefits.",
+            "what_user_understands": "They realize that entering their mobile number is necessary for the process, but they are unsure about how it connects to mutual funds or what the referral code does.",
+            "emotional_state": "Confused and slightly anxious about sharing personal information, but also curious about potential benefits."
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "A screen prompting for their mobile number with a field to enter it, an option to input a referral code, and a button to proceed. There are some icons indicating security and privacy.",
+            "what_user_thinks": "They need to enter their mobile number to continue with the onboarding process. The referral code might give them some benefits, but they are unsure what those are. The security icons make them feel a bit safer.",
+            "what_user_understands": "They realize that their mobile number is important for linking to mutual funds, which is a step towards managing their finances. However, they are not fully aware of how this information will be used or the implications of sharing it. They see some value in the referral code but don't fully grasp its potential benefits.",
+            "emotional_state": "Cautiously optimistic but slightly anxious about sharing personal information."
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "A clean interface prompting for their mobile number, with a field to enter the number and an option to input a referral code. There are clear instructions and a progress indicator showing they are on step 2 of 7.",
+            "what_user_thinks": "I need to enter my mobile number to proceed. This is probably to link my account to mutual funds. The referral code option suggests there might be some benefits or rewards for using a code.",
+            "what_user_understands": "Entering my mobile number is crucial for account verification and linking to financial services. I recognize that this step is relatively low risk, but I am aware that sharing my number could lead to marketing communications. The referral code could provide additional value, but I need to trust that this platform will handle my information securely.",
+            "emotional_state": "Cautiously optimistic; I feel a mix of anticipation about the potential benefits and slight anxiety about sharing my personal information."
+          }
+        ]
+      }
+    },
+    {
+      "step_index": 2,
+      "step": {
+        "step_id": "Check Limit - PAN and DOB",
+        "step_index": 2,
+        "step_description": "PAN and date of birth verification - credit limit check",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A form asking for PAN and date of birth with a progress bar showing 42%. There are buttons to submit or go back, and some text about verifying credit limits.",
+            "what_user_thinks": "I need to fill out this form with my PAN and date of birth to check my credit limit. It seems important, but I'm not sure why they need this information.",
+            "what_user_understands": "This step is about verifying my identity to see how much credit I can get. I think it might affect my ability to use the app, but I don't fully grasp how it works or what happens next.",
+            "emotional_state": "A bit anxious and uncertain, feeling the pressure of providing personal information but also curious about the outcome."
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "A screen displaying fields to enter their PAN and date of birth, along with a progress bar indicating they are 42% through the onboarding process. There are buttons for 'Continue' and 'Cancel', and a brief message about verifying their credit limit.",
+            "what_user_thinks": "They believe they need to provide their PAN and date of birth to check their credit limit. They might think this is a standard procedure and that it\u2019s necessary for getting access to financial services.",
+            "what_user_understands": "They realize that providing this information is part of a verification process that could affect their credit limit. They may feel somewhat reassured by the progress bar but are still uncertain about how this will impact their overall financial options and trust in the platform.",
+            "emotional_state": "Cautiously optimistic but slightly anxious about sharing personal information and the implications it may have on their financial future."
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "A clean interface displaying fields for entering their PAN and date of birth, along with a progress bar indicating they are 42% through the onboarding process. There are clear instructions on what information is required and a button to proceed.",
+            "what_user_thinks": "I need to enter my PAN and date of birth to check my credit limit. This seems straightforward, and I hope it won't take long. I wonder how this information will be used.",
+            "what_user_understands": "This step is crucial for verifying my identity and determining my credit limit. I realize that providing my PAN and date of birth is necessary for the service to assess my financial eligibility. I trust that this information will be handled securely, but I am aware that sharing personal data always carries some risk.",
+            "emotional_state": "Cautiously optimistic; they feel a mix of anticipation about the potential credit limit and slight anxiety about sharing sensitive personal information."
+          }
+        ]
+      }
+    },
+    {
+      "step_index": 3,
+      "step": {
+        "step_id": "OTP Verification",
+        "step_index": 3,
+        "step_description": "OTP verification sent to mobile number",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A message on the screen indicating that an OTP has been sent to their mobile number, along with a text box to enter the OTP.",
+            "what_user_thinks": "They believe they need to enter a code that was sent to their phone to continue using the app. It feels like a standard security step.",
+            "what_user_understands": "They realize that this step is meant to verify their identity, but they don't fully grasp the importance of this verification for their account security or the implications of not completing it.",
+            "emotional_state": "They feel slightly anxious about waiting for the OTP and uncertain about whether they will receive it in time, but also somewhat reassured that this is a common security measure."
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "A screen displaying a message that says 'OTP verification sent to your mobile number' along with a text box to enter the OTP and a button to verify.",
+            "what_user_thinks": "I need to check my phone for the OTP to continue. This seems like a standard security step.",
+            "what_user_understands": "This step is necessary for verifying my identity, which is important for securing my financial information. However, I still have some concerns about how my data is being used.",
+            "emotional_state": "A mix of mild anxiety and cautious optimism, feeling somewhat secure but also slightly apprehensive about sharing personal information."
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "A screen displaying a message confirming that an OTP has been sent to their registered mobile number, along with a text box to enter the OTP and a timer indicating how long they have to enter it.",
+            "what_user_thinks": "They believe that this step is a standard security measure to verify their identity and that entering the OTP will allow them to proceed with the onboarding process.",
+            "what_user_understands": "They realize that this verification step is crucial for securing their financial information and that it builds trust in the platform. They understand that completing this step is necessary to access the services they are interested in, but they are also aware that sharing their mobile number carries some risk.",
+            "emotional_state": "They feel a mix of anticipation and slight anxiety, as they are eager to move forward but also concerned about the security of their personal information."
+          }
+        ]
+      }
+    },
+    {
+      "step_index": 4,
+      "step": {
+        "step_id": "Bank Account Linking",
+        "step_index": 4,
+        "step_description": "Link bank account for loan disbursement - read-only access",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen prompting to link their bank account with a button to proceed. There are some security icons and a brief note about read-only access.",
+            "what_user_thinks": "I need to connect my bank account to get the loan. It seems safe since it says read-only, but I'm not sure what that means.",
+            "what_user_understands": "Linking my bank account is necessary for the loan process, but I don't fully grasp how it affects my finances or what read-only access entails.",
+            "emotional_state": "Anxious and uncertain, feeling a bit overwhelmed by the process but also hopeful about getting the loan."
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "A screen prompting to link their bank account with a simple interface, showing a button to proceed and a brief explanation about loan disbursement. There are icons indicating security and read-only access, along with a progress bar showing 71% completion.",
+            "what_user_thinks": "I need to link my bank account to get the loan. It seems straightforward, and the security icons make me feel a bit safer. I hope this won't take too long.",
+            "what_user_understands": "Linking my bank account is necessary for receiving the loan, but I\u2019m not fully aware of how this access works. I see that it\u2019s read-only, which is somewhat reassuring, but I still have some concerns about privacy and what happens if I change my mind later.",
+            "emotional_state": "Cautiously optimistic but slightly anxious about sharing bank details."
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "A clean interface prompting them to link their bank account for loan disbursement. There are fields to enter bank details, a brief explanation of read-only access, and a button to proceed. Visual indicators suggest security and ease of use.",
+            "what_user_thinks": "They believe they are simply providing their bank details to facilitate the loan process. They think this is a standard procedure and that it will help them receive their funds quickly.",
+            "what_user_understands": "They realize that linking their bank account is necessary for the loan disbursement, but they are aware that this access is read-only, which mitigates some concerns about security. They understand that while this step is low risk and reversible, it still requires a level of trust in the platform to handle their financial information responsibly.",
+            "emotional_state": "Cautiously optimistic, feeling a mix of trust in the fintech platform but also a slight apprehension about sharing sensitive financial information."
+          }
+        ]
+      }
+    },
+    {
+      "step_index": 5,
+      "step": {
+        "step_id": "Eligibility Results",
+        "step_index": 5,
+        "step_description": "Eligibility check results - credit limit displayed",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen displaying a credit limit amount, a simple message about eligibility, and a few buttons for next steps.",
+            "what_user_thinks": "I think I qualify for a credit limit. This means I can borrow money if I need it.",
+            "what_user_understands": "I don't really get how this credit limit works or what it means for my finances. It seems like a good thing, but I'm not sure about the details.",
+            "emotional_state": "Cautiously optimistic but slightly confused."
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "A screen displaying the results of their eligibility check with a clear credit limit shown, along with some basic information about the next steps in the onboarding process.",
+            "what_user_thinks": "They believe they have passed the eligibility check and are now eligible for a credit limit, which makes them feel somewhat relieved and hopeful about accessing funds.",
+            "what_user_understands": "They realize that they have a credit limit available, but they are unsure about the implications of this limit, such as how it affects their financial commitments or the trustworthiness of the platform.",
+            "emotional_state": "Cautiously optimistic, feeling a mix of excitement about the credit limit but also some anxiety about the responsibilities that come with it."
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "A clear display of the eligibility check results showing the approved credit limit, along with a summary of the criteria used for the assessment.",
+            "what_user_thinks": "I have passed the eligibility check and I can see how much credit I can access. This means I can start using this service soon.",
+            "what_user_understands": "I realize that I have a credit limit that I can utilize, which reflects my financial standing. I feel reassured about the process, but I also recognize that this commitment comes with responsibilities and potential risks if I misuse the credit.",
+            "emotional_state": "Cautiously optimistic, feeling a mix of excitement about the credit opportunity and a slight anxiety about managing it responsibly."
+          }
+        ]
+      }
+    },
+    {
+      "step_index": 6,
+      "step": {
+        "step_id": "Final Confirmation",
+        "step_index": 6,
+        "step_description": "Final confirmation - proceed with loan application",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A confirmation screen with a button to proceed with the loan application, some text about the loan terms, and a progress bar showing 100% completion.",
+            "what_user_thinks": "This is the last step, and I need to confirm to get the loan. It looks straightforward, but I'm not sure about the details.",
+            "what_user_understands": "I know I have to agree to something important, but I don't fully grasp what happens if I proceed. It feels like a big commitment, and I'm unsure if I can trust this process completely.",
+            "emotional_state": "Anxious and uncertain, feeling a mix of excitement about the loan and worry about the consequences of moving forward."
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "A confirmation screen with a summary of the loan application details, including the loan amount, interest rate, and repayment terms. There are buttons to confirm or cancel the application, along with a reassuring message about the process being secure.",
+            "what_user_thinks": "This looks like the final step to get my loan. I need to decide if I want to go ahead with it. The terms seem okay, but I hope I\u2019m making the right choice.",
+            "what_user_understands": "I realize that I am about to commit to a loan, which means I will have to repay it with interest. While the terms seem manageable, I\u2019m aware that this decision is somewhat irreversible and could impact my finances. I trust that the platform is secure, but I still have some doubts about the long-term implications.",
+            "emotional_state": "Nervous but hopeful; I feel a mix of excitement about getting the loan and anxiety about the commitment I\u2019m about to make."
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "A clean interface displaying a summary of the loan application details, including the loan amount, interest rate, repayment terms, and a prominent 'Confirm' button. There are reassuring messages about data security and customer support availability.",
+            "what_user_thinks": "This is the final step in my loan application process. I have all the information I need, and I believe this will help me get the funds I need. I feel ready to proceed and trust that this platform is legitimate.",
+            "what_user_understands": "I realize that by confirming this application, I am committing to a financial obligation that could impact my future. I understand the terms and conditions, and I am aware of the potential risks involved, but I also see the value in obtaining the loan to meet my current needs. I trust that the platform is secure and that my data is protected.",
+            "emotional_state": "Confident and slightly anxious, as I am excited about the opportunity the loan presents but also aware of the responsibility that comes with it."
+          }
+        ]
+      }
+    }
+  ]
+}

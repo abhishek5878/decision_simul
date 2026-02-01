@@ -1,0 +1,396 @@
+{
+  "simulationId": "BLI-2026-01",
+  "latency": "0.00s",
+  "confidence": "100.0%",
+  "cohort": "30+ Urban salaried or self-employed professionals with mutual fund holdings who need short-term liquidity without breaking long-term investments",
+  "productName": "Blink Money - Credit Against Mutual Funds",
+  "userContext": "Digitally savvy, credit-aware users who value speed, low friction, and cost-efficient borrowing over traditional personal loans. They have mutual funds but need quick liquidity without selling investments. Early-funnel but with strong intent once they understand the value proposition.",
+  "verdict": "Trust collapses when personal information requests (PAN, DOB, OTP verification) appear before users see their eligible credit limit. Credit-aware users abandon when verification requirements exceed demonstrated value (actual loan amount they can get).",
+  "beliefBreak": {
+    "screenshot": "screenshots/blink_money/1.jpeg",
+    "irreversibleAction": "User must make a commitment at step 1 of 5 (20% progress) without seeing value first.",
+    "callouts": [
+      {
+        "text": "Personal information requested before value shown",
+        "position": "top-left"
+      },
+      {
+        "text": "Trust demand exceeds demonstrated value",
+        "position": "bottom-right"
+      }
+    ],
+    "psychology": "Users reach step 1 expecting to see results, but instead face new requirements. The expectation mismatch triggers abandonment."
+  },
+  "journeyScreenshots": {
+    "before": "screenshots/blink_money/1.jpeg",
+    "moment": "screenshots/blink_money/1.jpeg",
+    "after": "screenshots/blink_money/2.jpeg"
+  },
+  "whyBeliefBreaks": {
+    "userBelieves": [
+      "This is a quick exploration tool",
+      "They can browse options without commitment",
+      "The platform will show value before asking for data"
+    ],
+    "productAsks": [
+      "Make a commitment without seeing value",
+      "Trust platform with personal information"
+    ],
+    "whyItFails": [
+      "Value not demonstrated before data request",
+      "Trust demand exceeds relationship depth"
+    ]
+  },
+  "oneBet": {
+    "headline": "Show personalized recommendations BEFORE requesting financial disclosure.",
+    "support": "If users see tailored results based solely on preferences, establishing value before trust demands, completion rates should increase.",
+    "confidenceLevel": "high"
+  },
+  "howWrong": [
+    {
+      "name": "Value-First Sequencing Test",
+      "hypothesis": "Users abandon due to premature data request, not data request itself",
+      "measure": "Completion rate when financial questions move to post-recommendation vs current placement",
+      "falsifier": "If post-recommendation placement shows equal abandonment, timing isn't the blocker."
+    },
+    {
+      "name": "Progressive Disclosure Test",
+      "hypothesis": "Users need gradual trust building through value demonstration",
+      "measure": "Engagement with initial recommendations (no financial data) vs refined recommendations (with data)",
+      "falsifier": "If users don't engage with initial recommendations, they don't value the output."
+    },
+    {
+      "name": "Framing Transparency Test",
+      "hypothesis": "Bait-and-switch perception drives exit more than data request",
+      "measure": "Completion rate when step 1 explicitly mentions 'financial info needed' vs silent",
+      "falsifier": "If transparency reduces starts, users actively avoid financial disclosure regardless of timing."
+    }
+  ],
+  "evidence": {
+    "assumptions": [
+      "Users discovered Blink Money - Credit Against Mutual Funds through organic search or ads promising 'instant recommendations'",
+      "Competing platforms offer immediate results without financial disclosure",
+      "Users have not yet established relationship with the brand"
+    ],
+    "constraints": [
+      "Accurate matching requires some financial data",
+      "Lending partners require minimum qualification criteria",
+      "Regulatory compliance mandates certain disclosures"
+    ],
+    "rationale": [
+      "Privacy reassurance appears only AFTER request \u2014 too late for trust building",
+      "Landing page shows value proposition (9.99% p.a., up to \u20b91 Crore) but doesn't show personalized eligibility",
+      "Users see generic benefits but must start process to learn if they qualify",
+      "Competing platforms show initial matches without credit score disclosure"
+    ]
+  },
+  "marginNotes": {
+    "page2": "Note: 20% progress indicator creates expectation of completion, not new high-friction requirement.",
+    "page4": "High confidence: Pattern observed across fintech onboarding where value-before-trust sequencing improves conversion.",
+    "page5": "Alternative hypothesis: Users lack credit score knowledge, not willingness to share. Test 'Don't know my score' option.",
+    "page3": "Landing page promises exploration, but immediately requires personal information \u2014 expectation mismatch from the start."
+  },
+  "decisionSimulation": {
+    "steps": [
+      {
+        "step_id": "Smart Credit Exploration",
+        "step_index": 0,
+        "step_description": "Users are prompted to explore credit options with the title 'Smart Credit against Mutual Funds for your dream Career'. The button 'Know Your Limit' invites users to check their credit limit, emphasizing the financial benefit of saving interest with BlinkMoney.. Available actions: Check Eligibility, Get Started, Let\u2019s Go. Visible numbers/amounts: \u20b912,001 (Save in interest), 4 (steps to avail loan).",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "Landing page with BLINK_MONEY branding and a call-to-action button",
+            "what_user_thinks": "This looks like a financial product. I can explore without commitment.",
+            "what_user_understands": "I'm still in the process. I haven't seen what I'll get yet.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Landing page promising credit/loan benefits. Progress shows step 1 of 5",
+            "what_user_thinks": "This is a credit/loan product. I'll need to provide some information to see if I qualify.",
+            "what_user_understands": "I'm 1 steps in. I expect to see results in 4 more steps. Value is coming but not yet shown.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Landing page: Users are prompted to explore credit options with the title 'Smart Credit against Mutual Funds for your dream Career'. The button 'Know Your Limit' invites users to check their credit limit, emphasizing the financial benefit of saving interest with BlinkMoney.. Available actions: Check Eligibility, Get Started, Let\u2019s Go. Visible numbers/amounts: \u20b912,001 (Save in interest), 4 (steps to avail loan).. Value proposition visible but generic. No personalized eligibility shown. Progress: 20%",
+            "what_user_thinks": "This is a credit/loan product. They want me to start a process that will require personal information. I haven't seen if I qualify yet, but they're asking me to begin.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 1 but value appears at step 5. I'm being asked to share users are prompted to explore credit options with the title 'smart credit against mutual funds for your dream career'. the button 'know your limit' invites users to check their credit limit, emphasizing the financial benefit of saving interest with blinkmoney.. available actions: check eligibility, get started, let\u2019s go. visible numbers/amounts: \u20b912,001 (save in interest), 4 (steps to avail loan). 4 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Cautiously optimistic - proceeding but aware of the trust-value gap"
+          }
+        ]
+      },
+      {
+        "step_id": "Eligibility Check for Credit",
+        "step_index": 1,
+        "step_description": "PRIMARY ACTION: Users must fill in a PHONE NUMBER INPUT FIELD (mobile number) to proceed to the next step. This is the main action that moves the user forward. SECONDARY: There is also a NUMBER INPUT FIELD labeled 'How much is your fund?' to enter mutual fund amount (format: currency/numeric, e.g., \u20b910,000, \u20b91,00,000, \u20b910,00,000). There is a toggle option labeled 'I have current funds'. The button 'Check Eligibility' submits the form and takes user to step 3. CONTEXT (below fold, informational only): Benefits section includes 'No selling of funds', 'Instant credit in just 2 hours', 'Pay only interest', 'Completely digital process', and 'No credit score impact'. Testimonials, FAQs, partner logos, and 'Why BlinkMoney?' section provide context but are not required actions. Progress indicator shows 'Step 2 of 5' (40% complete). Visible numbers/amounts: \u20b910,000 (minimum credit amount), \u20b91,00,000 (loan amount option), \u20b910,00,000 (maximum loan amount), 12 months (loan tenure option).",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen showing eligibility or results",
+            "what_user_thinks": "They want some information from me. I'll provide it if it's quick.",
+            "what_user_understands": "I'm still in the process. I haven't seen what I'll get yet.",
+            "emotional_state": "Slightly hesitant, wondering if this is worth the effort"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Eligibility results screen showing loan amount/limit. Clear value proposition visible.",
+            "what_user_thinks": "I've answered several questions but haven't seen my results yet. I'm getting closer.",
+            "what_user_understands": "I'm 2 steps in. I expect to see results in 2 more steps. Value is coming but not yet shown.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 2/5 (40%): Eligibility results shown. Personalized loan amount/limit displayed. FIRST VALUE MOMENT.",
+            "what_user_thinks": "I understand this is step 2 of 5. I'm providing information to get personalized results, but value hasn't been shown yet.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 2 but value appears at step 4. I'm being asked to share primary action: users must fill in a phone number input field (mobile number) to proceed to the next step. this is the main action that moves the user forward. secondary: there is also a number input field labeled 'how much is your fund?' to enter mutual fund amount (format: currency/numeric, e.g., \u20b910,000, \u20b91,00,000, \u20b910,00,000). there is a toggle option labeled 'i have current funds'. the button 'check eligibility' submits the form and takes user to step 3. context (below fold, informational only): benefits section includes 'no selling of funds', 'instant credit in just 2 hours', 'pay only interest', 'completely digital process', and 'no credit score impact'. testimonials, faqs, partner logos, and 'why blinkmoney?' section provide context but are not required actions. progress indicator shows 'step 2 of 5' (40% complete). visible numbers/amounts: \u20b910,000 (minimum credit amount), \u20b91,00,000 (loan amount option), \u20b910,00,000 (maximum loan amount), 12 months (loan tenure option). 2 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Cautiously optimistic - proceeding but aware of the trust-value gap"
+          }
+        ]
+      },
+      {
+        "step_id": "PAN & DOB Input",
+        "step_index": 2,
+        "step_description": "Users are asked to enter their PAN and date of birth in the fields labeled 'Enter PAN' and 'Date of Birth'. The button 'Verify' checks their eligibility. A disclaimer mentions acceptance of T&Cs and indicates that checking does not impact the credit score.. Users must fill in a text input field labeled 'Enter PAN' (format: 10 characters) with placeholder 'PAN ID'. Users must fill in a dropdown field labeled 'Date of Birth' with placeholder 'Select date'. Available actions: Verify.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A form asking for PAN and date of birth",
+            "what_user_thinks": "They want some information from me. I'll provide it if it's quick.",
+            "what_user_understands": "I'm providing information, but unclear what happens next.",
+            "emotional_state": "Cautious, slightly anxious about sharing information"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "PAN and DOB form. Security badges visible. Mentions credit check but 'no impact on score'.",
+            "what_user_thinks": "They're asking for sensitive financial information. I should understand what I'm committing to.",
+            "what_user_understands": "I'm providing information that will help determine my eligibility or options.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 3/5 (60%): PAN/DOB form. Security badges present. 'No credit score impact' mentioned. Still 0 steps from seeing eligibility.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I understand the process flow. I'm providing information that will lead to personalized results. The sequence makes sense.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      },
+      {
+        "step_id": "OTP Verification",
+        "step_index": 3,
+        "step_description": "Users must input a 6-digit OTP sent to their registered phone number to verify their identity. The screen features a timer indicating time left to enter the OTP and options to 'Verify' or 'Resend OTP'. There are no visible trust signals or explicit benefits.. Users must fill in a text input field labeled '6-digit OTP' (format: 6 digits). Available actions: Verify, Resend OTP. Visible numbers/amounts: 00:25 (countdown timer for OTP).",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen asking to enter OTP sent to phone",
+            "what_user_thinks": "This seems important. I should be careful about what I share.",
+            "what_user_understands": "I'm providing information, but unclear what happens next.",
+            "emotional_state": "Cautious, slightly anxious about sharing information"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Users must input a 6-digit OTP sent to their registered phone number to verify their identity. The screen features a timer indicating time left to enter the OTP and options to 'Verify' or 'Resend OTP'. There are no visible trust signals or explicit benefits.. Users must fill in a text input field labeled '6-digit OTP' (format: 6 digits). Available actions: Verify, Resend OTP. Visible numbers/amounts: 00:25 (countdown timer for OTP).. Progress shows 4/5",
+            "what_user_thinks": "They're asking for sensitive financial information. I should understand what I'm committing to.",
+            "what_user_understands": "I'm providing information that will help determine my eligibility or options.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 4/5 (80%): Users must input a 6-digit OTP sent to their registered phone number to verify their identity. The screen features a timer indicating time left to enter the OTP and options to 'Verify' or 'Resend OTP'. There are no visible trust signals or explicit benefits.. Users must fill in a text input field labeled '6-digit OTP' (format: 6 digits). Available actions: Verify, Resend OTP. Visible numbers/amounts: 00:25 (countdown timer for OTP).. Irreversibility: 0.0. Value delay: -2 steps.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I understand the process flow. I'm providing information that will lead to personalized results. The sequence makes sense.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      },
+      {
+        "step_id": "Eligibility Confirmation",
+        "step_index": 4,
+        "step_description": "Users see their eligibility confirmed with the message 'You\u2019re eligible for upto \u20b9 1,59,300'. The 'Proceed' button allows users to continue to the next step, and there's an option to learn more about how the credit amount is calculated. The screen suggests empowerment with phrases like 'Unlock your bold dreams with smart credit'.. Users must fill in a number input field labeled 'Loan Amount' (format: currency/numeric) with placeholder '\u20b9 25,600'. Users must fill in a date picker field labeled 'Loan Tenure' (format: numeric/duration) with placeholder '1 years - 5 years'. Available actions: Proceed. Visible numbers/amounts: \u20b91,59,300 (Eligible amount), \u20b925,600 (Loan Amount), 1 years (Minimum Loan Tenure), 5 years (Maximum Loan Tenure), \u20b924,000 (Personal Loan cost), \u20b918,923 (Selling Mutual Fund opportunity cost).",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "A screen showing eligibility or results",
+            "what_user_thinks": "I need to fill this out to continue. Seems straightforward.",
+            "what_user_understands": "There might be some benefit, but I'm not sure what exactly.",
+            "emotional_state": "Neutral, exploring without strong feelings"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Eligibility results screen showing loan amount/limit. Clear value proposition visible.",
+            "what_user_thinks": "This is part of the process. I'll continue if it's not too complicated.",
+            "what_user_understands": "I can see some value proposition, but I'm not sure if it's personalized to me yet.",
+            "emotional_state": "Engaged but cautious - proceeding with moderate trust"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 5/5 (100%): Eligibility results shown. Personalized loan amount/limit displayed. FIRST VALUE MOMENT.",
+            "what_user_thinks": "I'm finally seeing my eligibility/results. This is what I came for. Now I understand what I qualify for.",
+            "what_user_understands": "I can see value now (eligibility/loan amount). This justifies the information I've shared. Trust is established because value was shown.",
+            "emotional_state": "Relieved and engaged - finally seeing value justifies the process"
+          }
+        ]
+      }
+    ]
+  },
+  "productContext": {
+    "company": {
+      "name": "Blink Money",
+      "description": "Blink Money offers credit against mutual funds, providing short-term liquidity without requiring users to sell their long-term investments. It targets digitally savvy, credit-aware individuals who value speed, low friction, and cost-efficient borrowing over traditional personal loans.",
+      "founder": "Not specified",
+      "funding": "Not specified"
+    },
+    "features": [
+      {
+        "name": "Credit Against Mutual Funds",
+        "valueProposition": "Access short-term liquidity without liquidating long-term investments.",
+        "keyBenefit": "Preserve investment growth while meeting immediate cash needs."
+      },
+      {
+        "name": "Fast Approval",
+        "valueProposition": "Quick eligibility check and loan approval process.",
+        "keyBenefit": "Get funds rapidly when needed, avoiding delays of traditional loans."
+      },
+      {
+        "name": "Low Interest Rates",
+        "valueProposition": "Competitive interest rates compared to personal loans.",
+        "keyBenefit": "Cost-efficient borrowing, saving money on interest payments."
+      },
+      {
+        "name": "Digital Process",
+        "valueProposition": "Entire application and management process is online.",
+        "keyBenefit": "Convenient and accessible from anywhere, anytime."
+      },
+      {
+        "name": "No Credit Score Impact (for eligibility check)",
+        "valueProposition": "Check your loan eligibility without affecting your credit score.",
+        "keyBenefit": "Risk-free assessment of borrowing potential."
+      }
+    ],
+    "targetMarkets": {
+      "india": {
+        "opportunity": "Large and growing mutual fund investor base, increasing demand for digital credit, need for flexible liquidity solutions.",
+        "challenges": "Regulatory landscape for credit against securities, user awareness of this product type, competition from traditional lenders.",
+        "personaFit": "Strong fit for urban salaried/self-employed with MF holdings who are digitally savvy and credit-aware."
+      }
+    },
+    "competitiveLandscape": [
+      "Traditional Personal Loans",
+      "Credit Cards",
+      "Gold Loans",
+      "Mutual Fund Redemption"
+    ]
+  },
+  "founderInsights": {
+    "personaSegmentation": {
+      "salariedMFHolders": {
+        "primaryConcern": "Delay in seeing actual credit limit and terms",
+        "insight": "These users are busy professionals who value efficiency. They expect a clear, fast path to understanding their borrowing potential and terms. Long verification steps without immediate value feedback lead to abandonment.",
+        "blinkMoneyFit": "High - Product solves their exact need (liquidity without selling investments).",
+        "motivation": "Quick, low-cost liquidity for short-term needs (e.g., emergency, large purchase) without disturbing long-term wealth.",
+        "keyMessage": "Get up to \u20b9X credit limit against your mutual funds in minutes, without selling your investments.",
+        "onboardingPreference": "Fast-track, minimal data entry, clear progress, instant eligibility estimate."
+      },
+      "selfEmployedMFHolders": {
+        "primaryConcern": "Anxiety around PAN/DOB disclosure and potential credit score impact",
+        "insight": "Self-employed individuals often have irregular income and are more sensitive to credit score impacts. They need strong reassurance about data security and the 'no credit score impact' promise before sharing sensitive financial identity.",
+        "blinkMoneyFit": "High - Provides flexible liquidity for business needs without asset liquidation.",
+        "motivation": "Flexible, cost-efficient capital for business operations or personal emergencies, preserving investment growth.",
+        "keyMessage": "Unlock business liquidity from your mutual funds. Check your limit with zero impact on your credit score.",
+        "onboardingPreference": "Transparent data usage, strong security signals, clear benefits of each step, reassurance on credit impact."
+      },
+      "creditAwareUsers": {
+        "primaryConcern": "Comparison to alternative borrowing options (personal loans, credit cards)",
+        "insight": "These users are savvy and will compare rates, fees, and friction. If Blink Money's advantages (lower rates, MF-backed) aren't clear before high-friction steps like bank linking, they'll revert to familiar options.",
+        "blinkMoneyFit": "High - Offers a superior alternative to traditional loans for MF holders.",
+        "motivation": "Optimizing borrowing costs and terms, leveraging existing assets intelligently.",
+        "keyMessage": "Smarter borrowing starts here. Get credit at 9.99% p.a. against your mutual funds, better than personal loans.",
+        "onboardingPreference": "Comparative value propositions, clear cost breakdowns, minimal friction for verification."
+      },
+      "speedSeekers": {
+        "primaryConcern": "Perceived slowness of the 5-step process to get a credit limit",
+        "insight": "Digitally savvy users expect instant gratification. A 5-step flow, especially with multiple data entry points (phone, MF amount, PAN, DOB, OTP), feels long. They need to feel progress is rapid and value is imminent.",
+        "blinkMoneyFit": "High - Promises quick approval, but execution needs to match expectation.",
+        "motivation": "Immediate access to funds for urgent needs, valuing efficiency above all.",
+        "keyMessage": "Instant liquidity from your mutual funds. Get your credit limit in 2 minutes.",
+        "onboardingPreference": "Extremely fast flow, progress indicators, 'skip' options for non-critical info, instant feedback."
+      },
+      "costConsciousBorrowers": {
+        "primaryConcern": "Lack of clear interest rates and terms before final commitment",
+        "insight": "These users are highly sensitive to costs. If they reach the final steps without a clear understanding of the exact interest rate, processing fees, and repayment schedule, they will abandon due to uncertainty and fear of hidden charges.",
+        "blinkMoneyFit": "High - Product offers competitive rates.",
+        "motivation": "Minimizing borrowing costs, ensuring transparency in financial commitments.",
+        "keyMessage": "Transparent, low-cost credit against your mutual funds. Know your exact rates upfront.",
+        "onboardingPreference": "Clear display of all costs (interest, fees), flexible repayment options, comparison tools."
+      }
+    },
+    "keyInsights": [
+      "4-step delay to credit limit display is killing conversion. Credit-aware users expect faster eligibility feedback.",
+      "PAN disclosure step (step 3) creates anxiety for self-employed users - need better reassurance about no credit score impact.",
+      "OTP verification step (step 4) is a friction point - users comparing to alternatives need cost/rate advantage shown before this step.",
+      "Final confirmation (step 5) needs cost transparency earlier. Users drop if exact rates/terms are not clear before commitment.",
+      "Speed-seekers drop early because 5 steps don't feel fast enough for 'quick liquidity' promise.",
+      "Phone number input (step 2) is primary action but mutual fund amount field creates confusion about what's required."
+    ],
+    "productSpecificRecommendations": [
+      {
+        "recommendation": "Show credit limit estimate after phone + PAN only (step 2-3)",
+        "rationale": "Credit-aware users expect faster feedback. Current 4-step delay is too long. Show estimate early, refine after verification.",
+        "implementation": "Step 1: Phone \u2192 Step 2: PAN \u2192 Show 'You're eligible for ~\u20b9X credit limit' \u2192 Then verification (OTP)"
+      },
+      {
+        "recommendation": "Emphasize 'No credit score impact' before PAN step",
+        "rationale": "Self-employed and credit-aware users are anxious about credit checks. Reassure them upfront.",
+        "implementation": "Add 'Check eligibility without impacting credit score' messaging prominently in step 1-2"
+      },
+      {
+        "recommendation": "Show rate comparison vs personal loans before OTP verification",
+        "rationale": "Cost-conscious users are comparing to alternatives. Show your advantage (lower rates) before asking for OTP.",
+        "implementation": "After PAN verification (step 3), add 'Compare: Personal Loan 12% p.a. vs Blink Money 9.99% p.a.' before OTP"
+      },
+      {
+        "recommendation": "Add interest rate and terms in eligibility results (step 5)",
+        "rationale": "Cost-conscious users need this info to decide. Currently shown too late or not clearly.",
+        "implementation": "Step 5 (Eligibility Confirmation) should show: Credit limit + Interest rate + Tenure options + EMI calculator"
+      },
+      {
+        "recommendation": "Reduce steps from 5 to 4 by combining phone + MF amount into one step",
+        "rationale": "Speed-seekers expect faster onboarding. Combine initial inputs to reduce friction.",
+        "implementation": "Step 1: Phone + MF amount together \u2192 Step 2: PAN \u2192 Step 3: OTP \u2192 Step 4: Show eligibility"
+      },
+      {
+        "recommendation": "Add 'Quick Estimate' mode - show eligibility without full verification",
+        "rationale": "Speed-seekers want instant feedback. Let them see estimate first, complete verification only if interested.",
+        "implementation": "Option: 'Quick Estimate (2 min)' vs 'Full Application (5 min)' - estimate shows limit range, full app shows exact limit"
+      },
+      {
+        "recommendation": "Clarify primary action in step 2 - phone number is required, MF amount is optional/contextual",
+        "rationale": "Users are confused about what's required vs optional. Make phone number clearly the primary action.",
+        "implementation": "Redesign step 2: Phone number field prominently at top with 'Continue' button. MF amount field below with 'Optional - helps us estimate your limit' label."
+      }
+    ],
+    "competitivePositioning": {
+      "vsPersonalLoans": {
+        "advantage": "Lower rates (9.99% p.a. vs 12-18% p.a.), no need to sell investments, quick approval",
+        "onboardingGap": "Personal loans show eligibility faster (mobile + PAN only). You have 5 steps.",
+        "recommendation": "Match personal loan onboarding speed (2-3 steps to eligibility), then differentiate with MF-backed advantage"
+      },
+      "vsCreditCards": {
+        "advantage": "Lower rates, higher limits against MF holdings, no selling investments",
+        "onboardingGap": "Credit cards show limit instantly if user has card. You need full onboarding.",
+        "recommendation": "Position as 'Credit card alternative with lower rates' - show limit estimate as fast as card pre-approval"
+      },
+      "vsGoldLoans": {
+        "advantage": "No need to pledge physical gold, digital process, lower rates",
+        "onboardingGap": "Gold loans are simpler (gold + ID only). Your MF-backed process needs more verification.",
+        "recommendation": "Emphasize 'No physical assets needed' and 'Digital process' as differentiators"
+      },
+      "vsMFRedemption": {
+        "advantage": "Keep your investments growing, get liquidity without selling, tax-efficient",
+        "onboardingGap": "MF redemption is instant (sell in app). Your process takes longer but preserves investments.",
+        "recommendation": "Lead with 'Don't sell your mutual funds' value prop - the trade-off is worth the slightly longer process"
+      }
+    }
+  }
+}

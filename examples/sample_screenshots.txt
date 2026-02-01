@@ -1,0 +1,62 @@
+SCREENSHOT 1: Landing Page
+Welcome to QuickCredit
+Instant personal loans up to ₹5 lakhs
+No collateral required
+Minimal documentation
+Funds in 24 hours
+[Get Started] button
+
+---
+
+SCREENSHOT 2: Phone Verification
+Enter your mobile number
++91 [___________]
+We'll send you an OTP
+[Continue] button
+
+---
+
+SCREENSHOT 3: KYC Upload
+Upload Documents
+- PAN Card
+- Aadhaar Card
+- Selfie
+[Upload] buttons for each
+[Continue] button
+
+---
+
+SCREENSHOT 4: Income Verification
+Upload Salary Slips
+Last 3 months salary slips
+Bank statements (last 6 months)
+[Upload] buttons
+[Submit] button
+
+---
+
+SCREENSHOT 5: Loan Agreement
+Review Loan Terms
+Loan Amount: ₹50,000
+Interest Rate: 18% p.a.
+Tenure: 24 months
+EMI: ₹2,500/month
+[I Agree] checkbox
+[Sign Digitally] button
+
+---
+
+SCREENSHOT 6: Bank Linking
+Link Your Bank Account
+For loan disbursement
+Read-only access
+UPI mandate required
+[Link Account] button
+
+---
+
+SCREENSHOT 7: Disbursement Confirmation
+Loan Approved!
+₹50,000 will be credited to your account within 24 hours
+[View Details] button
+

@@ -1,0 +1,103 @@
+{
+  "simulation_type": "persona_driven_intent_aware_behavioral_engine",
+  "product": "Credigo.club SS",
+  "high_level_intent": "I want good credit card recommendations",
+  "granular_intent_differentiation": "Based on persona behavioral traits",
+  "timestamp": "2025-12-30T02:41:37.736064",
+  "total_personas": 1000,
+  "total_trajectories": 7000,
+  "overall_completion_rate": 0.0,
+  "granular_intent_distribution": {
+    "validate_choice": 1057,
+    "price_check": 846,
+    "quick_decision": 1452,
+    "learn_basics": 680,
+    "compare_options": 2141,
+    "eligibility_check": 824
+  },
+  "total_intent_mismatches": 5701,
+  "intent_mismatch_by_type": {
+    "value_type_mismatch": 5441,
+    "null": 257,
+    "effort_tolerance": 3
+  },
+  "step_drop_rates": {
+    "Find the Best Credit Card In 60 seconds": {
+      "drops": 5004,
+      "continues": 1996,
+      "drop_rate": 0.7148571428571429
+    },
+    "What kind of perks excite you the most?": {
+      "drops": 1738,
+      "continues": 258,
+      "drop_rate": 0.8707414829659319
+    },
+    "Any preference on annual fee?": {
+      "drops": 227,
+      "continues": 31,
+      "drop_rate": 0.8798449612403101
+    },
+    "straightforward + options are clearly defined": {
+      "drops": 23,
+      "continues": 8,
+      "drop_rate": 0.7419354838709677
+    },
+    "Your top 2 spend categories?": {
+      "drops": 7,
+      "continues": 1,
+      "drop_rate": 0.875
+    },
+    "Do you track your monthly spending?": {
+      "drops": 1,
+      "continues": 0,
+      "drop_rate": 1.0
+    }
+  },
+  "step_intent_mismatches": {
+    "Find the Best Credit Card In 60 seconds": {
+      "total_mismatches": 0,
+      "by_intent": {},
+      "by_type": {}
+    },
+    "What kind of perks excite you the most?": {
+      "total_mismatches": 0,
+      "by_intent": {},
+      "by_type": {}
+    },
+    "Any preference on annual fee?": {
+      "total_mismatches": 0,
+      "by_intent": {},
+      "by_type": {}
+    },
+    "straightforward + options are clearly defined": {
+      "total_mismatches": 0,
+      "by_intent": {},
+      "by_type": {}
+    },
+    "Your top 2 spend categories?": {
+      "total_mismatches": 0,
+      "by_intent": {},
+      "by_type": {}
+    },
+    "Do you track your monthly spending?": {
+      "total_mismatches": 0,
+      "by_intent": {},
+      "by_type": {}
+    }
+  },
+  "failure_reasons": {
+    "Intent mismatch: value_type_mismatch": 4738,
+    "System 2 fatigue": 2042,
+    "Intent mismatch: None": 216,
+    "Loss aversion": 1,
+    "Intent mismatch: effort_tolerance": 3
+  },
+  "exit_steps": {
+    "Find the Best Credit Card In 60 seconds": 5004,
+    "What kind of perks excite you the most?": 1738,
+    "Your top 2 spend categories?": 7,
+    "Any preference on annual fee?": 227,
+    "straightforward + options are clearly defined": 23,
+    "Do you track your monthly spending?": 1
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "product_name": "Credigo",
+  "category": "credit_card_recommendation",
+  "description": "Find the best credit card in 60 seconds - personalized recommendation engine (11 steps)",
+  "steps": {
+    "step_0": {
+      "step_name": "Find the Best Credit Card In 60 seconds",
+      "step_index": 0,
+      "step_type": "landing",
+      "effort_demand": 0.0,
+      "risk_signal": 0.1,
+      "explicit_value": 0.3,
+      "reassurance_signal": 0.6,
+      "cognitive_demand": 0.2,
+      "intent_signals": {
+        "credit_card_recommendation": 0.9,
+        "compare_credit_cards": 0.8
+      },
+      "description": "Landing page - 60 second promise, privacy claims, 'Find the Best' CTA"
+    },
+    "step_1": {
+      "step_name": "What kind of perks excite you the most?",
+      "step_index": 1,
+      "step_type": "preference",
+      "effort_demand": 0.2,
+      "risk_signal": 0.15,
+      "explicit_value": 0.2,
+      "reassurance_signal": 0.4,
+      "cognitive_demand": 0.3,
+      "intent_signals": {
+        "credit_card_recommendation": 0.8,
+        "compare_credit_cards": 0.7
+      },
+      "description": "First question - perks preference, no comparison yet"
+    },
+    "step_2": {
+      "step_name": "Any preference on annual fee?",
+      "step_index": 2,
+      "step_type": "preference",
+      "effort_demand": 0.2,
+      "risk_signal": 0.15,
+      "explicit_value": 0.2,
+      "reassurance_signal": 0.4,
+      "cognitive_demand": 0.3,
+      "intent_signals": {
+        "credit_card_recommendation": 0.8,
+        "compare_credit_cards": 0.7
+      },
+      "description": "Annual fee preference question - price signal but no prices"
+    },
+    "step_3": {
+      "step_name": "straightforward + options are clearly defined",
+      "step_index": 3,
+      "step_type": "preference",
+      "effort_demand": 0.15,
+      "risk_signal": 0.1,
+      "explicit_value": 0.25,
+      "reassurance_signal": 0.4,
+      "cognitive_demand": 0.25,
+      "intent_signals": {
+        "credit_card_recommendation": 0.7,
+        "compare_credit_cards": 0.6
+      },
+      "description": "Clarification step - options defined but not shown"
+    },
+    "step_4": {
+      "step_name": "Your top 2 spend categories?",
+      "step_index": 4,
+      "step_type": "data_entry",
+      "effort_demand": 0.3,
+      "risk_signal": 0.2,
+      "explicit_value": 0.25,
+      "reassurance_signal": 0.3,
+      "cognitive_demand": 0.4,
+      "intent_signals": {
+        "credit_card_recommendation": 0.7,
+        "compare_credit_cards": 0.6
+      },
+      "description": "Spend categories question - PERSONAL INFO BEFORE COMPARISON (intent mismatch risk)"
+    },
+    "step_5": {
+      "step_name": "Do you track your monthly spending?",
+      "step_index": 5,
+      "step_type": "data_entry",
+      "effort_demand": 0.25,
+      "risk_signal": 0.2,
+      "explicit_value": 0.25,
+      "reassurance_signal": 0.3,
+      "cognitive_demand": 0.35,
+      "intent_signals": {
+        "credit_card_recommendation": 0.6,
+        "compare_credit_cards": 0.5
+      },
+      "description": "Spending tracking question - more personal info"
+    },
+    "step_6": {
+      "step_name": "How much do you spend monthly?",
+      "step_index": 6,
+      "step_type": "data_entry",
+      "effort_demand": 0.3,
+      "risk_signal": 0.25,
+      "explicit_value": 0.25,
+      "reassurance_signal": 0.3,
+      "cognitive_demand": 0.4,
+      "intent_signals": {
+        "credit_card_recommendation": 0.6,
+        "compare_credit_cards": 0.5
+      },
+      "description": "Monthly spending amount - SENSITIVE INFO BEFORE VALUE (major intent mismatch)"
+    },
+    "step_7": {
+      "step_name": "Do you have any existing credit cards?",
+      "step_index": 7,
+      "step_type": "data_entry",
+      "effort_demand": 0.2,
+      "risk_signal": 0.2,
+      "explicit_value": 0.3,
+      "reassurance_signal": 0.35,
+      "cognitive_demand": 0.3,
+      "intent_signals": {
+        "credit_card_recommendation": 0.7,
+        "compare_credit_cards": 0.6
+      },
+      "description": "Existing cards question - less sensitive"
+    },
+    "step_8": {
+      "step_name": "Help us personalise your card matches",
+      "step_index": 8,
+      "step_type": "data_entry",
+      "effort_demand": 0.25,
+      "risk_signal": 0.2,
+      "explicit_value": 0.35,
+      "reassurance_signal": 0.4,
+      "cognitive_demand": 0.35,
+      "intent_signals": {
+        "credit_card_recommendation": 0.8,
+        "compare_credit_cards": 0.7
+      },
+      "description": "Personalization step - building anticipation, value soon"
+    },
+    "step_9": {
+      "step_name": "Step 1 of 11",
+      "step_index": 9,
+      "step_type": "preference",
+      "effort_demand": 0.1,
+      "risk_signal": 0.1,
+      "explicit_value": 0.5,
+      "reassurance_signal": 0.5,
+      "cognitive_demand": 0.2,
+      "intent_signals": {
+        "credit_card_recommendation": 0.8,
+        "compare_credit_cards": 0.7
+      },
+      "description": "Progress indicator - almost done, value imminent"
+    },
+    "step_10": {
+      "step_name": "Best Deals for You – Apply Now",
+      "step_index": 10,
+      "step_type": "value_reveal",
+      "effort_demand": 0.1,
+      "risk_signal": 0.15,
+      "explicit_value": 0.7,
+      "reassurance_signal": 0.4,
+      "cognitive_demand": 0.3,
+      "intent_signals": {
+        "credit_card_recommendation": 0.95,
+        "compare_credit_cards": 0.9
+      },
+      "description": "Results page - recommendations shown, comparison available, apply CTA (FIRST VALUE)"
+    }
+  },
+  "_notes": {
+    "assumptions": [
+      "Credigo asks for 9 preference/data steps before revealing value (steps 0-9 before step 10)",
+      "First value appears at step 10 (personalized recommendations)",
+      "No signup/gating before step 0 (can browse landing page)",
+      "Effort accumulates through preference/data steps (1-9)",
+      "Value signal is strong once recommendation is shown (step 10)",
+      "Intent alignment is high at landing, decreases during data collection, increases at value reveal",
+      "Risk signals increase with personal financial information questions (steps 4-7)"
+    ],
+    "comparison_to_benchmarks": [
+      "Groww shows value at step 2 (browse mode), Credigo at step 10",
+      "CRED shows rewards at step 0 (landing) and step 4 (rewards view), Credigo at step 10",
+      "Zerodha shows value at step 5 (account activated), Credigo at step 10",
+      "Credigo has significantly more preference/data steps before value (10 steps) vs benchmarks (0-5 steps)"
+    ]
+  }
+}

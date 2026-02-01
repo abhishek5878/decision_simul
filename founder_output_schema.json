@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "document_type": "Decision Autopsy",
+  "description": "Audit-grade, deterministic output explaining why belief collapsed in a product flow",
+  
+  "sections": {
+    "0_header": {
+      "title": "Header (Identity & Legitimacy)",
+      "required_fields": [
+        "product_id",
+        "simulation_version_hash",
+        "run_mode",
+        "personas_simulated",
+        "decision_traces_count",
+        "confidence_level"
+      ],
+      "constraints": {
+        "product_id": "string, required",
+        "simulation_version_hash": "string, SHA-256 hash of simulation config",
+        "run_mode": "enum: [research, evaluation, production]",
+        "personas_simulated": "integer, count",
+        "decision_traces_count": "integer, count",
+        "confidence_level": "float, 0-1, derived from variance across persona variants"
+      }
+    },
+    
+    "1_one_line_verdict": {
+      "title": "One-Line Verdict",
+      "required_fields": [
+        "verdict_text"
+      ],
+      "constraints": {
+        "verdict_text": "string, exactly one sentence, no numbers, no recommendations, derived from aggregated attribution + commitment collapse"
+      },
+      "example_pattern": "Trust collapses when irreversible disclosure is demanded before value is proven."
+    },
+    
+    "2_irreversible_moment": {
+      "title": "Irreversible Moment Detection",
+      "required_fields": [
+        "step_id",
+        "step_label",
+        "position_in_flow",
+        "commitment_delta",
+        "exit_probability_gradient",
+        "reversibility_score",
+        "why_irreversible"
+      ],
+      "constraints": {
+        "step_id": "string, step identifier",
+        "step_label": "string, human-readable step name",
+        "position_in_flow": "integer, 0-indexed step position",
+        "commitment_delta": "float, spike in commitment change",
+        "exit_probability_gradient": "float, peak in exit probability change",
+        "reversibility_score": "float, 0-1, where 0 = irreversible",
+        "why_irreversible": "string, derived from trace analysis, not written"
+      }
+    },
+    
+    "3_belief_state_transition": {
+      "title": "Belief State Transition (Before vs After)",
+      "required_fields": [
+        "step_id",
+        "before_state",
+        "after_state"
+      ],
+      "constraints": {
+        "step_id": "string, the irreversible step",
+        "before_state": {
+          "task_framing": "string, how user frames the task",
+          "commitment_level": "float, 0-1",
+          "expected_value_timing": "string, when value is expected",
+          "perceived_risk": "float, 0-1"
+        },
+        "after_state": {
+          "task_framing": "string, how user frames the task after",
+          "commitment_level": "float, 0-1",
+          "expected_value_timing": "string, when value is expected after",
+          "perceived_risk": "float, 0-1"
+        }
+      },
+      "note": "Before vs After only. No timelines."
+    },
+    
+    "4_recovery_impossibility": {
+      "title": "Recovery Impossibility Proof",
+      "required_fields": [
+        "retry_rate",
+        "backtracking_rate",
+        "abandonment_permanence_score",
+        "why_recovery_does_not_occur"
+      ],
+      "constraints": {
+        "retry_rate": "float, 0-1, computed from traces",
+        "backtracking_rate": "float, 0-1, computed from traces",
+        "abandonment_permanence_score": "float, 0-1, where 1 = permanent abandonment",
+        "why_recovery_does_not_occur": "string, derived from trace analysis"
+      }
+    },
+    
+    "5_counterfactual": {
+      "title": "Single Highest-Leverage Counterfactual",
+      "required_fields": [
+        "minimal_sequencing_change",
+        "why_it_repairs_belief_ordering"
+      ],
+      "constraints": {
+        "minimal_sequencing_change": "string, one minimal sequencing change, no UI language, no A/B framing",
+        "why_it_repairs_belief_ordering": "string, derived from attribution sensitivity + perturbation engine"
+      }
+    },
+    
+    "6_falsifiability": {
+      "title": "Falsifiability Conditions",
+      "required_fields": [
+        "conditions"
+      ],
+      "constraints": {
+        "conditions": "array of 2-3 objects, each with:",
+        "condition_text": "string, condition under which conclusion would be wrong",
+        "observable_outcome": "string, observable simulation or real-world outcome that would falsify"
+      }
+    },
+    
+    "7_variant_sensitivity": {
+      "title": "Variant Sensitivity Snapshot",
+      "required_fields": [
+        "most_sensitive_variant",
+        "least_sensitive_variant"
+      ],
+      "constraints": {
+        "most_sensitive_variant": "string, variant name, directional only",
+        "least_sensitive_variant": "string, variant name, directional only",
+        "note": "No tables, directional only"
+      }
+    },
+    
+    "8_non_claims": {
+      "title": "Explicit Non-Claims",
+      "required_fields": [
+        "what_this_does_not_prove",
+        "what_this_is_not_intended_for"
+      ],
+      "constraints": {
+        "what_this_does_not_prove": "array of strings, auto-generated boundaries",
+        "what_this_is_not_intended_for": "array of strings, auto-generated boundaries"
+      }
+    },
+    
+    "9_closing": {
+      "title": "Closing Identity Line",
+      "required_fields": [
+        "closing_text"
+      ],
+      "constraints": {
+        "closing_text": "Fixed line: 'This analysis explains why belief collapsed, not how to redesign the product.'"
+      }
+    }
+  },
+  
+  "output_formats": {
+    "markdown": {
+      "file_extension": ".md",
+      "structure": "strictly ordered sections as defined above"
+    },
+    "json": {
+      "file_extension": ".json",
+      "structure": "same structure as schema, with all fields populated"
+    }
+  },
+  
+  "determinism_requirements": {
+    "same_inputs_same_output": true,
+    "no_llm_creativity_at_render": true,
+    "every_sentence_maps_to_artifacts": true,
+    "traceable_to": [
+      "decision_traces",
+      "shap_attribution_values",
+      "commitment_deltas",
+      "belief_state_diffs"
+    ]
+  }
+}
+

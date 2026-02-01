@@ -1,0 +1,42 @@
+{
+  "total_users": 1000,
+  "steps": [
+    {
+      "step_name": "Landing Page",
+      "users_entered": 1000,
+      "users_dropped": 280,
+      "segment": "all"
+    },
+    {
+      "step_name": "Mobile + OTP",
+      "users_entered": 720,
+      "users_dropped": 150,
+      "segment": "all"
+    },
+    {
+      "step_name": "KYC Document Upload",
+      "users_entered": 570,
+      "users_dropped": 80,
+      "segment": "all"
+    },
+    {
+      "step_name": "PAN + Bank Linking",
+      "users_entered": 490,
+      "users_dropped": 220,
+      "segment": "all"
+    },
+    {
+      "step_name": "Consent + Terms",
+      "users_entered": 270,
+      "users_dropped": 20,
+      "segment": "all"
+    },
+    {
+      "step_name": "First Transaction",
+      "users_entered": 250,
+      "users_dropped": 50,
+      "segment": "all"
+    }
+  ]
+}
+

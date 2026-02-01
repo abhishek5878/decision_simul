@@ -1,0 +1,391 @@
+[
+  {
+    "step_number": 1,
+    "screenshot_file": "ss1.jpeg",
+    "all_text_content": {
+      "headings": [
+        "Smart Credit against Mutual Funds for your dream Career",
+        "We work with the best",
+        "Your personal virtual ATM... your exclusive access to cash",
+        "THE GROWTH CAPTOR FOR YOUR BOLD DREAMS",
+        "Why take a credit against your mutual funds?",
+        "Avail your loan in just 4 simple steps",
+        "The Credit Hack Banks Won't Tell You About",
+        "Now it\u2019s your turn to play the game smartly"
+      ],
+      "buttons": [
+        "Check Eligibility",
+        "Get Started",
+        "Let\u2019s Go"
+      ],
+      "form_field_labels": [],
+      "placeholders": [],
+      "helper_text": [],
+      "disclaimers": [],
+      "value_propositions": [
+        "Save \u20b912,001 Lakh in interest with BlinkMoney Smart Credit!",
+        "Credit Limit - Determine Your Limit",
+        "Instant Credit - Complete Credit in minutes",
+        "Flexible - Use as per your needs",
+        "Smart - Re-evaluate your investment"
+      ]
+    },
+    "input_fields": [],
+    "numbers_and_amounts": [
+      {
+        "type": "currency",
+        "value": "\u20b912,001",
+        "context": "Save in interest"
+      },
+      {
+        "type": "numeric",
+        "value": "4",
+        "context": "steps to avail loan"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Check Eligibility",
+        "type": "primary",
+        "action": "submits form"
+      },
+      {
+        "text": "Get Started",
+        "type": "secondary",
+        "action": "initiates loan process"
+      },
+      {
+        "text": "Let\u2019s Go",
+        "type": "tertiary",
+        "action": "proceeds to next step"
+      }
+    ],
+    "progress_indicator": {
+      "step_number": "",
+      "percentage": "",
+      "visible": false
+    },
+    "trust_signals": [
+      "We work with the best",
+      "Logos of HDFC, Axis, SBI, CDSL"
+    ],
+    "visual_elements": [
+      "Icons for benefits listed",
+      "Graphics explaining the process"
+    ],
+    "complete_description": "The screenshot features a webpage titled 'Smart Credit against Mutual Funds for your dream Career'. It consists of several headings highlighting partnerships with reputed brands, a claim to save significant amounts in interest, descriptions of credit limits, instant credit, flexibility, and smart investment re-evaluation. Various buttons prompt actions like checking eligibility and getting started. There are also graphics visualizing the benefits. The number '4' indicates the steps to avail a loan, while '\u20b912,001' emphasizes savings."
+  },
+  {
+    "step_number": 2,
+    "screenshot_file": "ss2.jpeg",
+    "all_text_content": {
+      "headings": [
+        "Get credit against your mutual funds from",
+        "Check Your Eligibility",
+        "Why BlinkMoney?",
+        "What people say about us",
+        "See more with smart credit options",
+        "FAQs",
+        "Proudly made with love in India"
+      ],
+      "buttons": [
+        "Check Eligibility",
+        "See more"
+      ],
+      "form_field_labels": [],
+      "placeholders": [],
+      "helper_text": [],
+      "disclaimers": [],
+      "value_propositions": [
+        "No selling of funds",
+        "Instant credit in just 2 hours",
+        "Pay only interest",
+        "Completely digital process",
+        "No credit score impact"
+      ]
+    },
+    "input_fields": [],
+    "numbers_and_amounts": [
+      {
+        "type": "currency",
+        "value": "\u20b910,000",
+        "context": "Get credit against your mutual funds from \u20b910,000"
+      },
+      {
+        "type": "currency",
+        "value": "\u20b91,00,000",
+        "context": "Loan Amount options"
+      },
+      {
+        "type": "currency",
+        "value": "\u20b910,00,000",
+        "context": "Maximum Loan Amount"
+      },
+      {
+        "type": "numeric",
+        "value": "12",
+        "context": "Loan Tenure in months"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Check Eligibility",
+        "type": "primary",
+        "action": "submits form"
+      },
+      {
+        "text": "See more",
+        "type": "secondary",
+        "action": "displays additional options"
+      }
+    ],
+    "progress_indicator": {
+      "step_number": "Step 2 of 5",
+      "percentage": "40%",
+      "visible": true
+    },
+    "trust_signals": [
+      "No credit score impact",
+      "Partner logos visible (e.g., KFINTECH)"
+    ],
+    "visual_elements": [
+      "Icons representing benefits such as no selling of funds and digital processes",
+      "Progress bar under Loan Amount",
+      "User testimonials shown in quoted format"
+    ],
+    "complete_description": "The screenshot contains a header displaying credit availability against mutual funds, an eligibility checker section, and a benefits summary including features like no selling of funds, instant credit, interest-only payments, digital processes, and no credit score impact. There are icons symbolizing these benefits, a progress indicator showing 'Step 2 of 5' and '40%' complete. Additionally, logos of partners like KFINTECH are visible. User testimonials are included, highlighting positive experiences."
+  },
+  {
+    "step_number": 3,
+    "screenshot_file": "ss3.jpeg",
+    "all_text_content": {
+      "headings": [
+        "Check Limit"
+      ],
+      "buttons": [
+        "Verify"
+      ],
+      "form_field_labels": [
+        "Enter PAN",
+        "Date of Birth"
+      ],
+      "placeholders": [
+        "PAN ID",
+        "Select date"
+      ],
+      "helper_text": [
+        "Check your eligible loan limit without impact on credit score"
+      ],
+      "disclaimers": [
+        "By proceeding, I accept T&Cs, Privacy Policy, and authorize bureau checks & contact via phone/WhatsApp."
+      ],
+      "value_propositions": []
+    },
+    "input_fields": [
+      {
+        "type": "text input",
+        "label": "Enter PAN",
+        "placeholder": "PAN ID",
+        "format": "10 characters",
+        "required": true,
+        "description": "User must enter their Permanent Account Number (PAN)"
+      },
+      {
+        "type": "dropdown",
+        "label": "Date of Birth",
+        "placeholder": "Select date",
+        "required": true,
+        "description": "User must select their date of birth"
+      }
+    ],
+    "numbers_and_amounts": [],
+    "buttons": [
+      {
+        "text": "Verify",
+        "type": "primary",
+        "action": "submits form"
+      }
+    ],
+    "progress_indicator": {
+      "step_number": "Not applicable",
+      "percentage": "Not applicable",
+      "visible": false
+    },
+    "trust_signals": [
+      "No credit score impact"
+    ],
+    "visual_elements": [],
+    "complete_description": "The screen displays a title 'Check Limit' at the top. Below it, there are two input fields: one for 'Enter PAN', which has a placeholder 'PAN ID', and a second for 'Date of Birth', which has a placeholder 'Select date'. A disclaimer states that by proceeding, the user accepts T&Cs and Privacy Policy. There is a primary button labeled 'Verify'."
+  },
+  {
+    "step_number": 4,
+    "screenshot_file": "ss4.jpeg",
+    "all_text_content": {
+      "headings": [
+        "Check Limit"
+      ],
+      "buttons": [
+        "Verify",
+        "Resend OTP"
+      ],
+      "form_field_labels": [
+        "Enter 6-digit OTP sent by MFCentral to 70145383803"
+      ],
+      "placeholders": [],
+      "helper_text": [],
+      "disclaimers": [],
+      "value_propositions": []
+    },
+    "input_fields": [
+      {
+        "type": "text input",
+        "label": "6-digit OTP",
+        "placeholder": "",
+        "format": "6 digits",
+        "required": true,
+        "description": "User must enter a 6-digit OTP."
+      }
+    ],
+    "numbers_and_amounts": [
+      {
+        "type": "numeric",
+        "value": "00:25",
+        "context": "countdown timer for OTP"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Verify",
+        "type": "primary",
+        "action": "submits OTP"
+      },
+      {
+        "text": "Resend OTP",
+        "type": "secondary",
+        "action": "resends OTP"
+      }
+    ],
+    "progress_indicator": {
+      "step_number": "Step 4 of 5",
+      "percentage": "80%",
+      "visible": true
+    },
+    "trust_signals": [],
+    "visual_elements": [
+      "Help icon indicating support options"
+    ],
+    "complete_description": "This screen displays the 'Check Limit' heading, an input field for a 6-digit OTP, and relevant action buttons for verifying the OTP or resending it. The countdown timer shows '00:25'."
+  },
+  {
+    "step_number": 5,
+    "screenshot_file": "ss5.jpeg",
+    "all_text_content": {
+      "headings": [
+        "You're eligible for upto",
+        "We can help you:",
+        "Did you know?",
+        "Unlock your bold dreams with smart credit",
+        "Did you know?",
+        "Save more with smart credit options",
+        "Blink Money loan benefits",
+        "FAQs"
+      ],
+      "buttons": [
+        "Proceed"
+      ],
+      "form_field_labels": [
+        "Loan Amount",
+        "Loan Tenure"
+      ],
+      "placeholders": [
+        "Enter amount"
+      ],
+      "helper_text": [
+        "Did you know? approx. 2,568 people in India have taken up LAM in the last 24 hours"
+      ],
+      "disclaimers": [
+        "*subject to change as per BFL policies"
+      ],
+      "value_propositions": [
+        "Pay interest only",
+        "Flexible tenure",
+        "One time processing fee",
+        "Instant transfer",
+        "Zero foreclosure charges",
+        "No hidden charges"
+      ]
+    },
+    "input_fields": [
+      {
+        "type": "number input",
+        "label": "Loan Amount",
+        "placeholder": "\u20b9 25,600",
+        "format": "currency/numeric",
+        "required": true,
+        "description": "User must enter a numeric value representing the loan amount"
+      },
+      {
+        "type": "date picker",
+        "label": "Loan Tenure",
+        "placeholder": "1 years - 5 years",
+        "format": "numeric/duration",
+        "required": true,
+        "description": "User must select a number representing years for loan tenure"
+      }
+    ],
+    "numbers_and_amounts": [
+      {
+        "type": "currency",
+        "value": "\u20b91,59,300",
+        "context": "Eligible amount"
+      },
+      {
+        "type": "currency",
+        "value": "\u20b925,600",
+        "context": "Loan Amount"
+      },
+      {
+        "type": "duration",
+        "value": "1 years",
+        "context": "Minimum Loan Tenure"
+      },
+      {
+        "type": "duration",
+        "value": "5 years",
+        "context": "Maximum Loan Tenure"
+      },
+      {
+        "type": "currency",
+        "value": "\u20b924,000",
+        "context": "Personal Loan cost"
+      },
+      {
+        "type": "currency",
+        "value": "\u20b918,923",
+        "context": "Selling Mutual Fund opportunity cost"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Proceed",
+        "type": "primary",
+        "action": "submits form"
+      }
+    ],
+    "progress_indicator": {
+      "step_number": "Step 3 of 5",
+      "percentage": "60%",
+      "visible": true
+    },
+    "trust_signals": [
+      "Did you know? approx. 2,568 people in India have taken up LAM in the last 24 hours",
+      "BlinkMoney now is a family of more than 1 Lac+ bold dreamers"
+    ],
+    "visual_elements": [
+      "Bar chart for Loan Amount",
+      "Slider for Loan Amount and Loan Tenure",
+      "Icons for loan benefits"
+    ],
+    "complete_description": "The screenshot displays information about eligibility for a loan amount, benefits of Blink Money loans, as well as FAQs. There are multiple sections detailing smart credit options and visual representations such as a bar chart. The interface provides essential fields for loan amount and tenure, and highlights user engagement statistics."
+  }
+]

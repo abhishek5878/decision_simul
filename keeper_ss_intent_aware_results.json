@@ -1,0 +1,54 @@
+{
+  "simulation_type": "intent_aware_behavioral_engine",
+  "product": "Keeper SS",
+  "timestamp": "2025-12-30T21:29:01.513500",
+  "total_personas": 1000,
+  "total_trajectories": 7000,
+  "overall_completion_rate": 0.2507142857142857,
+  "completion_rate_ci_lower": 0.241,
+  "completion_rate_ci_upper": 0.2610071428571429,
+  "completion_rate_std_error": 0.005271219508049425,
+  "completion_rate_range": "24.1% - 26.1%",
+  "confidence_level": 0.95,
+  "total_intent_mismatches": 28690,
+  "fixed_intent": {
+    "intent_id": "calculate_leave_liability",
+    "description": "Founder/business owner/CEO wants to calculate leave liability financial impact",
+    "primary_goal": "Understand financial impact of unused leave on balance sheet",
+    "tolerance_for_effort": 0.7,
+    "tolerance_for_risk": 0.3,
+    "expected_value_type": "certainty",
+    "commitment_threshold": 0.6,
+    "expected_reward": "Clear financial calculation showing leave liability impact (e.g., \u20b91.97 Cr)",
+    "acceptable_friction": 0.6,
+    "typical_exit_triggers": [
+      "Too many questions before showing calculations",
+      "Unclear how data will be used",
+      "No clear value proposition",
+      "Asking for sensitive financial data too early"
+    ],
+    "expected_completion_behavior": "Enters company data, sees financial calculations, then decides"
+  },
+  "intent_profile": {
+    "calculate_leave_liability": 1.0
+  },
+  "failure_reasons": {
+    "Step blocked comparison goal: risk_tolerance": 282,
+    "System 2 fatigue": 1190,
+    "Step blocked comparison goal: value_type_mismatch": 3520,
+    "Loss aversion": 253
+  },
+  "exit_steps": {
+    "What is your total monthly payout (salaries) to full-time employees? (in Crores)": 282,
+    "Check Paid Leave Balance": 1443,
+    "What is the max leave encashment at your organization?": 775,
+    "Completed": 1755,
+    "What is the average leave balance of your employees?": 1088,
+    "What is the total no of employees in your organization?": 217,
+    "What is the average annual employee growth rate (%) in your organization?": 535,
+    "Step 1 of 10": 195,
+    "What is your work email?": 181,
+    "What is your attrition rate?": 322,
+    "What is the average Salary Hike % in your organisation?": 207
+  }
+}

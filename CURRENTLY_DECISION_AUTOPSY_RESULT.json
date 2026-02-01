@@ -1,0 +1,272 @@
+{
+  "simulationId": "CUR-2026-01",
+  "latency": "0.00s",
+  "confidence": "100.0%",
+  "cohort": "Young Millennials (typically 22-35) who are heavy social app users and want real-time, authentic updates from friends rather than curated feeds. Socially active, urban users who like spontaneous meetups and seeing where friends are on a live map.",
+  "productName": "Currently - Real-time Social Updates",
+  "userContext": "Users discovering Currently through app store, social media, or friend referrals. They are active social media users, familiar with location-based apps, and seeking authentic social connections. Early-funnel but with strong intent for real-time social updates. Privacy-conscious but willing to share location for social value.",
+  "verdict": "Users abandon when phone verification feels like unnecessary friction before seeing value. They expect social apps to let them explore before requiring verification.",
+  "beliefBreak": {
+    "screenshot": "screenshots/currently/2.jpeg",
+    "irreversibleAction": "User must verify phone number at step 2 of 6 (33% progress) before seeing value.",
+    "callouts": [
+      {
+        "text": "Privacy/commitment required before value shown",
+        "position": "top-left"
+      },
+      {
+        "text": "Social app friction breaks exploration expectation",
+        "position": "bottom-right"
+      }
+    ],
+    "psychology": "Users expect social apps to allow exploration before requiring verification. When asked for phone verification early, it feels like unnecessary friction before they've seen the value (real-time updates, live map)."
+  },
+  "journeyScreenshots": {
+    "before": "screenshots/currently/4.jpeg",
+    "moment": "screenshots/currently/5.jpeg",
+    "after": "screenshots/currently/6.jpeg"
+  },
+  "whyBeliefBreaks": {
+    "userBelieves": [
+      "They can explore the app and see real-time updates first",
+      "Phone verification can happen later or is optional",
+      "Social apps let them browse before requiring verification"
+    ],
+    "productAsks": [
+      "Verify phone number before seeing main feed",
+      "Share contact information before experiencing value"
+    ],
+    "whyItFails": [
+      "Phone verification feels like unnecessary friction before seeing value",
+      "Users expect social apps to allow exploration before requiring verification",
+      "Value (real-time updates, live map) not demonstrated before trust demand"
+    ]
+  },
+  "oneBet": {
+    "headline": "Allow guest browsing of main feed BEFORE phone verification at Step 2",
+    "support": "If users can browse the main feed, see real-time friend updates, and explore the live map as a guest before being asked for phone verification, they'll experience value first and be more willing to verify to continue.",
+    "confidenceLevel": "high",
+    "minimalityAndReversibility": "Minimal change: Make phone verification optional initially, allow guest access. Reversible: Can add verification requirement back if needed.",
+    "executionSpecificity": "At Step 1-2 (Phone Number Entry/OTP), add 'Continue as Guest' option that lets users browse feed and map. After they engage with content, prompt: 'Verify your phone to see friend locations and send updates'. This creates value-first experience.",
+    "learningPayoff": "Even if this fails, we learn whether phone verification is the blocker or if users don't find value in the app itself. If guest browsing doesn't improve engagement, the issue is product-market fit, not verification friction."
+  },
+  "howWrong": [
+    {
+      "name": "Guest Browsing Test",
+      "hypothesis": "Users abandon due to premature verification requirement, not verification itself",
+      "measure": "Completion rate when guest browsing is allowed before phone verification vs current placement",
+      "falsifier": "If guest browsing before verification shows equal abandonment, verification timing isn't the blocker."
+    },
+    {
+      "name": "Value Preview Test",
+      "hypothesis": "Users need to see value (live map, friend updates) before sharing location or verifying phone",
+      "measure": "Engagement with preview screens (live map preview, feed preview) vs immediate permission requests",
+      "falsifier": "If preview screens don't improve conversion, users don't value the social features enough to share data."
+    },
+    {
+      "name": "Privacy Transparency Test",
+      "hypothesis": "Bait-and-switch perception (exploration vs verification) drives exit more than data request itself",
+      "measure": "Completion rate when onboarding explicitly mentions 'verification needed' vs silent verification prompt",
+      "falsifier": "If transparency reduces starts, users actively avoid verification regardless of timing."
+    }
+  ],
+  "evidence": {
+    "assumptions": [
+      "Users discovered Currently through app store, social media, or friend referrals",
+      "Competing social apps (Instagram, Snapchat, BeReal) allow exploration before verification",
+      "Users have not yet established relationship with the brand",
+      "Privacy-conscious Millennials are sensitive to location sharing and phone verification"
+    ],
+    "constraints": [
+      "Location-based features require location permission",
+      "Real-time friend updates require phone verification for security",
+      "Social graph building requires some user identification",
+      "Platform safety requires verification to prevent spam/abuse"
+    ],
+    "rationale": [
+      "Step 1 (Welcome) shows value proposition but doesn't demonstrate actual live map or friend updates",
+      "Step 2 (Phone Verification) requests contact info before user experiences value",
+      "Privacy reassurance appears only AFTER permission request \u2014 too late for trust building",
+      "Users expect social apps to let them explore (like Instagram, Snapchat) before requiring verification",
+      "Competing platforms show feed preview or allow guest browsing before verification"
+    ]
+  },
+  "marginNotes": {
+    "page2": "Note: 83% progress indicator creates expectation of exploration, not verification requirement.",
+    "page4": "High confidence: Pattern observed across social app onboarding where value-before-verification sequencing improves conversion (see Instagram, Snapchat, BeReal).",
+    "page5": "Alternative hypothesis: Users don't want to share location at all, not just timing. Test 'Skip location' option to see if it's privacy concern or timing issue.",
+    "page3": "First 4 steps show value proposition but don't demonstrate actual features. Step 5 breaks pattern with verification/permission requirements."
+  },
+  "decisionSimulation": {
+    "steps": [
+      {
+        "step_id": "Welcome & Value Proposition",
+        "step_index": 0,
+        "step_description": "Welcome screen showing value proposition: real-time updates from friends, live map, spontaneous meetups. User sees what the app offers before committing.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "Social app screen showing welcome screen showing value proposition: real-time updates from friends, live map, spontaneous meetups. user sees what the app offers before committing.",
+            "what_user_thinks": "This looks like a social app. I can explore to see what it offers.",
+            "what_user_understands": "I'm exploring a social app. I haven't seen the main feed or friend updates yet.",
+            "emotional_state": "Curious, exploring without strong commitment"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Step 1/6: Welcome screen showing value proposition: real-time updates from friends, live map, spontaneous meetups. User sees what the app offers before committing.",
+            "what_user_thinks": "I'm going through onboarding. I want to see real-time friend updates and live map.",
+            "what_user_understands": "I'm 1 steps in. I expect to see the main feed with friend updates soon.",
+            "emotional_state": "Engaged but waiting to see value - proceeding with moderate interest"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 1/6 (16%): Welcome screen showing value proposition: real-time updates from friends, live map, spontaneous meetups. User sees what the app offers before committing.",
+            "what_user_thinks": "This is a social app for real-time friend updates. I'm providing information but haven't seen the live map or feed yet.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 1 but value (main feed, live map) appears at step 6. I'm being asked to share data 5 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Cautiously optimistic - proceeding but aware of the trust-value gap"
+          }
+        ]
+      },
+      {
+        "step_id": "Phone Number Entry",
+        "step_index": 1,
+        "step_description": "User enters phone number to sign up. First data collection point. Privacy-conscious users may hesitate here.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "Social app screen showing user enters phone number to sign up. first data collection point. privacy-conscious users may hesitate here.",
+            "what_user_thinks": "This looks like a social app. I can explore to see what it offers.",
+            "what_user_understands": "I'm exploring a social app. I haven't seen the main feed or friend updates yet.",
+            "emotional_state": "Curious, exploring without strong commitment"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Step 2/6: User enters phone number to sign up. First data collection point. Privacy-conscious users may hesitate here.",
+            "what_user_thinks": "I'm going through onboarding. I want to see real-time friend updates and live map.",
+            "what_user_understands": "I'm 2 steps in. I expect to see the main feed with friend updates soon.",
+            "emotional_state": "Engaged but waiting to see value - proceeding with moderate interest"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 2/6 (33%): User enters phone number to sign up. First data collection point. Privacy-conscious users may hesitate here.",
+            "what_user_thinks": "This is a social app for real-time friend updates. I'm providing information but haven't seen the live map or feed yet.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 2 but value (main feed, live map) appears at step 6. I'm being asked to share data 4 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Cautiously optimistic - proceeding but aware of the trust-value gap"
+          }
+        ]
+      },
+      {
+        "step_id": "OTP Verification",
+        "step_index": 2,
+        "step_description": "User enters OTP received via SMS to verify phone number. Standard verification step.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "Social app screen showing user enters otp received via sms to verify phone number. standard verification step.",
+            "what_user_thinks": "This looks like a social app. I can explore to see what it offers.",
+            "what_user_understands": "I'm exploring a social app. I haven't seen the main feed or friend updates yet.",
+            "emotional_state": "Curious, exploring without strong commitment"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Step 3/6: User enters OTP received via SMS to verify phone number. Standard verification step.",
+            "what_user_thinks": "I'm going through onboarding. I want to see real-time friend updates and live map.",
+            "what_user_understands": "I'm 3 steps in. I expect to see the main feed with friend updates soon.",
+            "emotional_state": "Engaged but waiting to see value - proceeding with moderate interest"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 3/6 (50%): User enters OTP received via SMS to verify phone number. Standard verification step.",
+            "what_user_thinks": "This is a social app for real-time friend updates. I'm providing information but haven't seen the live map or feed yet.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 3 but value (main feed, live map) appears at step 6. I'm being asked to share data 3 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Cautiously optimistic - proceeding but aware of the trust-value gap"
+          }
+        ]
+      },
+      {
+        "step_id": "Profile Setup",
+        "step_index": 3,
+        "step_description": "User sets up profile: name, photo, bio. Personal information sharing. Some users may skip or provide minimal info.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "Social app screen showing user sets up profile: name, photo, bio. personal information sharing. some users may skip or provide minimal info.",
+            "what_user_thinks": "This looks like a social app. I can explore to see what it offers.",
+            "what_user_understands": "I'm exploring a social app. I haven't seen the main feed or friend updates yet.",
+            "emotional_state": "Curious, exploring without strong commitment"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Step 4/6: User sets up profile: name, photo, bio. Personal information sharing. Some users may skip or provide minimal info.",
+            "what_user_thinks": "I'm going through onboarding. I want to see real-time friend updates and live map.",
+            "what_user_understands": "I'm 4 steps in. I expect to see the main feed with friend updates soon.",
+            "emotional_state": "Engaged but waiting to see value - proceeding with moderate interest"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 4/6 (66%): User sets up profile: name, photo, bio. Personal information sharing. Some users may skip or provide minimal info.",
+            "what_user_thinks": "This is a social app for real-time friend updates. I'm providing information but haven't seen the live map or feed yet.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 4 but value (main feed, live map) appears at step 6. I'm being asked to share data 2 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Cautiously optimistic - proceeding but aware of the trust-value gap"
+          }
+        ]
+      },
+      {
+        "step_id": "Location Permission",
+        "step_index": 4,
+        "step_description": "App requests location permission to show live map and friend locations. High privacy concern for many users. Critical for app functionality.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "Social app screen showing app requests location permission to show live map and friend locations. high privacy concern for many users. critical for app functionality.",
+            "what_user_thinks": "This looks like a social app. I can explore to see what it offers.",
+            "what_user_understands": "I'm exploring a social app. I haven't seen the main feed or friend updates yet.",
+            "emotional_state": "Curious, exploring without strong commitment"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Step 5/6: App requests location permission to show live map and friend locations. High privacy concern for many users. Critical for app functionality.",
+            "what_user_thinks": "I'm going through onboarding. I want to see real-time friend updates and live map.",
+            "what_user_understands": "I'm 5 steps in. I expect to see the main feed with friend updates soon.",
+            "emotional_state": "Engaged but waiting to see value - proceeding with moderate interest"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 5/6 (83%): App requests location permission to show live map and friend locations. High privacy concern for many users. Critical for app functionality.",
+            "what_user_thinks": "This is a social app for real-time friend updates. I'm providing information but haven't seen the live map or feed yet.",
+            "what_user_understands": "VALUE MISMATCH: I'm at step 5 but value (main feed, live map) appears at step 6. I'm being asked to share data 1 steps BEFORE seeing what I'll get. This violates value-before-trust principle.",
+            "emotional_state": "Cautiously optimistic - proceeding but aware of the trust-value gap"
+          }
+        ]
+      },
+      {
+        "step_id": "Friend Discovery & Main Feed",
+        "step_index": 5,
+        "step_description": "User sees main feed with real-time updates from friends, live map showing friend locations, and can discover/connect with friends. Value delivery point - user finally sees what they came for.",
+        "inferences": [
+          {
+            "inference_level": "30%",
+            "what_user_sees": "Social app screen showing user sees main feed with real-time updates from friends, live map showing friend locations, and can discover/connect with friends. value delivery point - user finally sees what they came for.",
+            "what_user_thinks": "This looks like a social app. I can explore to see what it offers.",
+            "what_user_understands": "I'm exploring a social app. I haven't seen the main feed or friend updates yet.",
+            "emotional_state": "Curious, exploring without strong commitment"
+          },
+          {
+            "inference_level": "60%",
+            "what_user_sees": "Step 6/6: User sees main feed with real-time updates from friends, live map showing friend locations, and can discover/connect with friends. Value delivery point - user finally sees what they came for.",
+            "what_user_thinks": "I'm going through onboarding. I want to see real-time friend updates and live map.",
+            "what_user_understands": "I'm 6 steps in. I expect to see the main feed with friend updates soon.",
+            "emotional_state": "Engaged but waiting to see value - proceeding with moderate interest"
+          },
+          {
+            "inference_level": "100%",
+            "what_user_sees": "Step 6/6 (100%): User sees main feed with real-time updates from friends, live map showing friend locations, and can discover/connect with friends. Value delivery point - user finally sees what they came for.",
+            "what_user_thinks": "I'm finally seeing the main feed with real-time friend updates and live map. This is what I came for.",
+            "what_user_understands": "I can see value now (real-time friend updates, live map). This justifies the information I've shared. Trust is established because value was shown.",
+            "emotional_state": "Excited and engaged - finally seeing value justifies the process"
+          }
+        ]
+      }
+    ]
+  }
+}

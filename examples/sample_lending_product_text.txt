@@ -1,0 +1,31 @@
+QuickCredit - Instant personal loans for salaried professionals
+
+Product Description:
+QuickCredit offers instant personal loans up to ₹5 lakhs for salaried professionals. No collateral required, minimal documentation, and funds disbursed within 24 hours. Credit decisions based on salary slips and bank statements.
+
+Target Users:
+- Salaried professionals (25-45 years old) in Tier-1 and Tier-2 cities
+- Monthly income ₹25k-₹2L
+- Comfortable with digital apps and online banking
+- Need quick access to credit for emergencies or planned expenses
+- Moderate to high risk tolerance (comfortable with unsecured loans)
+- Individual decision-makers (not heavily family-influenced)
+- Growth-oriented, aspirational lifestyle
+
+Product Flow:
+1. Landing page - Explains loan features, eligibility, interest rates, EMI calculator
+2. Phone verification - Enter mobile number, receive OTP, verify
+3. KYC - Upload PAN card, Aadhaar, selfie for verification
+4. Income verification - Upload salary slips (last 3 months) and bank statements
+5. Credit check - System checks credit score, assigns loan limit
+6. Loan agreement - Review terms, interest rate, repayment schedule, sign digitally
+7. Bank account linking - Link bank account for disbursement (read-only access)
+8. Disbursement - Funds transferred to linked account within 24 hours
+
+Key Features:
+- RBI-regulated NBFC
+- No hidden charges, transparent interest rates
+- Flexible repayment (12-60 months)
+- Pre-approved limits for existing customers
+- Instant credit decision
+

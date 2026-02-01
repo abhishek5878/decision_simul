@@ -1,0 +1,223 @@
+{
+  "timestamp": "2026-01-02T14:53:04.419049",
+  "overall_prediction_interval": {
+    "lower_bound": 0.765,
+    "median": 0.7728571428571428,
+    "upper_bound": 0.7807142857142856,
+    "confidence_level": 0.9
+  },
+  "overall_confidence": {
+    "mean_completion": 0.7726761904761903,
+    "p10": 0.765,
+    "p25": 0.7686428571428571,
+    "p50": 0.7728571428571428,
+    "p75": 0.7772857142857141,
+    "p90": 0.7807142857142856,
+    "variance": 3.639446712018161e-05,
+    "std_dev": 0.0060327827012235085,
+    "stability_score": 0.9998544221315193,
+    "n_simulations": 30
+  },
+  "step_prediction_intervals": {
+    "Find the Best Credit Card In 60 seconds": {
+      "lower_bound": 0.21705714285714287,
+      "median": 0.22542857142857142,
+      "upper_bound": 0.23251428571428573,
+      "confidence_level": 0.9
+    },
+    "What kind of perks excite you the most?": {
+      "lower_bound": 0.0014293833417113782,
+      "median": 0.0025863662438216214,
+      "upper_bound": 0.00404161780512031,
+      "confidence_level": 0.9
+    },
+    "Any preference on annual fee?": {
+      "lower_bound": 0.0,
+      "median": 0.0,
+      "upper_bound": 0.0,
+      "confidence_level": 0.9
+    },
+    "straightforward + options are clearly defined": {
+      "lower_bound": 0.0,
+      "median": 0.0,
+      "upper_bound": 0.0,
+      "confidence_level": 0.9
+    },
+    "Your top 2 spend categories?": {
+      "lower_bound": 0.0,
+      "median": 0.0,
+      "upper_bound": 0.0,
+      "confidence_level": 0.9
+    },
+    "Do you track your monthly spending?": {
+      "lower_bound": 0.0,
+      "median": 0.0,
+      "upper_bound": 0.0,
+      "confidence_level": 0.9
+    },
+    "How much do you spend monthly?": {
+      "lower_bound": 0.0,
+      "median": 0.0,
+      "upper_bound": 0.0,
+      "confidence_level": 0.9
+    },
+    "Do you have any existing credit cards?": {
+      "lower_bound": 0.0,
+      "median": 0.0,
+      "upper_bound": 0.0,
+      "confidence_level": 0.9
+    },
+    "Help us personalise your card matches": {
+      "lower_bound": 0.0,
+      "median": 0.0,
+      "upper_bound": 0.0,
+      "confidence_level": 0.9
+    },
+    "Step 1 of 11": {
+      "lower_bound": 0.0,
+      "median": 0.0,
+      "upper_bound": 0.0,
+      "confidence_level": 0.9
+    },
+    "Best Deals for You \u2013 Apply Now": {
+      "lower_bound": 0.0,
+      "median": 0.0,
+      "upper_bound": 0.0,
+      "confidence_level": 0.9
+    }
+  },
+  "step_confidence": {
+    "Find the Best Credit Card In 60 seconds": {
+      "mean_completion": 0.22524761904761903,
+      "p10": 0.21705714285714287,
+      "p25": 0.22064285714285714,
+      "p50": 0.22542857142857142,
+      "p75": 0.2292142857142857,
+      "p90": 0.23251428571428573,
+      "variance": 3.610058956916099e-05,
+      "std_dev": 0.006008376616787682,
+      "stability_score": 0.9998555976417234,
+      "n_simulations": 30
+    },
+    "What kind of perks excite you the most?": {
+      "mean_completion": 0.0026796953319725993,
+      "p10": 0.0014293833417113782,
+      "p25": 0.002210767148990712,
+      "p50": 0.0025863662438216214,
+      "p75": 0.003306425705133472,
+      "p90": 0.00404161780512031,
+      "variance": 1.0294145564902215e-06,
+      "std_dev": 0.0010146006881971948,
+      "stability_score": 0.9999958823417741,
+      "n_simulations": 30
+    },
+    "Any preference on annual fee?": {
+      "mean_completion": 0.0,
+      "p10": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 0.0,
+      "p90": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "stability_score": 1.0,
+      "n_simulations": 30
+    },
+    "straightforward + options are clearly defined": {
+      "mean_completion": 0.0,
+      "p10": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 0.0,
+      "p90": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "stability_score": 1.0,
+      "n_simulations": 30
+    },
+    "Your top 2 spend categories?": {
+      "mean_completion": 0.0,
+      "p10": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 0.0,
+      "p90": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "stability_score": 1.0,
+      "n_simulations": 30
+    },
+    "Do you track your monthly spending?": {
+      "mean_completion": 0.0,
+      "p10": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 0.0,
+      "p90": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "stability_score": 1.0,
+      "n_simulations": 30
+    },
+    "How much do you spend monthly?": {
+      "mean_completion": 0.0,
+      "p10": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 0.0,
+      "p90": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "stability_score": 1.0,
+      "n_simulations": 30
+    },
+    "Do you have any existing credit cards?": {
+      "mean_completion": 0.0,
+      "p10": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 0.0,
+      "p90": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "stability_score": 1.0,
+      "n_simulations": 30
+    },
+    "Help us personalise your card matches": {
+      "mean_completion": 0.0,
+      "p10": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 0.0,
+      "p90": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "stability_score": 1.0,
+      "n_simulations": 30
+    },
+    "Step 1 of 11": {
+      "mean_completion": 0.0,
+      "p10": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 0.0,
+      "p90": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "stability_score": 1.0,
+      "n_simulations": 30
+    },
+    "Best Deals for You \u2013 Apply Now": {
+      "mean_completion": 0.0,
+      "p10": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 0.0,
+      "p90": 0.0,
+      "variance": 0.0,
+      "std_dev": 0.0,
+      "stability_score": 1.0,
+      "n_simulations": 30
+    }
+  }
+}

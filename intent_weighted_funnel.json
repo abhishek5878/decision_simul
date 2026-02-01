@@ -1,0 +1,37 @@
+{
+  "Landing Page - AI Tool Value Proposition": {
+    "try_ai_tool": {
+      "entered": 7000,
+      "exited": 1436,
+      "drop_rate": 20.514285714285716
+    }
+  },
+  "Sign Up / Email Entry": {
+    "try_ai_tool": {
+      "entered": 5564,
+      "exited": 838,
+      "drop_rate": 15.061107117181882
+    }
+  },
+  "Onboarding - Use Case Selection": {
+    "try_ai_tool": {
+      "entered": 4726,
+      "exited": 459,
+      "drop_rate": 9.712230215827338
+    }
+  },
+  "Setup / Configuration": {
+    "try_ai_tool": {
+      "entered": 4267,
+      "exited": 346,
+      "drop_rate": 8.108741504569956
+    }
+  },
+  "First Use / Value Delivery": {
+    "try_ai_tool": {
+      "entered": 3921,
+      "exited": 306,
+      "drop_rate": 7.804131599081867
+    }
+  }
+}

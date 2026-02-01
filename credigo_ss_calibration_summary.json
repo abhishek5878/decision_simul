@@ -1,0 +1,59 @@
+{
+  "before_error": 0.20711054516555094,
+  "after_error": 0.1878022759710655,
+  "improvement_pct": 9.322687639613738,
+  "calibrated_parameters": {
+    "BASE_COMPLETION_RATE": 0.475,
+    "PERSISTENCE_BONUS_START": 0.18,
+    "PERSISTENCE_BONUS_RATE": 0.22,
+    "INTENT_PENALTY_WEIGHT": 0.025,
+    "FRICTION_PENALTY_WEIGHT": 1.0,
+    "VALUE_SENSITIVITY": 1.0,
+    "COGNITIVE_PENALTY_WEIGHT": 1.0,
+    "EFFORT_PENALTY_WEIGHT": 1.0,
+    "RISK_PENALTY_WEIGHT": 1.0,
+    "ENTRY_PROBABILITY_SCALE": 0.875
+  },
+  "default_parameters": {
+    "BASE_COMPLETION_RATE": 0.6,
+    "PERSISTENCE_BONUS_START": 0.18,
+    "PERSISTENCE_BONUS_RATE": 0.22,
+    "INTENT_PENALTY_WEIGHT": 0.025,
+    "FRICTION_PENALTY_WEIGHT": 1.0,
+    "VALUE_SENSITIVITY": 1.0,
+    "COGNITIVE_PENALTY_WEIGHT": 1.0,
+    "EFFORT_PENALTY_WEIGHT": 1.0,
+    "RISK_PENALTY_WEIGHT": 1.0
+  },
+  "parameter_changes": {
+    "BASE_COMPLETION_RATE": -20.833333333333336,
+    "PERSISTENCE_BONUS_START": 0.0,
+    "PERSISTENCE_BONUS_RATE": 0.0,
+    "INTENT_PENALTY_WEIGHT": 0.0,
+    "ENTRY_PROBABILITY_SCALE": -12.5
+  },
+  "confidence_ranges": {
+    "BASE_COMPLETION_RATE": [
+      0.475,
+      0.475
+    ],
+    "PERSISTENCE_BONUS_START": [
+      0.18,
+      0.18
+    ],
+    "PERSISTENCE_BONUS_RATE": [
+      0.22,
+      0.22
+    ],
+    "INTENT_PENALTY_WEIGHT": [
+      0.025,
+      0.025
+    ],
+    "ENTRY_PROBABILITY_SCALE": [
+      0.875,
+      0.875
+    ]
+  },
+  "fit_score": 0.8121977240289345,
+  "timestamp": "2026-01-02T16:25:02.241067"
+}

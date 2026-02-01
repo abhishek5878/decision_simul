@@ -1,0 +1,749 @@
+{
+  "context_graph": {
+    "nodes": [
+      {
+        "step_id": "CrediGo",
+        "total_entries": 7000,
+        "total_exits": 235,
+        "total_drops": 235,
+        "drop_rate": 0.03357142857142857,
+        "avg_cognitive_energy": 0.47079064285713873,
+        "avg_perceived_risk": 0.19285714285714145,
+        "avg_perceived_effort": 0.16428571428571861,
+        "avg_perceived_value": 0.27085085714285584,
+        "avg_perceived_control": 0.37192199999998976,
+        "dominant_failure_factor": "System 2 fatigue"
+      },
+      {
+        "step_id": "What kind of perks excite you the most?",
+        "total_entries": 6765,
+        "total_exits": 72,
+        "total_drops": 72,
+        "drop_rate": 0.010643015521064302,
+        "avg_cognitive_energy": 0.1302726675905416,
+        "avg_perceived_risk": 0.35166870657797106,
+        "avg_perceived_effort": 0.36823872875092895,
+        "avg_perceived_value": 1.072085144124166,
+        "avg_perceived_control": 0.8109522542498124,
+        "dominant_failure_factor": "System 2 fatigue"
+      },
+      {
+        "step_id": "Any preference on annual fee?",
+        "total_entries": 6693,
+        "total_exits": 53,
+        "total_drops": 53,
+        "drop_rate": 0.007918721051845212,
+        "avg_cognitive_energy": 0.0029636553357985968,
+        "avg_perceived_risk": 0.5166583594800563,
+        "avg_perceived_effort": 0.5724652622142516,
+        "avg_perceived_value": 1.1154980599340576,
+        "avg_perceived_control": 1.246929926789184,
+        "dominant_failure_factor": "System 2 fatigue"
+      },
+      {
+        "step_id": "Which of the following describes you best?",
+        "total_entries": 6640,
+        "total_exits": 45,
+        "total_drops": 45,
+        "drop_rate": 0.00677710843373494,
+        "avg_cognitive_energy": 3.015481325301198e-06,
+        "avg_perceived_risk": 0.6818491566264959,
+        "avg_perceived_effort": 0.7768742469879479,
+        "avg_perceived_value": 1.1588112197204807,
+        "avg_perceived_control": 1.6689692771084135,
+        "dominant_failure_factor": "System 2 fatigue"
+      },
+      {
+        "step_id": "Your top 2 spend categories?",
+        "total_entries": 6595,
+        "total_exits": 608,
+        "total_drops": 608,
+        "drop_rate": 0.09219105382865807,
+        "avg_cognitive_energy": 0.0,
+        "avg_perceived_risk": 0.8476256557998555,
+        "avg_perceived_effort": 0.9809370735405621,
+        "avg_perceived_value": 1.2020698773701524,
+        "avg_perceived_control": 1.9108080363912165,
+        "dominant_failure_factor": "System 2 fatigue"
+      },
+      {
+        "step_id": "Do you track your monthly spending?",
+        "total_entries": 5987,
+        "total_exits": 2901,
+        "total_drops": 2901,
+        "drop_rate": 0.4845498580257224,
+        "avg_cognitive_energy": 0.0,
+        "avg_perceived_risk": 0.9983681309503909,
+        "avg_perceived_effort": 1.1696342074494825,
+        "avg_perceived_value": 1.2531831829419,
+        "avg_perceived_control": 1.9883123434107295,
+        "dominant_failure_factor": "System 2 fatigue"
+      },
+      {
+        "step_id": "Do you have any existing credit cards?",
+        "total_entries": 3086,
+        "total_exits": 2239,
+        "total_drops": 2239,
+        "drop_rate": 0.7255346727154893,
+        "avg_cognitive_energy": 0.0,
+        "avg_perceived_risk": 1.1213512637718654,
+        "avg_perceived_effort": 1.2770998055735587,
+        "avg_perceived_value": 1.3471204829377146,
+        "avg_perceived_control": 1.9996364225534669,
+        "dominant_failure_factor": "System 2 fatigue"
+      },
+      {
+        "step_id": "What's your credit score range?",
+        "total_entries": 847,
+        "total_exits": 600,
+        "total_drops": 600,
+        "drop_rate": 0.7083825265643447,
+        "avg_cognitive_energy": 0.0,
+        "avg_perceived_risk": 1.261132467532467,
+        "avg_perceived_effort": 1.3285419126328222,
+        "avg_perceived_value": 1.4657732229321576,
+        "avg_perceived_control": 2.0,
+        "dominant_failure_factor": "System 2 fatigue"
+      },
+      {
+        "step_id": "Finding the card that slaps harder than your playlist",
+        "total_entries": 247,
+        "total_exits": 247,
+        "total_drops": 168,
+        "drop_rate": 0.680161943319838,
+        "avg_cognitive_energy": 0.0,
+        "avg_perceived_risk": 1.4049554655870449,
+        "avg_perceived_effort": 1.3695546558704448,
+        "avg_perceived_value": 1.5732807394399873,
+        "avg_perceived_control": 2.0,
+        "dominant_failure_factor": "System 2 fatigue"
+      }
+    ],
+    "edges": [
+      {
+        "from_step": "CrediGo",
+        "to_step": "What kind of perks excite you the most?",
+        "traversal_count": 6765,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "avg_control_delta": 0.0,
+        "dominant_failure_factor": "System 2 fatigue"
+      },
+      {
+        "from_step": "What kind of perks excite you the most?",
+        "to_step": "Any preference on annual fee?",
+        "traversal_count": 6693,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "avg_control_delta": 0.0,
+        "dominant_failure_factor": "System 2 fatigue"
+      },
+      {
+        "from_step": "Any preference on annual fee?",
+        "to_step": "Which of the following describes you best?",
+        "traversal_count": 6640,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "avg_control_delta": 0.0,
+        "dominant_failure_factor": "System 2 fatigue"
+      },
+      {
+        "from_step": "Which of the following describes you best?",
+        "to_step": "Your top 2 spend categories?",
+        "traversal_count": 6595,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "avg_control_delta": 0.0,
+        "dominant_failure_factor": "System 2 fatigue"
+      },
+      {
+        "from_step": "Your top 2 spend categories?",
+        "to_step": "Do you track your monthly spending?",
+        "traversal_count": 5987,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "avg_control_delta": 0.0,
+        "dominant_failure_factor": "System 2 fatigue"
+      },
+      {
+        "from_step": "Do you track your monthly spending?",
+        "to_step": "Do you have any existing credit cards?",
+        "traversal_count": 3086,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "avg_control_delta": 0.0,
+        "dominant_failure_factor": "System 2 fatigue"
+      },
+      {
+        "from_step": "Do you have any existing credit cards?",
+        "to_step": "What's your credit score range?",
+        "traversal_count": 847,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "avg_control_delta": 0.0,
+        "dominant_failure_factor": "System 2 fatigue"
+      },
+      {
+        "from_step": "What's your credit score range?",
+        "to_step": "Finding the card that slaps harder than your playlist",
+        "traversal_count": 247,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "avg_control_delta": 0.0,
+        "dominant_failure_factor": "System 2 fatigue"
+      }
+    ],
+    "dominant_paths": [
+      {
+        "path": [
+          "CrediGo",
+          "What kind of perks excite you the most?"
+        ],
+        "traversal_count": 6765,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.010643015521064302
+      },
+      {
+        "path": [
+          "What kind of perks excite you the most?",
+          "Any preference on annual fee?"
+        ],
+        "traversal_count": 6693,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.007918721051845212
+      },
+      {
+        "path": [
+          "Any preference on annual fee?",
+          "Which of the following describes you best?"
+        ],
+        "traversal_count": 6640,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.00677710843373494
+      },
+      {
+        "path": [
+          "Which of the following describes you best?",
+          "Your top 2 spend categories?"
+        ],
+        "traversal_count": 6595,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.09219105382865807
+      },
+      {
+        "path": [
+          "Your top 2 spend categories?",
+          "Do you track your monthly spending?"
+        ],
+        "traversal_count": 5987,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.4845498580257224
+      },
+      {
+        "path": [
+          "Do you track your monthly spending?",
+          "Do you have any existing credit cards?"
+        ],
+        "traversal_count": 3086,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.7255346727154893
+      },
+      {
+        "path": [
+          "Do you have any existing credit cards?",
+          "What's your credit score range?"
+        ],
+        "traversal_count": 847,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.7083825265643447
+      },
+      {
+        "path": [
+          "What's your credit score range?",
+          "Finding the card that slaps harder than your playlist"
+        ],
+        "traversal_count": 247,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.680161943319838
+      }
+    ],
+    "fragile_transitions": [
+      {
+        "step_id": "Do you have any existing credit cards?",
+        "drop_rate": 0.7255346727154893,
+        "total_entries": 3086,
+        "total_drops": 2239,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.0,
+        "avg_perceived_risk": 1.1213512637718654,
+        "avg_perceived_effort": 1.2770998055735587
+      },
+      {
+        "step_id": "What's your credit score range?",
+        "drop_rate": 0.7083825265643447,
+        "total_entries": 847,
+        "total_drops": 600,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.0,
+        "avg_perceived_risk": 1.261132467532467,
+        "avg_perceived_effort": 1.3285419126328222
+      },
+      {
+        "step_id": "Finding the card that slaps harder than your playlist",
+        "drop_rate": 0.680161943319838,
+        "total_entries": 247,
+        "total_drops": 168,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.0,
+        "avg_perceived_risk": 1.4049554655870449,
+        "avg_perceived_effort": 1.3695546558704448
+      },
+      {
+        "step_id": "Do you track your monthly spending?",
+        "drop_rate": 0.4845498580257224,
+        "total_entries": 5987,
+        "total_drops": 2901,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.0,
+        "avg_perceived_risk": 0.9983681309503909,
+        "avg_perceived_effort": 1.1696342074494825
+      },
+      {
+        "step_id": "Your top 2 spend categories?",
+        "drop_rate": 0.09219105382865807,
+        "total_entries": 6595,
+        "total_drops": 608,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.0,
+        "avg_perceived_risk": 0.8476256557998555,
+        "avg_perceived_effort": 0.9809370735405621
+      },
+      {
+        "step_id": "CrediGo",
+        "drop_rate": 0.03357142857142857,
+        "total_entries": 7000,
+        "total_drops": 235,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.47079064285713873,
+        "avg_perceived_risk": 0.19285714285714145,
+        "avg_perceived_effort": 0.16428571428571861
+      },
+      {
+        "step_id": "What kind of perks excite you the most?",
+        "drop_rate": 0.010643015521064302,
+        "total_entries": 6765,
+        "total_drops": 72,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.1302726675905416,
+        "avg_perceived_risk": 0.35166870657797106,
+        "avg_perceived_effort": 0.36823872875092895
+      },
+      {
+        "step_id": "Any preference on annual fee?",
+        "drop_rate": 0.007918721051845212,
+        "total_entries": 6693,
+        "total_drops": 53,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.0029636553357985968,
+        "avg_perceived_risk": 0.5166583594800563,
+        "avg_perceived_effort": 0.5724652622142516
+      },
+      {
+        "step_id": "Which of the following describes you best?",
+        "drop_rate": 0.00677710843373494,
+        "total_entries": 6640,
+        "total_drops": 45,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 3.015481325301198e-06,
+        "avg_perceived_risk": 0.6818491566264959,
+        "avg_perceived_effort": 0.7768742469879479
+      }
+    ]
+  },
+  "context_graph_summary": {
+    "summary": {
+      "total_nodes": 9,
+      "total_edges": 8,
+      "total_traversals": 36860
+    },
+    "dominant_paths": [
+      {
+        "path": [
+          "CrediGo",
+          "What kind of perks excite you the most?"
+        ],
+        "traversal_count": 6765,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.010643015521064302
+      },
+      {
+        "path": [
+          "What kind of perks excite you the most?",
+          "Any preference on annual fee?"
+        ],
+        "traversal_count": 6693,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.007918721051845212
+      },
+      {
+        "path": [
+          "Any preference on annual fee?",
+          "Which of the following describes you best?"
+        ],
+        "traversal_count": 6640,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.00677710843373494
+      },
+      {
+        "path": [
+          "Which of the following describes you best?",
+          "Your top 2 spend categories?"
+        ],
+        "traversal_count": 6595,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.09219105382865807
+      },
+      {
+        "path": [
+          "Your top 2 spend categories?",
+          "Do you track your monthly spending?"
+        ],
+        "traversal_count": 5987,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.4845498580257224
+      },
+      {
+        "path": [
+          "Do you track your monthly spending?",
+          "Do you have any existing credit cards?"
+        ],
+        "traversal_count": 3086,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.7255346727154893
+      },
+      {
+        "path": [
+          "Do you have any existing credit cards?",
+          "What's your credit score range?"
+        ],
+        "traversal_count": 847,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.7083825265643447
+      },
+      {
+        "path": [
+          "What's your credit score range?",
+          "Finding the card that slaps harder than your playlist"
+        ],
+        "traversal_count": 247,
+        "avg_energy_delta": 0.0,
+        "avg_risk_delta": 0.0,
+        "avg_value_delta": 0.0,
+        "failure_probability": 0.680161943319838
+      }
+    ],
+    "highest_loss_transitions": [
+      {
+        "from_step": "CrediGo",
+        "to_step": "What kind of perks excite you the most?",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 6765,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0
+      },
+      {
+        "from_step": "What kind of perks excite you the most?",
+        "to_step": "Any preference on annual fee?",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 6693,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0
+      },
+      {
+        "from_step": "Any preference on annual fee?",
+        "to_step": "Which of the following describes you best?",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 6640,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0
+      },
+      {
+        "from_step": "Which of the following describes you best?",
+        "to_step": "Your top 2 spend categories?",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 6595,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0
+      },
+      {
+        "from_step": "Your top 2 spend categories?",
+        "to_step": "Do you track your monthly spending?",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 5987,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0
+      },
+      {
+        "from_step": "Do you track your monthly spending?",
+        "to_step": "Do you have any existing credit cards?",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 3086,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0
+      },
+      {
+        "from_step": "Do you have any existing credit cards?",
+        "to_step": "What's your credit score range?",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 847,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0
+      },
+      {
+        "from_step": "What's your credit score range?",
+        "to_step": "Finding the card that slaps harder than your playlist",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 247,
+        "avg_risk_delta": 0.0,
+        "avg_effort_delta": 0.0,
+        "avg_value_delta": 0.0
+      }
+    ],
+    "fragile_steps": [
+      {
+        "step_id": "Do you have any existing credit cards?",
+        "drop_rate": 0.7255346727154893,
+        "total_entries": 3086,
+        "total_drops": 2239,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.0,
+        "avg_perceived_risk": 1.1213512637718654,
+        "avg_perceived_effort": 1.2770998055735587
+      },
+      {
+        "step_id": "What's your credit score range?",
+        "drop_rate": 0.7083825265643447,
+        "total_entries": 847,
+        "total_drops": 600,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.0,
+        "avg_perceived_risk": 1.261132467532467,
+        "avg_perceived_effort": 1.3285419126328222
+      },
+      {
+        "step_id": "Finding the card that slaps harder than your playlist",
+        "drop_rate": 0.680161943319838,
+        "total_entries": 247,
+        "total_drops": 168,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.0,
+        "avg_perceived_risk": 1.4049554655870449,
+        "avg_perceived_effort": 1.3695546558704448
+      },
+      {
+        "step_id": "Do you track your monthly spending?",
+        "drop_rate": 0.4845498580257224,
+        "total_entries": 5987,
+        "total_drops": 2901,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.0,
+        "avg_perceived_risk": 0.9983681309503909,
+        "avg_perceived_effort": 1.1696342074494825
+      },
+      {
+        "step_id": "Your top 2 spend categories?",
+        "drop_rate": 0.09219105382865807,
+        "total_entries": 6595,
+        "total_drops": 608,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.0,
+        "avg_perceived_risk": 0.8476256557998555,
+        "avg_perceived_effort": 0.9809370735405621
+      },
+      {
+        "step_id": "CrediGo",
+        "drop_rate": 0.03357142857142857,
+        "total_entries": 7000,
+        "total_drops": 235,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.47079064285713873,
+        "avg_perceived_risk": 0.19285714285714145,
+        "avg_perceived_effort": 0.16428571428571861
+      },
+      {
+        "step_id": "What kind of perks excite you the most?",
+        "drop_rate": 0.010643015521064302,
+        "total_entries": 6765,
+        "total_drops": 72,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.1302726675905416,
+        "avg_perceived_risk": 0.35166870657797106,
+        "avg_perceived_effort": 0.36823872875092895
+      },
+      {
+        "step_id": "Any preference on annual fee?",
+        "drop_rate": 0.007918721051845212,
+        "total_entries": 6693,
+        "total_drops": 53,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 0.0029636553357985968,
+        "avg_perceived_risk": 0.5166583594800563,
+        "avg_perceived_effort": 0.5724652622142516
+      },
+      {
+        "step_id": "Which of the following describes you best?",
+        "drop_rate": 0.00677710843373494,
+        "total_entries": 6640,
+        "total_drops": 45,
+        "dominant_failure_factor": "System 2 fatigue",
+        "avg_cognitive_energy": 3.015481325301198e-06,
+        "avg_perceived_risk": 0.6818491566264959,
+        "avg_perceived_effort": 0.7768742469879479
+      }
+    ],
+    "paths_leading_to_drop": [
+      {
+        "path": [
+          "Your top 2 spend categories?",
+          "Do you track your monthly spending?"
+        ],
+        "failure_count": 2901,
+        "failure_rate": 0.4845498580257224,
+        "dominant_factor": "System 2 fatigue",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 5987
+      },
+      {
+        "path": [
+          "Do you track your monthly spending?",
+          "Do you have any existing credit cards?"
+        ],
+        "failure_count": 2239,
+        "failure_rate": 0.7255346727154893,
+        "dominant_factor": "System 2 fatigue",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 3086
+      },
+      {
+        "path": [
+          "Which of the following describes you best?",
+          "Your top 2 spend categories?"
+        ],
+        "failure_count": 608,
+        "failure_rate": 0.09219105382865807,
+        "dominant_factor": "System 2 fatigue",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 6595
+      },
+      {
+        "path": [
+          "Do you have any existing credit cards?",
+          "What's your credit score range?"
+        ],
+        "failure_count": 600,
+        "failure_rate": 0.7083825265643447,
+        "dominant_factor": "System 2 fatigue",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 847
+      },
+      {
+        "path": [
+          "What's your credit score range?",
+          "Finding the card that slaps harder than your playlist"
+        ],
+        "failure_count": 168,
+        "failure_rate": 0.680161943319838,
+        "dominant_factor": "System 2 fatigue",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 247
+      },
+      {
+        "path": [
+          "CrediGo",
+          "What kind of perks excite you the most?"
+        ],
+        "failure_count": 72,
+        "failure_rate": 0.010643015521064302,
+        "dominant_factor": "System 2 fatigue",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 6765
+      },
+      {
+        "path": [
+          "What kind of perks excite you the most?",
+          "Any preference on annual fee?"
+        ],
+        "failure_count": 53,
+        "failure_rate": 0.007918721051845212,
+        "dominant_factor": "System 2 fatigue",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 6693
+      },
+      {
+        "path": [
+          "Any preference on annual fee?",
+          "Which of the following describes you best?"
+        ],
+        "failure_count": 45,
+        "failure_rate": 0.00677710843373494,
+        "dominant_factor": "System 2 fatigue",
+        "avg_energy_delta": 0.0,
+        "traversal_count": 6640
+      }
+    ],
+    "successful_paths": []
+  }
+}
