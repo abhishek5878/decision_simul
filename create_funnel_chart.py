@@ -26,7 +26,7 @@ def load_decision_ledger(ledger_file: str) -> dict:
         return json.load(f)
 
 
-def create_funnel_chart(ledger_file: str, output_file: str = 'credigo_funnel_chart.png'):
+def create_funnel_chart(ledger_file: str, output_file: str = 'output/credigo_funnel_chart.png'):
     """Create a clean funnel visualization."""
     
     print(f"Loading ledger: {ledger_file}")
@@ -250,7 +250,7 @@ def create_funnel_chart(ledger_file: str, output_file: str = 'credigo_funnel_cha
 
 if __name__ == '__main__':
     ledger_file = sys.argv[1] if len(sys.argv) > 1 else 'credigo_ss_decision_ledger.json'
-    output_file = sys.argv[2] if len(sys.argv) > 2 else 'credigo_funnel_chart.png'
+    output_file = sys.argv[2] if len(sys.argv) > 2 else 'output/credigo_funnel_chart.png'
     
     create_funnel_chart(ledger_file, output_file)
 

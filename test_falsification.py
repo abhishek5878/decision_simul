@@ -14,7 +14,7 @@ def main():
     print()
     
     # Load baseline result
-    result_file = "credigo_ss_full_pipeline_results.json"
+    result_file = "output/credigo_ss_full_pipeline_results.json"
     if not os.path.exists(result_file):
         print(f"❌ Baseline result file not found: {result_file}")
         print("   Please run a full pipeline test first.")
@@ -68,7 +68,7 @@ def main():
     print()
     
     # Save report
-    output_file = "falsification_report.json"
+    output_file = "output/falsification_report.json"
     with open(output_file, 'w') as f:
         json.dump(report.to_dict(), f, indent=2, default=str)
     

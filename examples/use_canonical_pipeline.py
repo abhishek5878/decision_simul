@@ -37,8 +37,8 @@ def main():
         mode="production",
         n_personas=500,  # Medium for production
         seed=42,
-        calibration_file="credigo_ss_calibration_summary.json",  # Optional
-        baseline_file="credigo_ss_baseline.json",  # Optional
+        calibration_file="output/credigo_ss_calibration_summary.json",  # Optional
+        baseline_file="output/credigo_ss_baseline.json",  # Optional
         verbose=True
     )
     

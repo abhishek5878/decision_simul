@@ -213,7 +213,7 @@ def main():
     
     # Load screenshots from folder
     print("📸 Loading screenshots from credigo_ss folder...")
-    screenshot_texts = load_screenshots_from_folder("credigo_ss", openai_key)
+    screenshot_texts = load_screenshots_from_folder("products/credigo_ss", openai_key)
     if not screenshot_texts:
         print("❌ Failed to load screenshots")
         return
@@ -270,7 +270,7 @@ def main():
         print_deployment_validation(deployment_validation)
     
     # Export full results
-    output_file = "credigo_ss_full_pipeline_results.json"
+    output_file = "output/credigo_ss_full_pipeline_results.json"
     with open(output_file, 'w') as f:
         json.dump(scenario_result, f, indent=4, default=str)
     

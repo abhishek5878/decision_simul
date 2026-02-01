@@ -34,7 +34,7 @@ python3 run_bachatt_quick.py
 | Path | Purpose |
 |------|--------|
 | **docs/** | All markdown documentation (architecture, reports, guides) |
-| **output/** | Generated Decision Autopsy JSON and related result files |
+| **output/** | All generated artifacts: Decision Autopsy JSON, pipeline results, reports (PDF/HTML), analysis JSON |
 | **examples/** | Sample scenario JSON and target-group configs |
 | **benchmark_flows/** | Benchmark product configs and runners |
 | **calibration/** | Calibration and drift monitoring |
@@ -42,13 +42,13 @@ python3 run_bachatt_quick.py
 | **sensitivity_engine/** | Sensitivity and perturbation analysis |
 | **policy_registry/** | Policy versioning and resolution |
 | **step_semantics/** | Step-level semantic and intent alignment |
+| **products/** | Product screenshot assets (bachatt, blink_money, credigo_ss, currently, keeper_ss, novelty_wealth, pluto_pe, trial1) |
 | **\*_steps.py** | Product flow definitions (steps and signals) |
 | **run_*.py** | Product-specific simulation runners (write to `output/`) |
-| **blink_money/, credigo_ss/, novelty_wealth/, …** | Product screenshot assets (by product) |
 
 ## Products
 
-Product flows are defined in `*_steps.py` and screenshots live in per-product folders. Runners (`run_*_simulation.py`, `run_*_quick.py`, etc.) use the intent-aware behavioral engine and (when configured) the Nemotron-Personas-India dataset; they write `*_DECISION_AUTOPSY_RESULT.json` into **output/**.
+Product flows are defined in `*_steps.py`; screenshots live under **products/** (e.g. `products/blink_money/`, `products/novelty_wealth/`). Runners (`run_*_simulation.py`, `run_*_quick.py`, etc.) use the intent-aware behavioral engine and (when configured) the Nemotron-Personas-India dataset; they write `*_DECISION_AUTOPSY_RESULT.json` into **output/**.
 
 ## License
 

@@ -106,7 +106,7 @@ def main():
     }
     
     # Save comprehensive results
-    output_file = "keeper_ss_intent_aware_results.json"
+    output_file = "output/keeper_ss_intent_aware_results.json"
     print(f"\n💾 Saving comprehensive results to {output_file}...")
     
     total_trajectories = len(result_df) * 7

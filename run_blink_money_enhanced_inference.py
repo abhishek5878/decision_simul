@@ -574,7 +574,7 @@ def main():
     print("\n📸 Using detailed screenshot analysis for richer inferences...\n")
     
     # Load screenshot analysis
-    screenshot_analysis_path = "blink_money_screenshots_deep_analysis.json"
+    screenshot_analysis_path = "output/blink_money_screenshots_deep_analysis.json"
     
     generator = EnhancedBlinkMoneyResultGenerator(
         product_steps=BLINK_MONEY_STEPS,

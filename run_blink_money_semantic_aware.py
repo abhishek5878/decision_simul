@@ -70,7 +70,7 @@ def main():
     )
     
     # Save results
-    output_file = "blink_money_semantic_aware_results.json"
+    output_file = "output/blink_money_semantic_aware_results.json"
     print(f"\n💾 Saving results to {output_file}...")
     
     # Prepare summary for JSON

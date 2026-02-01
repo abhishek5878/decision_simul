@@ -374,7 +374,7 @@ if __name__ == '__main__':
     analysis = analyze_credigo_decision_system(ledger_file)
     
     # Save analysis
-    output_file = 'credigo_decision_system_analysis.json'
+    output_file = 'output/credigo_decision_system_analysis.json'
     with open(output_file, 'w') as f:
         json.dump(analysis, f, indent=2)
     

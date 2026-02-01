@@ -92,7 +92,7 @@ def main():
         print(f"     {name}: {path}")
     
     # Save comprehensive results
-    output_file = "blink_money_intent_aware_results.json"
+    output_file = "output/blink_money_intent_aware_results.json"
     print(f"\n💾 Saving comprehensive results to {output_file}...")
     
     total_trajectories = len(result_df) * 7

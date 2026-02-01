@@ -218,7 +218,7 @@ for item in filtered_results['persona_steps']:
     print(json.dumps(item['step'], indent=4)[:500])
 
 # Save filtered results
-output_file = 'filtered_bachatt_persona_results.json'
+output_file = 'output/filtered_bachatt_persona_results.json'
 with open(output_file, 'w') as f:
     json.dump(filtered_results, f, indent=2)
 

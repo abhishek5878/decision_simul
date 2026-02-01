@@ -79,7 +79,7 @@ def load_sequences_from_result(result_file: str):
 
 
 def main():
-    result_file = 'trial1_pipeline_result.json'
+    result_file = 'output/trial1_pipeline_result.json'
     
     print(f"Loading pipeline result: {result_file}")
     sequences, product_steps = load_sequences_from_result(result_file)

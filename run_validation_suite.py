@@ -69,7 +69,7 @@ def main():
     report['confidence_factors'] = confidence_factors
     
     # Save comprehensive report
-    output_file = 'comprehensive_validation_report.json'
+    output_file = 'output/comprehensive_validation_report.json'
     with open(output_file, 'w') as f:
         json.dump(report, f, indent=2, default=str)
     

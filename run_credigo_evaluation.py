@@ -79,8 +79,8 @@ def main():
         export_evaluation_report(report, 'credigo_evaluation_report.json')
         print(f"   ✓ Full evaluation report: credigo_evaluation_report.json")
         
-        export_calibration_report(report, 'credigo_calibration_report.json')
-        print(f"   ✓ Calibration report: credigo_calibration_report.json")
+        export_calibration_report(report, 'output/credigo_calibration_report.json')
+        print(f"   ✓ Calibration report: output/credigo_calibration_report.json")
         
         export_sensitivity_report(report, 'credigo_sensitivity_report.json')
         print(f"   ✓ Sensitivity report: credigo_sensitivity_report.json")
@@ -120,7 +120,7 @@ def main():
         print("=" * 80)
         print(f"\n📁 Reports saved:")
         print(f"   - credigo_evaluation_report.json (complete report)")
-        print(f"   - credigo_calibration_report.json (confidence & stability)")
+        print(f"   - output/credigo_calibration_report.json (confidence & stability)")
         print(f"   - credigo_sensitivity_report.json (parameter sensitivity)")
         print(f"   - credigo_confidence_intervals.json (prediction intervals)")
         print("=" * 80 + "\n")

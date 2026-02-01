@@ -127,7 +127,7 @@ def main():
         print("Error: OPENAI_API_KEY not set")
         return
     
-    screenshot_dir = "bachatt"
+    screenshot_dir = "products/bachatt"
     screenshot_files = sorted([f for f in os.listdir(screenshot_dir) if f.endswith('.jpeg')])
     
     print(f"\n🔍 Analyzing {len(screenshot_files)} screenshots from {screenshot_dir}...")

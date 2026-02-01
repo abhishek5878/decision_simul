@@ -53,7 +53,7 @@ def simplify_persona_name(persona_class: str) -> str:
     return abbrev
 
 
-def create_clean_visualization(ledger_file: str, output_file: str = 'credigo_context_graph.png'):
+def create_clean_visualization(ledger_file: str, output_file: str = 'output/credigo_context_graph.png'):
     """Create a clean, professional visualization."""
     
     print(f"Loading ledger: {ledger_file}")
@@ -244,7 +244,7 @@ def create_clean_visualization(ledger_file: str, output_file: str = 'credigo_con
 
 if __name__ == '__main__':
     ledger_file = sys.argv[1] if len(sys.argv) > 1 else 'credigo_ss_decision_ledger.json'
-    output_file = sys.argv[2] if len(sys.argv) > 2 else 'credigo_context_graph.png'
+    output_file = sys.argv[2] if len(sys.argv) > 2 else 'output/credigo_context_graph.png'
     
     create_clean_visualization(ledger_file, output_file)
 

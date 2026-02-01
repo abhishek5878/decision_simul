@@ -79,7 +79,7 @@ def load_sequences_from_result(result_file: str):
 
 
 def main():
-    result_file = 'credigo_pipeline_result.json'
+    result_file = 'output/credigo_pipeline_result.json'
     
     print("Loading decision sequences...")
     sequences, product_steps = load_sequences_from_result(result_file)

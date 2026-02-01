@@ -131,7 +131,7 @@ def main():
     print("📸 Loading and analyzing screenshots from credigo_ss folder...")
     print()
     
-    screenshot_texts = load_and_analyze_screenshots("credigo_ss", openai_key)
+    screenshot_texts = load_and_analyze_screenshots("products/credigo_ss", openai_key)
     if not screenshot_texts:
         print("❌ Failed to load screenshots")
         return
@@ -195,7 +195,7 @@ def main():
         # For now, let's check if we can pass it through
         
         # Save results
-        output_file = "credigo_ss_targeted_explicit_results.json"
+        output_file = "output/credigo_ss_targeted_explicit_results.json"
         with open(output_file, 'w') as f:
             json.dump(result, f, indent=2, default=str)
         

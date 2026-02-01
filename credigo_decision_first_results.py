@@ -86,7 +86,7 @@ def load_sequences_from_result(result_file: str):
 
 
 def main():
-    result_file = 'credigo_pipeline_result.json'
+    result_file = 'output/credigo_pipeline_result.json'
     
     print("=" * 80)
     print("CREDIGO: DECISION-FIRST RESULTS")

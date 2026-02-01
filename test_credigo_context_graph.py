@@ -210,7 +210,7 @@ def main():
         
         # Export context graph to JSON for inspection
         if context_graph:
-            output_file = 'credigo_context_graph.json'
+            output_file = 'output/credigo_context_graph.json'
             with open(output_file, 'w') as f:
                 json.dump({
                     'context_graph': context_graph,

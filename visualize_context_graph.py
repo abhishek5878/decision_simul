@@ -241,7 +241,7 @@ def create_visualization(ledger_file: str, output_file: str = 'context_graph_vis
 
 if __name__ == '__main__':
     ledger_file = sys.argv[1] if len(sys.argv) > 1 else 'credigo_ss_decision_ledger.json'
-    output_file = sys.argv[2] if len(sys.argv) > 2 else 'credigo_context_graph.png'
+    output_file = sys.argv[2] if len(sys.argv) > 2 else 'output/credigo_context_graph.png'
     
     create_visualization(ledger_file, output_file)
 

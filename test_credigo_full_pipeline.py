@@ -274,7 +274,7 @@ def main():
         print_interpretation(interpretation)
     
     # Export full results
-    output_file = "credigo_full_pipeline_results.json"
+    output_file = "output/credigo_full_pipeline_results.json"
     with open(output_file, 'w') as f:
         json.dump(scenario_result, f, indent=4, default=str)
     

@@ -10,7 +10,7 @@
 
 ## THE FUNNEL
 
-![Trial1 User Funnel](trial1_funnel_chart.png)
+![Trial1 User Funnel](../output/trial1_funnel_chart.png)
 
 **Most drop-offs happen in Steps 1-2.** If a user doesn't make it past the landing page and sign-up, they're unlikely to complete.
 

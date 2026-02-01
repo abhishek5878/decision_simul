@@ -183,7 +183,7 @@ def main():
         print("Error: OPENAI_API_KEY not set")
         return
     
-    screenshot_dir = "blink_money"
+    screenshot_dir = "products/blink_money"
     screenshot_files = sorted([f for f in os.listdir(screenshot_dir) if f.endswith(('.jpeg', '.jpg', '.png'))])
     total_steps = len(screenshot_files)
     
@@ -213,7 +213,9 @@ def main():
             traceback.print_exc()
     
     # Save complete analysis
-    output_file = "blink_money_complete_analysis.json"
+    import os
+    os.makedirs("output", exist_ok=True)
+    output_file = "output/blink_money_complete_analysis.json"
     with open(output_file, 'w') as f:
         json.dump(all_analyses, f, indent=2)
     

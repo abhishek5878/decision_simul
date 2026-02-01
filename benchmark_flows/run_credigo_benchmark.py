@@ -267,8 +267,8 @@ if __name__ == '__main__':
     import argparse
     
     parser = argparse.ArgumentParser(description='Run Credigo Benchmark Analysis')
-    parser.add_argument('--output-dir', type=str, default='.',
-                       help='Output directory (default: current directory)')
+    parser.add_argument('--output-dir', type=str, default='output',
+                       help='Output directory (default: output)')
     parser.add_argument('--personas', type=int, default=100,
                        help='Number of fixed personas (default: 100)')
     parser.add_argument('--seed', type=int, default=42,

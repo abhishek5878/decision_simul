@@ -93,10 +93,12 @@ def draw_context_graph_on_canvas(canvas_obj, x, y, width, height):
 
 def create_final_pdf():
     """Create final 3-page PDF."""
+    import os
+    os.makedirs("output", exist_ok=True)
     print("📄 Creating final 3-page PDF with visual diagrams...")
     
     doc = SimpleDocTemplate(
-        'blink_money_3page_brief.pdf',
+        'output/blink_money_3page_brief.pdf',
         pagesize=A4,
         rightMargin=1.5*cm,
         leftMargin=1.5*cm,
@@ -300,8 +302,8 @@ def create_final_pdf():
     # Build PDF
     doc.build(story, onFirstPage=page1_template, onLaterPages=lambda c, d: (page2_template(c, d) if c.getPageNumber() == 2 else page3_template(c, d)))
     
-    print("✅ Final 3-page PDF generated: blink_money_3page_brief.pdf")
-    print(f"   File size: {os.path.getsize('blink_money_3page_brief.pdf') / 1024:.1f} KB")
+    print("✅ Final 3-page PDF generated: output/blink_money_3page_brief.pdf")
+    print(f"   File size: {os.path.getsize('output/blink_money_3page_brief.pdf') / 1024:.1f} KB")
     print(f"   Pages: 3")
     print(f"   Includes: Context graph diagram, persona table, comparison table, visual pointers")
 

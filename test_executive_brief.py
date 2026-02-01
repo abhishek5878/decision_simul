@@ -13,7 +13,7 @@ def main():
     print()
     
     # Load result
-    result_file = "credigo_ss_full_pipeline_results.json"
+    result_file = "output/credigo_ss_full_pipeline_results.json"
     if not os.path.exists(result_file):
         print(f"❌ Result file not found: {result_file}")
         print("   Please run a full pipeline test first.")

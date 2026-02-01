@@ -80,7 +80,7 @@ def load_sequences_from_result(result_file: str):
 
 
 def main():
-    result_file = 'credigo_ss_pipeline_result.json'
+    result_file = 'output/credigo_ss_pipeline_result.json'
     
     # Try to load existing result, or run pipeline
     try:

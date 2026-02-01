@@ -58,7 +58,7 @@ def main():
     )
     
     # Save results
-    output_file = "credigo_semantic_aware_results.json"
+    output_file = "output/credigo_semantic_aware_results.json"
     print(f"\n💾 Saving results to {output_file}...")
     
     # Prepare summary for JSON

@@ -57,6 +57,12 @@ nemotron_personas_india_data/
 .cache/
 nemotron_personas_india_data/.cache/
 
+# Junk / personal (do not commit)
+WhatsApp*
+Screenshot*
+IMG_*
+*.HEIC
+
 # Large pipeline/generated outputs (exceed GitHub 100MB limit)
 *_pipeline_result.json
 *_full_pipeline_results.json

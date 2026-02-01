@@ -76,10 +76,11 @@ def draw_context_graph(canvas_obj, x, y, width, height):
 
 def create_3page_pdf():
     """Create 3-page PDF."""
+    os.makedirs("output", exist_ok=True)
     print("📄 Creating 3-page PDF...")
     
     doc = SimpleDocTemplate(
-        'blink_money_3page_brief.pdf',
+        'output/blink_money_3page_brief.pdf',
         pagesize=A4,
         rightMargin=1.5*cm,
         leftMargin=1.5*cm,
@@ -265,8 +266,8 @@ def create_3page_pdf():
     
     # Build PDF
     doc.build(story)
-    print("✅ 3-page PDF generated: blink_money_3page_brief.pdf")
-    print(f"   File size: {os.path.getsize('blink_money_3page_brief.pdf') / 1024:.1f} KB")
+    print("✅ 3-page PDF generated: output/blink_money_3page_brief.pdf")
+    print(f"   File size: {os.path.getsize('output/blink_money_3page_brief.pdf') / 1024:.1f} KB")
 
 if __name__ == '__main__':
     try:

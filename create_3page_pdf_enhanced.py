@@ -115,10 +115,12 @@ def add_page_number(canvas_obj, page_num):
 
 def create_3page_pdf():
     """Create enhanced 3-page PDF."""
+    import os
+    os.makedirs("output", exist_ok=True)
     print("📄 Creating enhanced 3-page PDF with visual diagrams...")
     
     doc = SimpleDocTemplate(
-        'blink_money_3page_brief.pdf',
+        'output/blink_money_3page_brief.pdf',
         pagesize=A4,
         rightMargin=1.5*cm,
         leftMargin=1.5*cm,
@@ -386,8 +388,8 @@ def create_3page_pdf():
     # Build PDF with custom page templates
     doc.build(story, onFirstPage=page1_template, onLaterPages=lambda c, d: add_page_number(c, 2 if c.getPageNumber() == 2 else 3))
     
-    print("✅ Enhanced 3-page PDF generated: blink_money_3page_brief.pdf")
-    print(f"   File size: {os.path.getsize('blink_money_3page_brief.pdf') / 1024:.1f} KB")
+    print("✅ Enhanced 3-page PDF generated: output/blink_money_3page_brief.pdf")
+    print(f"   File size: {os.path.getsize('output/blink_money_3page_brief.pdf') / 1024:.1f} KB")
     print(f"   Pages: 3")
 
 if __name__ == '__main__':

@@ -35,7 +35,7 @@ def load_decision_ledger(ledger_file: str) -> Dict:
         return json.load(f)
 
 
-def create_funnel_visualization(ledger_file: str, output_file: str = 'credigo_context_graph_v2.png'):
+def create_funnel_visualization(ledger_file: str, output_file: str = 'output/credigo_context_graph_v2.png'):
     """Create a clear funnel-style visualization."""
     
     print(f"Loading ledger: {ledger_file}")
@@ -220,7 +220,7 @@ def create_funnel_visualization(ledger_file: str, output_file: str = 'credigo_co
 
 if __name__ == '__main__':
     ledger_file = sys.argv[1] if len(sys.argv) > 1 else 'credigo_ss_decision_ledger.json'
-    output_file = sys.argv[2] if len(sys.argv) > 2 else 'credigo_context_graph_v2.png'
+    output_file = sys.argv[2] if len(sys.argv) > 2 else 'output/credigo_context_graph_v2.png'
     
     create_funnel_visualization(ledger_file, output_file)
 

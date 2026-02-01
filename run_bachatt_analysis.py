@@ -81,7 +81,7 @@ Describe the screen in detail, focusing on what the user needs to do at this ste
     return response.choices[0].message.content
 
 
-def analyze_bachatt_screenshots(screenshot_dir="bachatt", api_key=None):
+def analyze_bachatt_screenshots(screenshot_dir="products/bachatt", api_key=None):
     """Analyze all bachatt screenshots and extract product flow."""
     if api_key is None:
         api_key = os.environ.get("OPENAI_API_KEY")
@@ -224,7 +224,7 @@ def main():
     # Step 1: Analyze screenshots
     print("\n📸 STEP 1: Analyzing screenshots...")
     try:
-        screenshots = analyze_bachatt_screenshots("bachatt")
+        screenshots = analyze_bachatt_screenshots("products/bachatt")
         print(f"   ✅ Analyzed {len(screenshots)} screenshots")
     except Exception as e:
         print(f"   ❌ Error analyzing screenshots: {e}")

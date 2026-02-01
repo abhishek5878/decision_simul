@@ -28,7 +28,7 @@ def main():
     )
     
     # Export results
-    output_file = "credigo_pipeline_result.json"
+    output_file = "output/credigo_pipeline_result.json"
     result.export(output_file)
     print(f"\n✅ Results exported to: {output_file}")
     

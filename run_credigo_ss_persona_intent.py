@@ -85,7 +85,7 @@ def main():
         print(f"     {intent_id}: {pct:.1f}% ({count:,} users)")
     
     # Save results
-    output_file = "credigo_ss_persona_intent_results.json"
+    output_file = "output/credigo_ss_persona_intent_results.json"
     print(f"\n💾 Saving results to {output_file}...")
     
     # Prepare summary

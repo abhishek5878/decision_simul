@@ -93,6 +93,8 @@ def draw_context_graph_on_canvas(canvas_obj, x, y, width, height):
 
 def create_circlepe_pdf():
     """Create PDF with context graph for CirclePe."""
+    import os
+    os.makedirs("output", exist_ok=True)
     print("📄 Creating CirclePe context graph PDF...")
     
     # Load results
@@ -104,7 +106,7 @@ def create_circlepe_pdf():
         results = {}
     
     doc = SimpleDocTemplate(
-        'circlepe_context_graph.pdf',
+        'output/circlepe_context_graph.pdf',
         pagesize=A4,
         rightMargin=1.5*cm,
         leftMargin=1.5*cm,
@@ -260,8 +262,8 @@ def create_circlepe_pdf():
     # Build PDF
     doc.build(story, onFirstPage=page1_template, onLaterPages=lambda c, d: (page2_template(c, d) if c.getPageNumber() == 2 else page3_template(c, d)))
     
-    print("✅ CirclePe context graph PDF generated: circlepe_context_graph.pdf")
-    print(f"   File size: {os.path.getsize('circlepe_context_graph.pdf') / 1024:.1f} KB")
+    print("✅ CirclePe context graph PDF generated: output/circlepe_context_graph.pdf")
+    print(f"   File size: {os.path.getsize('output/circlepe_context_graph.pdf') / 1024:.1f} KB")
     print(f"   Pages: 3")
     print(f"   Includes: Context graph diagram, decision simulation results, step-by-step analysis")
 

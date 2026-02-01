@@ -74,7 +74,7 @@ def run_scenario(name, persona_notes, target_group_notes, api_key, firecrawl_key
     print(f"Running Scenario: {name}")
     print(f"{'='*80}")
     
-    screenshot_texts = load_screenshots_from_folder("credigo_ss", api_key)
+    screenshot_texts = load_screenshots_from_folder("products/credigo_ss", api_key)
     
     wizard_input = WizardInput(
         product_url="https://credigo.club",

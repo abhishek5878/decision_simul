@@ -243,7 +243,7 @@ def run_blink_money_simulation_improved():
                 print(f"     Step {pos+1}: {rate:.1f}% ({data['continued']:,}/{data['total']:,})")
         
         # 9. Save Results
-        output_file = "blink_money_improved_results.json"
+        output_file = "output/blink_money_improved_results.json"
         print(f"\n💾 SAVING RESULTS:")
         print(f"   Saving to: {output_file}")
         
