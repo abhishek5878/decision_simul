@@ -69,7 +69,7 @@ class CalibrationRecord:
 class ReferenceSignalStore:
     """Simple store for reference signals and calibration history."""
     
-    def __init__(self, store_path: str = "reference_signals.json"):
+    def __init__(self, store_path: str = "config/reference_signals.json"):
         self.store_path = store_path
         self.signals: List[ReferenceSignal] = []
         self.calibration_history: List[CalibrationRecord] = []
