@@ -7,7 +7,7 @@ decision flow using personas from the Nemotron-Personas-India dataset (same
 pipeline as Credigo / Currently), then generates a Decision Autopsy JSON
 result using the existing engine.
 
-Output: NOVELTY_WEALTH_DECISION_AUTOPSY_RESULT.json
+Output: output/NOVELTY_WEALTH_DECISION_AUTOPSY_RESULT.json
 
 Usage:
   python3 run_novelty_wealth_simulation.py                # default 1000 personas
@@ -16,6 +16,7 @@ Usage:
 
 import argparse
 import json
+import os
 import sys
 from typing import List
 
@@ -732,7 +733,8 @@ def main():
     autopsy = generator.generate(traces)
 
     # Save to JSON
-    output_file = "NOVELTY_WEALTH_DECISION_AUTOPSY_RESULT.json"
+    os.makedirs("output", exist_ok=True)
+    output_file = "output/NOVELTY_WEALTH_DECISION_AUTOPSY_RESULT.json"
     with open(output_file, "w") as f:
         json.dump(autopsy, f, indent=2)
 

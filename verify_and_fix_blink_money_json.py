@@ -221,7 +221,7 @@ def main():
     print(f"✅ Calculated metrics for {len(step_metrics)} steps")
     
     # Load current JSON
-    with open('BLINK_MONEY_DECISION_AUTOPSY_RESULT.json', 'r') as f:
+    with open('output/BLINK_MONEY_DECISION_AUTOPSY_RESULT.json', 'r') as f:
         data = json.load(f)
     
     # Update persona segmentation with calculated data
@@ -265,7 +265,7 @@ def main():
     }
     
     # Save updated JSON
-    with open('BLINK_MONEY_DECISION_AUTOPSY_RESULT.json', 'w') as f:
+    with open('output/BLINK_MONEY_DECISION_AUTOPSY_RESULT.json', 'w') as f:
         json.dump(data, f, indent=2)
     
     print(f"\n✅ Updated JSON saved")

@@ -97,7 +97,7 @@ def create_circlepe_pdf():
     
     # Load results
     try:
-        with open('CIRCLEPE_DECISION_AUTOPSY_RESULT.json', 'r') as f:
+        with open('output/CIRCLEPE_DECISION_AUTOPSY_RESULT.json', 'r') as f:
             results = json.load(f)
     except Exception as e:
         print(f"⚠️  Could not load results: {e}")

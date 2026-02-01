@@ -438,7 +438,7 @@ def main():
     )
     
     # Save results
-    output_file = "BACHATT_DECISION_AUTOPSY_RESULT.json"
+    output_file = "output/BACHATT_DECISION_AUTOPSY_RESULT.json"
     with open(output_file, "w") as f:
         json.dump(result, f, indent=2)
     

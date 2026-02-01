@@ -2,7 +2,7 @@ import json
 import re
 
 # Load the JSON file
-with open('BLINK_MONEY_DECISION_AUTOPSY_RESULT.json', 'r') as f:
+with open('output/BLINK_MONEY_DECISION_AUTOPSY_RESULT.json', 'r') as f:
     data = json.load(f)
 
 # Target persona keywords

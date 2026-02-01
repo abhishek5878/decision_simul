@@ -168,7 +168,7 @@ def main():
         )
         
         # Save results
-        output_file = "PLUTO_PE_DECISION_AUTOPSY_RESULT.json"
+        output_file = "output/PLUTO_PE_DECISION_AUTOPSY_RESULT.json"
         with open(output_file, "w") as f:
             json.dump(result, f, indent=2)
         

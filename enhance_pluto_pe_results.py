@@ -9,7 +9,7 @@ def enhance_results():
     """Add product context and enhanced persona details to results."""
     
     # Load existing results
-    with open('PLUTO_PE_DECISION_AUTOPSY_RESULT.json', 'r') as f:
+    with open('output/PLUTO_PE_DECISION_AUTOPSY_RESULT.json', 'r') as f:
         result = json.load(f)
     
     # Add product context section
@@ -214,7 +214,7 @@ def enhance_results():
     result["userContext"] = "Crypto-native users and merchants wanting to spend crypto like regular money (Visa debit card) or accept crypto payments with INR settlement. High intent but need to see value (debit card, lower fees, DeFi services) before committing to 8-step wallet setup."
     
     # Save enhanced results
-    with open('PLUTO_PE_DECISION_AUTOPSY_RESULT.json', 'w') as f:
+    with open('output/PLUTO_PE_DECISION_AUTOPSY_RESULT.json', 'w') as f:
         json.dump(result, f, indent=2)
     
     print("✅ Enhanced results saved!")

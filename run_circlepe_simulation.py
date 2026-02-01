@@ -639,7 +639,7 @@ Return JSON:
         ]
     }
     
-    output_file = "CIRCLEPE_DECISION_AUTOPSY_RESULT.json"
+    output_file = "output/CIRCLEPE_DECISION_AUTOPSY_RESULT.json"
     with open(output_file, 'w') as f:
         json.dump(result, f, indent=2)
     

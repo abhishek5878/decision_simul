@@ -764,7 +764,7 @@ def main():
         }
     }
     
-    output_file = "BLINK_MONEY_DECISION_AUTOPSY_RESULT.json"
+    output_file = "output/BLINK_MONEY_DECISION_AUTOPSY_RESULT.json"
     with open(output_file, 'w') as f:
         json.dump(result, f, indent=2)
     

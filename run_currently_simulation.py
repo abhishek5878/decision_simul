@@ -651,7 +651,7 @@ def main():
     autopsy = generator.generate(traces)
     
     # Save to JSON
-    output_file = "CURRENTLY_DECISION_AUTOPSY_RESULT.json"
+    output_file = "output/CURRENTLY_DECISION_AUTOPSY_RESULT.json"
     with open(output_file, 'w') as f:
         json.dump(autopsy, f, indent=2)
     
